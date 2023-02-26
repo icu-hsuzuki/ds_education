@@ -1,6 +1,6 @@
 --- 
 title: "データ・サイエンス教育"
-author: "John Doe"
+author: "鈴木 寛（Hiroshi Suzuki）"
 date: "2023-02-26"
 site: bookdown::bookdown_site
 documentclass: book
@@ -8,50 +8,33 @@ bibliography: [book.bib, packages.bib]
 url: https://icu-hsuzuki.github.io/ds_education/
 # cover-image: path to the social sharing image like images/cover.jpg
 description: |
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::bs4_book,
-  set in the _output.yml file.
+  We start to write this book using the bookdown package with the HTML output format bookdown::bs4_book, set in the _output.yml file.
 biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
 ---
 
-# About
+# この文書について  {-} 
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
+データサイエンス教育について考えながら、課題や手法なども含めて、少しずつ書いていきたいと思う。
 
-## Usage 
+データサイエンスは、広い意味をもったことばで、一口に、語ることはできないが、文部科学省でも、「数理・データサイエンス・AI」の教育を推進するため、特に、大学や高等専門学校では、専門的な学びだけではなく、すべての学生が学ぶことを目標として掲げている。
 
-Each **bookdown** chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter *must* start with a first-level heading: `# A good chapter`, and can contain one (and only one) first-level heading.
+個人的にも、データサイエンス教育の重要性は、強く感じているが、何のためなのか、大学などでは、データサイエンスとして、なにを扱うべきかなども含めて、考えていきたいと思う。
 
-Use second-level and higher headings within chapters like: `## A short section` or `### An even shorter section`.
+みなさんも一緒にデータサイエンスについて考えていただければと願っています。
 
-The `index.Rmd` file is required, and is also your first book chapter. It will be the homepage when you render the book.
+## 著者について {-}
 
-## Render book
+著者は、大学の学生の時以来、数学を学び、大学で教え、2019年春に退職。それ以来、少しずつ、データサイエンスを学んでいます。
 
-You can render the HTML version of this example book without changing anything:
+幸運にも、2019年9月の日本数学会教育委員会主催教育シンポジウムで、「文理共通して行う数理・データサイエンス教育」という題で、話す機会が与えられました。
 
-1. Find the **Build** pane in the RStudio IDE, and
-
-1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files.
-
-Or build the book from the R console:
+その後、あることが契機となり、2020年度から、毎年、冬に、大学院一般向け（分野の指定なし）の授業、「研究者のためのデータ分析（Data Analysis for Researchers）」を担当しています。複数の教員で担当しますが、基本的な部分は、わたしが教えています。受講生は20人程度ですが、殆どが、外国人。それも、多国籍で、多くても一国から三人程度。英語で教えています。
 
 
-```r
-bookdown::render_book()
-```
+## PDF、ePub 版について {-}
 
-To render this example to PDF as a `bookdown::pdf_book`, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>.
+実は、PDF 版と、ePub 版も作成しています。しかし、扱いが異なるので、ある程度完成するまでは、ほとんど更新しない予定です。いずれ、これらも、更新したものを公開できると良いのですが。試験公開版は、下のリンクにあります。
 
-## Preview book
-
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
-
-
-```r
-bookdown::serve_book()
-```
-
-
-
+* [PDF 版](https://icu-hsuzuki.github.io/ds4aj/ds4aj.pdf)
+* [ePub 版](https://icu-hsuzuki.github.io/ds4aj/ds4aj.epub)

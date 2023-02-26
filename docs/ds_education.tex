@@ -111,12 +111,12 @@
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
   pdftitle={データ・サイエンス教育},
-  pdfauthor={John Doe},
+  pdfauthor={鈴木 寛（Hiroshi Suzuki）},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
 \title{データ・サイエンス教育}
-\author{John Doe}
+\author{鈴木 寛（Hiroshi Suzuki）}
 \date{2023-02-26}
 
 \usepackage{amsthm}
@@ -143,13 +143,77 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
+\hypertarget{ux3053ux306eux6587ux66f8ux306bux3064ux3044ux3066}{%
+\chapter*{この文書について}\label{ux3053ux306eux6587ux66f8ux306bux3064ux3044ux3066}}
+\addcontentsline{toc}{chapter}{この文書について}
+
+データサイエンス教育について考えながら、課題や手法なども含めて、少しずつ書いていきたいと思う。
+
+データサイエンスは、広い意味をもったことばで、一口に、語ることはできないが、文部科学省でも、「数理・データサイエンス・AI」の教育を推進するため、特に、大学や高等専門学校では、専門的な学びだけではなく、すべての学生が学ぶことを目標として掲げている。
+
+個人的にも、データサイエンス教育の重要性は、強く感じているが、何のためなのか、大学などでは、データサイエンスとして、なにを扱うべきかなども含めて、考えていきたいと思う。
+
+みなさんも一緒にデータサイエンスについて考えていただければと願っています。
+
+\hypertarget{ux8457ux8005ux306bux3064ux3044ux3066}{%
+\section*{著者について}\label{ux8457ux8005ux306bux3064ux3044ux3066}}
+\addcontentsline{toc}{section}{著者について}
+
+著者は、大学の学生の時以来、数学を学び、大学で教え、2019年春に退職。それ以来、少しずつ、データサイエンスを学んでいます。
+
+幸運にも、2019年9月の日本数学会教育委員会主催教育シンポジウムで、「文理共通して行う数理・データサイエンス教育」という題で、話す機会が与えられました。
+
+その後、あることが契機となり、2020年度から、毎年、冬に、大学院一般向け（分野の指定なし）の授業、「研究者のためのデータ分析（Data Analysis for Researchers）」を担当しています。複数の教員で担当しますが、基本的な部分は、わたしが教えています。受講生は20人程度ですが、殆どが、外国人。それも、多国籍で、多くても一国から三人程度。英語で教えています。
+
+\hypertarget{pdfepub-ux7248ux306bux3064ux3044ux3066}{%
+\section*{PDF、ePub 版について}\label{pdfepub-ux7248ux306bux3064ux3044ux3066}}
+\addcontentsline{toc}{section}{PDF、ePub 版について}
+
+実は、PDF 版と、ePub 版も作成しています。しかし、扱いが異なるので、ある程度完成するまでは、ほとんど更新しない予定です。いずれ、これらも、更新したものを公開できると良いのですが。試験公開版は、下のリンクにあります。
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://icu-hsuzuki.github.io/ds4aj/ds4aj.pdf}{PDF 版}
+\item
+  \href{https://icu-hsuzuki.github.io/ds4aj/ds4aj.epub}{ePub 版}
+\end{itemize}
+
+\hypertarget{introduction}{%
+\chapter{はじめに}\label{introduction}}
+
+まず、課題を整理したいと思う。
+
+\hypertarget{ux30b3ux30f3ux30d4ux30e5ux30fcux30bfux8a00ux8a9eux306bux3064ux3044ux3066}{%
+\section*{コンピュータ言語について}\label{ux30b3ux30f3ux30d4ux30e5ux30fcux30bfux8a00ux8a9eux306bux3064ux3044ux3066}}
+\addcontentsline{toc}{section}{コンピュータ言語について}
+
+統計解析のために開発された R を使います。いずれは、python についても触れたいと思いますが、プログラミングの経験がない方も含めて、最初にデータサイエンスを学ぶには、R は最適だと考えています。特に、R Studio IDE（integrated development environment, 統合開発環境） で、R を使うことがとても、簡単になっています。さらに、簡単なものであれば、Posit Cloud で試したり、共有することも可能です。また、再現性（Reproducibility）や、なにを実行しているのかの説明を同時に記述すること（Literate Programming）は、非常に重要ですが、その記述も、R Markdown によって、可能になっています。この文書も、R Markdown の一つの形式の、bookdown を利用しています。最後に、Bookdown に関連して、膨大な数の、参考書も、無償で提供されており、オンラインで読むことができることも、R をお薦めする理由です。
+
+ただし、日本語のものは、まだ十分とは言えない状況です。この文書を書き始めたのも、すこしでも、お役に立つことができればとの、気持ちが背景にあります。
+
+\hypertarget{ux8a00ux8a9eux306bux3064ux3044ux3066}{%
+\section*{言語について}\label{ux8a00ux8a9eux306bux3064ux3044ux3066}}
+\addcontentsline{toc}{section}{言語について}
+
+ご覧の通り、本書は、日本語で書かれています。用語は、英語、あるいは、英語を追記、または、英語をカタカナにしただけのものを使用する可能性が大きいですが、説明は、極力、日本語で書いていく予定です。
+
+しかし、基本的に、コード（プログラムの記述）には、日本語を使わないで書いていく予定です。とくに、初心者にとっては、日本語の扱いは、負担になることが多いからです。最近は、コードの中で日本語を使用しても、ほとんど、問題は起きないように思います。そうであっても、世界の人の共通言語として、プログラム言語を学んでいくときには、日本語を使わないことは意義があると思います。
+
+少し慣れてきて、日本語のデータなどを扱うときには、コードにも日本語を使う必要ができていますから、日本語の利用についても、追って説明していきます。APPENDIX \ref{japanese} を参照してください。
+
+最初は、みなさんも、変数（variable）や、オブジェクト（object）に名前をつけるときは、半角英数を使い、日本語は、使わないようにすることをお勧めします。
+
+\hypertarget{bookdown}{%
+\chapter{Bookdown}\label{bookdown}}
+
 \hypertarget{about}{%
-\chapter{About}\label{about}}
+\section{About}\label{about}}
 
 This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports; for example, a math equation \(a^2 + b^2 = c^2\).
 
 \hypertarget{usage}{%
-\section{Usage}\label{usage}}
+\subsection{Usage}\label{usage}}
 
 Each \textbf{bookdown} chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter \emph{must} start with a first-level heading: \texttt{\#\ A\ good\ chapter}, and can contain one (and only one) first-level heading.
 
@@ -158,7 +222,7 @@ Use second-level and higher headings within chapters like: \texttt{\#\#\ A\ shor
 The \texttt{index.Rmd} file is required, and is also your first book chapter. It will be the homepage when you render the book.
 
 \hypertarget{render-book}{%
-\section{Render book}\label{render-book}}
+\subsection{Render book}\label{render-book}}
 
 You can render the HTML version of this example book without changing anything:
 
@@ -181,7 +245,7 @@ Or build the book from the R console:
 To render this example to PDF as a \texttt{bookdown::pdf\_book}, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
 
 \hypertarget{preview-book}{%
-\section{Preview book}\label{preview-book}}
+\subsection{Preview book}\label{preview-book}}
 
 As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in ``Preview book'', or from the R console:
 
@@ -192,84 +256,17 @@ As you work, you may start a local server to live preview this HTML book. This p
 \end{Shaded}
 
 \hypertarget{hello-bookdown}{%
-\chapter{Hello bookdown}\label{hello-bookdown}}
+\section{Hello bookdown}\label{hello-bookdown}}
 
 All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (\texttt{\#}) per .Rmd file.
 
 \hypertarget{a-section}{%
-\section{A section}\label{a-section}}
+\subsection{A section}\label{a-section}}
 
 All chapter sections start with a second-level (\texttt{\#\#}) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
 
 \hypertarget{an-unnumbered-section}{%
-\subsection*{An unnumbered section}\label{an-unnumbered-section}}
-\addcontentsline{toc}{subsection}{An unnumbered section}
-
-Chapters and sections are numbered by default. To un-number a heading, add a \texttt{\{.unnumbered\}} or the shorter \texttt{\{-\}} at the end of the heading, like in this section.
-
-\hypertarget{bookdown}{%
-\chapter{Bookdown}\label{bookdown}}
-
-\hypertarget{about-1}{%
-\section{About}\label{about-1}}
-
-This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports; for example, a math equation \(a^2 + b^2 = c^2\).
-
-\hypertarget{usage-1}{%
-\subsection{Usage}\label{usage-1}}
-
-Each \textbf{bookdown} chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter \emph{must} start with a first-level heading: \texttt{\#\ A\ good\ chapter}, and can contain one (and only one) first-level heading.
-
-Use second-level and higher headings within chapters like: \texttt{\#\#\ A\ short\ section} or \texttt{\#\#\#\ An\ even\ shorter\ section}.
-
-The \texttt{index.Rmd} file is required, and is also your first book chapter. It will be the homepage when you render the book.
-
-\hypertarget{render-book-1}{%
-\subsection{Render book}\label{render-book-1}}
-
-You can render the HTML version of this example book without changing anything:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Find the \textbf{Build} pane in the RStudio IDE, and
-\item
-  Click on \textbf{Build Book}, then select your output format, or select ``All formats'' if you'd like to use multiple formats from the same book source files.
-\end{enumerate}
-
-Or build the book from the R console:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{render\_book}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
-
-To render this example to PDF as a \texttt{bookdown::pdf\_book}, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
-
-\hypertarget{preview-book-1}{%
-\subsection{Preview book}\label{preview-book-1}}
-
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in ``Preview book'', or from the R console:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{serve\_book}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{hello-bookdown-1}{%
-\section{Hello bookdown}\label{hello-bookdown-1}}
-
-All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (\texttt{\#}) per .Rmd file.
-
-\hypertarget{a-section-1}{%
-\subsection{A section}\label{a-section-1}}
-
-All chapter sections start with a second-level (\texttt{\#\#}) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
-
-\hypertarget{an-unnumbered-section-1}{%
-\subsubsection*{An unnumbered section}\label{an-unnumbered-section-1}}
+\subsubsection*{An unnumbered section}\label{an-unnumbered-section}}
 \addcontentsline{toc}{subsubsection}{An unnumbered section}
 
 Chapters and sections are numbered by default. To un-number a heading, add a \texttt{\{.unnumbered\}} or the shorter \texttt{\{-\}} at the end of the heading, like in this section.
