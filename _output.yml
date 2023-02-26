@@ -2,7 +2,7 @@ bookdown::bs4_book:
   css: style.css
   theme:
     primary: "#096B72"
-  repo: https://github.com/icu-hsuzuki/ds_eduction
+  repo: https://github.com/icu-hsuzuki/ds_education
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
