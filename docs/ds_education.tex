@@ -117,7 +117,7 @@
 
 \title{データ・サイエンス教育}
 \author{鈴木 寛（Hiroshi Suzuki）}
-\date{2023-02-27}
+\date{2023-02-28}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Theorem}[chapter]
@@ -1245,6 +1245,429 @@ Learning Goals
 {[}12{]} How I learned to understand the world by Hans Rosling with Fanny Haergestam、邦訳「私はこうして世界を理解できるようになった」
 
 {[}13{]} Analyzing the Analyzers (O'Reilly) by Harlan Harris, Sean Murphy, and Marck Vais- man
+
+\hypertarget{susemi202006}{%
+\chapter{データサイエンスを学びませんか}\label{susemi202006}}
+
+鈴木寛\footnote{2019 年 3 月 31 日まで国際基督教大学教養学部教授(数学)College of Liberal Arts, International Christian University、 2019 年 4 月 1 日より国際基督教大学名誉教授}
+
+2020年3月（「数学セミナー」2020年6月号に掲載）
+
+\hypertarget{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9-ai}{%
+\section{データサイエンス? AI?}\label{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9-ai}}
+
+データサイエンス(Data Science)ということばを聞いたことがありますか。このことばが頻繁に使われる ようになって、まだ 10 年ほどしかたっていません。データサイエンスの定義も定まっていませんが、簡単に 表現すると「データを解析して課題を探求し、コミュニケーションを図りながら適切な解決方法を発見する科 学」、また「AI(Artificial Intelligence 人工知能)の応用を支える科学」、「コンピュータ技術とともに、統計、 数理モデル、アルゴリズムといった数学的考え方に支えられた、意思決定の科学(Decision Making Science)」 です。この広がりが、統計学という範囲を飛び越えているのでしょう。
+
+少し古い例から始めると、手書きの郵便番号の自動読み取りで困難な「2」と「7」の識別も、コンピュータ の発達によって膨大な教師データ(Training Data,「2」か「7」かの判定が付加され正誤が判定できるデータ) を使うことが可能になり、この課題に適した数理モデルの開発・適用も進み、統計的評価によって「2」か「7」 か判断(決定)するアルゴリズム(手続き)の精度が格段に増しました。これは画像認識の一つですが、ご存 じのように、今は、顔識別もほとんど間違わないようになってきたと言われています。音声認識も、翻訳もか なり進んでいます。現在、注目を集めているものとしては、Google, Amazon から殆どすべての宣伝に取り入 れられている、リコメンダ・システム(Recommendation System)があります。皆さんも「あなたへのおす すめ」という形で、日常的に経験しているのではないでしょうか。診断・投薬管理・治療方法といった、医療 システムの開発、法律・財務、その他の相談業務、犯罪捜査、防犯システム、災害予知、防災などの分野にも 応用が始まり、国や公共機関の政策決定にも不可欠になっています。世界の資源や、貧困、食糧、環境、経済、 そして、感染症の予防や拡大防止といった問題においても、さまざまなデータを分析して、結果をわかりやす く表現することで共有し、どのような方策・施策が適切であるかを検討し、決定に生かされることが望まれる と共に、可能になっています ({[}1, 2{]})。
+
+データサイエンスをみなさんに学んでいただきたい、三つの理由を書きます。
+まず第一に AI や意思決定の背後にある科学を学ぶことが重要だからです。最近は、Buzz Word として「AI」 が頻繁に使われますが、人間とは独立なコンピュータ(機械)が考えたような表現をせず、背景にある課題と 考え方を理解するために、データサイエンスを学ぶ必要があります。考えることを科学する人工知能研究は、 さらに重要度を増していくでしょうが、AI に仕事を奪われるとか、AI がこれが一番よいと言っているのだか ら仕方がない、というような、思考停止に陥らないためにも、背後にある科学を学んでいただきたい。
+
+二番目は、世界の変化に適切に対応するためです。一方で、インターネットの発達によって、つねに生成さ れている情報のデータを膨大に集め、それをコンピュータで扱い、解析し、新しい価値を発見することが 可 能になっています (Exporatory Data Analysis) 。他方で、皆さんの食卓に上るものも、身の回りのものも世
+界中から集めてきているものですし、旅行や労働者だけでなく、人の移動が活発化し、多様な背景、考え方を 持った人との合意・共働のために、コミュニケーションがたいせつになっています。データをわかりやすく示 して、理解を共有し、課題と共に向き合うことが必要不可欠になっています (Data Visualization)。
+
+三番目は、データや AI を適切に活用するためには、多くの人の理解と協力が必要だからです。AI は有用で あるとともに、社会への影響がとても大きいので、さまざまな問題をひきおこし始めており、その背景を理解 し、協力して向き合っていくひとが、あらゆる分野に必要だからです ({[}1{]},{[}4{]}\footnote{ 原題は ``Weapons of Math Destruction'' 数学破壊兵器. 大量破壊兵器 (Weapons of Mass Destruction) にかけています。)})。データを根拠とすることは、 数値化しやすい価値が強調され、単純な功利主義的な判断が優先される危険があり、公平・尊厳・人権・倫理・ 感情・共感・文化など、数値化が困難ではあるが、ひとにとって本質的なことを置き去りにしないため、どの ような配慮、方策、制度、法律などが必要かを、検討する必要があります ({[}8{]})。膨大な、データから判断する こと自体が、客観的で価値が高いように思われますが、おそらく人間には、理解しづらいことで、納得感、安 心感などが、失われる可能性もあり、母集団をいくつかの因子からではなくトータルにみる視点を意識して育 むことが必須です。
+
+\hypertarget{ux30d1ux30d6ux30eaux30c3ux30afux30c7ux30fcux30bf}{%
+\section{パブリック・データ}\label{ux30d1ux30d6ux30eaux30c3ux30afux30c7ux30fcux30bf}}
+
+皆さんは、ハンス・ロスリング等が書いた「ファクトフルネス -- 10 の思い込みを乗り越え、データを基 に世界を正しく見る習慣」{[}5{]} という本を読んだことがありますか? お勧めです。まだの方は、Gapminder のサイト(\url{https://www.gapminder.org)の一番上にある} 13 問からなる 10 分ほどのテストに挑戦してみ ませんか。日本語でも受けることができます。ひとは、さまざまな、先入観 (bias) にとらわれていると、ロ スリングは言っています。ロスリングの TED などでのビデオ講義もお勧めです。一つだけリンクを付けて おきます ({[}9{]})。Gapminder のサイトを見ると、バブル・チャートと呼ばれるグラフが登場し、世界の状況 を、わかりやすく見ることができます。このようにして、世界の困難な課題に取り組むことが可能になって いくのです。ロスリングはスウェーデン生まれの公衆衛生の専門家で、大学で統計学と医学を学び、モザン ビークで地域医療に従事し、リベリアなどでエボラ出血熱とも戦い、公衆衛生を学生に教えてきた人です。 2017 年になくなりましたが、ロスリングの著書には、Google と協力し公開したものが、Google Public Data (\url{https://www.google.com/publicdata/directory?hl=en_US6\%5B原語を英語に設定すると膨大なリストが現れ、上に} Gapminder のバブルチャートが現れると思います。{]}) だとあります ({[}6{]})。
+
+世界中の公的機関がパブリック・データを公開しており、誰でも、データを見ることができ、また、データ を取得して、分析し、考えることもできるようになってきています。日本の政府統計(パブリック・データ) は、e-Stat (\url{https://www.e-stat.go.jp}) にあります\footnote{国際連合は、各専門機関 (specialized agencies) ごとにデータをまとめています。World Bank \url{https://data.worldbank.org} など検索してみてください。}。
+
+\hypertarget{ux3069ux306eux3088ux3046ux306bux3057ux3066ux5b66ux3073ux307eux3059ux304b}{%
+\section{どのようにして学びますか?}\label{ux3069ux306eux3088ux3046ux306bux3057ux3066ux5b66ux3073ux307eux3059ux304b}}
+
+データサイエンスの学びの鍵は、データに興味を持つことだと思います。AI はどのようなデータを用いて いるのだろうか考えたり、ニュースなどで数値データやグラフに出会ったら、どのようにして得られたデータ なのか、データやグラフから読み取れることはなにか、グラフはわかりやすく表示されているか、同じような データからどのような関連する情報が得られるかを考えてみてください。公開されている元データを探して見 てみるとよいでしょう。最近は、データの公開が進んでいるだけでなく、ダッシュボード\footnote{Gapminder の Tools にあるバブルチャートもその一つです。日本の政府統計のダッシュボード: \url{https://dashboard.e-stat}.
+  go.jp}といって、データ の項目を操作してグラフ表示の仕方を選ぶことができるものも増えています。興味を持った項目について、グラフを作成してデータを分析してみたいとなるとよいですね。
+
+データサイエンスは、誰でも、インターネットネット上で、殆ど無償で学ぶことができます\footnote{日本でも大学・高専では、文系・理系を問わず「数理・データサイエンス・AI」の初歩を学んで卒業するようにカリキュラムを変 更する計画が進んでいます。} 。そのほんの
+一部を紹介します。キーワードは、Free--Open--Online\footnote{基本的に、無償で、公開されているものを活用し、インターネット上で学ぶことです。} です。データサイエンスは、理論を学ぶより、実証 的 (Empirical) な学びですので、実際にデータに触れることがたいせつです。
+
+データの分析には、Excel など、市販の表計算ソフトを利用することも可能ですが、R や、python という 無償のフリーソフト\footnote{フリーにはいろいろな意味があります。Free Software Foundation \url{https://www.fsf.org/about/}}が一般的になっています。鍵は、操作の再現可能性(Reproducible)とプログラムを理 解できるように記述すること (Literate Programming) です。チーム内や、世界の人々と共有・協力するため には、常に、再現と利用が可能な形式で結果を提供することが重要だからです。プログラミング経験者は、最 初から、python で学ぶことも可能ですが、まずは、統計分析のために開発された R がお勧めです。
+
+R は、インターネット上からダウンロードして、自分のコンピュータにインストールして使うことができま すし、使いやすくするための、RStudio IDE\footnote{Integrated Development Environment /統合開発環境} も同様に、無償で提供されています。しかし、まず、インス トールしないで使える RStudio.cloud の紹介をします。インターネットにつながっていればどこでも同じ環境 で使えますので、大学や高等学校だけでなく、自宅や公立の図書館などからでもインターネットに接続できれ ば利用が可能です。
+
+まず、RStudio.cloud のアカウントを取得します。\url{http://RStudio.cloud} にアクセスし、右上の Sign Up を選択し、メール・アドレスを入力し、パスワードを決めます。Google などのアカウントと連携することも 可能です。Project を一つ作りましょう。New Project をクリックして、名前を決めてください。少し待つと、 RStudio 画面に変わります。ここまでで、第一ステップ完了です。
+
+次に、上の メニューの Tools から、Install Packages \ldots{} を選び、swirl と入れてください。それから、Console と書いてあるところに、library(swirl) といれ、Enter(または改行)。さらに、swirl() として、Enter です。指 示に従うと、R の基本を学ぶことができます。英語であることに、抵抗がある方もいると思いますが、それほ ど難しくはありません。また、\url{https://foods4all.github.io} に日本語の説明がありますから、是非、挑戦 してください。一般の人が学ぶデータサイエンスは、日本では始まったばかりですが、英語ではすばらしいサ イトがたくさんあります。英語での学びを始めることで、あなたの世界が広がりますよ。
+
+次に、RStudio.cloud の左上の三本線を選択すると、Learn として、学びのメニューがあります。Cheat Sheets(早見表)もあり、とても便利です。Learn の下にある、Primer(入門書)を選択して The Basic(基 本)を学んでみてください。雰囲気がわかります。RStudio.cloud を終了するときは、右上の名前のところに ある、Log Out を選択します。
+
+これで基本は終了です。もっと学びたい人のために、本を 2 冊紹介します。1 冊目は「R ではじめるデータ サイエンス」({[}3{]}) です。この本の原著は、インターネット上に無償で公開されています。tidyverse という論 理的に構成された パッケージ集を活用した R によるデータサイエンスの全体像がわかります。英語であって も、インターネット上のものが便利に感じてくると思います。データサイエンスの英語はあまり難しくありま せんし、プログラムを、コピー・ペーストして使うことも可能です。2 冊目は「データサイエンス講義」({[}2{]}) です。社会においてデータサイエンスがどのように使われているかについて書かれています。
+
+コースとしてしっかり学びたい人には、MOOCs (Massive Open Online Courses) がお勧めです。日本語 の JMOOC(\url{https://www.jmooc.jp)にもデータサイエンスのコースがいくつか出ています。わたしのお} 勧めは、HarvardX Data Science {[}7{]} です。9 コースのシリーズで一通り学ぶことができます。最初の 2 コース\footnote{Data Science: R Basics, Visualization} を学べば、入門終了です。このコースに、正式に登録して修了証を取得するのは有償ですが、無償での聴 講(Audit)でも、実際に、R のプログラミングの演習ができ、教科書も、ビデオも何度でも見ることが可能で す。ビデオ講義の原稿 (Script) も画面の右に流れますし、これも含めすべてダウンロード可能です。わからな くなったら、止めて単語を調べたり、Google などで翻訳をみることもできます。MOOCs の他のコースの聴 講は、いろいろと制限が付くものもありますが、皆さんにあったものを見つけることができるとよいですね。
+
+\url{https://foods4all.github.io} に、少し詳しく紹介してありますので、参考にして下さい。わたしも Free-Open-Online のものを活用し勉強をはじめて一年になったところです。一緒に学びませんか。
+
+\hypertarget{ux304aux308fux308aux306b-1}{%
+\section{おわりに}\label{ux304aux308fux308aux306b-1}}
+
+データサイエンスは、数学にはない要素をいくつも含んでいますが、数学に興味をもち、勉強をしているひ とにとっては抵抗なく学ぶことができると思います。必要に応じて少しずつ学んでいけばよいので、まず、数 学や統計をあるレベルまで学ばないと、データサイエンスを学べないことはありません。データサイエンスの 世界に飛び込んでみませんか。
+
+専門的に学んでいくと、統計学や、様々な数学が必要になっていきますが、大学一年生で学ぶ、線形代数と 微分積分の初歩を知っていれば、しばらくは十分です\footnote{はじめは、高校 2 年生の数学で十分だと思います。}。自分でデータから考えてみようという意欲がたいせ つです。ニュースでグラフなどを見たら、その元のデータを探して、いろいろグラフを作ってみると勉強にな りますよ。データの見方(データからわかる事実)はたくさんあり、報道されているのは、そのほんの一部分ですから。
+
+わたしは、他者と協力し、データを活用して課題と向き合う社会の責任ある構成員となることが、データサ イエンスを学ぶまず第一の目的であると思います。
+
+あなたも、データサイエンスを学びませんか。
+
+\hypertarget{ux53c2ux8003ux6587ux732e}{%
+\section*{参考文献}\label{ux53c2ux8003ux6587ux732e}}
+\addcontentsline{toc}{section}{参考文献}
+
+{[}1{]}「アルゴリズムが世界を支配する」Christopher Steiner 著、永峯涼訳、角川 書店、2013.
+
+{[}2{]}「データサイエンス講義」Rachel Schutt, Cathy O'Neil 著、瀬戸山雅人他訳、オライリー・ジャパン、2014.
+
+{[}3{]}「R ではじめるデータサイエンス」Hadley Wickham 他著、大橋真也他訳 、オライリージャパン、2017. 原
+著 ''R for Data Science'' (\url{https://r4ds.had.co.nz}) および Jeffrey B. Arnold による 練習問題の解答
+(\url{https://jrnold.github.io/r4ds-exercise-solutions/}) はオンラインで公開されています。
+
+{[}4{]}「あなたを支配し、社会を破壊する、AI・ビッグデータの罠」Cathy O'Neil 著、久保尚子訳、インターシ
+フト、2018 年.
+
+{[}5{]}「Factfulness(ファクトフルネス)-- 10 の思い込みを乗り越え、データを基に世界を正しく見る習慣」Hans
+Rosling 他著、上杉周作・関美和訳、日経 BP、2019.
+
+{[}6{]}「私はこうして世界を理解できるようになった」Hans Rosling 他著、枇谷玲子訳、青土社、2019.
+
+{[}7{]} データサイエンスのオンライン・コース:edX Professional Certificate in Data Science:
+\url{https://online-learning.harvard.edu/series/professional-certificate-data-science}
+
+{[}8{]} データサイエンス倫理のオンライン・コース:edX Data Science Ethics: \url{https://www.edx.org/course/data-science-ethics}
+
+{[}9{]} Hans Rosling による TED Talk(日本語字幕付き): \url{https://www.ted.com/talks/hans_rosling_} the\_best\_stats\_you\_ve\_ever\_seen?language=ja
+
+\hypertarget{da4r}{%
+\chapter{Data Analysis for Researchers}\label{da4r}}
+
+\hypertarget{ux30b3ux30fcux30b9ux306bux3064ux3044ux3066}{%
+\section{コースについて}\label{ux30b3ux30fcux30b9ux306bux3064ux3044ux3066}}
+
+国際基督教大学（International Christian University）の大学院共通科目（QALL401）のコースで、開講言語は英語。コースの日本語名は、「研究者のためのデータ分析」。
+
+何回か、ほんの一部を担当していたが、2020年度からは、中心となって、担当している。また、近年は、冬学期に開講している。
+
+\hypertarget{ux30b3ux30fcux30b9ux30b3ux30f3ux30c6ux30f3ux30c4}{%
+\section{コース・コンテンツ}\label{ux30b3ux30fcux30b9ux30b3ux30f3ux30c6ux30f3ux30c4}}
+
+2021年度担当時の、スライドや、資料をまとめたものを、Bookdown 形式でまとめたものを作成、2022年度は、少し構成を変えた。2021年度のものも一部利用しているが、新しい形式の Bookdown で電子書籍を作成した。
+いずれも、このページの下にリンクがある。
+
+\texttt{bookdown} は、\texttt{R\ Markdown} をベースにした、電子書籍のRのパッケージ名で、現在は、多数の電子書籍が出版されている。
+
+教科書とか、講義録というには、まだ、程遠いが、2022年度の授業は、終了したばかりであるが、2023年度も担当することになっており、現在は、非常勤講師として、このコースのみを担当しているので、極力、12月に開講するまでに、資料としても使えるような内容に、整えていきたいと考えている。
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://icu-hsuzuki.github.io/da4r2021/}{Data Analysis for Researchers 2021}
+\item
+  \href{https://icu-hsuzuki.github.io/da4r2022/}{Data Analysis for Researchers 2022}
+\end{itemize}
+
+\hypertarget{intro2r}{%
+\chapter{Introduction to R}\label{intro2r}}
+
+\hypertarget{ux7279ux5225ux8b1bux7fa970ux5206x2}{%
+\section{特別講義（70分x2）}\label{ux7279ux5225ux8b1bux7fa970ux5206x2}}
+
+Data Analysis for Researchers \ref{da4r} を一緒に担当している、経済学の先生に、依頼されて、2022年11月2日に行った、特別講義である。学生は、経済学のコースを履修している大学院生。講義は英語。日本人大学院生もいるが、大半は、外国人である。背景はまちまちで、R や、他の、分析ソフトを使った経験のある人もいるが、ほとんどは、R の初心者。大学院生のうちの数人は、冬学期（12月開講）に、Data Analysis for Researchers を履修していた。
+
+みな、自分の、コンピュータを持ってきて、実習をしながらと考えて、組み立てたが、あまりに、背景の差があり、ほどんどは、デモンストレーションに終始した。
+
+英語では、このような、入門コースの資料がたくさんあるので、少しだけ、参考資料として、提供した。
+
+Data Analysis for Researchers の講義録のようなものに、今回の講義録に詳しく説明を加えたものを、Introduction として、加えるようにしていくとよいと考えている。
+
+\hypertarget{ux8b1bux7fa9ux8cc7ux6599}{%
+\section{講義資料}\label{ux8b1bux7fa9ux8cc7ux6599}}
+
+RMarkdown の一形式である、RNotebook で作成した、講義資料である。
+リンク先のファイルは、右上に、{[}Code{]} ボタンがあり、そこから、内容を記述した、ソースファイルである、RMarkdown 形式のファイルをダウンロードすることができる。したがって、そのファイルを、RStudio などに取り込めば、実際のコードを、実行して、結果を表示することができる。自分で、コード・チャンクを付け加えて、実行することもできるので、練習も可能である。
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://ds-sl.github.io/intro2r/intro2r.nb.html}{RNotebook リンク}
+\end{itemize}
+
+\hypertarget{eco232}{%
+\chapter{中級マクロ経済学特別講義}\label{eco232}}
+
+\hypertarget{ux7279ux5225ux8b1bux7fa9ux306bux3064ux3044ux3066}{%
+\section{特別講義について}\label{ux7279ux5225ux8b1bux7fa9ux306bux3064ux3044ux3066}}
+
+Data Analysis for Researchers \ref{da4r} を一緒に担当している、経済学の先生に、依頼されて、2023年2月20日、22日、24日に、一時限（70分）ずつ行った、特別講義である。
+
+学生は、マクロ経済学原論（初級マクロ経済学）を履修ししており、また、多くが、計量経済学で、R を、使った経験を持っている。ただし、計量経済学は、Web 上での、\href{https://research.google.com/colaboratory/faq.html}{Google Colab} で、R を利用したとのことである。Windows 上で、R を R Studio で使うときに、発生する問題をさけるため、Google Colab を利用しているとのことである。
+
+Public Data 公開されている実際のデータを使った経験がほとんどないとのことなので、自分で、みてみたい、World Development Indicator を探して、Template に入れて、みてみることを課題とし、講義も、それを中心に据えて、進めた。
+
+はじめての日本語での、データサイエンスの講義で、Windows 上で、R を R Studio を使う場合も、いくつかの問題も把握することとなった。ほとんどの、学生は、問題なく、使えたが。解決しない場合を考えて、Posit Cloud（旧 RStudio Cloud）の説明もした。20人ほどの受講生で、自分の PC では使えず、Posit Cloud を使った学生は一人。
+
+\hypertarget{ux8b1bux7fa9ux8cc7ux6599-1}{%
+\section{講義資料}\label{ux8b1bux7fa9ux8cc7ux6599-1}}
+
+\begin{itemize}
+\item
+  R Studio で R をはじめてみよう \href{https://ds-sl.github.io/intro2r/getstarted.html}{Slide + Vido}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    R Markdown についての説明とビデオも付属
+  \end{itemize}
+\item
+  R ではじめるデータ・サイエンス \href{https://ds-sl.github.io/intro2r/eco232.nb.html}{RNotebook リンク}
+\item
+  課題について \href{https://ds-sl.github.io/intro2r/resp_assignment.nb.html}{RNotebook リンク}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    経済学の学生だけあって、非常に、多くの、WDI コードを選択している。
+  \item
+    近日中に、応答や、質問への回答もしたいと考えている。
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{ds4aj}{%
+\chapter{データサイエンスをはじめましょう}\label{ds4aj}}
+
+\hypertarget{data-science-for-all}{%
+\section*{Data Science for All}\label{data-science-for-all}}
+\addcontentsline{toc}{section}{Data Science for All}
+
+日本語での入門的な教科書を書き始めました。まだ、ほとんど、内容はありませんが、「中級マクロ経済学特別講義」\ref{eco232} で、 日本語での特別講義も経験したので、その内容を土台として、Data Analysis for Researchers \ref{da4r} の翻訳なども含めていきたいと願っている。
+
+\hypertarget{ux30eaux30f3ux30af}{%
+\section{リンク}\label{ux30eaux30f3ux30af}}
+
+\begin{itemize}
+\item
+  \href{https://icu-hsuzuki.github.io/ds4aj/index.html}{データサイエンスをはじめましょう - Data Science for All -}
+\item
+  \href{https://foods4all.github.io/}{Let's enjoy data science together! データサイエンス、一緒に学びませんか}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    最初に2019年の後半に作成したホームページ。この形式に限界を感じ、2020年途中で、改訂を中止。
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{chatgpt}{%
+\chapter{Chat GPT}\label{chatgpt}}
+
+Chat GPT を使いながら、考えたことを、実例を交えて書いていきます。英語で使うことが多いですが、英語の場合には、\href{https://www.deepl.com/translator}{DeepL} による翻訳をつけてあります。このページでは、翻訳には、手を入れない方針にしています。
+
+\hypertarget{epidemiology---ux75abux5b66}{%
+\section{Epidemiology - 疫学}\label{epidemiology---ux75abux5b66}}
+
+2023.02.05
+
+{[}HS{]} I want to know about the so-called digital health. For example, measuring the condition by the wearable device. Is there any academic research on the epidemiology using such devices?
+
+{[}ChatGPT{]} Yes, there have been multiple studies and academic research done in the field of digital health, specifically regarding the use of wearable devices for monitoring health conditions. These studies have focused on a variety of topics such as the accuracy of wearable device readings, the potential for these devices to improve disease management and health outcomes, and the role of wearable devices in population health and epidemiology studies. For example, wearable devices have been used to monitor physical activity levels, heart rate, and sleep patterns, which can provide valuable insights into population health and disease trends. Additionally, wearable devices have been used to track the spread of infectious diseases and to monitor disease outbreaks, providing valuable information for public health decision-making.
+
+{[}HS{]} Would you give a couple of examples with sources?
+
+{[}ChatGPT{]} Certainly! Here are a few examples of academic studies related to digital health and wearable devices:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  ``Validation of Wearable Sensors for Continuous Monitoring of Physical Activity and Sleep'' - This study, published in the Journal of Medical Internet Research in 2016, aimed to validate the accuracy of wearable devices for monitoring physical activity and sleep. The results showed that wearable devices can provide reliable and valid measurements of physical activity and sleep patterns.
+\item
+  ``The Potential of Wearable Devices in Chronic Disease Management: A Systematic Review'' - This study, published in the Journal of Medical Systems in 2016, reviewed the literature on the use of wearable devices in the management of chronic diseases such as diabetes, heart disease, and respiratory disease. The results showed that wearable devices have the potential to improve disease management and health outcomes in these conditions.
+\item
+  ``Using Wearable Devices to Track the Spread of Infectious Diseases'' - This study, published in the Journal of Medical Internet Research in 2018, investigated the potential of wearable devices for tracking the spread of infectious diseases. The results showed that wearable devices can provide valuable data for disease surveillance and outbreak response.
+\end{enumerate}
+
+These are just a few examples, but there are many more studies in the field of digital health and wearable devices. I hope this information is helpful!
+
+{[}HS{]} Is there any discussion on regulations and moral standards for such privacy research?
+
+{[}ChatGPT{]} Yes, there has been significant discussion and debate surrounding the regulations and ethical considerations for digital health research, particularly with regards to privacy. The use of wearable devices and other digital health technologies generates a large amount of personal data, which raises important privacy concerns.
+
+For example, there are concerns about the security of personal health information and the potential for this information to be used for unauthorized purposes. There are also concerns about the potential for discrimination based on the information collected by wearable devices, such as discrimination in employment or insurance based on health status.
+
+To address these concerns, there are a number of regulations and guidelines that have been developed to ensure the privacy and security of personal health information in digital health research. For example, the General Data Protection Regulation (GDPR) in the European Union and the Health Insurance Portability and Accountability Act (HIPAA) in the United States are two examples of privacy regulations that apply to digital health research.
+
+In addition to these regulations, there are also ethical guidelines and codes of conduct for digital health research that outline the responsibilities of researchers and organizations in protecting the privacy and security of personal health information. For example, the World Medical Association has developed the Declaration of Helsinki, which provides ethical guidelines for medical research involving human subjects, and the Council for International Organizations of Medical Sciences has developed the International Ethical Guidelines for Health-Related Research Involving Humans, which provides similar guidelines for international health research.
+
+Overall, the regulations and ethical considerations for digital health research are constantly evolving and it is important for researchers and organizations to stay up to date on the latest developments in this field to ensure that privacy and security are protected.
+
+{[}HS{]} Can you give leading institutions planning to do such research worldwide?
+
+{[}ChatGPT{]} There are many institutions and organizations around the world that are conducting research in the field of digital health and wearable devices. Here are a few examples of leading institutions in this field:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Harvard Medical School - Harvard Medical School is one of the leading institutions for digital health research, with multiple research groups and initiatives dedicated to studying the impact of wearable devices and other digital health technologies on health and wellness.
+\item
+  Stanford University - Stanford University has a strong tradition of innovation in digital health, and its School of Medicine has multiple research programs focused on wearable devices and other digital health technologies.
+\item
+  MIT Media Lab - The MIT Media Lab is a research lab at the Massachusetts Institute of Technology that focuses on interdisciplinary research at the intersection of technology and health. They have several research groups dedicated to digital health, including the Biomedical Cybernetics group, which focuses on the development of wearable devices and other digital health technologies.
+\item
+  Imperial College London - Imperial College London is a leading institution for research in digital health, with multiple research programs and initiatives focused on wearable devices and other digital health technologies.
+\item
+  University of California, San Francisco - The University of California, San Francisco is a leading institution for digital health research, with multiple research programs focused on the development and implementation of wearable devices and other digital health technologies.
+\end{enumerate}
+
+These are just a few examples, and there are many other institutions and organizations around the world that are conducting research in the field of digital health and wearable devices.
+
+{[}HS{]} Do you know institutions or examples conducting research in a local region but in an intensive way to promote health?
+
+{[}ChatGPT{]} Yes, there are many institutions and organizations around the world that are conducting research on digital health and wearable devices with a focus on promoting health in a local region. Here are a few examples:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Kermanshah University of Medical Sciences, Iran - Kermanshah University of Medical Sciences has established a research center for digital health, which aims to promote health in the local region through the use of wearable devices and other digital health technologies. This center conducts research on a variety of topics related to digital health, including the development of wearable devices for disease management and the evaluation of the impact of digital health interventions on health outcomes.
+\item
+  National University of Singapore, Singapore - The National University of Singapore has established a research program in digital health, which aims to promote health in the local region through the use of wearable devices and other digital health technologies. This program conducts research on a variety of topics related to digital health, including the development of wearable devices for disease management and the evaluation of the impact of digital health interventions on health outcomes.
+\item
+  University of the Witwatersrand, South Africa - The University of the Witwatersrand has established a research program in digital health, which aims to promote health in the local region through the use of wearable devices and other digital health technologies. This program conducts research on a variety of topics related to digital health, including the development of wearable devices for disease management and the evaluation of the impact of digital health interventions on health outcomes.
+\end{enumerate}
+
+These are just a few examples, and there are many other institutions and organizations around the world that are conducting research in the field of digital health and wearable devices with a focus on promoting health in a local region.
+
+{[}HS{]} What do you predict the future of epidemiology in connection with this digital health or research using IT devices such as wearable devices monitoring health?
+
+{[}ChatGPT{]} The use of wearable devices and other digital health technologies has the potential to revolutionize epidemiology and the study of disease and health outcomes. Here are a few ways that digital health and wearable devices may shape the future of epidemiology:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Increased Data Collection: Wearable devices and other digital health technologies generate a large amount of data on individuals' health and behaviors, which can be used to better understand patterns of disease and health outcomes. This increased data collection has the potential to greatly enhance our understanding of the causes of disease and the factors that influence health outcomes.
+\item
+  Real-Time Monitoring: Wearable devices allow for real-time monitoring of individuals' health, which has the potential to greatly improve our ability to detect outbreaks of disease and track the spread of illness. This real-time monitoring has the potential to greatly enhance our ability to respond to public health emergencies and reduce the spread of disease.
+\item
+  Improved Data Analysis: With the increased data collection made possible by wearable devices and other digital health technologies, there will be a growing need for advanced data analysis methods and tools to make sense of this data. This will require new and innovative approaches to data analysis, including the use of machine learning and artificial intelligence.
+\item
+  Personalized Medicine: The data generated by wearable devices and other digital health technologies has the potential to inform the development of personalized medicine, where treatments are tailored to an individual's specific needs and health status. This has the potential to greatly improve health outcomes and reduce the risk of adverse events associated with treatments.
+\end{enumerate}
+
+Overall, the future of epidemiology in connection with digital health and wearable devices is very promising, with the potential to greatly enhance our understanding of disease and improve health outcomes. However, it is important to ensure that the privacy and security of personal health information are protected as we move forward with this research.
+
+{[}HS{]} Thank you very much. I want to come back to you after reviewing your comments.
+
+{[}ChatGPT{]} You're welcome! I'm here to help, so feel free to reach out to me again if you have any additional questions. Have a great day!
+
+DeepL Translation
+
+{[}HS{]} いわゆるデジタルヘルスについて知りたいのですが。例えば、ウェアラブルデバイスによる体調の測定などです。そのようなデバイスを用いた疫学に関する学術研究はあるのでしょうか？
+
+{[}ChatGPT{]} はい、デジタルヘルス分野、特に健康状態をモニタリングするためのウェアラブルデバイスの使用に関しては、複数の研究および学術的な調査が行われています。これらの研究は、ウェアラブルデバイスの読み取り精度、これらのデバイスによる疾病管理および健康状態の改善の可能性、集団健康および疫学研究におけるウェアラブルデバイスの役割など、さまざまなトピックに焦点を当てています。例えば、ウェアラブル端末は、身体活動レベル、心拍数、睡眠パターンのモニタリングに使用されており、集団の健康状態や疾病の傾向について貴重な洞察を得ることができます。さらに、ウェアラブル端末は、感染症の蔓延の追跡や病気の発生状況の監視にも利用されており、公衆衛生の意思決定に貴重な情報を提供しています。
+
+{[}HS{]} いくつか例を挙げていただけますか？
+
+{[}ChatGPT{]} もちろんです。デジタルヘルスとウェアラブルデバイスに関連する学術研究の例をいくつかご紹介しましょう。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  ``Validation of Wearable Sensors for Continuous Monitoring of Physical Activity and Sleep'' - 2016年にJournal of Medical Internet Researchに掲載されたこの研究は、身体活動や睡眠をモニタリングするためのウェアラブルデバイスの精度を検証することを目的としたものである。その結果、ウェアラブルデバイスは、身体活動や睡眠パターンの信頼性の高い有効な測定値を提供できることが示されました。
+\item
+  ``The Potential of Wearable Devices in Chronic Disease Management''（慢性疾患管理におけるウェアラブルデバイスの可能性。A Systematic Review'' - 2016年にJournal of Medical Systemsに掲載されたこの研究は、糖尿病、心臓病、呼吸器疾患などの慢性疾患の管理におけるウェアラブルデバイスの使用に関する文献をレビューしたものである。その結果、ウェアラブルデバイスはこれらの疾患における疾病管理および健康アウトカムを改善する可能性があることが示されました。
+\item
+  ``Using Wearable Devices to Track the Spread of Infectious Diseases'' - 2018年にJournal of Medical Internet Researchに掲載されたこの研究は、感染症の広がりを追跡するためのウェアラブルデバイスの可能性を調査したものである。その結果、ウェアラブルデバイスは、病気の監視やアウトブレイク対応に貴重なデータを提供できることがわかりました。
+\end{enumerate}
+
+これらはほんの一例ですが、デジタルヘルスとウェアラブルデバイスの分野では、他にも多くの研究が行われています。この情報がお役に立てれば幸いです
+
+{[}HS{]}このようなプライバシー研究に対する規制や道徳的基準についての議論はありますか？
+
+{[}ChatGPT{]}はい、デジタルヘルス研究、特にプライバシーに関する規制や倫理的配慮をめぐって、大きな議論や討論が行われています。ウェアラブルデバイスやその他のデジタルヘルス技術の使用は、大量の個人データを生成するため、プライバシーに関する重要な懸念が生じます。
+
+例えば、個人健康情報のセキュリティや、この情報が不正に使用される可能性についての懸念があります。また、ウェアラブル端末が収集した情報に基づいて、健康状態に基づく雇用や保険の差別が行われる可能性も懸念されます。
+
+これらの懸念に対応するため、デジタルヘルス研究において個人の健康情報のプライバシーとセキュリティを確保するための規制やガイドラインが数多く策定されています。例えば、欧州連合の一般データ保護規則（GDPR）、米国の医療保険の相互運用性と説明責任に関する法律（HIPAA）などは、デジタルヘルス研究に適用されるプライバシー規制の一例である。
+
+これらの規制に加えて、デジタルヘルス研究のための倫理ガイドラインや行動規範もあり、個人健康情報のプライバシーとセキュリティを保護する上での研究者や組織の責任について概説しています。例えば、世界医師会では、人間を対象とする医学研究の倫理指針として「ヘルシンキ宣言」を、国際医学会では「人間を対象とする健康関連研究のための国際倫理指針」を策定し、国際的な健康研究に対して同様の指針を提供しています。
+
+全体として、デジタルヘルス研究の規制や倫理的配慮は常に進化しており、研究者や組織はこの分野の最新動向を把握し、プライバシーとセキュリティを確実に保護することが重要です。
+
+{[}HS{]} 世界中でこのような研究を計画している代表的な機関を教えてください。
+
+{[}ChatGPT{]} デジタルヘルスやウェアラブルデバイスの分野で研究を行っている機関や組織は、世界中にたくさんあります。ここでは、この分野の先進的な機関の例をいくつか紹介します。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  ハーバード・メディカル・スクール - ハーバード・メディカル・スクールは、デジタルヘルス研究の主要機関の1つで、ウェアラブルデバイスやその他のデジタルヘルス技術が健康やウェルネスに与える影響を研究するための複数の研究グループやイニシアチブがあります。
+\item
+  スタンフォード大学 - スタンフォード大学は、デジタルヘルス分野におけるイノベーションの強い伝統があり、医学部には、ウェアラブルデバイスやその他のデジタルヘルス技術に焦点を当てた複数の研究プログラムがあります。
+\item
+  MITメディアラボ - MITメディアラボは、マサチューセッツ工科大学の研究室で、テクノロジーと健康の交差点における学際的な研究に焦点を当てています。ウェアラブルデバイスやその他のデジタルヘルス技術の開発に注力するBiomedical Cyberneticsグループなど、デジタルヘルスに特化した研究グループを複数有しています。
+\item
+  Imperial College London - Imperial College Londonは、デジタルヘルス研究の主要機関であり、ウェアラブルデバイスやその他のデジタルヘルス技術に焦点を当てた複数の研究プログラムやイニシアチブを有しています。
+\item
+  カリフォルニア大学サンフランシスコ校 - カリフォルニア大学サンフランシスコ校は、デジタルヘルス研究の主要機関であり、ウェアラブルデバイスやその他のデジタルヘルス技術の開発・導入に焦点を当てた複数の研究プログラムを有しています。
+\end{enumerate}
+
+これらはほんの一例であり、他にもデジタルヘルスやウェアラブルデバイスの分野で研究を行っている機関や組織が世界中に数多く存在します。
+
+{[}HS{]} 地方でも集中的に健康増進のための研究を行っている機関や事例をご存知ですか？
+
+{[}ChatGPT{]} はい、デジタルヘルスやウェアラブルデバイスの研究を、地域の健康増進にフォーカスして行っている機関や団体が、世界中にたくさんあります。その例をいくつかご紹介します。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  イラン ケルマンシャー医科大学 - ケルマンシャー医科大学では、ウェアラブルデバイスなどのデジタルヘルス技術を活用し、地域の健康増進を目指すデジタルヘルス研究センターを設立しています。本センターでは、疾病管理のためのウェアラブルデバイスの開発や、デジタルヘルスによる介入が健康状態に及ぼす影響の評価など、デジタルヘルスに関する様々なテーマについて研究を行っています。
+\item
+  シンガポール国立大学（シンガポール） - シンガポール国立大学は、ウェアラブルデバイスやその他のデジタルヘルス技術を活用し、地域の健康増進を目指すデジタルヘルス分野の研究プログラムを設立しています。このプログラムでは、疾病管理のためのウェアラブルデバイスの開発や、デジタルヘルスによる介入が健康アウトカムに与える影響の評価など、デジタルヘルスに関する様々なテーマについて研究を行っています。
+\item
+  ウィットウォータースランド大学（南アフリカ） - ウィットウォータースランド大学は、デジタルヘルスの研究プログラムを設立し、ウェアラブルデバイスやその他のデジタルヘルス技術の利用を通じて、地域の健康増進を図ることを目的としています。このプログラムでは、疾病管理のためのウェアラブルデバイスの開発や、デジタルヘルスによる介入が健康状態に及ぼす影響の評価など、デジタルヘルスに関するさまざまなテーマについて研究を行っています。
+\end{enumerate}
+
+これらはほんの一例で、他にもデジタルヘルスやウェアラブルデバイスの分野で、地域の健康増進に焦点を当てた研究を行っている機関や組織が世界中にたくさんあります。
+
+{[}HS{]} このデジタルヘルスや、健康をモニタリングするウェアラブルデバイスなどのIT機器を用いた研究に関連して、疫学は今後どのようになると予測されますか？
+
+{[}ChatGPT{]} ウェアラブルデバイスなどのデジタルヘルス技術の活用は、疫学や病気・健康結果の研究に革命を起こす可能性があります。ここでは、デジタルヘルスとウェアラブルデバイスが疫学の未来を形作る可能性があるいくつかの方法を紹介します。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    データ収集の増加。データ収集の増加：ウェアラブル端末やその他のデジタルヘルス技術は、個人の健康状態や行動に関する大量のデータを生成し、それらを用いて疾患や健康アウトカムのパターンをよりよく理解することができる。このようなデータ収集の増加は、病気の原因や健康状態に影響を与える要因に関する我々の理解を大きく深める可能性がある。
+  \end{enumerate}
+\item
+  リアルタイムのモニタリング。ウェアラブル端末は、個人の健康状態をリアルタイムでモニタリングできるため、疾病の発生を検知し、疾病の広がりを追跡する能力を大幅に向上させる可能性がある。このリアルタイム・モニタリングは、公衆衛生上の緊急事態への対応能力を大幅に向上させ、病気の蔓延を抑えることができる可能性があります。
+\item
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    データ解析の改善。ウェアラブルデバイスやその他のデジタルヘルス技術によるデータ収集の増加に伴い、このデータを理解するための高度なデータ分析手法とツールの必要性が高まっています。そのためには、機械学習や人工知能の活用など、データ分析に対する新しい革新的なアプローチが必要となります。
+  \end{enumerate}
+\item
+  個別化医療。ウェアラブル端末やその他のデジタルヘルス技術によって生成されたデータは、個人の特定のニーズや健康状態に合わせて治療を行う個別化医療の発展に寄与する可能性があります。これは、健康上の成果を大幅に改善し、治療に伴う有害事象のリスクを低減する可能性がある。
+\end{enumerate}
+
+全体として、デジタルヘルスやウェアラブル端末に関連する疫学の未来は非常に有望であり、疾病に対する理解を大きく深め、健康アウトカムを改善する可能性があります。しかし、この研究を進めるにあたっては、個人の健康情報のプライバシーとセキュリティが確実に保護されることが重要です。
+
+{[}HS{]} ありがとうございました。皆さんのコメントを確認した後、またお伺いしたいと思います。
+
+{[}ChatGPT{]}どういたしまして。また何かありましたら、お気軽にお声掛けください。良い一日をお過ごしください。
+
+www.DeepL.com/Translator（無料版）で翻訳しました。
 
 \hypertarget{bookdown}{%
 \chapter{Bookdown}\label{bookdown}}
