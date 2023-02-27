@@ -238,7 +238,13 @@
 
 \begin{itemize}
 \item
-  第5期科学技術基本計画:2016年1月22日閣議決定 \footnote{\url{https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html}}
+  第5期科学技術基本計画:2016年1月22日閣議決定 \footnote{1第 2 章 未来の産業創造と社会変革に向けた新たな価値創出の取組}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \url{https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html}
+  \end{itemize}
 \item
   大学の数理・データサイエンス教育強化方策:2016年12月21日公表
   - 文部科学省として喫緊に取り組むべき方策
@@ -253,7 +259,7 @@ https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html
 - 北海道・東京・滋賀・京都・大阪・九州(6 国立大学)
 \end{verbatim}
 \item
-  データ関連人材育成プログラム(D-DRIVE2 )2017 年度\textasciitilde{}
+  データ関連人材育成プログラム(D-DRIVE\footnote{Doctoral program for Data-Related InnoVation Expert})2017 年度\textasciitilde{}
 \item
   「大学における数理・データサイエンス教育の全国展開」の協力校の選定
 
@@ -288,12 +294,10 @@ https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\tightlist
 \item
   目標 1:文理を問わず、全ての大学・高専生 (約 50 万人卒/年) が、課程にて初級レベルの数理・デー タサイエンス・AI を習得 {[}MOOC 放送大学の活用{]}
 \item
   目標 2:多くの社会人 (約 100 万人/年) が、基本的情報知識と、データサイエンス・AI 等の実践的活 用スキルを習得できる機会をあらゆる手段を用いて提供
-  1第 2 章 未来の産業創造と社会変革に向けた新たな価値創出の取組 2Doctoral program for Data-Related InnoVation Expert
 \item
   目標 3:大学生、社会人に対するリベラルアーツ教育の充実 (一面的なデータ解析の結果や AI を鵜呑 みにしないための批判的思考力の養成も含む)
 \end{enumerate}
@@ -304,11 +308,10 @@ https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html
 \url{http://www.mi.u-tokyo.ac.jp/consortium/index.html}
 
 \begin{itemize}
-\tightlist
 \item
   北海道大学・東京大学・滋賀大学・京都大学・大阪大学・九州大学
 \item
-  北見工業大学・東北大学・山形大学・筑波大学・宇都宮大学・群馬大学・千葉大学・お茶の水女子大学・新 潟大学・長岡技術科学大学・静岡大学・名古屋大学・豊橋技術科学大学・神戸大学・島根大学・岡山大学・ 広島大学・愛媛大学・宮崎大学・琉球大学
+  北見工業大学・東北大学・山形大学・筑波大学・宇都宮大学・群馬大学・千葉大学・お茶の水女子大学・新潟大学・長岡技術科学大学・静岡大学・名古屋大学・豊橋技術科学大学・神戸大学・島根大学・岡山大学・ 広島大学・愛媛大学・宮崎大学・琉球大学
 \end{itemize}
 
 \hypertarget{ux6559ux79d1ux66f8ux306eux51faux7248ux306aux3069}{%
@@ -349,7 +352,7 @@ https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html
 \item
   担当教員:経済学、情報科学、数学(R Markdown etc.)
 \item
-  担当年度:2014-20153, (2016), 2017 年
+  担当年度:2014-2015\footnote{32015 年度までは、研究者のためのコンピューティング(Computing for Researchers)}, (2016), 2017 年
 \end{itemize}
 
 \hypertarget{ux30b9ux30b1ux30b8ux30e5ux30fcux30eb}{%
@@ -357,6 +360,7 @@ https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\tightlist
 \item
   Introduction to R, Open Data and Free Software 2. Basic R Objects and Commands
 \item
@@ -371,7 +375,6 @@ https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html
   Statistical analysis with R IV
 \item
   Guest Lecture and preparation for presentations
-  32015 年度までは、研究者のためのコンピューティング(Computing for Researchers) 2
 \item
   Final presentations
 \end{enumerate}
@@ -383,7 +386,6 @@ https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html
 授業で使ったデータ
 
 \begin{itemize}
-\tightlist
 \item
   Base R に付属のデータ
 
@@ -398,7 +400,6 @@ https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html
   package MASS に付属のデータ
 \item
   WDI: World Bank Development indicators for R
-\end{itemize}
 
 \begin{verbatim}
 library(WDI)
@@ -408,10 +409,11 @@ indicator = "NY.GDP.MKTP.CD",
 start = 1960, end = 2017)
 \end{verbatim}
 
-現在は、より新しい wbstats パッケージもある。
-
-\begin{itemize}
-\tightlist
+  \begin{itemize}
+  \tightlist
+  \item
+    現在は、より新しい wbstats パッケージもある。
+  \end{itemize}
 \item
   Quandl package: \url{https://www.quandl.com/tools/r}
 \item
@@ -426,7 +428,7 @@ start = 1960, end = 2017)
 \hypertarget{ux4e00ux822cux306eux5b66ux751fux5bfeux8c61ux306eux30b3ux30fcux30b9}{%
 \subsubsection{一般の学生対象のコース}\label{ux4e00ux822cux306eux5b66ux751fux5bfeux8c61ux306eux30b3ux30fcux30b9}}
 
-なぜ 社会的要請?
+なぜ 社会的要請? 教養人としてのリテラシー?
 
 \begin{itemize}
 \tightlist
@@ -434,7 +436,6 @@ start = 1960, end = 2017)
   科学的思考リテラシー:因果関係、相関関係、隠れた因子についての考察
 \item
   関係する因子の多い実社会の問題の分析・解決方法の探索
-  教養人としてのリテラシー
 \item
   社会や会社・機関の責任ある構成員として、政策決定や事業方針策定に必要な因子を把握・異なる視点から 検証
 \item
@@ -447,7 +448,13 @@ start = 1960, end = 2017)
   数学への苦手意識が強くても、データ分析に力を発揮するひとは多い
 \item
   (高校までに学ぶ)数学を活用し、その重要さを実感することが可能
-  コース・デザイン
+\end{itemize}
+
+\hypertarget{ux30b3ux30fcux30b9ux30c7ux30b6ux30a4ux30f3}{%
+\paragraph{コース・デザイン}\label{ux30b3ux30fcux30b9ux30c7ux30b6ux30a4ux30f3}}
+
+\begin{itemize}
+\tightlist
 \item
   目的を達成できるコースの企画・運営が不可欠
 \item
@@ -457,11 +464,15 @@ start = 1960, end = 2017)
 \hypertarget{ux8ab2ux984cux79c1ux898b}{%
 \subsubsection{課題(私見)}\label{ux8ab2ux984cux79c1ux898b}}
 
+\textbf{皆さんも様々なお考えがあると思います}
+
 \begin{itemize}
 \item
   データの公開とその利用が進んでいない
 \item
-  高校までの教育でデータ・サイエンスが扱われてこなかった * 特に学部では日本語の閉じた空間で学んでいる場合が多い
+  高校までの教育でデータ・サイエンスが扱われてこなかった
+\item
+  特に学部では日本語の閉じた空間で学んでいる場合が多い
 \item
   学部レベルでの学際的な科学教育が進んでいない
 \item
@@ -493,6 +504,8 @@ start = 1960, end = 2017)
 \hypertarget{ux7406ux60f3ux7684ux5b66ux4feeux8005ux30e2ux30c7ux30ebux3092ux60f3ux5b9a}{%
 \subsubsection{理想的学修者モデルを想定}\label{ux7406ux60f3ux7684ux5b66ux4feeux8005ux30e2ux30c7ux30ebux3092ux60f3ux5b9a}}
 
+\textbf{教養? Liberal Arts?}
+
 \begin{itemize}
 \tightlist
 \item
@@ -507,6 +520,8 @@ start = 1960, end = 2017)
 
 \hypertarget{ux30afux30e9ux30b9ux5185ux3067ux306eux5b66ux3073ux306eux6a5fux4f1aux306eux63d0ux4f9b}{%
 \subsubsection{クラス内での学びの機会の提供}\label{ux30afux30e9ux30b9ux5185ux3067ux306eux5b66ux3073ux306eux6a5fux4f1aux306eux63d0ux4f9b}}
+
+\textbf{Teaching to Learning}
 
 \begin{itemize}
 \tightlist
@@ -523,14 +538,20 @@ start = 1960, end = 2017)
 \hypertarget{ux5b66ux3073ux306eux652fux63f4}{%
 \subsubsection{学びの支援}\label{ux5b66ux3073ux306eux652fux63f4}}
 
+\textbf{Students with Various Backgrounds}
+
 \begin{itemize}
 \tightlist
 \item
-  サポートの学生の活用と訓練:質問を受けたことのレポート * 教員の役割・(コースの目的に適した)評価
+  サポートの学生の活用と訓練:質問を受けたことのレポート
+\item
+  教員の役割・(コースの目的に適した)評価
 \end{itemize}
 
 \hypertarget{literacy}{%
 \subsubsection{Literacy}\label{literacy}}
+
+\textbf{Expand your horizon!}
 
 \begin{itemize}
 \tightlist
@@ -542,18 +563,10 @@ start = 1960, end = 2017)
   \item
     データの取得、コマンド、プログラミング
   \item
-    マニュアル、ヘルプ、Q \& A、(ユーザ)コミュニティ へのアクセス - オンライン・コース、オンライン・ツールの利用
+    マニュアル、ヘルプ、Q \& A、(ユーザ)コミュニティ へのアクセス\\
+  \item
+    オンライン・コース、オンライン・ツールの利用
   \end{itemize}
-\end{itemize}
-
-皆さんも様々なお考えがあると思います
-教養? Liberal Arts?
-Teaching to Learning
-Students with Various Backgrounds
-Expand your horizon!
-
-\begin{itemize}
-\tightlist
 \item
   数学:学びの広がりを制限しないため
 
@@ -579,6 +592,8 @@ Expand your horizon!
 \hypertarget{resources}{%
 \subsubsection{Resources}\label{resources}}
 
+\textbf{IT / Cloud}
+
 \begin{itemize}
 \tightlist
 \item
@@ -596,28 +611,48 @@ Expand your horizon!
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  営利目的、非営利目的を問わず二次利用可能なルールが適用されたもの 2. 機械判読に適したもの
+  営利目的、非営利目的を問わず二次利用可能なルールが適用されたもの
+\item
+  機械判読に適したもの
 \item
   無償で利用できるもの
-  IT / Cloud
   \url{http://www.soumu.go.jp/menu_seisaku/ictseisaku/ictriyou/opendata/}
 \end{enumerate}
 
-\hypertarget{world-bank-open-data-defined-httpopendatatoolkit.worldbank.org}{%
-\subsubsection{\texorpdfstring{World Bank: Open Data Defined \url{http://opendatatoolkit.worldbank.org}}{World Bank: Open Data Defined http://opendatatoolkit.worldbank.org}}\label{world-bank-open-data-defined-httpopendatatoolkit.worldbank.org}}
+\hypertarget{world-bank-open-data-defined}{%
+\subsubsection{\texorpdfstring{World Bank: \href{http://opendatatoolkit.worldbank.org}{Open Data Defined}}{World Bank: Open Data Defined}}\label{world-bank-open-data-defined}}
 
 The term ``Open Data'' has a very precise meaning. Data or content is open if anyone is free to use, re-use or redistribute it, subject at most to measures that preserve provenance and openness.
-1. The data must be legally open, which means they must be placed in the public domain or under liberal terms of use with minimal restrictions.
-2. The data must be technically open, which means they must be published in electronic formats that are
-machine readable and non-proprietary, so that anyone can access and use the data using common, freely available software tools. Data must also be publicly available and accessible on a public server, without password or firewall restrictions. To make Open Data easier to find, most organizations create and manage Open Data catalogs.
 
-\hypertarget{ux30aaux30fcux30d7ux30f3ux30c7ux30fcux30bfux306eux4f8b-list-of-open-data-catalogue}{%
-\subsubsection{オープン・データの例 List of Open Data Catalogue}\label{ux30aaux30fcux30d7ux30f3ux30c7ux30fcux30bfux306eux4f8b-list-of-open-data-catalogue}}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  The data must be \textbf{legally open}, which means they must be placed in the public domain or under liberal terms of use with minimal restrictions.
+\item
+  The data must be \textbf{technically open}, which means they must be published in electronic formats that are machine readable and non-proprietary, so that anyone can access and use the data using common, freely available software tools. Data must also be publicly available and accessible on a public server, without password or firewall restrictions. To make Open Data easier to find, most organizations create and manage Open Data catalogs.
+\end{enumerate}
+
+\hypertarget{ux30aaux30fcux30d7ux30f3ux30c7ux30fcux30bfux306eux4f8b}{%
+\subsubsection{オープン・データの例}\label{ux30aaux30fcux30d7ux30f3ux30c7ux30fcux30bfux306eux4f8b}}
+
+\textbf{List of Open Data Catalogue}
 
 \begin{itemize}
 \item
   公共データ:\url{https://www.data.go.jp}
-  オープンデータの意義・目的:1. 国民参加・官民協働の推進を通じた諸課題の解決、2. 経済活性化行政の 高度化・効率化、3. 透明性・信頼の向上
+\item
+  オープンデータの意義・目的:
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    国民参加・官民協働の推進を通じた諸課題の解決、
+  \item
+    経済活性化行政の 高度化・効率化、
+  \item
+    透明性・信頼の向上
+  \end{enumerate}
 
   \begin{itemize}
   \tightlist
@@ -655,28 +690,54 @@ machine readable and non-proprietary, so that anyone can access and use the data
   \tightlist
   \item
     Global Open Data Index: \url{https://index.okfn.org}
-    Free Software, Online Access R
   \end{itemize}
+\end{itemize}
+
+\hypertarget{free-software-online-access-r}{%
+\paragraph{Free Software, Online Access R}\label{free-software-online-access-r}}
+
+\begin{itemize}
+\tightlist
 \item
   R Project for Statistical Computing: \url{https://www.r-project.org}
 \item
   R Studio: \url{https://www.rstudio.com}
 \item
   R Studio Cloud: \url{https://rstudio.cloud}
-  Python
+\end{itemize}
+
+\hypertarget{python}{%
+\paragraph{Python}\label{python}}
+
+\begin{itemize}
+\tightlist
 \item
   Phython: \url{https://www.python.org}
 \item
   Anaconda: \url{https://www.anaconda.com}
 \item
   Jupyter Notebook Cloud: Binder, Kaggle Kernels, Google Collaborate, CoCalc, PaizaCloud, etc.
-  Free Software
+\end{itemize}
+
+\hypertarget{free-software}{%
+\paragraph{Free Software}\label{free-software}}
+
+\begin{itemize}
+\tightlist
 \item
   Free Software, Free Society: Selected Essays of Richard M. Stallman: \url{https://www.gnu.org/philosophy/} fsfs/rms-essays.pdf
 \item
   Richard Stallman TEDxGeneva 2014: \url{https://youtu.be/Ag1AKIl_2GM}
-  インターネット上での学習
-  List of Online Help and Mini Courses
+\end{itemize}
+
+\hypertarget{ux30a4ux30f3ux30bfux30fcux30cdux30c3ux30c8ux4e0aux3067ux306eux5b66ux7fd2}{%
+\paragraph{インターネット上での学習}\label{ux30a4ux30f3ux30bfux30fcux30cdux30c3ux30c8ux4e0aux3067ux306eux5b66ux7fd2}}
+
+\textbf{Online Learning Source}
+
+\textbf{List of Online Help and Mini Courses}
+
+\begin{itemize}
 \item
   英語では、Online で学べるサイトが多い。基本コースは無料。以下は例
 
@@ -690,11 +751,18 @@ machine readable and non-proprietary, so that anyone can access and use the data
     Code Academy: \url{https://www.codecademy.com}
   \item
     RStudio Premier: \url{https://rstudio.cloud/learn/primers}
-    Online Learning Source
   \end{itemize}
 \item
   質問とその答えの載ったサイト、User Community
-  MOOCs 大学などが提供している大規模公開オンライン講座
+\end{itemize}
+
+\hypertarget{moocs}{%
+\paragraph{MOOCs}\label{moocs}}
+
+\textbf{大学などが提供している大規模公開オンライン講座}
+
+\begin{itemize}
+\tightlist
 \item
   OED: MOOC n.~massive open online course, an educational course made available to a large number of people via the internet.
 \item
@@ -704,24 +772,37 @@ machine readable and non-proprietary, so that anyone can access and use the data
   の授業、UC Berkeley: 学習支援
 \item
   MOOC 元年: 2012 年 Stanford U. と MIT が オンラインのコースを提供
-  6
 \end{itemize}
 
-\hypertarget{massive-open-online-courses-moocs-ux304bux3089ux5b66ux3076-moocs-ux306eux6d3bux7528ux3068ux6ce8ux610fux70b9}{%
-\subsection{Massive Open Online Courses (MOOCs) から学ぶ Moocs の活用と注意点}\label{massive-open-online-courses-moocs-ux304bux3089ux5b66ux3076-moocs-ux306eux6d3bux7528ux3068ux6ce8ux610fux70b9}}
+\hypertarget{massive-open-online-courses-moocs-ux304bux3089ux5b66ux3076}{%
+\subsection{Massive Open Online Courses (MOOCs) から学ぶ}\label{massive-open-online-courses-moocs-ux304bux3089ux5b66ux3076}}
 
-MOOCs の活用を勧める理由 英語の数学の教科書と似た利点 * 無償で、講義ビデオ、講義録、スクリプトがダウンロード可能な場合が多い
+\textbf{Moocs の活用と注意点}
+
+\hypertarget{moocs-ux306eux6d3bux7528ux3092ux52e7ux3081ux308bux7406ux7531}{%
+\subsubsection{MOOCs の活用を勧める理由**}\label{moocs-ux306eux6d3bux7528ux3092ux52e7ux3081ux308bux7406ux7531}}
+
+\textbf{英語の数学の教科書と似た利点}
 
 \begin{itemize}
 \tightlist
+\item
+  無償で、講義ビデオ、講義録、スクリプトがダウンロード可能な場合が多い
 \item
   基本的な内容が適切に学習できるように、配置されている
 \item
   いくつかのコースからなるプログラムも多くあり、修了証を提供
 \item
   例・利用する データ(datasets)が優れている(個人で準備するのは困難) * プログラムを含む演習問題が内容を理解する助けになっている
-  MOOCs 活用時に考えるべきこと
-  学修者に適したコースの推薦
+\end{itemize}
+
+\hypertarget{moocs-ux6d3bux7528ux6642ux306bux8003ux3048ux308bux3079ux304dux3053ux3068}{%
+\subsubsection{MOOCs 活用時に考えるべきこと}\label{moocs-ux6d3bux7528ux6642ux306bux8003ux3048ux308bux3079ux304dux3053ux3068}}
+
+\textbf{学修者に適したコースの推薦}
+
+\begin{itemize}
+\tightlist
 \item
   無償でコンテンツにアクセスできるコースが多いが 修了証のため有償のプログラムを勧められる
 \item
@@ -739,15 +820,18 @@ MOOCs の活用を勧める理由 英語の数学の教科書と似た利点 * �
 \hypertarget{coursera}{%
 \paragraph{Coursera}\label{coursera}}
 
+\textbf{Stanford U. が中心}
+
 \begin{itemize}
 \tightlist
 \item
   Stanford U.: Machine Learning \url{https://www.coursera.org/learn/machine-learning}
-  Stanford U. が中心 人気の高いコース(登録:2,513,476)
 \item
-  Johns Hopkins U.: Data Science, 10 courses \url{https://www.coursera.org/specializations/jhu-data-science}
+  人気の高いコース(登録:2,513,476)
 \item
-  U. of Michigan: Applied Data Science, 5 courses \url{https://www.coursera.org/specializations/data-science-python}
+  Johns Hopkins U.: Data Science, 10 courses {[}初級, R{]} \url{https://www.coursera.org/specializations/jhu-data-science}
+\item
+  U. of Michigan: Applied Data Science, 5 courses {[}中級, python{]} \url{https://www.coursera.org/specializations/data-science-python}
 \item
   100\% オンラインのデータ・サイエンスの修士号取得のコースもある。 U. of Illinois, U. of Michigan, U. of Colorado, など
 \end{itemize}
@@ -755,14 +839,15 @@ MOOCs の活用を勧める理由 英語の数学の教科書と似た利点 * �
 \hypertarget{edx}{%
 \paragraph{edX}\label{edx}}
 
+\textbf{MIT と Harvard U. が中心}
+
 \begin{itemize}
 \tightlist
 \item
-  Harvard U.: Data Science, 9 courses
+  Harvard U.: Data Science, 9 courses {[}初級, R{]}
 \item
-  MIT: Statistics and Data Science, 5 courses
-  {[}初級, R{]} {[}中級, python{]}
-  MIT と Harvard U. が中心 {[}初級, R{]} {[}Graduate Level{]}
+  MIT: Statistics and Data Science, 5 courses {[}Graduate Level{]}
+\item
   \url{https://www.edx.org/micromasters/mitx-statistics-and-data-science}
 \item
   Microsoft, IBM, UC SanDiego などもコースをプログラムを提供
@@ -771,38 +856,38 @@ MOOCs の活用を勧める理由 英語の数学の教科書と似た利点 * �
 \hypertarget{professional-certificate-in-data-science}{%
 \subsubsection{Professional Certificate in Data Science}\label{professional-certificate-in-data-science}}
 
-基本情報: HarvardX, through edX 演習も無償で殆どすべて提供
+\hypertarget{ux57faux672cux60c5ux5831-harvardx-through-edx}{%
+\paragraph{基本情報: HarvardX, through edX}\label{ux57faux672cux60c5ux5831-harvardx-through-edx}}
+
+\textbf{演習も無償で殆どすべて提供}
 
 \begin{itemize}
+\tightlist
 \item
-  URL: \url{https://online-learning.harvard.edu/series/professional-certificate-data-science} * Book: \url{https://rafalab.github.io/dsbook/} (R Markdown Document)
-  R で学び、Data Camp で Assessment
-
-  \begin{enumerate}
-  \def\labelenumi{\arabic{enumi}.}
-  \tightlist
-  \item
-    Data Science: R Basics; データ解析ソフト R の基本
-  \item
-    Data Science: Visualization; データの視覚化
-  \item
-    Data Science: Probability; 確率・大数の法則
-  \item
-    Data Science: Inference and Modeling; 推定と数学モデル
-  \item
-    Data Science: Productivity Tools; Unix, Git, GitHub, R Markdown 6. Data Science: Wrangling; データの整理
-  \item
-    Data Science: Linear Regression; 線形回帰
-  \item
-    Data Science: Machine Learning; 機械学習
-  \item
-    Data Science: Capstone まとめと次のステップへの架け橋
-    コースの前半で使われるデータ例
-  \end{enumerate}
+  URL: \url{https://online-learning.harvard.edu/series/professional-certificate-data-science}
+\item
+  Book: \url{https://rafalab.github.io/dsbook/} (R Markdown Document)
 \end{itemize}
 
-\hypertarget{professional-certificate-in-data-science-1}{%
-\paragraph{Professional Certificate in Data Science}\label{professional-certificate-in-data-science-1}}
+\hypertarget{r-ux3067ux5b66ux3073data-camp-ux3067-assessment}{%
+\paragraph{R で学び、Data Camp で Assessment}\label{r-ux3067ux5b66ux3073data-camp-ux3067-assessment}}
+
+\begin{verbatim}
+1. Data Science: R Basics; データ解析ソフト R の基本
+2. Data Science: Visualization; データの視覚化
+3. Data Science: Probability; 確率・大数の法則
+4. Data Science: Inference and Modeling; 推定と数学モデル
+5. Data Science: Productivity Tools; Unix, Git, GitHub, R Markdown 
+6. Data Science: Wrangling; データの整理
+7. Data Science: Linear Regression; 線形回帰
+8. Data Science: Machine Learning; 機械学習
+9. Data Science: Capstone まとめと次のステップへの架け橋
+\end{verbatim}
+
+\hypertarget{ux30b3ux30fcux30b9ux306eux524dux534aux3067ux4f7fux308fux308cux308bux30c7ux30fcux30bfux4f8b}{%
+\paragraph{コースの前半で使われるデータ例}\label{ux30b3ux30fcux30b9ux306eux524dux534aux3067ux4f7fux308fux308cux308bux30c7ux30fcux30bfux4f8b}}
+
+\textbf{Professional Certificate in Data Science}
 
 8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 2 weeks
 Required R Packages for Examples: tidyverse, dslabs: \url{https://cran.r-project.org/web/packages/} dslabs/dslabs.pdf
@@ -841,7 +926,9 @@ Required R Packages for Examples: tidyverse, dslabs: \url{https://cran.r-project
 \hypertarget{jmooc}{%
 \paragraph{JMOOC}\label{jmooc}}
 
-大学生のためのデータサイエンス(1)の内容
+\textbf{日本発の MOOC}
+
+\textbf{大学生のためのデータサイエンス(1)の内容}
 
 \begin{itemize}
 \tightlist
@@ -854,7 +941,7 @@ Required R Packages for Examples: tidyverse, dslabs: \url{https://cran.r-project
     役割
   \item
     データの取得・管理、入手方法、分析 - 画像・音声処理技術
-    日本発の MOOC gacco: ドコモ提供
+    gacco: ドコモ提供
   \end{itemize}
 \item
   Week 2 データ分析の基礎
@@ -864,7 +951,13 @@ Required R Packages for Examples: tidyverse, dslabs: \url{https://cran.r-project
   \item
     ヒストグラム・箱ひげ図・平均・分散・標準偏差・散布図・相関係数・回帰直線
   \item
-    データ分析で注意すべき点:相関と因果、観察研究と実験研究、標本調査 * Week 3 コンピュータを用いたデータ分析
+    データ分析で注意すべき点:相関と因果、観察研究と実験研究、標本調査
+  \end{itemize}
+\item
+  Week 3 コンピュータを用いたデータ分析
+
+  \begin{itemize}
+  \tightlist
   \item
     Excel, R, Python の紹介
   \end{itemize}
@@ -879,17 +972,26 @@ Required R Packages for Examples: tidyverse, dslabs: \url{https://cran.r-project
     マーケティング・リサーチ - 染色体上で遺伝子を探す
   \item
     品質管理
-    10 月 8 日開講
   \end{itemize}
+\end{itemize}
+
+\hypertarget{jmooc-https-www.-jmooc.-jp}{%
+\paragraph{JMOOC: https: // www. jmooc. jp}\label{jmooc-https-www.-jmooc.-jp}}
+
+\textbf{10 月 8 日開講}
+
+\begin{itemize}
+\tightlist
+\item
+  統計学 II: 推測統計の方法(竹村先生他)・社会人のためのデータサイエンス入門
 \end{itemize}
 
 \hypertarget{ux6559ux990aux3068ux3057ux3066ux306eux30c7ux30fcux30bfux30b5ux30a4ux30f3ux30a8ux30f3ux30b9ux306eux30b3ux30fcux30b9ux3092ux4f01ux753bux3059ux308bux306bux3042ux305fux3063ux3066}{%
 \subsection{「教養としてのデータ・サインエンス」のコースを企画するにあたって}\label{ux6559ux990aux3068ux3057ux3066ux306eux30c7ux30fcux30bfux30b5ux30a4ux30f3ux30a8ux30f3ux30b9ux306eux30b3ux30fcux30b9ux3092ux4f01ux753bux3059ux308bux306bux3042ux305fux3063ux3066}}
 
-JMOOC: https: // www. jmooc. jp
-統計学 II: 推測統計の方法(竹村先生他)・社会人のためのデータサイエンス入門
-全学の学生のためのコースの企画について
-配慮すべきこと
+\textbf{全学の学生のためのコースの企画について}
+
+\textbf{配慮すべきこと}
 
 \hypertarget{ux5b66ux7fd2ux76eeux6a19}{%
 \subsubsection{学習目標}\label{ux5b66ux7fd2ux76eeux6a19}}
@@ -926,8 +1028,11 @@ JMOOC: https: // www. jmooc. jp
 \hypertarget{ux5168ux5b66ux306eux5b66ux751fux306eux305fux3081ux306eux30b3ux30fcux30b9ux306eux4f01ux753bux306bux3064ux3044ux3066}{%
 \subsubsection{全学の学生のためのコースの企画について}\label{ux5168ux5b66ux306eux5b66ux751fux306eux305fux3081ux306eux30b3ux30fcux30b9ux306eux4f01ux753bux306bux3064ux3044ux3066}}
 
-配慮すべきこと
-考慮すべきこと 問い
+\textbf{配慮すべきこと}
+
+\textbf{考慮すべきこと}
+
+\textbf{問い}
 
 \begin{itemize}
 \tightlist
@@ -999,10 +1104,12 @@ And now Apple CEO Tim Cook is spreading the word that would-be programmers reall
   大学生、社会人に対するリベラルアーツ教育の充実 (一面的なデータ解析の結果や AI を鵜呑みにしないための批判的思考力の養成も含む)
 \end{enumerate}
 
-現在の日本の就業労働人口が約 6 千万人、その 25\%の 1500 万人が「『数理・データサイエ ンス・AI』に関する知識・技能、新たな社会の在り方や製品・サービスをデザインするた めに必要な基礎力」を持つことを目標としている。産業界が中心に、社会人(100 万人/ 年)計画が推し進められるものと思われ、すでにいくつかのプログラムがスタートしている\footnote{5 月 20 日から 22 日に開催される、第 11 回 教育 IT ソリューション EXPO においては、教育プログラ ムが商品化され、宣伝されると思われる。大学によっては、このような企業と契約を結び、プログラムを提 供してもらうところも現れると思われるが、産業界での動きや、基本技術については得られるかもしれな いが、大学教育には、担うべき責任が他にあると考え本稿を書いている。}。
+現在の日本の就業労働人口が約 6 千万人、その 25\%の 1500 万人が「『数理・データサイエ ンス・AI』に関する知識・技能、新たな社会の在り方や製品・サービスをデザインするた めに必要な基礎力」を持つことを目標としている。産業界が中心に、社会人(100 万人/ 年)計画が推し進められるものと思われ、すでにいくつかのプログラムがスタートしている\footnote{5 月 20 日から 22 日に開催される、第 11 回 教育 IT ソリューション EXPO においては、教育プログラムが商品化され、宣伝されると思われる。大学によっては、このような企業と契約を結び、プログラムを提供してもらうところも現れると思われるが、産業界での動きや、基本技術については得られるかもしれないが、大学教育には、担うべき責任が他にあると考え本稿を書いている。}。
 大学・高専では「数理・データサイエンス強化方策」のもとで定められた拠点校 6 校と協力大学・コンソーシアムを中心に現在モデルカリキュラムの作成が行われ、さらに
-「国内大学等において実施されている AI 等教育プログラムの主な事例」{[}3{]} が集められている。2000 年の廣中レポート2、GP プログラム選定から始まった、大学の教学改革を彷 彿とさせる勢いである3 。
-その一つの到着点が主体的学習などが中心に置かれた、2012 年の中央教育審議会答申4 と考えると、小中高で始まっている統計教育 {[}4{]} 、コンピュータ教育、英語教育、大学入学 試験改革や、STEAM 教育の重要性など、教育内容の改編が、大学・高専に到達したと言 えるかもしれない。上の 1, 3 が大学教育の中に組み込まれていくなかで、大学教育(以 後、この言葉で高専も含むものとする)における位置づけと、その内容について考える上 で、まずは「数理・データサイエンス・AI」という言葉で表現されているものの内容を確 認するとともに、その目的とわが国の大学教育における課題について考察したい。「デー タサイエンス・AI」という言葉に代表される専門領域に精通しているわけではないが、文 理を問わず、学生全員が必修として学ぶと言うことだけでも大きなインパクトを持つもの である。また大学に於いて教養教育は様々な形で語られてきてはいるものの「リベラル アーツ教育の充実」という文脈で「数理」とその応用をどう捕らえたらよいのか、この問 いは、大学での教育に関わって以来、常に考えてきたので、その点を中心に考察する。
+「国内大学等において実施されている AI 等教育プログラムの主な事例」{[}3{]} が集められている。2000 年の廣中レポート\footnote{22000.6 学生の立場に立った大学づくりを目指して(廣中レポート)}、GP プログラム選定から始まった、大学の教学改革を彷 彿とさせる勢いである\footnote{3 今回は首相官邸発である点も特徴的である。}。
+
+その一つの到着点が主体的学習などが中心に置かれた、2012 年の中央教育審議会答申\footnote{42012.8 新たな未来を築くための大学教育の質的転換に向けて ∼ 生涯学び続け、主体的に考える力を育
+  成する大学へ} と考えると、小中高で始まっている統計教育 {[}4{]} 、コンピュータ教育、英語教育、大学入学 試験改革や、STEAM 教育の重要性など、教育内容の改編が、大学・高専に到達したと言 えるかもしれない。上の 1, 3 が大学教育の中に組み込まれていくなかで、大学教育(以 後、この言葉で高専も含むものとする)における位置づけと、その内容について考える上 で、まずは「数理・データサイエンス・AI」という言葉で表現されているものの内容を確 認するとともに、その目的とわが国の大学教育における課題について考察したい。「デー タサイエンス・AI」という言葉に代表される専門領域に精通しているわけではないが、文 理を問わず、学生全員が必修として学ぶと言うことだけでも大きなインパクトを持つもの である。また大学に於いて教養教育は様々な形で語られてきてはいるものの「リベラル アーツ教育の充実」という文脈で「数理」とその応用をどう捕らえたらよいのか、この問 いは、大学での教育に関わって以来、常に考えてきたので、その点を中心に考察する。
 
 \hypertarget{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9}{%
 \section{データサイエンス}\label{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9}}
@@ -1012,63 +1119,103 @@ And now Apple CEO Tim Cook is spreading the word that would-be programmers reall
 しかし、実際のところ、これらの言葉を明確に定義し、区別し、関係性を明確にする ことは困難である。AI (Artificial Intelligence(人工知能)は学問の専門領域を現す言葉 としてもとれるが「AI 戦略 2019 ∼ 人・産業・地域・政府全てに AI」で表現されている ものは、それとは方向性が異なるであろう。また最近のメディアで使われている「AI に よって、AI が組み込まれて」などの言葉は、学問的な問いとしてではなく、これらの言 葉を利用することで、ブラックボックス化して、中身については問わないものとしている ようである。AI の社会的影響が甚大であることを考えると、ブラックボックス化は、思 考停止を招いており、教育においては、それこそが問われなければいけないだろう。
 
 また、これだけ注目されてきている背景には、インターネットの発達と、経済活動の 国際化、また人口の増大とともに、国際的な人の移動が活発になり、人間の活動が、地球 規模での気候変動にも影響を与えるという人間社会の未曾有の変化に対応するために注 目されていることも見逃してはならない。これらからひきおこされる、感染症の世界的 蔓延、極度の貧困・貧富の差や、フェイクニュースやヘイトスピーチが生み出す世界の分 断・紛争、原因・責任が複雑で明確にできない経済危機にも、立ち向かって行かなければ ならない。さらに、この分野において、日本が遅れており、このままでは、世界から取り 残される可能性が高いという危機感もあるだろう。遅れているとすると、その原因は何な
-22000.6 学生の立場に立った大学づくりを目指して(廣中レポート)
-3 今回は首相官邸発である点も特徴的である。
-42012.8 新たな未来を築くための大学教育の質的転換に向けて ∼ 生涯学び続け、主体的に考える力を育
-成する大学へ
+のか。この背景を理解しなければ、表面的な対応となり、本質的な改善は期待できないと 思われる。({[}11{]} 参照)
 
-のか。この背景を理解しなければ、表面的な対応となり、本質的な改善は期待できないと 思われる。({[}?{]} 参照)
 データサイエンスの明確な定義は、確立していないが、短く表現すると「データを活用 して課題を発見・探求し、適切な解決策を探る科学 」で、意思決定のための科学(Decision Science)とも表現できる。また、エンピリカル(Empirical Study)と言われるように、理 論ではなく、実験(実証, 経験)に基づいた分野でもある。必然的にコンピュータを利用 し(課題に応じ)様々な分野のひとたちと協力することが不可欠な学際科学であるととも に、解決策を探るには数理モデルを適用し・機械学習で評価し・アルゴリズムを策定する 数理的思考、その共有、可視化などわかりやすい説明によるコミュニケーションが不可欠 である。この課題解決の全体のプロセスを「AI を使って課題を解決する」とも表現する。 活用可能な範囲は、意思決定のための科学という観点からは、ほとんどすべての分野とし か表現できないが、手書きの郵便番号の認識に始まり、音声認識、顔などの画像認識へと 進み、現在注目を集めているものとしては、Google, Amazon, Netflix などのリコメンダ・ システム(Recommendation System)、診断・投薬管理・治療方法といった、医療システ ムの開発、法律・財務、その他の相談業務、国や公共機関の政策決定、犯罪捜査、防犯シ ステム、災害予知、防災などが挙げられるだろう。
-効果とその影響についても、考える必要がある。有効性としては、課題解決のための、 阻害要因を精査して、目的を達成できる可能性、効率が高い選択肢を、見つけ出すことが 可能である。同時に、適用範囲が広く、社会的影響が大きく、社会的責任・倫理問題が増 大することもあり、一部はすでに社会問題化している5 。しかし、データに基づいた根拠 を求め、思考する訓練は、フェイクニュースやヘイトスピーチなどに惑わされず、個々の 課題に個人がどう向き合うかという、民主的な、多文化共生の社会基盤を生み出す可能 性を秘めていると同時に、多くの人たちが「AI に任せる」「AI が答えを出したのだから」 と、個人で考えなくなる可能性も秘め、教育により新たな分断を生み出す危険性もある。 また、データを根拠とすることは、数値化しやすい価値が強調され単純な功利主義的な判 断が優先され、公平・尊厳・人権・倫理・感情・共感・文化など、数値化が困難ではある が、ひとにとって本質的なことが置き去りにされないためには、どのような配慮、方策、 制度、法律などが必要かも、検討する必要がある。膨大な、データから判断すること自体 が、客観的で価値が高いように思われるが、おそらく人間には、理解しづらいことで、納 得感、安心感などが、失われる可能性も十分にあり、母集団をいくつかの因子からではな くトータルにみる視点を意識して育むことも必須である。({[}12{]} 参照)
-個人的には、特に大学教育においては「データサイエンス」を用語として中心的に使 うことが望ましいと考えている。深い数理的思考は、実際の探求過程において、必要不可 欠であるが、専門分野によって分断がおこりやすい高等教育機関においては、すべてのひ とが協力して課題を発見、特定し、ひとり一人への影響を考慮しながら解決を探る学際的 な分野であることを強調すべきである。統計学は、データサイエンスの理論的基盤を支え るものであるが、統計学では完結しない範囲に関わることから、実際の学びの中で、背景 にある統計の考え方を少しずつ学んで行くことが適切である。
-AI については、すでに述べたが、ブラックボックス化して、応用から得られる限られ た評価基準での効率・利得を強調しすぎることなく、脳の働きを含めた、思考するとは、 学ぶとはという基本的な、ひとの営み、また、そのある部分を実装する研究など、人工知 能の研究は、経済活動や単なる技術などとは、独立にも進んで行くべきものである。特定
-5 日本ではまだ散見される程度であるが、米国などでは、大統領選挙にも関わる様々な課題として似認識 され始めている。({[}7, 9{]} 参照)
 
-のことに特化して力を発揮する AI の開発から、現在は、複合的な問題を取り扱う AI へと 進んでおり、将来的には、Artificial General Intelligence (AGI) と呼ばれる、人間の脳の 働きのような、一般的な問題を取り扱うことが少しずつ可能になっていくであろう。「AI が考えた」ことの背景を分解して説明し共有し、適切な選択肢を共に選び取っていこうと する人材を育てることこそが、AI を活用する人材を育む高等教育機関の責任ではないだ ろうか。人間とは何者で、これから世界はどのように変化して行くのだろうか。
+効果とその影響についても、考える必要がある。有効性としては、課題解決のための、 阻害要因を精査して、目的を達成できる可能性、効率が高い選択肢を、見つけ出すことが 可能である。同時に、適用範囲が広く、社会的影響が大きく、社会的責任・倫理問題が増 大することもあり、一部はすでに社会問題化している\footnote{日本ではまだ散見される程度であるが、米国などでは、大統領選挙にも関わる様々な課題として似認識 され始めている。({[}7, 9{]} 参照)}。しかし、データに基づいた根拠 を求め、思考する訓練は、フェイクニュースやヘイトスピーチなどに惑わされず、個々の 課題に個人がどう向き合うかという、民主的な、多文化共生の社会基盤を生み出す可能 性を秘めていると同時に、多くの人たちが「AI に任せる」「AI が答えを出したのだから」 と、個人で考えなくなる可能性も秘め、教育により新たな分断を生み出す危険性もある。 また、データを根拠とすることは、数値化しやすい価値が強調され単純な功利主義的な判 断が優先され、公平・尊厳・人権・倫理・感情・共感・文化など、数値化が困難ではある が、ひとにとって本質的なことが置き去りにされないためには、どのような配慮、方策、 制度、法律などが必要かも、検討する必要がある。膨大な、データから判断すること自体 が、客観的で価値が高いように思われるが、おそらく人間には、理解しづらいことで、納 得感、安心感などが、失われる可能性も十分にあり、母集団をいくつかの因子からではな くトータルにみる視点を意識して育むことも必須である。({[}12{]} 参照)
+
+個人的には、特に大学教育においては「データサイエンス」を用語として中心的に使 うことが望ましいと考えている。深い数理的思考は、実際の探求過程において、必要不可 欠であるが、専門分野によって分断がおこりやすい高等教育機関においては、すべてのひ とが協力して課題を発見、特定し、ひとり一人への影響を考慮しながら解決を探る学際的 な分野であることを強調すべきである。統計学は、データサイエンスの理論的基盤を支え るものであるが、統計学では完結しない範囲に関わることから、実際の学びの中で、背景 にある統計の考え方を少しずつ学んで行くことが適切である。
+
+AI については、すでに述べたが、ブラックボックス化して、応用から得られる限られ た評価基準での効率・利得を強調しすぎることなく、脳の働きを含めた、思考するとは、 学ぶとはという基本的な、ひとの営み、また、そのある部分を実装する研究など、人工知 能の研究は、経済活動や単なる技術などとは、独立にも進んで行くべきものである。特定のことに特化して力を発揮する AI の開発から、現在は、複合的な問題を取り扱う AI へと 進んでおり、将来的には、Artificial General Intelligence (AGI) と呼ばれる、人間の脳の働きのような、一般的な問題を取り扱うことが少しずつ可能になっていくであろう。「AI が考えた」ことの背景を分解して説明し共有し、適切な選択肢を共に選び取っていこうと する人材を育てることこそが、AI を活用する人材を育む高等教育機関の責任ではないだ ろうか。人間とは何者で、これから世界はどのように変化して行くのだろうか。
 
 \hypertarget{ux5927ux5b66ux6559ux80b2ux306bux304aux3051ux308bux8ab2ux984c}{%
 \section{大学教育における課題}\label{ux5927ux5b66ux6559ux80b2ux306bux304aux3051ux308bux8ab2ux984c}}
 
 前節で課題の概要についてもふれたが、大学教育においては特に、どのような学生の育成 をめざすかを明確にしながら教育課程を構築すること、学際科学として最終的には大学全 体としての関わり方、数理分野の教員の教育への関わりかた、このためのコストとインフ ラ整備に関するビジョンを明確にすることについて以下に述べる。
-3.1 どのような学生を育成するか まず、私論であるが、データサイエンス教育の目的を短い文章で表現すると以下のように
+
+\hypertarget{ux3069ux306eux3088ux3046ux306aux5b66ux751fux3092ux80b2ux6210ux3059ux308bux304b}{%
+\subsection{どのような学生を育成するか}\label{ux3069ux306eux3088ux3046ux306aux5b66ux751fux3092ux80b2ux6210ux3059ux308bux304b}}
+
+まず、私論であるが、データサイエンス教育の目的を短い文章で表現すると以下のように
 なる。
+
+\begin{quote}
 現今の産業や経済活動を含む人間社会の国際的な変動が、ひとり一人の活動 と影響し合っていることを理解し、生涯学び続けながら、データに基づいて課 題を探求するひとを育成することを目的とする。
+\end{quote}
+
 変化の時代に生きていくためには、先人の英知を蓄積することに留まらず、それをどう活 用していくか、生涯学びつづける基盤を得ることを中心におくことが肝要である。常に 生成されている膨大なデータを、インターネットを介して入手することができ(IoT, Big Data)、コンピュータを使って、分析し、可視化して理解し、他者と共有し、適切な解決 方法を探索する道筋を理解し経験することで、課題と向き合う社会の責任ある構成員とな ることを支援することが教育機関の使命であると考える。
+
 データサイエンス自体が、理論ではなく、データに基づいて課題を探求する実証的な 新しい科学であることを理解し、関連する分野の広がりを認識しながら、他者とも協力し て、いくつかの課題に興味を持って、実際に取り組みながら、影響する範囲と具体的な課 題を議論し、さらに学んでいく手段をイメージできるようにすることが肝要である。
+
 公開データ(Public Data)の活用、分析・探索プロセスの大まかな理解とともに、機 械学習などで有効性が高いと評価された方策の課題を具体例も含め、学生自身が調べ、積 極的に議論する経験も必要である。
-英語の活用も有効である6 。高校までで十分な時間をかけて英語を学んでいながら、大 学で殆ど活用されていないが、データサイエンス教育は適切な突破口になると思われる。 英語を活用することで入手できるデータが莫大で広範囲となるとともに、無償で提供され ている分析ツール(R, Python など)を利用でき、そのユーザコミュニティでの共通言語
-620 年ぐらいの内には、中国語の存在感も増大すると思われる。国際会議や、国際的な経済活動におい て、現在は英語が使われることが多いが、分野によっては、実際の議論は中国語でされることが広がってい る。データサイエンスやコンピュータ科学、経済分野では、インドとともに、中国の存在は、顕在化してい る。
 
-は英語が中心、edX, Coursera, JMOOC などの MOOCs をはじめとして、インターネッ ト上で、無償の学びの場も、英語では、膨大に存在することを実際に使ってみながら経験 するこが可能である。世界の状況を垣間見れば、日本の状況がどのようなもので、英語を 活用すれば、学びの機会がどれほど広がるかを学生の間に経験して欲しい。国際連合や、 世界銀行などのデータの活用も、世界の一員として自覚を持って自己の生き方を見つめる よい機会となると思う。データは数字であることが多く、この分野の英語も難しくはな い。英語を活用して学ぶ良いステップである。
+英語の活用も有効である\footnote{20年ぐらいの内には、中国語の存在感も増大すると思われる。国際会議や、国際的な経済活動において、現在は英語が使われることが多いが、分野によっては、実際の議論は中国語でされることが広がっている。データサイエンスやコンピュータ科学、経済分野では、インドとともに、中国の存在は、顕在化している。}。高校までで十分な時間をかけて英語を学んでいながら、大学で殆ど活用されていないが、データサイエンス教育は適切な突破口になると思われる。英語を活用することで入手できるデータが莫大で広範囲となるとともに、無償で提供され ている分析ツール(R, Python など)を利用でき、そのユーザコミュニティでの共通言語は英語が中心、edX, Coursera, JMOOC などの MOOCs をはじめとして、インターネット上で、無償の学びの場も、英語では、膨大に存在することを実際に使ってみながら経験するこが可能である。世界の状況を垣間見れば、日本の状況がどのようなもので、英語を 活用すれば、学びの機会がどれほど広がるかを学生の間に経験して欲しい。国際連合や、 世界銀行などのデータの活用も、世界の一員として自覚を持って自己の生き方を見つめる よい機会となると思う。データは数字であることが多く、この分野の英語も難しくはな い。英語を活用して学ぶ良いステップである。
+
 また、経済格差が、教育格差となることを避けつつ、生涯を通して、学びたいとき、 必要なときに学ぶことができる基盤を構築することも配慮すべきであり、この意味でも、 データサイエンス教育において、無償のオンラインの学びを促進することは価値が高い。
-前節でデータサイエンスについて記述したことからも理解できるように、データサイ エンスには、様々な視点が必要である。いろいろなところで引用されている、`Skills and Self - ID Top Factors' {[}13{]} にもあるように、データサイエンスには、様々な技能や視点が 必要であり、それを一人で賄うことは、不可能であり、課題によってまた分野によって、 必要なスキルを、互いに補い合い、その過程で欠けている視点や、能力を認識する必要が ある。({[}8{]} 参照)すなわち、データサイエンスで必要な技能をひとりで充足させることは できず、GAFA などでは常識となっているが、様々な分野の人たちが協力するチームで の活動が重要でもある。その中で、理系・文系をとわず、どのような学びが鍵となるかを 学ぶ経験も重要な資産となる可能性が高い。
-3.2 全学がどう関わるか
-特定の分野の学習が全学必修になるという、大学教育においては、近年には経験したこと がない状況と、大学全体として、まずは真摯に向き合うことが必要である。中心的な課題 とは離れるので、ここで書いておくが、大学院生も分野を問わず、履修または聴講できる ようにすること、TA も他のクラスを積極的に聴講できるようにし、関係する TA どうし て議論し、授業の改善を提案できるようにしておくことが重要である。実習を加えること が欠かせないとすると、だれでも担当できるわけではないが、極力広い専門分野の大学院 生が関わることができるように、することが望ましい。受講生にとっても望ましいと思わ れる。また、すでに受講している学部学生も、技術的なサポートなどとしては、アルバイ トとして関わることも検討することも良いと思われる。経験のある専任教員では担当を賄 い得ない背景で、全学としてきめ細かなサポート体制を構築することは成否を分ける課題 である。
-さて、2025 年、今から 5 年後、すべての大学および高専卒業生が「『数理・データサイ エ ンス・AI』に関する知識・技能、新たな社会の在り方や製品・サービスをデザインする ために必要な基礎力」を獲得して、卒業していったとしよう。大学教員はどうだろうか。 それぞれの学問分野においても、学生が学んだことを理解できない教員で溢れることは、 ないだろうか。もし、それが「持続可能な社会の創り手として必要な力」であるなら、当 然、大学教員、そしておそらく職員にとっても、必要な力であるはずである。すぐに、教 えることはできないだろうし、それには、膨大なエネルギーを必要とし、失うことも多い だろう。しかし、複数の教員が学生と共に学ぶことは、可能であるはずである。そして、 担当教員も少しずつ学ぶ姿は、学生にとっても、刺激となる。数学・コンピュータ・英語 が不得意で(またはそう思い込んでいて)、学ぶことを拒否してしまうことは、学生にも、 教員にも、職員にもあることだが、共に乗り越える経験とともに、それぞれの専門分野か
 
-らの異なる視点や、経験からの阻害要因の指摘、バイアスの認識や指摘など、お互いに学 ぶことは多い。
+前節でデータサイエンスについて記述したことからも理解できるように、データサイ エンスには、様々な視点が必要である。いろいろなところで引用されている、`Skills and Self - ID Top Factors' {[}13{]} にもあるように、データサイエンスには、様々な技能や視点が 必要であり、それを一人で賄うことは、不可能であり、課題によってまた分野によって、 必要なスキルを、互いに補い合い、その過程で欠けている視点や、能力を認識する必要が ある。({[}8{]} 参照)すなわち、データサイエンスで必要な技能をひとりで充足させることは できず、GAFA などでは常識となっているが、様々な分野の人たちが協力するチームで の活動が重要でもある。その中で、理系・文系をとわず、どのような学びが鍵となるかを 学ぶ経験も重要な資産となる可能性が高い。
+
+\hypertarget{ux5168ux5b66ux304cux3069ux3046ux95a2ux308fux308bux304b}{%
+\subsection{全学がどう関わるか}\label{ux5168ux5b66ux304cux3069ux3046ux95a2ux308fux308bux304b}}
+
+特定の分野の学習が全学必修になるという、大学教育においては、近年には経験したこと がない状況と、大学全体として、まずは真摯に向き合うことが必要である。中心的な課題 とは離れるので、ここで書いておくが、大学院生も分野を問わず、履修または聴講できる ようにすること、TA も他のクラスを積極的に聴講できるようにし、関係する TA どうし て議論し、授業の改善を提案できるようにしておくことが重要である。実習を加えること が欠かせないとすると、だれでも担当できるわけではないが、極力広い専門分野の大学院 生が関わることができるように、することが望ましい。受講生にとっても望ましいと思わ れる。また、すでに受講している学部学生も、技術的なサポートなどとしては、アルバイ トとして関わることも検討することも良いと思われる。経験のある専任教員では担当を賄 い得ない背景で、全学としてきめ細かなサポート体制を構築することは成否を分ける課題 である。
+
+さて、2025 年、今から 5 年後、すべての大学および高専卒業生が「『数理・データサイ エ ンス・AI』に関する知識・技能、新たな社会の在り方や製品・サービスをデザインする ために必要な基礎力」を獲得して、卒業していったとしよう。大学教員はどうだろうか。 それぞれの学問分野においても、学生が学んだことを理解できない教員で溢れることは、 ないだろうか。もし、それが「持続可能な社会の創り手として必要な力」であるなら、当 然、大学教員、そしておそらく職員にとっても、必要な力であるはずである。すぐに、教 えることはできないだろうし、それには、膨大なエネルギーを必要とし、失うことも多い だろう。しかし、複数の教員が学生と共に学ぶことは、可能であるはずである。そして、 担当教員も少しずつ学ぶ姿は、学生にとっても、刺激となる。数学・コンピュータ・英語 が不得意で(またはそう思い込んでいて)、学ぶことを拒否してしまうことは、学生にも、 教員にも、職員にもあることだが、共に乗り越える経験とともに、それぞれの専門分野からの異なる視点や、経験からの阻害要因の指摘、バイアスの認識や指摘など、お互いに学 ぶことは多い。
+
 社会科学系、人文系であっても、統計を使う分野は多いが、多くの場合、その分野の 専門性の高いソフトを使うことが多い。そのまま紹介してもらうことも良いかもしれない が、R のような、パブリックドメインの Free なソフトでも、基本的な部分はできること を経験してらもうように、技術スタッフまたは、サポートの大学院生などが、変換の手伝 いをすることは、有効である。研究者は、自分の研究に適したソフトを選択するが、学生 は、有償のソフトは、各大学・研究室でサポートしていたとしても、卒業後は、使えない からである。また、研究者も、より広い分野とのつながりをえることができる可能性もあ る。学際的な学びのメリットでもある。
+
 すぐに、すべての教員がデータサイエンス教育に関わることは、様々な理由から困難 であろうが、上に述べた理由からも、基本的に、専任教員全員が何年か(たとえば最低三 回)は担当するなどを決めることで、全学的な取り組みとすることが可能になる。シラバ スと、コーディネータ、さらに、途中でも、相談に乗れる、チームを別途用意することも、 不可欠であろう。
+
 「数理・データサイエンス・AI」教育の推進が、文系と理系のさらなる分断が起こら ないように、特別に配慮する必要がある。それを、軽減して、お互いに、Respect をもっ て、教育にあたることのできる、すばらしい機会だと思う。
-3.3 数理分野の教員の関わり方に関する課題
+
+\hypertarget{ux6570ux7406ux5206ux91ceux306eux6559ux54e1ux306eux95a2ux308fux308aux65b9ux306bux95a2ux3059ux308bux8ab2ux984c}{%
+\subsection{数理分野の教員の関わり方に関する課題}\label{ux6570ux7406ux5206ux91ceux306eux6559ux54e1ux306eux95a2ux308fux308aux65b9ux306bux95a2ux3059ux308bux8ab2ux984c}}
+
 数理分野をどう特定するか困難であるが、データサイエンスに関わることを考えると、本 来は、統計学が重要であるが、日本では、まだ独立した分野と見なされていない面もある ので、ここでは、数学(統計分野を含む)、情報を中心に理系分野を想定するものとする。 個人的に、現在は、定年退職して、関わっていないが、大学での数学教員を長くしてきた こともあり、数学を中心に考えてしまうことは、お許し願う。
+
 最初に注意すべき事は、して、そして、担当教員も少しずつ学ぶことをこころがける 全学生が、数学・コンピュータ・英語が不得意で(またはそう思い込んでいて)、学ぶこ とを拒否してしまうひとに配慮
-3.4 コストとインフラ整備 以下の提案をする。
-1. Broad Band の Internet Access を公共インフラとして、無償または低価格で提供。 経済的格差が教育格差、経済的格差の固定化とならないように、学習機会の公平化 をめざし、Broad Band での Internet Access が、提供されることを要望する。
-2. RStudio (for R), Jupyter (for python) などの基本的なサーバーを、どこからでも、 だれでも利用できるように、日本語環境も整備しながら、提供する。Data Science をはじめとした、学習・教育を支援するための Interactive な学習ツール開発などに は、サーバーが必要であり、Security などの面から、信頼できる機関が、管理運営 することが必要である。
+
+\hypertarget{ux30b3ux30b9ux30c8ux3068ux30a4ux30f3ux30d5ux30e9ux6574ux5099}{%
+\subsection{コストとインフラ整備}\label{ux30b3ux30b9ux30c8ux3068ux30a4ux30f3ux30d5ux30e9ux6574ux5099}}
+
+以下の提案をする。
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
+\item
+  Broad Band の Internet Access を公共インフラとして、無償または低価格で提供。 経済的格差が教育格差、経済的格差の固定化とならないように、学習機会の公平化 をめざし、Broad Band での Internet Access が、提供されることを要望する。
+\item
+  RStudio (for R), Jupyter (for python) などの基本的なサーバーを、どこからでも、 だれでも利用できるように、日本語環境も整備しながら、提供する。Data Science をはじめとした、学習・教育を支援するための Interactive な学習ツール開発などに は、サーバーが必要であり、Security などの面から、信頼できる機関が、管理運営 することが必要である。
 \item
   分野の異なる、特に、文系の教員と理系の教員、社会科学系の複数の教員が、共同 で学びながら、教える、Team and Collaborative Teaching を推進するため、このよ うな枠組みについては、特別の補助を、文部科学省の予算枠内ではなく、官邸の特 別補助枠を用いて、行うことを要望する。学際科学の推進のためには、教員の教育 学習が必須であり、共働で学び、考え、教える、経験のための、経済的支援が必要 である。パイを拡大しないと不可能である。
 \item
   大学が、一般のひとの学びを支援するため、MOOCs や、OCW その他、質の高い、 教育・学習コンテンツを無償で、提供できるように、支援する。初期においては、 その質の向上も目指して、大学・高専の職員も、受講できる枠組みを作るべきであ る。Interactive な教材で学ぶなど、また、考える機会を重視するなど、日本のその 方向での学習環境提供の質は、高くない。海外からも、一般の教員などが、学べる 環境を、提供し、科学研究費受給者であっても、教育の質の改善のための、研究補 助金を受けることができるようにする。
 \item
   政府・行政機関や、公共性の高い企業が、積極的にデータを使いやすい形式で公開 し、データ分析に依拠した情報を、可視化してわかりやすく伝えるモデルを意識し た情報公開をし、メディアにも、Fact Base, Evidence Base というに留まらず、デー タに依拠し、適切な可視化をともなった情報伝達を促し、奨励することを要望する。 特に、AI の活用においても、極力、Black Box 化をさけ、どのようなデータを用 いているかなどを伝える努力をうながす。Fake News、Hate Speach、風評被害など を、極力抑えるために、有効な、事実とデータに基づいた情報提供を適切に行う。 政府公共団体の首長、職員や、政治家の勉強会提供も、必要であろう。このことは、 Data Sciece を学んだ学生たちの就職の道が広がr区事にもつながり、大学などで の学習意欲の向上にも資する。
-  Learning Goals * A. Data Science: What? and Why? * Data Science とは? 統計・ AI ? Data Scientists? * Data Science が注目される背景? - 変化* B. Business の世界に おける Data Science * C. Data Science と社会:Data から見る世界、Data をもとにした 思考* D. Data Analysis 入門
 \end{enumerate}
+
+Learning Goals
+
+\begin{itemize}
+\tightlist
+\item
+  A. Data Science: What? and Why?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Data Science とは? 統計・ AI ? Data Scientists?
+  \item
+    Data Science が注目される背景? - 変化
+  \end{itemize}
+\item
+  B. Business の世界に おける Data Science
+\item
+  C. Data Science と社会:Data から見る世界、Data をもとにした 思考
+\item
+  D. Data Analysis 入門
+\end{itemize}
 
 \hypertarget{ux304aux308fux308aux306b-references}{%
 \section{おわりに References}\label{ux304aux308fux308aux306b-references}}
