@@ -83,3 +83,9 @@ sharing-your-book
 publishing
 pages
 metadata-for-sharing
+cover-image-path-to-the-social-sharing-image-like-imagescover.jpg
+susemi202006
+データサイエンス-ai
+パブリックデータ
+どのようにして学びますか
+おわりに-1
