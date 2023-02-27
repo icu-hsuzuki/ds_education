@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>A 教養としてのデータサイエンス教育 | データ・サイエンス教育</title>
+<meta name="author" content="鈴木 寛（Hiroshi Suzuki）">
+<meta name="description" content="～MOOCsの活用を視野に入れて～ 日本数学会教育委員会主催教育シンポジウム：文理共通して行う数理・データサイエンス教育における講演　時：2019年9月17日 シンポジウム・リンク  A.1 音声付き画面収録ビデオ（YouTube）  スライド PDF  A.2 講演概要  A.2.1 はじめに  A.2.1.1 背景・現状  A.2.1.1.1 政府・文部科学省...">
+<meta name="generator" content="bookdown 0.32 with bs4_book()">
+<meta property="og:title" content="A 教養としてのデータサイエンス教育 | データ・サイエンス教育">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://icu-hsuzuki.github.io/ds_education/math2019.html">
+<meta property="og:description" content="～MOOCsの活用を視野に入れて～ 日本数学会教育委員会主催教育シンポジウム：文理共通して行う数理・データサイエンス教育における講演　時：2019年9月17日 シンポジウム・リンク  A.1 音声付き画面収録ビデオ（YouTube）  スライド PDF  A.2 講演概要  A.2.1 はじめに  A.2.1.1 背景・現状  A.2.1.1.1 政府・文部科学省...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="A 教養としてのデータサイエンス教育 | データ・サイエンス教育">
+<meta name="twitter:description" content="～MOOCsの活用を視野に入れて～ 日本数学会教育委員会主催教育シンポジウム：文理共通して行う数理・データサイエンス教育における講演　時：2019年9月17日 シンポジウム・リンク  A.1 音声付き画面収録ビデオ（YouTube）  スライド PDF  A.2 講演概要  A.2.1 はじめに  A.2.1.1 背景・現状  A.2.1.1.1 政府・文部科学省...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.2/transition.js"></script><script src="libs/bs3compat-0.4.2/tabs.js"></script><script src="libs/bs3compat-0.4.2/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">データ・サイエンス教育</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">この文書について</a></li>
+<li><a class="" href="introduction.html"><span class="header-section-number">1</span> はじめに</a></li>
+<li class="book-part">APPENDIX</li>
+<li><a class="active" href="math2019.html"><span class="header-section-number">A</span> 教養としてのデータサイエンス教育</a></li>
+<li><a class="" href="math2020.html"><span class="header-section-number">B</span> 教養としてのデータサイエンス教育の目的と課題</a></li>
+<li><a class="" href="bookdown.html"><span class="header-section-number">C</span> Bookdown</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/icu-hsuzuki/ds_education">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="math2019" class="section level1" number="2">
+<h1>
+<span class="header-section-number">A</span> 教養としてのデータサイエンス教育<a class="anchor" aria-label="anchor" href="#math2019"><i class="fas fa-link"></i></a>
+</h1>
+<div id="moocsの活用を視野に入れて" class="section level2 unnumbered">
+<h2>～MOOCsの活用を視野に入れて～<a class="anchor" aria-label="anchor" href="#moocs%E3%81%AE%E6%B4%BB%E7%94%A8%E3%82%92%E8%A6%96%E9%87%8E%E3%81%AB%E5%85%A5%E3%82%8C%E3%81%A6"><i class="fas fa-link"></i></a>
+</h2>
+<p>日本数学会教育委員会主催教育シンポジウム：文理共通して行う数理・データサイエンス教育における講演　時：2019年9月17日</p>
+<p><a href="https://www.mathsoc.jp/overview/committee/education/sympo/2019sep.html">シンポジウム・リンク</a></p>
+</div>
+<div id="音声付き画面収録ビデオyoutube" class="section level2" number="2.1">
+<h2>
+<span class="header-section-number">A.1</span> 音声付き画面収録ビデオ（YouTube）<a class="anchor" aria-label="anchor" href="#%E9%9F%B3%E5%A3%B0%E4%BB%98%E3%81%8D%E7%94%BB%E9%9D%A2%E5%8F%8E%E9%8C%B2%E3%83%93%E3%83%87%E3%82%AAyoutube"><i class="fas fa-link"></i></a>
+</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kvC80PAlpwk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+<p><a href="https://icu-hsuzuki.github.io/datascience/ed/msj2019.pdf">スライド PDF</a></p>
+</div>
+<div id="講演概要" class="section level2" number="2.2">
+<h2>
+<span class="header-section-number">A.2</span> 講演概要<a class="anchor" aria-label="anchor" href="#%E8%AC%9B%E6%BC%94%E6%A6%82%E8%A6%81"><i class="fas fa-link"></i></a>
+</h2>
+<div id="はじめに" class="section level3" number="2.2.1">
+<h3>
+<span class="header-section-number">A.2.1</span> はじめに<a class="anchor" aria-label="anchor" href="#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB"><i class="fas fa-link"></i></a>
+</h3>
+<div id="背景現状" class="section level4" number="2.2.1.1">
+<h4>
+<span class="header-section-number">A.2.1.1</span> 背景・現状<a class="anchor" aria-label="anchor" href="#%E8%83%8C%E6%99%AF%E7%8F%BE%E7%8A%B6"><i class="fas fa-link"></i></a>
+</h4>
+<div id="政府文部科学省" class="section level5" number="2.2.1.1.1">
+<h5>
+<span class="header-section-number">A.2.1.1.1</span> 政府・文部科学省<a class="anchor" aria-label="anchor" href="#%E6%94%BF%E5%BA%9C%E6%96%87%E9%83%A8%E7%A7%91%E5%AD%A6%E7%9C%81"><i class="fas fa-link"></i></a>
+</h5>
+<ul>
+<li><p>第5期科学技術基本計画:2016年1月22日閣議決定 <a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;&lt;a href="https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html" class="uri"&gt;https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html&lt;/a&gt;&lt;/p&gt;'><sup>1</sup></a></p></li>
+<li>
+<p>大学の数理・データサイエンス教育強化方策:2016年12月21日公表
+- 文部科学省として喫緊に取り組むべき方策</p>
+<pre><code>1. 数理・データサイエンス教育研究センター(仮称)の整備
+2. 標準カリキュラム・教材の在り方
+3. 実践教育に関する産学連携ネットワークの整備         
+https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html
+
+-  「数理及びデータサイエンスに係る教育強化」の拠点校の選定 
+- 北海道・東京・滋賀・京都・大阪・九州(6 国立大学)</code></pre>
+</li>
+<li><p>データ関連人材育成プログラム(D-DRIVE2 )2017 年度~</p></li>
+<li>
+<p>「大学における数理・データサイエンス教育の全国展開」の協力校の選定</p>
+<ul>
+<li>20大学選定:2019年1月8日</li>
+<li><a href="http://www.mext.go.jp/b_menu/shingi/chousa/koutou/095/gaiyou/1412367.htm" class="uri">http://www.mext.go.jp/b_menu/shingi/chousa/koutou/095/gaiyou/1412367.htm</a></li>
+</ul>
+</li>
+<li>
+<p>経済産業省:産業技術環境局 大学連携推進室等 2019 年 3 月 26 日</p>
+<ul>
+<li><p>数理資本主義の時代 ∼ 数学パワーが世界を変える ∼</p></li>
+<li><p><a href="https://www.meti.go.jp/shingikai/economy/risukei_jinzai/20190326_report.html" class="uri">https://www.meti.go.jp/shingikai/economy/risukei_jinzai/20190326_report.html</a></p></li>
+</ul>
+</li>
+<li>
+<p>統合イノベーション戦略推進会議(首相官邸・政策会議)</p>
+<ul>
+<li>人間中心の AI 社会原則:2019年3月29日
+<a href="https://www8.cao.go.jp/cstp/aigensoku.pdf" class="uri">https://www8.cao.go.jp/cstp/aigensoku.pdf</a>
+</li>
+<li>AI 戦略 2019 ∼ 人・産業・地域・政府全てに AI∼ 2019 年 6 月 11 日 <a href="https://www.kantei.go.jp/jp/singi/tougou-innovation/pdf/aisenryaku2019.pdf" class="uri">https://www.kantei.go.jp/jp/singi/tougou-innovation/pdf/aisenryaku2019.pdf</a>
+</li>
+</ul>
+</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>目標 1:文理を問わず、全ての大学・高専生 (約 50 万人卒/年) が、課程にて初級レベルの数理・デー タサイエンス・AI を習得 [MOOC 放送大学の活用]</li>
+<li>目標 2:多くの社会人 (約 100 万人/年) が、基本的情報知識と、データサイエンス・AI 等の実践的活 用スキルを習得できる機会をあらゆる手段を用いて提供
+1第 2 章 未来の産業創造と社会変革に向けた新たな価値創出の取組 2Doctoral program for Data-Related InnoVation Expert</li>
+<li>目標 3:大学生、社会人に対するリベラルアーツ教育の充実 (一面的なデータ解析の結果や AI を鵜呑 みにしないための批判的思考力の養成も含む)</li>
+</ol>
+</div>
+</div>
+<div id="数理データサイエンス教育強化拠点コンソーシアム" class="section level4" number="2.2.1.2">
+<h4>
+<span class="header-section-number">A.2.1.2</span> 数理・データサイエンス教育強化拠点コンソーシアム<a class="anchor" aria-label="anchor" href="#%E6%95%B0%E7%90%86%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E6%95%99%E8%82%B2%E5%BC%B7%E5%8C%96%E6%8B%A0%E7%82%B9%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%82%B7%E3%82%A2%E3%83%A0"><i class="fas fa-link"></i></a>
+</h4>
+<p><a href="http://www.mi.u-tokyo.ac.jp/consortium/index.html" class="uri">http://www.mi.u-tokyo.ac.jp/consortium/index.html</a></p>
+<ul>
+<li>北海道大学・東京大学・滋賀大学・京都大学・大阪大学・九州大学</li>
+<li>北見工業大学・東北大学・山形大学・筑波大学・宇都宮大学・群馬大学・千葉大学・お茶の水女子大学・新 潟大学・長岡技術科学大学・静岡大学・名古屋大学・豊橋技術科学大学・神戸大学・島根大学・岡山大学・ 広島大学・愛媛大学・宮崎大学・琉球大学</li>
+</ul>
+</div>
+<div id="教科書の出版など" class="section level4" number="2.2.1.3">
+<h4>
+<span class="header-section-number">A.2.1.3</span> 教科書の出版など<a class="anchor" aria-label="anchor" href="#%E6%95%99%E7%A7%91%E6%9B%B8%E3%81%AE%E5%87%BA%E7%89%88%E3%81%AA%E3%81%A9"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>データサイエンス入門シリーズ、講談社、2019年秋刊行開始</li>
+</ul>
+</div>
+</div>
+<div id="個人的な経験" class="section level3" number="2.2.2">
+<h3>
+<span class="header-section-number">A.2.2</span> 個人的な経験<a class="anchor" aria-label="anchor" href="#%E5%80%8B%E4%BA%BA%E7%9A%84%E3%81%AA%E7%B5%8C%E9%A8%93"><i class="fas fa-link"></i></a>
+</h3>
+<div id="教育-ir" class="section level4" number="2.2.2.1">
+<h4>
+<span class="header-section-number">A.2.2.1</span> 教育 IR<a class="anchor" aria-label="anchor" href="#%E6%95%99%E8%82%B2-ir"><i class="fas fa-link"></i></a>
+</h4>
+<p>学修・教育センターの柱の一つに、大学の IR とは別に、教育 IR を含める</p>
+</div>
+<div id="個人的な学び" class="section level4" number="2.2.2.2">
+<h4>
+<span class="header-section-number">A.2.2.2</span> 個人的な学び<a class="anchor" aria-label="anchor" href="#%E5%80%8B%E4%BA%BA%E7%9A%84%E3%81%AA%E5%AD%A6%E3%81%B3"><i class="fas fa-link"></i></a>
+</h4>
+<p>2019 年 3 月末に退職後 MOOCs のコースなどを利用して、学習中</p>
+</div>
+<div id="教育研究者のためのデータ活用と分析data-analysis-for-researchers" class="section level4" number="2.2.2.3">
+<h4>
+<span class="header-section-number">A.2.2.3</span> 教育:研究者のためのデータ活用と分析(Data Analysis for Researchers)<a class="anchor" aria-label="anchor" href="#%E6%95%99%E8%82%B2%E7%A0%94%E7%A9%B6%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E6%B4%BB%E7%94%A8%E3%81%A8%E5%88%86%E6%9E%90data-analysis-for-researchers"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>全学の大学院(修士)の学生向け、学部3年生以上は許可を得て履修可</li>
+<li>受講生:Rotary Peace Fellow, The Project for Human Resource Development Scholarship (JDS) および 一般の大学院生と少数の4年生 10-25 人</li>
+<li>教授言語:英語</li>
+<li>スケジュール:2時限(70 分 × 2 × 10 週間)、1 時限講義・1 時限実習</li>
+<li>担当教員:経済学、情報科学、数学(R Markdown etc.)</li>
+<li>担当年度:2014-20153, (2016), 2017 年</li>
+</ul>
+</div>
+<div id="スケジュール" class="section level4" number="2.2.2.4">
+<h4>
+<span class="header-section-number">A.2.2.4</span> スケジュール<a class="anchor" aria-label="anchor" href="#%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB"><i class="fas fa-link"></i></a>
+</h4>
+<ol style="list-style-type: decimal">
+<li><p>Introduction to R, Open Data and Free Software 2. Basic R Objects and Commands</p></li>
+<li><p>Data Frame Manipulation</p></li>
+<li><p>Linear Regression and Graphics</p></li>
+<li><p>Dynamic Documents Using Rmarkdown 6. Statistical analysis with R II</p></li>
+<li><p>Statistical analysis with R III</p></li>
+<li><p>Statistical analysis with R IV</p></li>
+<li><p>Guest Lecture and preparation for presentations
+32015 年度までは、研究者のためのコンピューティング(Computing for Researchers) 2</p></li>
+<li><p>Final presentations</p></li>
+</ol>
+</div>
+<div id="コースの特徴" class="section level4" number="2.2.2.5">
+<h4>
+<span class="header-section-number">A.2.2.5</span> コースの特徴<a class="anchor" aria-label="anchor" href="#%E3%82%B3%E3%83%BC%E3%82%B9%E3%81%AE%E7%89%B9%E5%BE%B4"><i class="fas fa-link"></i></a>
+</h4>
+<p>オープン・データ、R Studio (サーバーと PC)上での R の活用、R Markdown での文書作成、実例の提供、ゲ スト講義、プロジェクト、教員の協力
+授業で使ったデータ</p>
+<ul>
+<li>Base R に付属のデータ
+<ul>
+<li>cars: 車のスピードと制動距離</li>
+<li>iris: あやめの花びらと萼のデータ</li>
+</ul>
+</li>
+<li>package MASS に付属のデータ</li>
+<li>WDI: World Bank Development indicators for R</li>
+</ul>
+<pre><code><a href="https://vincentarelbundock.github.io/WDI/">library(WDI)
+#GDP (current US$)
+gdp &lt;- WDI(country = c("US", "JP", "CN", "KR"),
+indicator = "NY.GDP.MKTP.CD",
+start = 1960, end = 2017)</a></code></pre>
+<p>現在は、より新しい wbstats パッケージもある。</p>
+<ul>
+<li>Quandl package: <a href="https://www.quandl.com/tools/r" class="uri">https://www.quandl.com/tools/r</a>
+</li>
+<li>Google Trends: <a href="https://trends.google.co.jp/" class="uri">https://trends.google.co.jp/</a>
+</li>
+<li>Yahoo Finance: <a href="https://finance.yahoo.com/quote/DATA/" class="uri">https://finance.yahoo.com/quote/DATA/</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="教養としてのデータサイエンス" class="section level3" number="2.2.3">
+<h3>
+<span class="header-section-number">A.2.3</span> 教養としてのデータ・サイエンス<a class="anchor" aria-label="anchor" href="#%E6%95%99%E9%A4%8A%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9"><i class="fas fa-link"></i></a>
+</h3>
+<div id="一般の学生対象のコース" class="section level4" number="2.2.3.1">
+<h4>
+<span class="header-section-number">A.2.3.1</span> 一般の学生対象のコース<a class="anchor" aria-label="anchor" href="#%E4%B8%80%E8%88%AC%E3%81%AE%E5%AD%A6%E7%94%9F%E5%AF%BE%E8%B1%A1%E3%81%AE%E3%82%B3%E3%83%BC%E3%82%B9"><i class="fas fa-link"></i></a>
+</h4>
+<p>なぜ 社会的要請?</p>
+<ul>
+<li>科学的思考リテラシー:因果関係、相関関係、隠れた因子についての考察</li>
+<li>関係する因子の多い実社会の問題の分析・解決方法の探索
+教養人としてのリテラシー</li>
+<li>社会や会社・機関の責任ある構成員として、政策決定や事業方針策定に必要な因子を把握・異なる視点から 検証</li>
+<li>関係するすべての人が知恵を出し合い、問いを発し、異なる視点を理解し、協力し、新しい価値を生み出し ながら、データ・サイエンス、AI を活用</li>
+<li>データの公開が進み、だれでも、膨大なデータを活用することが可能</li>
+<li>変化の時代に、データの分析結果を理解し、適切な判断をすることが不可欠</li>
+<li>数学への苦手意識が強くても、データ分析に力を発揮するひとは多い</li>
+<li>(高校までに学ぶ)数学を活用し、その重要さを実感することが可能
+コース・デザイン</li>
+<li>目的を達成できるコースの企画・運営が不可欠</li>
+<li>数学の専門知識の活用を急がず、(変化の時代に)数学を学ぶ有効性を探る</li>
+</ul>
+</div>
+<div id="課題私見" class="section level4" number="2.2.3.2">
+<h4>
+<span class="header-section-number">A.2.3.2</span> 課題(私見)<a class="anchor" aria-label="anchor" href="#%E8%AA%B2%E9%A1%8C%E7%A7%81%E8%A6%8B"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li><p>データの公開とその利用が進んでいない</p></li>
+<li><p>高校までの教育でデータ・サイエンスが扱われてこなかった * 特に学部では日本語の閉じた空間で学んでいる場合が多い</p></li>
+<li><p>学部レベルでの学際的な科学教育が進んでいない</p></li>
+<li>
+<p>数学分野の問題(他の分野でもそうかもしれませんが)</p>
+<ul>
+<li>授業で、コンピュータを活用することが少ない</li>
+<li>授業で、応用や社会とのつながりに触れる機会が少ない</li>
+<li>統計学の授業が実際のデータを扱うデータ・サイエンスに連動していない</li>
+<li>数学分野の教員のデータ・サイエンス(教育)の理解度が低い?
+どのような数学がデータ・サイエンスに必要かという意識しかない?
+数学の教員としてどのように貢献したら良いかわからない。</li>
+<li>理系の学生は(文系の学生も)、就職先でデータ・サイエンスや AI を活用することが多いが、大学の カリキュラムは、学生の必要に応えていない</li>
+<li>学部を横断して、文系(特に社会科学系)の教員と協力して、教える機会がない</li>
+<li>自分の分野の研究、授業、大学のしごとで、手一杯で、それ以上のことは考える余裕がない</li>
+</ul>
+</li>
+<li><p>大学全体で取り組み、数学教員が少しずつ役割を見出していく価値がある 鍵となるもの</p></li>
+</ul>
+</div>
+<div id="理想的学修者モデルを想定" class="section level4" number="2.2.3.3">
+<h4>
+<span class="header-section-number">A.2.3.3</span> 理想的学修者モデルを想定<a class="anchor" aria-label="anchor" href="#%E7%90%86%E6%83%B3%E7%9A%84%E5%AD%A6%E4%BF%AE%E8%80%85%E3%83%A2%E3%83%87%E3%83%AB%E3%82%92%E6%83%B3%E5%AE%9A"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>強い動機づけを持ち、自律的かつ主体的に、一生学び続ける基盤を構築</li>
+<li>個別学習では得られないことをグループの中で積極的に学ぶ</li>
+<li>広い興味をもち、自らの地平を広げながら学ぶ</li>
+<li>複雑な問題の全体像を把握し・課題設定し・他者と協力しながら価値を創造</li>
+</ul>
+</div>
+<div id="クラス内での学びの機会の提供" class="section level4" number="2.2.3.4">
+<h4>
+<span class="header-section-number">A.2.3.4</span> クラス内での学びの機会の提供<a class="anchor" aria-label="anchor" href="#%E3%82%AF%E3%83%A9%E3%82%B9%E5%86%85%E3%81%A7%E3%81%AE%E5%AD%A6%E3%81%B3%E3%81%AE%E6%A9%9F%E4%BC%9A%E3%81%AE%E6%8F%90%E4%BE%9B"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>動機づけ、世界が広げていくための機会と情報の提供 * 何をグループや、クラスで行うか。
+<ul>
+<li>自律的に学び始めるため、スタート地点に立つ機会を提供 - 問い(課題)を提出する訓練 Community of Inquiry (CoI), - 可視化の評価 Communication of Facts</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="学びの支援" class="section level4" number="2.2.3.5">
+<h4>
+<span class="header-section-number">A.2.3.5</span> 学びの支援<a class="anchor" aria-label="anchor" href="#%E5%AD%A6%E3%81%B3%E3%81%AE%E6%94%AF%E6%8F%B4"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>サポートの学生の活用と訓練:質問を受けたことのレポート * 教員の役割・(コースの目的に適した)評価</li>
+</ul>
+</div>
+<div id="literacy" class="section level4" number="2.2.3.6">
+<h4>
+<span class="header-section-number">A.2.3.6</span> Literacy<a class="anchor" aria-label="anchor" href="#literacy"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>英語:学びの広がりを制限しないため
+<ul>
+<li>データの取得、コマンド、プログラミング</li>
+<li>マニュアル、ヘルプ、Q &amp; A、(ユーザ)コミュニティ へのアクセス - オンライン・コース、オンライン・ツールの利用</li>
+</ul>
+</li>
+</ul>
+<p>皆さんも様々なお考えがあると思います
+教養? Liberal Arts?
+Teaching to Learning
+Students with Various Backgrounds
+Expand your horizon!</p>
+<ul>
+<li>数学:学びの広がりを制限しないため
+<ul>
+<li>基本的な式変形など、中学数学および、高校数学 I, II, A, B の必要な部分の学習 - 確率・統計:データ・サイエンスの中で少しずつ学習</li>
+<li>理系で数学を学んだ学生が、教え・助ける経験をもつ</li>
+</ul>
+</li>
+<li>コンピュータ:学びに有効活用するため
+<ul>
+<li>データ・サイエンスのためのソフトによるスクリプトの活用</li>
+<li>プログラミングへの関心</li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="resources" class="section level4" number="2.2.3.7">
+<h4>
+<span class="header-section-number">A.2.3.7</span> Resources<a class="anchor" aria-label="anchor" href="#resources"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>オープン・データ(Open/Public Data)</li>
+<li>インターネット上の情報、コース、各種ツールなど(Online/Cloud)</li>
+<li>無償、かつ、オンラインのソフトウェア(Free and online/cloud system)</li>
+</ul>
+</div>
+<div id="総務省オープンデータの定義" class="section level4" number="2.2.3.8">
+<h4>
+<span class="header-section-number">A.2.3.8</span> 総務省:オープン・データの定義<a class="anchor" aria-label="anchor" href="#%E7%B7%8F%E5%8B%99%E7%9C%81%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E5%AE%9A%E7%BE%A9"><i class="fas fa-link"></i></a>
+</h4>
+<ol style="list-style-type: decimal">
+<li>営利目的、非営利目的を問わず二次利用可能なルールが適用されたもの 2. 機械判読に適したもの</li>
+<li>無償で利用できるもの
+IT / Cloud
+<a href="http://www.soumu.go.jp/menu_seisaku/ictseisaku/ictriyou/opendata/" class="uri">http://www.soumu.go.jp/menu_seisaku/ictseisaku/ictriyou/opendata/</a>
+</li>
+</ol>
+</div>
+<div id="world-bank-open-data-defined-httpopendatatoolkit.worldbank.org" class="section level4" number="2.2.3.9">
+<h4>
+<span class="header-section-number">A.2.3.9</span> World Bank: Open Data Defined <a href="http://opendatatoolkit.worldbank.org" class="uri">http://opendatatoolkit.worldbank.org</a><a class="anchor" aria-label="anchor" href="#world-bank-open-data-defined-httpopendatatoolkit.worldbank.org"><i class="fas fa-link"></i></a>
+</h4>
+<p>The term “Open Data” has a very precise meaning. Data or content is open if anyone is free to use, re-use or redistribute it, subject at most to measures that preserve provenance and openness.
+1. The data must be legally open, which means they must be placed in the public domain or under liberal terms of use with minimal restrictions.
+2. The data must be technically open, which means they must be published in electronic formats that are
+machine readable and non-proprietary, so that anyone can access and use the data using common, freely available software tools. Data must also be publicly available and accessible on a public server, without password or firewall restrictions. To make Open Data easier to find, most organizations create and manage Open Data catalogs.</p>
+</div>
+<div id="オープンデータの例-list-of-open-data-catalogue" class="section level4" number="2.2.3.10">
+<h4>
+<span class="header-section-number">A.2.3.10</span> オープン・データの例 List of Open Data Catalogue<a class="anchor" aria-label="anchor" href="#%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E4%BE%8B-list-of-open-data-catalogue"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>
+<p>公共データ:<a href="https://www.data.go.jp" class="uri">https://www.data.go.jp</a>
+オープンデータの意義・目的:1. 国民参加・官民協働の推進を通じた諸課題の解決、2. 経済活性化行政の 高度化・効率化、3. 透明性・信頼の向上</p>
+<ul>
+<li>データベースサイト一覧:<a href="https://www.data.go.jp/list-of-database/" class="uri">https://www.data.go.jp/list-of-database/</a><br>
+</li>
+<li>気象庁:<a href="https://www.jma.go.jp/jma/menu/menureport.html" class="uri">https://www.jma.go.jp/jma/menu/menureport.html</a>
+</li>
+</ul>
+</li>
+<li><p>U.S. Government’s Open Data: <a href="https://www.data.gov" class="uri">https://www.data.gov</a></p></li>
+<li><p>EU Open Data Portal: <a href="http://data.europa.eu/euodp/en/home" class="uri">http://data.europa.eu/euodp/en/home</a></p></li>
+<li><p>UK Open Data: <a href="https://data.gov.uk" class="uri">https://data.gov.uk</a></p></li>
+<li>
+<p>World Bank: New Ways of Looking at Poverty</p>
+<ul>
+<li>Open Data: <a href="https://data.worldbank.org" class="uri">https://data.worldbank.org</a>
+</li>
+<li>World Development Indicators: <a href="http://datatopics.worldbank.org/world-development-indicators/" class="uri">http://datatopics.worldbank.org/world-development-indicators/</a>
+</li>
+</ul>
+</li>
+<li><p>UN Data: <a href="http://data.un.org" class="uri">http://data.un.org</a></p></li>
+<li><p>WHO Data: <a href="https://www.who.int/gho/en/" class="uri">https://www.who.int/gho/en/</a></p></li>
+<li><p>Google Public Data: 日本語での検索:7、言語を英語に変えると:136 <a href="https://www.google.com/publicdata/directory" class="uri">https://www.google.com/publicdata/directory</a></p></li>
+<li>
+<p>Open Knowledge Foundation: <a href="https://okfn.org" class="uri">https://okfn.org</a></p>
+<ul>
+<li>Global Open Data Index: <a href="https://index.okfn.org" class="uri">https://index.okfn.org</a>
+Free Software, Online Access R</li>
+</ul>
+</li>
+<li><p>R Project for Statistical Computing: <a href="https://www.r-project.org" class="uri">https://www.r-project.org</a></p></li>
+<li><p>R Studio: <a href="https://www.rstudio.com" class="uri">https://www.rstudio.com</a></p></li>
+<li><p>R Studio Cloud: <a href="https://rstudio.cloud" class="uri">https://rstudio.cloud</a>
+Python</p></li>
+<li><p>Phython: <a href="https://www.python.org" class="uri">https://www.python.org</a></p></li>
+<li><p>Anaconda: <a href="https://www.anaconda.com" class="uri">https://www.anaconda.com</a></p></li>
+<li><p>Jupyter Notebook Cloud: Binder, Kaggle Kernels, Google Collaborate, CoCalc, PaizaCloud, etc.
+Free Software</p></li>
+<li><p>Free Software, Free Society: Selected Essays of Richard M. Stallman: <a href="https://www.gnu.org/philosophy/" class="uri">https://www.gnu.org/philosophy/</a> fsfs/rms-essays.pdf</p></li>
+<li><p>Richard Stallman TEDxGeneva 2014: <a href="https://youtu.be/Ag1AKIl_2GM" class="uri">https://youtu.be/Ag1AKIl_2GM</a>
+インターネット上での学習
+List of Online Help and Mini Courses</p></li>
+<li>
+<p>英語では、Online で学べるサイトが多い。基本コースは無料。以下は例</p>
+<ul>
+<li>TutorialPoint: <a href="https://www.tutorialspoint.com/" class="uri">https://www.tutorialspoint.com/</a>
+</li>
+<li>DataCamp: <a href="https://www.datacamp.com/home" class="uri">https://www.datacamp.com/home</a>
+</li>
+<li>Code Academy: <a href="https://www.codecademy.com" class="uri">https://www.codecademy.com</a>
+</li>
+<li>RStudio Premier: <a href="https://rstudio.cloud/learn/primers" class="uri">https://rstudio.cloud/learn/primers</a>
+Online Learning Source</li>
+</ul>
+</li>
+<li><p>質問とその答えの載ったサイト、User Community
+MOOCs 大学などが提供している大規模公開オンライン講座</p></li>
+<li><p>OED: MOOC n. massive open online course, an educational course made available to a large number of people via the internet.</p></li>
+<li><p>First MOOC: 2008 by Dave Cormier, Connectivism and Connective Knowledge (CCK08)</p></li>
+<li><p>MIT OpenCourseWare 2002: 教育の質の向上(教育の提供ではない)OER Stanford U Model: 有名教授
+の授業、UC Berkeley: 学習支援</p></li>
+<li><p>MOOC 元年: 2012 年 Stanford U. と MIT が オンラインのコースを提供
+6</p></li>
+</ul>
+</div>
+</div>
+<div id="massive-open-online-courses-moocs-から学ぶ-moocs-の活用と注意点" class="section level3" number="2.2.4">
+<h3>
+<span class="header-section-number">A.2.4</span> Massive Open Online Courses (MOOCs) から学ぶ Moocs の活用と注意点<a class="anchor" aria-label="anchor" href="#massive-open-online-courses-moocs-%E3%81%8B%E3%82%89%E5%AD%A6%E3%81%B6-moocs-%E3%81%AE%E6%B4%BB%E7%94%A8%E3%81%A8%E6%B3%A8%E6%84%8F%E7%82%B9"><i class="fas fa-link"></i></a>
+</h3>
+<p>MOOCs の活用を勧める理由 英語の数学の教科書と似た利点 * 無償で、講義ビデオ、講義録、スクリプトがダウンロード可能な場合が多い</p>
+<ul>
+<li>基本的な内容が適切に学習できるように、配置されている</li>
+<li>いくつかのコースからなるプログラムも多くあり、修了証を提供</li>
+<li>例・利用する データ(datasets)が優れている(個人で準備するのは困難) * プログラムを含む演習問題が内容を理解する助けになっている
+MOOCs 活用時に考えるべきこと
+学修者に適したコースの推薦</li>
+<li>無償でコンテンツにアクセスできるコースが多いが 修了証のため有償のプログラムを勧められる</li>
+<li>演習問題によって、学びの確認ができるが、無償では、すべての演習問題ができない、または利用期間が限
+られている場合が多い</li>
+<li>ビデオ講義の内容も重要だが、演習問題の質が学びには重要、パスできないときの方策も必要</li>
+<li>同じものが何回も利用されている。洗練もされるが、修了証の質を維持するためか、コースによっては、簡 単には答えられないようにした問題もある</li>
+</ul>
+<div id="moocs-の-データサイエンスコースの例" class="section level4" number="2.2.4.1">
+<h4>
+<span class="header-section-number">A.2.4.1</span> Moocs の データ・サイエンス・コースの例<a class="anchor" aria-label="anchor" href="#moocs-%E3%81%AE-%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E3%82%B3%E3%83%BC%E3%82%B9%E3%81%AE%E4%BE%8B"><i class="fas fa-link"></i></a>
+</h4>
+<div id="coursera" class="section level5" number="2.2.4.1.1">
+<h5>
+<span class="header-section-number">A.2.4.1.1</span> Coursera<a class="anchor" aria-label="anchor" href="#coursera"><i class="fas fa-link"></i></a>
+</h5>
+<ul>
+<li>Stanford U.: Machine Learning <a href="https://www.coursera.org/learn/machine-learning" class="uri">https://www.coursera.org/learn/machine-learning</a>
+Stanford U. が中心 人気の高いコース(登録:2,513,476)</li>
+<li>Johns Hopkins U.: Data Science, 10 courses <a href="https://www.coursera.org/specializations/jhu-data-science" class="uri">https://www.coursera.org/specializations/jhu-data-science</a>
+</li>
+<li>U. of Michigan: Applied Data Science, 5 courses <a href="https://www.coursera.org/specializations/data-science-python" class="uri">https://www.coursera.org/specializations/data-science-python</a>
+</li>
+<li>100% オンラインのデータ・サイエンスの修士号取得のコースもある。 U. of Illinois, U. of Michigan, U. of Colorado, など</li>
+</ul>
+</div>
+<div id="edx" class="section level5" number="2.2.4.1.2">
+<h5>
+<span class="header-section-number">A.2.4.1.2</span> edX<a class="anchor" aria-label="anchor" href="#edx"><i class="fas fa-link"></i></a>
+</h5>
+<ul>
+<li>Harvard U.: Data Science, 9 courses</li>
+<li>MIT: Statistics and Data Science, 5 courses
+[初級, R] [中級, python]
+MIT と Harvard U. が中心 [初級, R] [Graduate Level]
+<a href="https://www.edx.org/micromasters/mitx-statistics-and-data-science" class="uri">https://www.edx.org/micromasters/mitx-statistics-and-data-science</a>
+</li>
+<li>Microsoft, IBM, UC SanDiego などもコースをプログラムを提供</li>
+</ul>
+</div>
+</div>
+<div id="professional-certificate-in-data-science" class="section level4" number="2.2.4.2">
+<h4>
+<span class="header-section-number">A.2.4.2</span> Professional Certificate in Data Science<a class="anchor" aria-label="anchor" href="#professional-certificate-in-data-science"><i class="fas fa-link"></i></a>
+</h4>
+<p>基本情報: HarvardX, through edX 演習も無償で殆どすべて提供</p>
+<ul>
+<li>
+<p>URL: <a href="https://online-learning.harvard.edu/series/professional-certificate-data-science" class="uri">https://online-learning.harvard.edu/series/professional-certificate-data-science</a> * Book: <a href="https://rafalab.github.io/dsbook/" class="uri">https://rafalab.github.io/dsbook/</a> (R Markdown Document)
+R で学び、Data Camp で Assessment</p>
+<ol style="list-style-type: decimal">
+<li>Data Science: R Basics; データ解析ソフト R の基本</li>
+<li>Data Science: Visualization; データの視覚化</li>
+<li>Data Science: Probability; 確率・大数の法則</li>
+<li>Data Science: Inference and Modeling; 推定と数学モデル</li>
+<li>Data Science: Productivity Tools; Unix, Git, GitHub, R Markdown 6. Data Science: Wrangling; データの整理</li>
+<li>Data Science: Linear Regression; 線形回帰</li>
+<li>Data Science: Machine Learning; 機械学習</li>
+<li>Data Science: Capstone まとめと次のステップへの架け橋
+コースの前半で使われるデータ例</li>
+</ol>
+</li>
+</ul>
+<div id="professional-certificate-in-data-science-1" class="section level5" number="2.2.4.2.1">
+<h5>
+<span class="header-section-number">A.2.4.2.1</span> Professional Certificate in Data Science<a class="anchor" aria-label="anchor" href="#professional-certificate-in-data-science-1"><i class="fas fa-link"></i></a>
+</h5>
+<p>8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 2 weeks
+Required R Packages for Examples: tidyverse, dslabs: <a href="https://cran.r-project.org/web/packages/" class="uri">https://cran.r-project.org/web/packages/</a> dslabs/dslabs.pdf</p>
+<ul>
+<li>男女の身長のデータ</li>
+<li>アメリカにおける 2010 年の銃による殺人事件の FBI の報告書</li>
+<li>Gapminder: Almost nobody knows the basic global facts! (Gapminder Test)
+<ul>
+<li>TED 増え続ける世界人口(Hans Rosling) <a href="https://www.gapminder.org" class="uri">https://www.gapminder.org</a>
+</li>
+<li>Health and income outcomes for 184 countries from 1960 to 2016</li>
+<li>Country, Year, Infant deaths per 1000, Life expectancy in years, Average of children per woman,
+Country population, GDP, Continent, Geographical region</li>
+</ul>
+</li>
+<li>Brexit の国民投票の事前調査と実際のデータ</li>
+<li>2016 年の大統領選挙の事前調査と結果のデータ</li>
+<li>UC Berkeley の大学院入試における男女差</li>
+<li>オランダにおける研究費獲得率に関する男女差</li>
+<li>プロ野球の新人の打率予測</li>
+</ul>
+</div>
+<div id="jmooc" class="section level5" number="2.2.4.2.2">
+<h5>
+<span class="header-section-number">A.2.4.2.2</span> JMOOC<a class="anchor" aria-label="anchor" href="#jmooc"><i class="fas fa-link"></i></a>
+</h5>
+<p>大学生のためのデータサイエンス(1)の内容</p>
+<ul>
+<li>Week 1 現代社会におけるデータサイエンス
+<ul>
+<li>役割</li>
+<li>データの取得・管理、入手方法、分析 - 画像・音声処理技術
+日本発の MOOC gacco: ドコモ提供</li>
+</ul>
+</li>
+<li>Week 2 データ分析の基礎
+<ul>
+<li>ヒストグラム・箱ひげ図・平均・分散・標準偏差・散布図・相関係数・回帰直線</li>
+<li>データ分析で注意すべき点:相関と因果、観察研究と実験研究、標本調査 * Week 3 コンピュータを用いたデータ分析</li>
+<li>Excel, R, Python の紹介</li>
+</ul>
+</li>
+<li>Week 4 データサイエンスの応用事例
+<ul>
+<li>保険・金融</li>
+<li>マーケティング・リサーチ - 染色体上で遺伝子を探す</li>
+<li>品質管理
+10 月 8 日開講</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="教養としてのデータサインエンスのコースを企画するにあたって" class="section level3" number="2.2.5">
+<h3>
+<span class="header-section-number">A.2.5</span> 「教養としてのデータ・サインエンス」のコースを企画するにあたって<a class="anchor" aria-label="anchor" href="#%E6%95%99%E9%A4%8A%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%83%B3%E3%82%A8%E3%83%B3%E3%82%B9%E3%81%AE%E3%82%B3%E3%83%BC%E3%82%B9%E3%82%92%E4%BC%81%E7%94%BB%E3%81%99%E3%82%8B%E3%81%AB%E3%81%82%E3%81%9F%E3%81%A3%E3%81%A6"><i class="fas fa-link"></i></a>
+</h3>
+<p>JMOOC: https: // www. jmooc. jp
+統計学 II: 推測統計の方法(竹村先生他)・社会人のためのデータサイエンス入門
+全学の学生のためのコースの企画について
+配慮すべきこと</p>
+<div id="学習目標" class="section level4" number="2.2.5.1">
+<h4>
+<span class="header-section-number">A.2.5.1</span> 学習目標<a class="anchor" aria-label="anchor" href="#%E5%AD%A6%E7%BF%92%E7%9B%AE%E6%A8%99"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>オープン・データについて理解し、課題を設定し、活用することを経験</li>
+<li>データ分析ソフトに触れ、統計量について理解し、分析と可視化を経験する</li>
+<li>データ分析のプロセスの全体像と流れを理解し、そのステップを経験する</li>
+<li>データの分析結果の見え方の評価を受ける</li>
+<li>何が見えて、なにが見えないか、どのようなものが必要かともに議論し改善していく経験をもつ</li>
+<li>あることを知るためには、どのようなデータが必要か、取得したデータから読み取れるものはなにかを議論 する</li>
+</ul>
+</div>
+<div id="r-markdown-or-jupyter-notebook-for-python" class="section level4" number="2.2.5.2">
+<h4>
+<span class="header-section-number">A.2.5.2</span> R Markdown Or jupyter notebook for python<a class="anchor" aria-label="anchor" href="#r-markdown-or-jupyter-notebook-for-python"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>Reproducible Research: 再現性を確保でき、記録としても有用</li>
+<li>Literate Programming: Code, Script の説明を順次書き加えることができる * html, doc, presentation, pdf (using TeX) フォーマットに出力できる</li>
+<li>スクリプトの利用、演習の記録、課題の提出、プレゼンテーションにも有用</li>
+</ul>
+</div>
+<div id="全学の学生のためのコースの企画について" class="section level4" number="2.2.5.3">
+<h4>
+<span class="header-section-number">A.2.5.3</span> 全学の学生のためのコースの企画について<a class="anchor" aria-label="anchor" href="#%E5%85%A8%E5%AD%A6%E3%81%AE%E5%AD%A6%E7%94%9F%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%82%B3%E3%83%BC%E3%82%B9%E3%81%AE%E4%BC%81%E7%94%BB%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"><i class="fas fa-link"></i></a>
+</h4>
+<p>配慮すべきこと
+考慮すべきこと 問い</p>
+<ul>
+<li>自律的・主体的な学修者が、大学のコースとしてデータ・サイエンスを学ぶ価値は何か。必修要件を修了証 で代替できるか</li>
+<li>学修者が助け合い、学び合い、智を、創造していくためには何が必要か</li>
+<li>学修者に、どのような支援が、必要で、有効か</li>
+<li>Empirical (理論ではなく、実験 [実証, 経験] に基づいた)面が大きいことを意識して、理論より例の提示 を重視し、背景にある数学を説明</li>
+<li>社会科学系など異分野の教員と助け合い、協働でコースを運営 変化の時代に、多くの因子が関係する課題への数学の貢献を考えながら</li>
+</ul>
+<blockquote>
+<p>Quote: On Listening to Lectures, by Plutarch プルタルコス The correct analogy for the mind is not a vessel that needs filling, but wood that needs igniting - no more - and then it motivates one towards originality and instills the desire for truth. (https: //quoteinvestigator.com/2013/03/28/mind-fire/)</p>
+</blockquote>
+<blockquote>
+<p>こころは、満たすべき器ではなく、着火すべき木のようなものなのだ。火がつけば、あとは自分で、どんどん、真理を吸収していくことだろう。(私訳)</p>
+</blockquote>
+</div>
+</div>
+<div id="おわりに" class="section level3" number="2.2.6">
+<h3>
+<span class="header-section-number">A.2.6</span> おわりに<a class="anchor" aria-label="anchor" href="#%E3%81%8A%E3%82%8F%E3%82%8A%E3%81%AB"><i class="fas fa-link"></i></a>
+</h3>
+<div id="データサイエンス教育と大学の未来" class="section level4" number="2.2.6.1">
+<h4>
+<span class="header-section-number">A.2.6.1</span> データ・サイエンス教育と大学の未来<a class="anchor" aria-label="anchor" href="#%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E6%95%99%E8%82%B2%E3%81%A8%E5%A4%A7%E5%AD%A6%E3%81%AE%E6%9C%AA%E6%9D%A5"><i class="fas fa-link"></i></a>
+</h4>
+<blockquote>
+<p>Quote: Apple co-founders Steve Jobs and Steve Wozniak didn’t have degrees when they launched what has become one of the most valuable companies in the world.
+And now Apple CEO Tim Cook is spreading the word that would-be programmers really don’t need the endorsement of a university to be able to create something of commercial value, such as an app for the Apple App Store.
+<a href="https://www.zdnet.com/article/apple-ceo-tim-cook-you-dont-need-a-degree-to-code-mobile-apps/" class="uri">https://www.zdnet.com/article/apple-ceo-tim-cook-you-dont-need-a-degree-to-code-mobile-apps/</a></p>
+</blockquote>
+</div>
+<div id="ひとこと" class="section level4" number="2.2.6.2">
+<h4>
+<span class="header-section-number">A.2.6.2</span> ひとこと<a class="anchor" aria-label="anchor" href="#%E3%81%B2%E3%81%A8%E3%81%93%E3%81%A8"><i class="fas fa-link"></i></a>
+</h4>
+<blockquote>
+<p>データ・サイエンスや AI に関して、大学で教えるべきことは何なのでしょうか。 本日は「教養としてのデータサイエンス教育」というタイトルでお話しましたが、どのレベルであっても、真
+剣に考えるべき課題だと思います。大学以外で学べるのであるならば、大学の価値は、失われていくかもしれま
+せん。
+このことを考えながら、準備をしました。みなさんが、一般教育科目、数学の学生の教養として、学内全体の データ・サイエンス教育のことを検討するときに、なにかヒントになることが含まれていればと願っています。</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+
+  <div class="chapter-nav">
+<div class="prev"><a href="introduction.html"><span class="header-section-number">1</span> はじめに</a></div>
+<div class="next"><a href="math2020.html"><span class="header-section-number">B</span> 教養としてのデータサイエンス教育の目的と課題</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#math2019"><span class="header-section-number">A</span> 教養としてのデータサイエンス教育</a></li>
+<li><a class="nav-link" href="#moocs%E3%81%AE%E6%B4%BB%E7%94%A8%E3%82%92%E8%A6%96%E9%87%8E%E3%81%AB%E5%85%A5%E3%82%8C%E3%81%A6">～MOOCsの活用を視野に入れて～</a></li>
+<li><a class="nav-link" href="#%E9%9F%B3%E5%A3%B0%E4%BB%98%E3%81%8D%E7%94%BB%E9%9D%A2%E5%8F%8E%E9%8C%B2%E3%83%93%E3%83%87%E3%82%AAyoutube"><span class="header-section-number">A.1</span> 音声付き画面収録ビデオ（YouTube）</a></li>
+<li>
+<a class="nav-link" href="#%E8%AC%9B%E6%BC%94%E6%A6%82%E8%A6%81"><span class="header-section-number">A.2</span> 講演概要</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB"><span class="header-section-number">A.2.1</span> はじめに</a></li>
+<li><a class="nav-link" href="#%E5%80%8B%E4%BA%BA%E7%9A%84%E3%81%AA%E7%B5%8C%E9%A8%93"><span class="header-section-number">A.2.2</span> 個人的な経験</a></li>
+<li><a class="nav-link" href="#%E6%95%99%E9%A4%8A%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9"><span class="header-section-number">A.2.3</span> 教養としてのデータ・サイエンス</a></li>
+<li><a class="nav-link" href="#massive-open-online-courses-moocs-%E3%81%8B%E3%82%89%E5%AD%A6%E3%81%B6-moocs-%E3%81%AE%E6%B4%BB%E7%94%A8%E3%81%A8%E6%B3%A8%E6%84%8F%E7%82%B9"><span class="header-section-number">A.2.4</span> Massive Open Online Courses (MOOCs) から学ぶ Moocs の活用と注意点</a></li>
+<li><a class="nav-link" href="#%E6%95%99%E9%A4%8A%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%83%B3%E3%82%A8%E3%83%B3%E3%82%B9%E3%81%AE%E3%82%B3%E3%83%BC%E3%82%B9%E3%82%92%E4%BC%81%E7%94%BB%E3%81%99%E3%82%8B%E3%81%AB%E3%81%82%E3%81%9F%E3%81%A3%E3%81%A6"><span class="header-section-number">A.2.5</span> 「教養としてのデータ・サインエンス」のコースを企画するにあたって</a></li>
+<li><a class="nav-link" href="#%E3%81%8A%E3%82%8F%E3%82%8A%E3%81%AB"><span class="header-section-number">A.2.6</span> おわりに</a></li>
+</ul>
+</li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/icu-hsuzuki/ds_education/blob/master/80-math2019.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/icu-hsuzuki/ds_education/edit/master/80-math2019.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>データ・サイエンス教育</strong>" was written by 鈴木 寛（Hiroshi Suzuki）. It was last built on 2023-02-27.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>
