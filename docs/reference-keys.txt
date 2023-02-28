@@ -85,6 +85,12 @@ digitalhealthj
 nationalbond
 bigmacindex
 bigmacindexj
+mapdataofwir2022
+mapdataofwir2022j
+miscellanous
+miscellanousj
+dseducation
+dseducationj
 bookdown
 about
 usage
