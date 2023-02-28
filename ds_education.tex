@@ -1,0 +1,2767 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={データ・サイエンス教育},
+  pdfauthor={鈴木 寛（Hiroshi Suzuki）},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{データ・サイエンス教育}
+\author{鈴木 寛（Hiroshi Suzuki）}
+\date{2023-02-28}
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{conjecture}{Conjecture}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\theoremstyle{definition}
+\newtheorem{example}{Example}[chapter]
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[chapter]
+\theoremstyle{definition}
+\newtheorem{hypothesis}{Hypothesis}[chapter]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{solution}{Solution}
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{ux3053ux306eux6587ux66f8ux306bux3064ux3044ux3066}{%
+\chapter*{この文書について}\label{ux3053ux306eux6587ux66f8ux306bux3064ux3044ux3066}}
+\addcontentsline{toc}{chapter}{この文書について}
+
+データサイエンス教育について考えながら、課題や手法なども含めて、少しずつ書いていきたいと思う。
+
+データサイエンスは、広い意味をもったことばで、一口に、語ることはできないが、文部科学省でも、「数理・データサイエンス・AI」の教育を推進するため、特に、大学や高等専門学校では、専門的な学びだけではなく、すべての学生が学ぶことを目標として掲げている。
+
+個人的にも、データサイエンス教育の重要性は、強く感じているが、何のためなのか、大学などでは、データサイエンスとして、なにを扱うべきかなども含めて、考えていきたいと思う。
+
+みなさんも一緒にデータサイエンスについて考えていただければと願っています。
+
+\hypertarget{ux8457ux8005ux306bux3064ux3044ux3066}{%
+\section*{著者について}\label{ux8457ux8005ux306bux3064ux3044ux3066}}
+\addcontentsline{toc}{section}{著者について}
+
+著者は、大学の学生の時以来、数学を学び、大学で教え、2019年春に退職。それ以来、少しずつ、データサイエンスを学んでいます。
+
+幸運にも、2019年9月の日本数学会教育委員会主催教育シンポジウムで、「文理共通して行う数理・データサイエンス教育」という題で、話す機会が与えられました。
+
+その後、あることが契機となり、2020年度から、毎年、冬に、大学院一般向け（分野の指定なし）の授業、「研究者のためのデータ分析（Data Analysis for Researchers）」を担当しています。複数の教員で担当しますが、基本的な部分は、わたしが教えています。受講生は20人程度ですが、殆どが、外国人。それも、多国籍で、多くても一国から三人程度。英語で教えています。
+
+\hypertarget{pdfepub-ux7248ux306bux3064ux3044ux3066}{%
+\section*{PDF、ePub 版について}\label{pdfepub-ux7248ux306bux3064ux3044ux3066}}
+\addcontentsline{toc}{section}{PDF、ePub 版について}
+
+実は、PDF 版と、ePub 版も作成しています。しかし、扱いが異なるので、ある程度完成するまでは、ほとんど更新しない予定です。いずれ、これらも、更新したものを公開できると良いのですが。試験公開版は、下のリンクにあります。
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://icu-hsuzuki.github.io/ds4aj/ds4aj.pdf}{PDF 版}
+\item
+  \href{https://icu-hsuzuki.github.io/ds4aj/ds4aj.epub}{ePub 版}
+\end{itemize}
+
+\hypertarget{introduction}{%
+\chapter{はじめに}\label{introduction}}
+
+まず、課題を整理したいと思う。
+
+\hypertarget{ux30b3ux30f3ux30d4ux30e5ux30fcux30bfux8a00ux8a9eux306bux3064ux3044ux3066}{%
+\section*{コンピュータ言語について}\label{ux30b3ux30f3ux30d4ux30e5ux30fcux30bfux8a00ux8a9eux306bux3064ux3044ux3066}}
+\addcontentsline{toc}{section}{コンピュータ言語について}
+
+統計解析のために開発された R を使います。いずれは、python についても触れたいと思いますが、プログラミングの経験がない方も含めて、最初にデータサイエンスを学ぶには、R は最適だと考えています。特に、R Studio IDE（integrated development environment, 統合開発環境） で、R を使うことがとても、簡単になっています。さらに、簡単なものであれば、Posit Cloud で試したり、共有することも可能です。また、再現性（Reproducibility）や、なにを実行しているのかの説明を同時に記述すること（Literate Programming）は、非常に重要ですが、その記述も、R Markdown によって、可能になっています。この文書も、R Markdown の一つの形式の、bookdown を利用しています。最後に、Bookdown に関連して、膨大な数の、参考書も、無償で提供されており、オンラインで読むことができることも、R をお薦めする理由です。
+
+ただし、日本語のものは、まだ十分とは言えない状況です。この文書を書き始めたのも、すこしでも、お役に立つことができればとの、気持ちが背景にあります。
+
+\hypertarget{ux8a00ux8a9eux306bux3064ux3044ux3066}{%
+\section*{言語について}\label{ux8a00ux8a9eux306bux3064ux3044ux3066}}
+\addcontentsline{toc}{section}{言語について}
+
+ご覧の通り、本書は、日本語で書かれています。用語は、英語、あるいは、英語を追記、または、英語をカタカナにしただけのものを使用する可能性が大きいですが、説明は、極力、日本語で書いていく予定です。
+
+しかし、基本的に、コード（プログラムの記述）には、日本語を使わないで書いていく予定です。とくに、初心者にとっては、日本語の扱いは、負担になることが多いからです。最近は、コードの中で日本語を使用しても、ほとんど、問題は起きないように思います。そうであっても、世界の人の共通言語として、プログラム言語を学んでいくときには、日本語を使わないことは意義があると思います。
+
+少し慣れてきて、日本語のデータなどを扱うときには、コードにも日本語を使う必要ができていますから、日本語の利用についても、追って説明していきます。APPENDIX \ref{japanese} を参照してください。
+
+最初は、みなさんも、変数（variable）や、オブジェクト（object）に名前をつけるときは、半角英数を使い、日本語は、使わないようにすることをお勧めします。
+
+\hypertarget{appendix-appendix}{%
+\appendix}
+
+
+\hypertarget{math2019}{%
+\chapter{教養としてのデータサイエンス教育}\label{math2019}}
+
+\hypertarget{moocsux306eux6d3bux7528ux3092ux8996ux91ceux306bux5165ux308cux3066}{%
+\section*{～MOOCsの活用を視野に入れて～}\label{moocsux306eux6d3bux7528ux3092ux8996ux91ceux306bux5165ux308cux3066}}
+\addcontentsline{toc}{section}{～MOOCsの活用を視野に入れて～}
+
+日本数学会教育委員会主催教育シンポジウム：文理共通して行う数理・データサイエンス教育における講演　時：2019年9月17日
+
+\href{https://www.mathsoc.jp/overview/committee/education/sympo/2019sep.html}{シンポジウム・リンク}
+
+\hypertarget{ux97f3ux58f0ux4ed8ux304dux753bux9762ux53ceux9332ux30d3ux30c7ux30aayoutube}{%
+\section{音声付き画面収録ビデオ（YouTube）}\label{ux97f3ux58f0ux4ed8ux304dux753bux9762ux53ceux9332ux30d3ux30c7ux30aayoutube}}
+
+\href{https://icu-hsuzuki.github.io/datascience/ed/msj2019.pdf}{スライド PDF}
+
+\hypertarget{ux8b1bux6f14ux6982ux8981}{%
+\section{講演概要}\label{ux8b1bux6f14ux6982ux8981}}
+
+\hypertarget{ux306fux3058ux3081ux306b}{%
+\subsection{はじめに}\label{ux306fux3058ux3081ux306b}}
+
+\hypertarget{ux80ccux666fux73feux72b6}{%
+\subsubsection{背景・現状}\label{ux80ccux666fux73feux72b6}}
+
+\hypertarget{ux653fux5e9cux6587ux90e8ux79d1ux5b66ux7701}{%
+\paragraph{政府・文部科学省}\label{ux653fux5e9cux6587ux90e8ux79d1ux5b66ux7701}}
+
+\begin{itemize}
+\item
+  第5期科学技術基本計画:2016年1月22日閣議決定 \footnote{1第 2 章 未来の産業創造と社会変革に向けた新たな価値創出の取組}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \url{https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html}
+  \end{itemize}
+\item
+  大学の数理・データサイエンス教育強化方策:2016年12月21日公表
+  - 文部科学省として喫緊に取り組むべき方策
+
+\begin{verbatim}
+1. 数理・データサイエンス教育研究センター(仮称)の整備
+2. 標準カリキュラム・教材の在り方
+3. 実践教育に関する産学連携ネットワークの整備         
+https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html
+
+-  「数理及びデータサイエンスに係る教育強化」の拠点校の選定 
+- 北海道・東京・滋賀・京都・大阪・九州(6 国立大学)
+\end{verbatim}
+\item
+  データ関連人材育成プログラム(D-DRIVE\footnote{Doctoral program for Data-Related InnoVation Expert})2017 年度\textasciitilde{}
+\item
+  「大学における数理・データサイエンス教育の全国展開」の協力校の選定
+
+  \begin{itemize}
+  \tightlist
+  \item
+    20大学選定:2019年1月8日
+  \item
+    \url{http://www.mext.go.jp/b_menu/shingi/chousa/koutou/095/gaiyou/1412367.htm}
+  \end{itemize}
+\item
+  経済産業省:産業技術環境局 大学連携推進室等 2019 年 3 月 26 日
+
+  \begin{itemize}
+  \item
+    数理資本主義の時代 ∼ 数学パワーが世界を変える ∼
+  \item
+    \url{https://www.meti.go.jp/shingikai/economy/risukei_jinzai/20190326_report.html}
+  \end{itemize}
+\item
+  統合イノベーション戦略推進会議(首相官邸・政策会議)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    人間中心の AI 社会原則:2019年3月29日
+    \url{https://www8.cao.go.jp/cstp/aigensoku.pdf}
+  \item
+    AI 戦略 2019 ∼ 人・産業・地域・政府全てに AI∼ 2019 年 6 月 11 日 \url{https://www.kantei.go.jp/jp/singi/tougou-innovation/pdf/aisenryaku2019.pdf}
+  \end{itemize}
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  目標 1:文理を問わず、全ての大学・高専生 (約 50 万人卒/年) が、課程にて初級レベルの数理・デー タサイエンス・AI を習得 {[}MOOC 放送大学の活用{]}
+\item
+  目標 2:多くの社会人 (約 100 万人/年) が、基本的情報知識と、データサイエンス・AI 等の実践的活 用スキルを習得できる機会をあらゆる手段を用いて提供
+\item
+  目標 3:大学生、社会人に対するリベラルアーツ教育の充実 (一面的なデータ解析の結果や AI を鵜呑 みにしないための批判的思考力の養成も含む)
+\end{enumerate}
+
+\hypertarget{ux6570ux7406ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux6559ux80b2ux5f37ux5316ux62e0ux70b9ux30b3ux30f3ux30bdux30fcux30b7ux30a2ux30e0}{%
+\subsubsection{数理・データサイエンス教育強化拠点コンソーシアム}\label{ux6570ux7406ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux6559ux80b2ux5f37ux5316ux62e0ux70b9ux30b3ux30f3ux30bdux30fcux30b7ux30a2ux30e0}}
+
+\url{http://www.mi.u-tokyo.ac.jp/consortium/index.html}
+
+\begin{itemize}
+\item
+  北海道大学・東京大学・滋賀大学・京都大学・大阪大学・九州大学
+\item
+  北見工業大学・東北大学・山形大学・筑波大学・宇都宮大学・群馬大学・千葉大学・お茶の水女子大学・新潟大学・長岡技術科学大学・静岡大学・名古屋大学・豊橋技術科学大学・神戸大学・島根大学・岡山大学・ 広島大学・愛媛大学・宮崎大学・琉球大学
+\end{itemize}
+
+\hypertarget{ux6559ux79d1ux66f8ux306eux51faux7248ux306aux3069}{%
+\subsubsection{教科書の出版など}\label{ux6559ux79d1ux66f8ux306eux51faux7248ux306aux3069}}
+
+\begin{itemize}
+\tightlist
+\item
+  データサイエンス入門シリーズ、講談社、2019年秋刊行開始
+\end{itemize}
+
+\hypertarget{ux500bux4ebaux7684ux306aux7d4cux9a13}{%
+\subsection{個人的な経験}\label{ux500bux4ebaux7684ux306aux7d4cux9a13}}
+
+\hypertarget{ux6559ux80b2-ir}{%
+\subsubsection{教育 IR}\label{ux6559ux80b2-ir}}
+
+学修・教育センターの柱の一つに、大学の IR とは別に、教育 IR を含める
+
+\hypertarget{ux500bux4ebaux7684ux306aux5b66ux3073}{%
+\subsubsection{個人的な学び}\label{ux500bux4ebaux7684ux306aux5b66ux3073}}
+
+2019 年 3 月末に退職後 MOOCs のコースなどを利用して、学習中
+
+\hypertarget{ux6559ux80b2ux7814ux7a76ux8005ux306eux305fux3081ux306eux30c7ux30fcux30bfux6d3bux7528ux3068ux5206ux6790data-analysis-for-researchers}{%
+\subsubsection{教育:研究者のためのデータ活用と分析(Data Analysis for Researchers)}\label{ux6559ux80b2ux7814ux7a76ux8005ux306eux305fux3081ux306eux30c7ux30fcux30bfux6d3bux7528ux3068ux5206ux6790data-analysis-for-researchers}}
+
+\begin{itemize}
+\tightlist
+\item
+  全学の大学院(修士)の学生向け、学部3年生以上は許可を得て履修可
+\item
+  受講生:Rotary Peace Fellow, The Project for Human Resource Development Scholarship (JDS) および 一般の大学院生と少数の4年生 10-25 人
+\item
+  教授言語:英語
+\item
+  スケジュール:2時限(70 分 × 2 × 10 週間)、1 時限講義・1 時限実習
+\item
+  担当教員:経済学、情報科学、数学(R Markdown etc.)
+\item
+  担当年度:2014-2015\footnote{32015 年度までは、研究者のためのコンピューティング(Computing for Researchers)}, (2016), 2017 年
+\end{itemize}
+
+\hypertarget{ux30b9ux30b1ux30b8ux30e5ux30fcux30eb}{%
+\subsubsection{スケジュール}\label{ux30b9ux30b1ux30b8ux30e5ux30fcux30eb}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Introduction to R, Open Data and Free Software 2. Basic R Objects and Commands
+\item
+  Data Frame Manipulation
+\item
+  Linear Regression and Graphics
+\item
+  Dynamic Documents Using Rmarkdown 6. Statistical analysis with R II
+\item
+  Statistical analysis with R III
+\item
+  Statistical analysis with R IV
+\item
+  Guest Lecture and preparation for presentations
+\item
+  Final presentations
+\end{enumerate}
+
+\hypertarget{ux30b3ux30fcux30b9ux306eux7279ux5fb4}{%
+\subsubsection{コースの特徴}\label{ux30b3ux30fcux30b9ux306eux7279ux5fb4}}
+
+オープン・データ、R Studio (サーバーと PC)上での R の活用、R Markdown での文書作成、実例の提供、ゲ スト講義、プロジェクト、教員の協力
+授業で使ったデータ
+
+\begin{itemize}
+\item
+  Base R に付属のデータ
+
+  \begin{itemize}
+  \tightlist
+  \item
+    cars: 車のスピードと制動距離
+  \item
+    iris: あやめの花びらと萼のデータ
+  \end{itemize}
+\item
+  package MASS に付属のデータ
+\item
+  WDI: World Bank Development indicators for R
+
+\begin{verbatim}
+library(WDI)
+#GDP (current US$)
+gdp <- WDI(country = c("US", "JP", "CN", "KR"),
+indicator = "NY.GDP.MKTP.CD",
+start = 1960, end = 2017)
+\end{verbatim}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    現在は、より新しい wbstats パッケージもある。
+  \end{itemize}
+\item
+  Quandl package: \url{https://www.quandl.com/tools/r}
+\item
+  Google Trends: \url{https://trends.google.co.jp/}
+\item
+  Yahoo Finance: \url{https://finance.yahoo.com/quote/DATA/}
+\end{itemize}
+
+\hypertarget{ux6559ux990aux3068ux3057ux3066ux306eux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9}{%
+\subsection{教養としてのデータ・サイエンス}\label{ux6559ux990aux3068ux3057ux3066ux306eux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9}}
+
+\hypertarget{ux4e00ux822cux306eux5b66ux751fux5bfeux8c61ux306eux30b3ux30fcux30b9}{%
+\subsubsection{一般の学生対象のコース}\label{ux4e00ux822cux306eux5b66ux751fux5bfeux8c61ux306eux30b3ux30fcux30b9}}
+
+なぜ 社会的要請? 教養人としてのリテラシー?
+
+\begin{itemize}
+\tightlist
+\item
+  科学的思考リテラシー:因果関係、相関関係、隠れた因子についての考察
+\item
+  関係する因子の多い実社会の問題の分析・解決方法の探索
+\item
+  社会や会社・機関の責任ある構成員として、政策決定や事業方針策定に必要な因子を把握・異なる視点から 検証
+\item
+  関係するすべての人が知恵を出し合い、問いを発し、異なる視点を理解し、協力し、新しい価値を生み出し ながら、データ・サイエンス、AI を活用
+\item
+  データの公開が進み、だれでも、膨大なデータを活用することが可能
+\item
+  変化の時代に、データの分析結果を理解し、適切な判断をすることが不可欠
+\item
+  数学への苦手意識が強くても、データ分析に力を発揮するひとは多い
+\item
+  (高校までに学ぶ)数学を活用し、その重要さを実感することが可能
+\end{itemize}
+
+\hypertarget{ux30b3ux30fcux30b9ux30c7ux30b6ux30a4ux30f3}{%
+\paragraph{コース・デザイン}\label{ux30b3ux30fcux30b9ux30c7ux30b6ux30a4ux30f3}}
+
+\begin{itemize}
+\tightlist
+\item
+  目的を達成できるコースの企画・運営が不可欠
+\item
+  数学の専門知識の活用を急がず、(変化の時代に)数学を学ぶ有効性を探る
+\end{itemize}
+
+\hypertarget{ux8ab2ux984cux79c1ux898b}{%
+\subsubsection{課題(私見)}\label{ux8ab2ux984cux79c1ux898b}}
+
+\textbf{皆さんも様々なお考えがあると思います}
+
+\begin{itemize}
+\item
+  データの公開とその利用が進んでいない
+\item
+  高校までの教育でデータ・サイエンスが扱われてこなかった
+\item
+  特に学部では日本語の閉じた空間で学んでいる場合が多い
+\item
+  学部レベルでの学際的な科学教育が進んでいない
+\item
+  数学分野の問題(他の分野でもそうかもしれませんが)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    授業で、コンピュータを活用することが少ない
+  \item
+    授業で、応用や社会とのつながりに触れる機会が少ない
+  \item
+    統計学の授業が実際のデータを扱うデータ・サイエンスに連動していない
+  \item
+    数学分野の教員のデータ・サイエンス(教育)の理解度が低い?
+    どのような数学がデータ・サイエンスに必要かという意識しかない?
+    数学の教員としてどのように貢献したら良いかわからない。
+  \item
+    理系の学生は(文系の学生も)、就職先でデータ・サイエンスや AI を活用することが多いが、大学の カリキュラムは、学生の必要に応えていない
+  \item
+    学部を横断して、文系(特に社会科学系)の教員と協力して、教える機会がない
+  \item
+    自分の分野の研究、授業、大学のしごとで、手一杯で、それ以上のことは考える余裕がない
+  \end{itemize}
+\item
+  大学全体で取り組み、数学教員が少しずつ役割を見出していく価値がある 鍵となるもの
+\end{itemize}
+
+\hypertarget{ux7406ux60f3ux7684ux5b66ux4feeux8005ux30e2ux30c7ux30ebux3092ux60f3ux5b9a}{%
+\subsubsection{理想的学修者モデルを想定}\label{ux7406ux60f3ux7684ux5b66ux4feeux8005ux30e2ux30c7ux30ebux3092ux60f3ux5b9a}}
+
+\textbf{教養? Liberal Arts?}
+
+\begin{itemize}
+\tightlist
+\item
+  強い動機づけを持ち、自律的かつ主体的に、一生学び続ける基盤を構築
+\item
+  個別学習では得られないことをグループの中で積極的に学ぶ
+\item
+  広い興味をもち、自らの地平を広げながら学ぶ
+\item
+  複雑な問題の全体像を把握し・課題設定し・他者と協力しながら価値を創造
+\end{itemize}
+
+\hypertarget{ux30afux30e9ux30b9ux5185ux3067ux306eux5b66ux3073ux306eux6a5fux4f1aux306eux63d0ux4f9b}{%
+\subsubsection{クラス内での学びの機会の提供}\label{ux30afux30e9ux30b9ux5185ux3067ux306eux5b66ux3073ux306eux6a5fux4f1aux306eux63d0ux4f9b}}
+
+\textbf{Teaching to Learning}
+
+\begin{itemize}
+\tightlist
+\item
+  動機づけ、世界が広げていくための機会と情報の提供 * 何をグループや、クラスで行うか。
+
+  \begin{itemize}
+  \tightlist
+  \item
+    自律的に学び始めるため、スタート地点に立つ機会を提供 - 問い(課題)を提出する訓練 Community of Inquiry (CoI), - 可視化の評価 Communication of Facts
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{ux5b66ux3073ux306eux652fux63f4}{%
+\subsubsection{学びの支援}\label{ux5b66ux3073ux306eux652fux63f4}}
+
+\textbf{Students with Various Backgrounds}
+
+\begin{itemize}
+\tightlist
+\item
+  サポートの学生の活用と訓練:質問を受けたことのレポート
+\item
+  教員の役割・(コースの目的に適した)評価
+\end{itemize}
+
+\hypertarget{literacy}{%
+\subsubsection{Literacy}\label{literacy}}
+
+\textbf{Expand your horizon!}
+
+\begin{itemize}
+\tightlist
+\item
+  英語:学びの広がりを制限しないため
+
+  \begin{itemize}
+  \tightlist
+  \item
+    データの取得、コマンド、プログラミング
+  \item
+    マニュアル、ヘルプ、Q \& A、(ユーザ)コミュニティ へのアクセス\\
+  \item
+    オンライン・コース、オンライン・ツールの利用
+  \end{itemize}
+\item
+  数学:学びの広がりを制限しないため
+
+  \begin{itemize}
+  \tightlist
+  \item
+    基本的な式変形など、中学数学および、高校数学 I, II, A, B の必要な部分の学習 - 確率・統計:データ・サイエンスの中で少しずつ学習
+  \item
+    理系で数学を学んだ学生が、教え・助ける経験をもつ
+  \end{itemize}
+\item
+  コンピュータ:学びに有効活用するため
+
+  \begin{itemize}
+  \tightlist
+  \item
+    データ・サイエンスのためのソフトによるスクリプトの活用
+  \item
+    プログラミングへの関心
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{resources}{%
+\subsubsection{Resources}\label{resources}}
+
+\textbf{IT / Cloud}
+
+\begin{itemize}
+\tightlist
+\item
+  オープン・データ(Open/Public Data)
+\item
+  インターネット上の情報、コース、各種ツールなど(Online/Cloud)
+\item
+  無償、かつ、オンラインのソフトウェア(Free and online/cloud system)
+\end{itemize}
+
+\hypertarget{ux7dcfux52d9ux7701ux30aaux30fcux30d7ux30f3ux30c7ux30fcux30bfux306eux5b9aux7fa9}{%
+\subsubsection{総務省:オープン・データの定義}\label{ux7dcfux52d9ux7701ux30aaux30fcux30d7ux30f3ux30c7ux30fcux30bfux306eux5b9aux7fa9}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  営利目的、非営利目的を問わず二次利用可能なルールが適用されたもの
+\item
+  機械判読に適したもの
+\item
+  無償で利用できるもの
+  \url{http://www.soumu.go.jp/menu_seisaku/ictseisaku/ictriyou/opendata/}
+\end{enumerate}
+
+\hypertarget{world-bank-open-data-defined}{%
+\subsubsection{\texorpdfstring{World Bank: \href{http://opendatatoolkit.worldbank.org}{Open Data Defined}}{World Bank: Open Data Defined}}\label{world-bank-open-data-defined}}
+
+The term ``Open Data'' has a very precise meaning. Data or content is open if anyone is free to use, re-use or redistribute it, subject at most to measures that preserve provenance and openness.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  The data must be \textbf{legally open}, which means they must be placed in the public domain or under liberal terms of use with minimal restrictions.
+\item
+  The data must be \textbf{technically open}, which means they must be published in electronic formats that are machine readable and non-proprietary, so that anyone can access and use the data using common, freely available software tools. Data must also be publicly available and accessible on a public server, without password or firewall restrictions. To make Open Data easier to find, most organizations create and manage Open Data catalogs.
+\end{enumerate}
+
+\hypertarget{ux30aaux30fcux30d7ux30f3ux30c7ux30fcux30bfux306eux4f8b}{%
+\subsubsection{オープン・データの例}\label{ux30aaux30fcux30d7ux30f3ux30c7ux30fcux30bfux306eux4f8b}}
+
+\textbf{List of Open Data Catalogue}
+
+\begin{itemize}
+\item
+  公共データ:\url{https://www.data.go.jp}
+\item
+  オープンデータの意義・目的:
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    国民参加・官民協働の推進を通じた諸課題の解決、
+  \item
+    経済活性化行政の 高度化・効率化、
+  \item
+    透明性・信頼の向上
+  \end{enumerate}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    データベースサイト一覧:\url{https://www.data.go.jp/list-of-database/}\\
+  \item
+    気象庁:\url{https://www.jma.go.jp/jma/menu/menureport.html}
+  \end{itemize}
+\item
+  U.S. Government's Open Data: \url{https://www.data.gov}
+\item
+  EU Open Data Portal: \url{http://data.europa.eu/euodp/en/home}
+\item
+  UK Open Data: \url{https://data.gov.uk}
+\item
+  World Bank: New Ways of Looking at Poverty
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Open Data: \url{https://data.worldbank.org}
+  \item
+    World Development Indicators: \url{http://datatopics.worldbank.org/world-development-indicators/}
+  \end{itemize}
+\item
+  UN Data: \url{http://data.un.org}
+\item
+  WHO Data: \url{https://www.who.int/gho/en/}
+\item
+  Google Public Data: 日本語での検索:7、言語を英語に変えると:136 \url{https://www.google.com/publicdata/directory}
+\item
+  Open Knowledge Foundation: \url{https://okfn.org}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Global Open Data Index: \url{https://index.okfn.org}
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{free-software-online-access-r}{%
+\paragraph{Free Software, Online Access R}\label{free-software-online-access-r}}
+
+\begin{itemize}
+\tightlist
+\item
+  R Project for Statistical Computing: \url{https://www.r-project.org}
+\item
+  R Studio: \url{https://www.rstudio.com}
+\item
+  R Studio Cloud: \url{https://rstudio.cloud}
+\end{itemize}
+
+\hypertarget{python}{%
+\paragraph{Python}\label{python}}
+
+\begin{itemize}
+\tightlist
+\item
+  Phython: \url{https://www.python.org}
+\item
+  Anaconda: \url{https://www.anaconda.com}
+\item
+  Jupyter Notebook Cloud: Binder, Kaggle Kernels, Google Collaborate, CoCalc, PaizaCloud, etc.
+\end{itemize}
+
+\hypertarget{free-software}{%
+\paragraph{Free Software}\label{free-software}}
+
+\begin{itemize}
+\tightlist
+\item
+  Free Software, Free Society: Selected Essays of Richard M. Stallman: \url{https://www.gnu.org/philosophy/} fsfs/rms-essays.pdf
+\item
+  Richard Stallman TEDxGeneva 2014: \url{https://youtu.be/Ag1AKIl_2GM}
+\end{itemize}
+
+\hypertarget{ux30a4ux30f3ux30bfux30fcux30cdux30c3ux30c8ux4e0aux3067ux306eux5b66ux7fd2}{%
+\paragraph{インターネット上での学習}\label{ux30a4ux30f3ux30bfux30fcux30cdux30c3ux30c8ux4e0aux3067ux306eux5b66ux7fd2}}
+
+\textbf{Online Learning Source}
+
+\textbf{List of Online Help and Mini Courses}
+
+\begin{itemize}
+\item
+  英語では、Online で学べるサイトが多い。基本コースは無料。以下は例
+
+  \begin{itemize}
+  \tightlist
+  \item
+    TutorialPoint: \url{https://www.tutorialspoint.com/}
+  \item
+    DataCamp: \url{https://www.datacamp.com/home}
+  \item
+    Code Academy: \url{https://www.codecademy.com}
+  \item
+    RStudio Premier: \url{https://rstudio.cloud/learn/primers}
+  \end{itemize}
+\item
+  質問とその答えの載ったサイト、User Community
+\end{itemize}
+
+\hypertarget{moocs}{%
+\paragraph{MOOCs}\label{moocs}}
+
+\textbf{大学などが提供している大規模公開オンライン講座}
+
+\begin{itemize}
+\tightlist
+\item
+  OED: MOOC n.~massive open online course, an educational course made available to a large number of people via the internet.
+\item
+  First MOOC: 2008 by Dave Cormier, Connectivism and Connective Knowledge (CCK08)
+\item
+  MIT OpenCourseWare 2002: 教育の質の向上(教育の提供ではない)OER Stanford U Model: 有名教授
+  の授業、UC Berkeley: 学習支援
+\item
+  MOOC 元年: 2012 年 Stanford U. と MIT が オンラインのコースを提供
+\end{itemize}
+
+\hypertarget{massive-open-online-courses-moocs-ux304bux3089ux5b66ux3076}{%
+\subsection{Massive Open Online Courses (MOOCs) から学ぶ}\label{massive-open-online-courses-moocs-ux304bux3089ux5b66ux3076}}
+
+\textbf{Moocs の活用と注意点}
+
+\hypertarget{moocs-ux306eux6d3bux7528ux3092ux52e7ux3081ux308bux7406ux7531}{%
+\subsubsection{MOOCs の活用を勧める理由**}\label{moocs-ux306eux6d3bux7528ux3092ux52e7ux3081ux308bux7406ux7531}}
+
+\textbf{英語の数学の教科書と似た利点}
+
+\begin{itemize}
+\tightlist
+\item
+  無償で、講義ビデオ、講義録、スクリプトがダウンロード可能な場合が多い
+\item
+  基本的な内容が適切に学習できるように、配置されている
+\item
+  いくつかのコースからなるプログラムも多くあり、修了証を提供
+\item
+  例・利用する データ(datasets)が優れている(個人で準備するのは困難) * プログラムを含む演習問題が内容を理解する助けになっている
+\end{itemize}
+
+\hypertarget{moocs-ux6d3bux7528ux6642ux306bux8003ux3048ux308bux3079ux304dux3053ux3068}{%
+\subsubsection{MOOCs 活用時に考えるべきこと}\label{moocs-ux6d3bux7528ux6642ux306bux8003ux3048ux308bux3079ux304dux3053ux3068}}
+
+\textbf{学修者に適したコースの推薦}
+
+\begin{itemize}
+\tightlist
+\item
+  無償でコンテンツにアクセスできるコースが多いが 修了証のため有償のプログラムを勧められる
+\item
+  演習問題によって、学びの確認ができるが、無償では、すべての演習問題ができない、または利用期間が限
+  られている場合が多い
+\item
+  ビデオ講義の内容も重要だが、演習問題の質が学びには重要、パスできないときの方策も必要
+\item
+  同じものが何回も利用されている。洗練もされるが、修了証の質を維持するためか、コースによっては、簡 単には答えられないようにした問題もある
+\end{itemize}
+
+\hypertarget{moocs-ux306e-ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux30b3ux30fcux30b9ux306eux4f8b}{%
+\subsubsection{Moocs の データ・サイエンス・コースの例}\label{moocs-ux306e-ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux30b3ux30fcux30b9ux306eux4f8b}}
+
+\hypertarget{coursera}{%
+\paragraph{Coursera}\label{coursera}}
+
+\textbf{Stanford U. が中心}
+
+\begin{itemize}
+\tightlist
+\item
+  Stanford U.: Machine Learning \url{https://www.coursera.org/learn/machine-learning}
+\item
+  人気の高いコース(登録:2,513,476)
+\item
+  Johns Hopkins U.: Data Science, 10 courses {[}初級, R{]} \url{https://www.coursera.org/specializations/jhu-data-science}
+\item
+  U. of Michigan: Applied Data Science, 5 courses {[}中級, python{]} \url{https://www.coursera.org/specializations/data-science-python}
+\item
+  100\% オンラインのデータ・サイエンスの修士号取得のコースもある。 U. of Illinois, U. of Michigan, U. of Colorado, など
+\end{itemize}
+
+\hypertarget{edx}{%
+\paragraph{edX}\label{edx}}
+
+\textbf{MIT と Harvard U. が中心}
+
+\begin{itemize}
+\tightlist
+\item
+  Harvard U.: Data Science, 9 courses {[}初級, R{]}
+\item
+  MIT: Statistics and Data Science, 5 courses {[}Graduate Level{]}
+\item
+  \url{https://www.edx.org/micromasters/mitx-statistics-and-data-science}
+\item
+  Microsoft, IBM, UC SanDiego などもコースをプログラムを提供
+\end{itemize}
+
+\hypertarget{professional-certificate-in-data-science}{%
+\subsubsection{Professional Certificate in Data Science}\label{professional-certificate-in-data-science}}
+
+\hypertarget{ux57faux672cux60c5ux5831-harvardx-through-edx}{%
+\paragraph{基本情報: HarvardX, through edX}\label{ux57faux672cux60c5ux5831-harvardx-through-edx}}
+
+\textbf{演習も無償で殆どすべて提供}
+
+\begin{itemize}
+\tightlist
+\item
+  URL: \url{https://online-learning.harvard.edu/series/professional-certificate-data-science}
+\item
+  Book: \url{https://rafalab.github.io/dsbook/} (R Markdown Document)
+\end{itemize}
+
+\hypertarget{r-ux3067ux5b66ux3073data-camp-ux3067-assessment}{%
+\paragraph{R で学び、Data Camp で Assessment}\label{r-ux3067ux5b66ux3073data-camp-ux3067-assessment}}
+
+\begin{verbatim}
+1. Data Science: R Basics; データ解析ソフト R の基本
+2. Data Science: Visualization; データの視覚化
+3. Data Science: Probability; 確率・大数の法則
+4. Data Science: Inference and Modeling; 推定と数学モデル
+5. Data Science: Productivity Tools; Unix, Git, GitHub, R Markdown 
+6. Data Science: Wrangling; データの整理
+7. Data Science: Linear Regression; 線形回帰
+8. Data Science: Machine Learning; 機械学習
+9. Data Science: Capstone まとめと次のステップへの架け橋
+\end{verbatim}
+
+\hypertarget{ux30b3ux30fcux30b9ux306eux524dux534aux3067ux4f7fux308fux308cux308bux30c7ux30fcux30bfux4f8b}{%
+\paragraph{コースの前半で使われるデータ例}\label{ux30b3ux30fcux30b9ux306eux524dux534aux3067ux4f7fux308fux308cux308bux30c7ux30fcux30bfux4f8b}}
+
+\textbf{Professional Certificate in Data Science}
+
+8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 2 weeks
+Required R Packages for Examples: tidyverse, dslabs: \url{https://cran.r-project.org/web/packages/} dslabs/dslabs.pdf
+
+\begin{itemize}
+\tightlist
+\item
+  男女の身長のデータ
+\item
+  アメリカにおける 2010 年の銃による殺人事件の FBI の報告書
+\item
+  Gapminder: Almost nobody knows the basic global facts! (Gapminder Test)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    TED 増え続ける世界人口(Hans Rosling) \url{https://www.gapminder.org}
+  \item
+    Health and income outcomes for 184 countries from 1960 to 2016
+  \item
+    Country, Year, Infant deaths per 1000, Life expectancy in years, Average of children per woman,
+    Country population, GDP, Continent, Geographical region
+  \end{itemize}
+\item
+  Brexit の国民投票の事前調査と実際のデータ
+\item
+  2016 年の大統領選挙の事前調査と結果のデータ
+\item
+  UC Berkeley の大学院入試における男女差
+\item
+  オランダにおける研究費獲得率に関する男女差
+\item
+  プロ野球の新人の打率予測
+\end{itemize}
+
+\hypertarget{jmooc}{%
+\paragraph{JMOOC}\label{jmooc}}
+
+\textbf{日本発の MOOC}
+
+\textbf{大学生のためのデータサイエンス(1)の内容}
+
+\begin{itemize}
+\tightlist
+\item
+  Week 1 現代社会におけるデータサイエンス
+
+  \begin{itemize}
+  \tightlist
+  \item
+    役割
+  \item
+    データの取得・管理、入手方法、分析 - 画像・音声処理技術
+    gacco: ドコモ提供
+  \end{itemize}
+\item
+  Week 2 データ分析の基礎
+
+  \begin{itemize}
+  \tightlist
+  \item
+    ヒストグラム・箱ひげ図・平均・分散・標準偏差・散布図・相関係数・回帰直線
+  \item
+    データ分析で注意すべき点:相関と因果、観察研究と実験研究、標本調査
+  \end{itemize}
+\item
+  Week 3 コンピュータを用いたデータ分析
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Excel, R, Python の紹介
+  \end{itemize}
+\item
+  Week 4 データサイエンスの応用事例
+
+  \begin{itemize}
+  \tightlist
+  \item
+    保険・金融
+  \item
+    マーケティング・リサーチ - 染色体上で遺伝子を探す
+  \item
+    品質管理
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{jmooc-https-www.-jmooc.-jp}{%
+\paragraph{JMOOC: https: // www. jmooc. jp}\label{jmooc-https-www.-jmooc.-jp}}
+
+\textbf{10 月 8 日開講}
+
+\begin{itemize}
+\tightlist
+\item
+  統計学 II: 推測統計の方法(竹村先生他)・社会人のためのデータサイエンス入門
+\end{itemize}
+
+\hypertarget{ux6559ux990aux3068ux3057ux3066ux306eux30c7ux30fcux30bfux30b5ux30a4ux30f3ux30a8ux30f3ux30b9ux306eux30b3ux30fcux30b9ux3092ux4f01ux753bux3059ux308bux306bux3042ux305fux3063ux3066}{%
+\subsection{「教養としてのデータ・サインエンス」のコースを企画するにあたって}\label{ux6559ux990aux3068ux3057ux3066ux306eux30c7ux30fcux30bfux30b5ux30a4ux30f3ux30a8ux30f3ux30b9ux306eux30b3ux30fcux30b9ux3092ux4f01ux753bux3059ux308bux306bux3042ux305fux3063ux3066}}
+
+\textbf{全学の学生のためのコースの企画について}
+
+\textbf{配慮すべきこと}
+
+\hypertarget{ux5b66ux7fd2ux76eeux6a19}{%
+\subsubsection{学習目標}\label{ux5b66ux7fd2ux76eeux6a19}}
+
+\begin{itemize}
+\tightlist
+\item
+  オープン・データについて理解し、課題を設定し、活用することを経験
+\item
+  データ分析ソフトに触れ、統計量について理解し、分析と可視化を経験する
+\item
+  データ分析のプロセスの全体像と流れを理解し、そのステップを経験する
+\item
+  データの分析結果の見え方の評価を受ける
+\item
+  何が見えて、なにが見えないか、どのようなものが必要かともに議論し改善していく経験をもつ
+\item
+  あることを知るためには、どのようなデータが必要か、取得したデータから読み取れるものはなにかを議論 する
+\end{itemize}
+
+\hypertarget{r-markdown-or-jupyter-notebook-for-python}{%
+\subsubsection{R Markdown Or jupyter notebook for python}\label{r-markdown-or-jupyter-notebook-for-python}}
+
+\begin{itemize}
+\tightlist
+\item
+  Reproducible Research: 再現性を確保でき、記録としても有用
+\item
+  Literate Programming: Code, Script の説明を順次書き加えることができる * html, doc, presentation, pdf (using TeX) フォーマットに出力できる
+\item
+  スクリプトの利用、演習の記録、課題の提出、プレゼンテーションにも有用
+\end{itemize}
+
+\hypertarget{ux5168ux5b66ux306eux5b66ux751fux306eux305fux3081ux306eux30b3ux30fcux30b9ux306eux4f01ux753bux306bux3064ux3044ux3066}{%
+\subsubsection{全学の学生のためのコースの企画について}\label{ux5168ux5b66ux306eux5b66ux751fux306eux305fux3081ux306eux30b3ux30fcux30b9ux306eux4f01ux753bux306bux3064ux3044ux3066}}
+
+\textbf{配慮すべきこと}
+
+\textbf{考慮すべきこと}
+
+\textbf{問い}
+
+\begin{itemize}
+\tightlist
+\item
+  自律的・主体的な学修者が、大学のコースとしてデータ・サイエンスを学ぶ価値は何か。必修要件を修了証 で代替できるか
+\item
+  学修者が助け合い、学び合い、智を、創造していくためには何が必要か
+\item
+  学修者に、どのような支援が、必要で、有効か
+\item
+  Empirical (理論ではなく、実験 {[}実証, 経験{]} に基づいた)面が大きいことを意識して、理論より例の提示 を重視し、背景にある数学を説明
+\item
+  社会科学系など異分野の教員と助け合い、協働でコースを運営 変化の時代に、多くの因子が関係する課題への数学の貢献を考えながら
+\end{itemize}
+
+\begin{quote}
+Quote: On Listening to Lectures, by Plutarch プルタルコス The correct analogy for the mind is not a vessel that needs filling, but wood that needs igniting - no more - and then it motivates one towards originality and instills the desire for truth. (https: //quoteinvestigator.com/2013/03/28/mind-fire/)
+\end{quote}
+
+\begin{quote}
+こころは、満たすべき器ではなく、着火すべき木のようなものなのだ。火がつけば、あとは自分で、どんどん、真理を吸収していくことだろう。(私訳)
+\end{quote}
+
+\hypertarget{ux304aux308fux308aux306b}{%
+\subsection{おわりに}\label{ux304aux308fux308aux306b}}
+
+\hypertarget{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux6559ux80b2ux3068ux5927ux5b66ux306eux672aux6765}{%
+\subsubsection{データ・サイエンス教育と大学の未来}\label{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux6559ux80b2ux3068ux5927ux5b66ux306eux672aux6765}}
+
+\begin{quote}
+Quote: Apple co-founders Steve Jobs and Steve Wozniak didn't have degrees when they launched what has become one of the most valuable companies in the world.
+And now Apple CEO Tim Cook is spreading the word that would-be programmers really don't need the endorsement of a university to be able to create something of commercial value, such as an app for the Apple App Store.
+\url{https://www.zdnet.com/article/apple-ceo-tim-cook-you-dont-need-a-degree-to-code-mobile-apps/}
+\end{quote}
+
+\hypertarget{ux3072ux3068ux3053ux3068}{%
+\subsubsection{ひとこと}\label{ux3072ux3068ux3053ux3068}}
+
+\begin{quote}
+データ・サイエンスや AI に関して、大学で教えるべきことは何なのでしょうか。 本日は「教養としてのデータサイエンス教育」というタイトルでお話しましたが、どのレベルであっても、真
+剣に考えるべき課題だと思います。大学以外で学べるのであるならば、大学の価値は、失われていくかもしれま
+せん。
+このことを考えながら、準備をしました。みなさんが、一般教育科目、数学の学生の教養として、学内全体の データ・サイエンス教育のことを検討するときに、なにかヒントになることが含まれていればと願っています。
+\end{quote}
+
+\hypertarget{math2020}{%
+\chapter{教養としてのデータサイエンス教育の目的と課題}\label{math2020}}
+
+\hypertarget{moocsux306eux6d3bux7528ux3092ux8996ux91ceux306bux5165ux308cux3066-1}{%
+\section*{～MOOCsの活用を視野に入れて～}\label{moocsux306eux6d3bux7528ux3092ux8996ux91ceux306bux5165ux308cux3066-1}}
+\addcontentsline{toc}{section}{～MOOCsの活用を視野に入れて～}
+
+\begin{quote}
+3 月 12 日 京都数理解析研究所での研究集会「教育数学の一側面 ‒ 高等教育における数学の多様性と 普遍性 ‒ (II)」での講演が covid-19 のため中止となったが、記録として概要を書き残す。本講は、午前中 に予定されたもので、午後の講演予定タイトルは「生涯学び続ける基盤を構築するデータサイエンス・コー スの開発」
+\end{quote}
+
+\hypertarget{ux306fux3058ux3081ux306b-1}{%
+\section{はじめに}\label{ux306fux3058ux3081ux306b-1}}
+
+首相官邸発の「 イノベーション政策強化推進のための有識者会議『AI戦略』」{[}1{]} では、 2019 年 6 月 11 付けの文書「AI 戦略 2019 ∼ 人・産業・地域・政府全てに AI」で「デジタ ル社会の基礎知識 (いわゆる『読み・書き・そろばん』的な素養) である『数理・データサ イエ ンス・AI』に関する知識・技能、新たな社会の在り方や製品・サービスをデザイン するために必要な基礎力など、持続可能な社会の創り手として必要な力を全ての国民が育 み、社会のあらゆる分野で人材が活躍することを目指し、以下の三項目を 2025 年にむけ て実現する目標として掲げている。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  文理を問わず、全ての大学・高専生 (約 50 万人卒/年) が、課程にて初級レベルの数 理・デー タサイエンス・AI を習得 {[}MOOC 放送大学の活用{]}
+\item
+  多くの社会人 (約 100 万人/年) が、基本的情報知識と、データサイエンス・AI 等の 実践的活用スキルを習得できる機会をあらゆる手段を用いて提供
+\item
+  大学生、社会人に対するリベラルアーツ教育の充実 (一面的なデータ解析の結果や AI を鵜呑みにしないための批判的思考力の養成も含む)
+\end{enumerate}
+
+現在の日本の就業労働人口が約 6 千万人、その 25\%の 1500 万人が「『数理・データサイエ ンス・AI』に関する知識・技能、新たな社会の在り方や製品・サービスをデザインするた めに必要な基礎力」を持つことを目標としている。産業界が中心に、社会人(100 万人/ 年)計画が推し進められるものと思われ、すでにいくつかのプログラムがスタートしている\footnote{5 月 20 日から 22 日に開催される、第 11 回 教育 IT ソリューション EXPO においては、教育プログラムが商品化され、宣伝されると思われる。大学によっては、このような企業と契約を結び、プログラムを提供してもらうところも現れると思われるが、産業界での動きや、基本技術については得られるかもしれないが、大学教育には、担うべき責任が他にあると考え本稿を書いている。}。
+大学・高専では「数理・データサイエンス強化方策」のもとで定められた拠点校 6 校と協力大学・コンソーシアムを中心に現在モデルカリキュラムの作成が行われ、さらに
+「国内大学等において実施されている AI 等教育プログラムの主な事例」{[}3{]} が集められている。2000 年の廣中レポート\footnote{22000.6 学生の立場に立った大学づくりを目指して(廣中レポート)}、GP プログラム選定から始まった、大学の教学改革を彷 彿とさせる勢いである\footnote{3 今回は首相官邸発である点も特徴的である。}。
+
+その一つの到着点が主体的学習などが中心に置かれた、2012 年の中央教育審議会答申\footnote{42012.8 新たな未来を築くための大学教育の質的転換に向けて ∼ 生涯学び続け、主体的に考える力を育
+  成する大学へ} と考えると、小中高で始まっている統計教育 {[}4{]} 、コンピュータ教育、英語教育、大学入学 試験改革や、STEAM 教育の重要性など、教育内容の改編が、大学・高専に到達したと言 えるかもしれない。上の 1, 3 が大学教育の中に組み込まれていくなかで、大学教育(以 後、この言葉で高専も含むものとする)における位置づけと、その内容について考える上 で、まずは「数理・データサイエンス・AI」という言葉で表現されているものの内容を確 認するとともに、その目的とわが国の大学教育における課題について考察したい。「デー タサイエンス・AI」という言葉に代表される専門領域に精通しているわけではないが、文 理を問わず、学生全員が必修として学ぶと言うことだけでも大きなインパクトを持つもの である。また大学に於いて教養教育は様々な形で語られてきてはいるものの「リベラル アーツ教育の充実」という文脈で「数理」とその応用をどう捕らえたらよいのか、この問 いは、大学での教育に関わって以来、常に考えてきたので、その点を中心に考察する。
+
+\hypertarget{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9}{%
+\section{データサイエンス}\label{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9}}
+
+本稿の表題には「データサイエンス」という用語を用いているが、首相官邸から発せられ た文書は「AI 戦略」となっており、文部科学省では「数理・データサイエンス」の名称 が使われてきたが、2019 年度から AI が加わり「数理・データサイエンス・AI」となって いる。初等中等教育では「統計」教育の充実が進められてきた経緯からも、数理、データ サイエンス、AI と 統計、これらの言葉をどう理解し、大学教育を整備していくかを整理 する必要があると思う。
+
+しかし、実際のところ、これらの言葉を明確に定義し、区別し、関係性を明確にする ことは困難である。AI (Artificial Intelligence(人工知能)は学問の専門領域を現す言葉 としてもとれるが「AI 戦略 2019 ∼ 人・産業・地域・政府全てに AI」で表現されている ものは、それとは方向性が異なるであろう。また最近のメディアで使われている「AI に よって、AI が組み込まれて」などの言葉は、学問的な問いとしてではなく、これらの言 葉を利用することで、ブラックボックス化して、中身については問わないものとしている ようである。AI の社会的影響が甚大であることを考えると、ブラックボックス化は、思 考停止を招いており、教育においては、それこそが問われなければいけないだろう。
+
+また、これだけ注目されてきている背景には、インターネットの発達と、経済活動の 国際化、また人口の増大とともに、国際的な人の移動が活発になり、人間の活動が、地球 規模での気候変動にも影響を与えるという人間社会の未曾有の変化に対応するために注 目されていることも見逃してはならない。これらからひきおこされる、感染症の世界的 蔓延、極度の貧困・貧富の差や、フェイクニュースやヘイトスピーチが生み出す世界の分 断・紛争、原因・責任が複雑で明確にできない経済危機にも、立ち向かって行かなければ ならない。さらに、この分野において、日本が遅れており、このままでは、世界から取り 残される可能性が高いという危機感もあるだろう。遅れているとすると、その原因は何な
+のか。この背景を理解しなければ、表面的な対応となり、本質的な改善は期待できないと 思われる。({[}11{]} 参照)
+
+データサイエンスの明確な定義は、確立していないが、短く表現すると「データを活用 して課題を発見・探求し、適切な解決策を探る科学 」で、意思決定のための科学(Decision Science)とも表現できる。また、エンピリカル(Empirical Study)と言われるように、理 論ではなく、実験(実証, 経験)に基づいた分野でもある。必然的にコンピュータを利用 し(課題に応じ)様々な分野のひとたちと協力することが不可欠な学際科学であるととも に、解決策を探るには数理モデルを適用し・機械学習で評価し・アルゴリズムを策定する 数理的思考、その共有、可視化などわかりやすい説明によるコミュニケーションが不可欠 である。この課題解決の全体のプロセスを「AI を使って課題を解決する」とも表現する。 活用可能な範囲は、意思決定のための科学という観点からは、ほとんどすべての分野とし か表現できないが、手書きの郵便番号の認識に始まり、音声認識、顔などの画像認識へと 進み、現在注目を集めているものとしては、Google, Amazon, Netflix などのリコメンダ・ システム(Recommendation System)、診断・投薬管理・治療方法といった、医療システ ムの開発、法律・財務、その他の相談業務、国や公共機関の政策決定、犯罪捜査、防犯シ ステム、災害予知、防災などが挙げられるだろう。
+
+効果とその影響についても、考える必要がある。有効性としては、課題解決のための、 阻害要因を精査して、目的を達成できる可能性、効率が高い選択肢を、見つけ出すことが 可能である。同時に、適用範囲が広く、社会的影響が大きく、社会的責任・倫理問題が増 大することもあり、一部はすでに社会問題化している\footnote{日本ではまだ散見される程度であるが、米国などでは、大統領選挙にも関わる様々な課題として似認識 され始めている。({[}7, 9{]} 参照)}。しかし、データに基づいた根拠 を求め、思考する訓練は、フェイクニュースやヘイトスピーチなどに惑わされず、個々の 課題に個人がどう向き合うかという、民主的な、多文化共生の社会基盤を生み出す可能 性を秘めていると同時に、多くの人たちが「AI に任せる」「AI が答えを出したのだから」 と、個人で考えなくなる可能性も秘め、教育により新たな分断を生み出す危険性もある。 また、データを根拠とすることは、数値化しやすい価値が強調され単純な功利主義的な判 断が優先され、公平・尊厳・人権・倫理・感情・共感・文化など、数値化が困難ではある が、ひとにとって本質的なことが置き去りにされないためには、どのような配慮、方策、 制度、法律などが必要かも、検討する必要がある。膨大な、データから判断すること自体 が、客観的で価値が高いように思われるが、おそらく人間には、理解しづらいことで、納 得感、安心感などが、失われる可能性も十分にあり、母集団をいくつかの因子からではな くトータルにみる視点を意識して育むことも必須である。({[}12{]} 参照)
+
+個人的には、特に大学教育においては「データサイエンス」を用語として中心的に使 うことが望ましいと考えている。深い数理的思考は、実際の探求過程において、必要不可 欠であるが、専門分野によって分断がおこりやすい高等教育機関においては、すべてのひ とが協力して課題を発見、特定し、ひとり一人への影響を考慮しながら解決を探る学際的 な分野であることを強調すべきである。統計学は、データサイエンスの理論的基盤を支え るものであるが、統計学では完結しない範囲に関わることから、実際の学びの中で、背景 にある統計の考え方を少しずつ学んで行くことが適切である。
+
+AI については、すでに述べたが、ブラックボックス化して、応用から得られる限られ た評価基準での効率・利得を強調しすぎることなく、脳の働きを含めた、思考するとは、 学ぶとはという基本的な、ひとの営み、また、そのある部分を実装する研究など、人工知 能の研究は、経済活動や単なる技術などとは、独立にも進んで行くべきものである。特定のことに特化して力を発揮する AI の開発から、現在は、複合的な問題を取り扱う AI へと 進んでおり、将来的には、Artificial General Intelligence (AGI) と呼ばれる、人間の脳の働きのような、一般的な問題を取り扱うことが少しずつ可能になっていくであろう。「AI が考えた」ことの背景を分解して説明し共有し、適切な選択肢を共に選び取っていこうと する人材を育てることこそが、AI を活用する人材を育む高等教育機関の責任ではないだ ろうか。人間とは何者で、これから世界はどのように変化して行くのだろうか。
+
+\hypertarget{ux5927ux5b66ux6559ux80b2ux306bux304aux3051ux308bux8ab2ux984c}{%
+\section{大学教育における課題}\label{ux5927ux5b66ux6559ux80b2ux306bux304aux3051ux308bux8ab2ux984c}}
+
+前節で課題の概要についてもふれたが、大学教育においては特に、どのような学生の育成 をめざすかを明確にしながら教育課程を構築すること、学際科学として最終的には大学全 体としての関わり方、数理分野の教員の教育への関わりかた、このためのコストとインフ ラ整備に関するビジョンを明確にすることについて以下に述べる。
+
+\hypertarget{ux3069ux306eux3088ux3046ux306aux5b66ux751fux3092ux80b2ux6210ux3059ux308bux304b}{%
+\subsection{どのような学生を育成するか}\label{ux3069ux306eux3088ux3046ux306aux5b66ux751fux3092ux80b2ux6210ux3059ux308bux304b}}
+
+まず、私論であるが、データサイエンス教育の目的を短い文章で表現すると以下のように
+なる。
+
+\begin{quote}
+現今の産業や経済活動を含む人間社会の国際的な変動が、ひとり一人の活動 と影響し合っていることを理解し、生涯学び続けながら、データに基づいて課 題を探求するひとを育成することを目的とする。
+\end{quote}
+
+変化の時代に生きていくためには、先人の英知を蓄積することに留まらず、それをどう活 用していくか、生涯学びつづける基盤を得ることを中心におくことが肝要である。常に 生成されている膨大なデータを、インターネットを介して入手することができ(IoT, Big Data)、コンピュータを使って、分析し、可視化して理解し、他者と共有し、適切な解決 方法を探索する道筋を理解し経験することで、課題と向き合う社会の責任ある構成員とな ることを支援することが教育機関の使命であると考える。
+
+データサイエンス自体が、理論ではなく、データに基づいて課題を探求する実証的な 新しい科学であることを理解し、関連する分野の広がりを認識しながら、他者とも協力し て、いくつかの課題に興味を持って、実際に取り組みながら、影響する範囲と具体的な課 題を議論し、さらに学んでいく手段をイメージできるようにすることが肝要である。
+
+公開データ(Public Data)の活用、分析・探索プロセスの大まかな理解とともに、機 械学習などで有効性が高いと評価された方策の課題を具体例も含め、学生自身が調べ、積 極的に議論する経験も必要である。
+
+英語の活用も有効である\footnote{20年ぐらいの内には、中国語の存在感も増大すると思われる。国際会議や、国際的な経済活動において、現在は英語が使われることが多いが、分野によっては、実際の議論は中国語でされることが広がっている。データサイエンスやコンピュータ科学、経済分野では、インドとともに、中国の存在は、顕在化している。}。高校までで十分な時間をかけて英語を学んでいながら、大学で殆ど活用されていないが、データサイエンス教育は適切な突破口になると思われる。英語を活用することで入手できるデータが莫大で広範囲となるとともに、無償で提供され ている分析ツール(R, Python など)を利用でき、そのユーザコミュニティでの共通言語は英語が中心、edX, Coursera, JMOOC などの MOOCs をはじめとして、インターネット上で、無償の学びの場も、英語では、膨大に存在することを実際に使ってみながら経験するこが可能である。世界の状況を垣間見れば、日本の状況がどのようなもので、英語を 活用すれば、学びの機会がどれほど広がるかを学生の間に経験して欲しい。国際連合や、 世界銀行などのデータの活用も、世界の一員として自覚を持って自己の生き方を見つめる よい機会となると思う。データは数字であることが多く、この分野の英語も難しくはな い。英語を活用して学ぶ良いステップである。
+
+また、経済格差が、教育格差となることを避けつつ、生涯を通して、学びたいとき、 必要なときに学ぶことができる基盤を構築することも配慮すべきであり、この意味でも、 データサイエンス教育において、無償のオンラインの学びを促進することは価値が高い。
+
+前節でデータサイエンスについて記述したことからも理解できるように、データサイ エンスには、様々な視点が必要である。いろいろなところで引用されている、`Skills and Self - ID Top Factors' {[}13{]} にもあるように、データサイエンスには、様々な技能や視点が 必要であり、それを一人で賄うことは、不可能であり、課題によってまた分野によって、 必要なスキルを、互いに補い合い、その過程で欠けている視点や、能力を認識する必要が ある。({[}8{]} 参照)すなわち、データサイエンスで必要な技能をひとりで充足させることは できず、GAFA などでは常識となっているが、様々な分野の人たちが協力するチームで の活動が重要でもある。その中で、理系・文系をとわず、どのような学びが鍵となるかを 学ぶ経験も重要な資産となる可能性が高い。
+
+\hypertarget{ux5168ux5b66ux304cux3069ux3046ux95a2ux308fux308bux304b}{%
+\subsection{全学がどう関わるか}\label{ux5168ux5b66ux304cux3069ux3046ux95a2ux308fux308bux304b}}
+
+特定の分野の学習が全学必修になるという、大学教育においては、近年には経験したこと がない状況と、大学全体として、まずは真摯に向き合うことが必要である。中心的な課題 とは離れるので、ここで書いておくが、大学院生も分野を問わず、履修または聴講できる ようにすること、TA も他のクラスを積極的に聴講できるようにし、関係する TA どうし て議論し、授業の改善を提案できるようにしておくことが重要である。実習を加えること が欠かせないとすると、だれでも担当できるわけではないが、極力広い専門分野の大学院 生が関わることができるように、することが望ましい。受講生にとっても望ましいと思わ れる。また、すでに受講している学部学生も、技術的なサポートなどとしては、アルバイ トとして関わることも検討することも良いと思われる。経験のある専任教員では担当を賄 い得ない背景で、全学としてきめ細かなサポート体制を構築することは成否を分ける課題 である。
+
+さて、2025 年、今から 5 年後、すべての大学および高専卒業生が「『数理・データサイ エ ンス・AI』に関する知識・技能、新たな社会の在り方や製品・サービスをデザインする ために必要な基礎力」を獲得して、卒業していったとしよう。大学教員はどうだろうか。 それぞれの学問分野においても、学生が学んだことを理解できない教員で溢れることは、 ないだろうか。もし、それが「持続可能な社会の創り手として必要な力」であるなら、当 然、大学教員、そしておそらく職員にとっても、必要な力であるはずである。すぐに、教 えることはできないだろうし、それには、膨大なエネルギーを必要とし、失うことも多い だろう。しかし、複数の教員が学生と共に学ぶことは、可能であるはずである。そして、 担当教員も少しずつ学ぶ姿は、学生にとっても、刺激となる。数学・コンピュータ・英語 が不得意で(またはそう思い込んでいて)、学ぶことを拒否してしまうことは、学生にも、 教員にも、職員にもあることだが、共に乗り越える経験とともに、それぞれの専門分野からの異なる視点や、経験からの阻害要因の指摘、バイアスの認識や指摘など、お互いに学 ぶことは多い。
+
+社会科学系、人文系であっても、統計を使う分野は多いが、多くの場合、その分野の 専門性の高いソフトを使うことが多い。そのまま紹介してもらうことも良いかもしれない が、R のような、パブリックドメインの Free なソフトでも、基本的な部分はできること を経験してらもうように、技術スタッフまたは、サポートの大学院生などが、変換の手伝 いをすることは、有効である。研究者は、自分の研究に適したソフトを選択するが、学生 は、有償のソフトは、各大学・研究室でサポートしていたとしても、卒業後は、使えない からである。また、研究者も、より広い分野とのつながりをえることができる可能性もあ る。学際的な学びのメリットでもある。
+
+すぐに、すべての教員がデータサイエンス教育に関わることは、様々な理由から困難 であろうが、上に述べた理由からも、基本的に、専任教員全員が何年か(たとえば最低三 回)は担当するなどを決めることで、全学的な取り組みとすることが可能になる。シラバ スと、コーディネータ、さらに、途中でも、相談に乗れる、チームを別途用意することも、 不可欠であろう。
+
+「数理・データサイエンス・AI」教育の推進が、文系と理系のさらなる分断が起こら ないように、特別に配慮する必要がある。それを、軽減して、お互いに、Respect をもっ て、教育にあたることのできる、すばらしい機会だと思う。
+
+\hypertarget{ux6570ux7406ux5206ux91ceux306eux6559ux54e1ux306eux95a2ux308fux308aux65b9ux306bux95a2ux3059ux308bux8ab2ux984c}{%
+\subsection{数理分野の教員の関わり方に関する課題}\label{ux6570ux7406ux5206ux91ceux306eux6559ux54e1ux306eux95a2ux308fux308aux65b9ux306bux95a2ux3059ux308bux8ab2ux984c}}
+
+数理分野をどう特定するか困難であるが、データサイエンスに関わることを考えると、本 来は、統計学が重要であるが、日本では、まだ独立した分野と見なされていない面もある ので、ここでは、数学(統計分野を含む)、情報を中心に理系分野を想定するものとする。 個人的に、現在は、定年退職して、関わっていないが、大学での数学教員を長くしてきた こともあり、数学を中心に考えてしまうことは、お許し願う。
+
+最初に注意すべき事は、して、そして、担当教員も少しずつ学ぶことをこころがける 全学生が、数学・コンピュータ・英語が不得意で(またはそう思い込んでいて)、学ぶこ とを拒否してしまうひとに配慮
+
+\hypertarget{ux30b3ux30b9ux30c8ux3068ux30a4ux30f3ux30d5ux30e9ux6574ux5099}{%
+\subsection{コストとインフラ整備}\label{ux30b3ux30b9ux30c8ux3068ux30a4ux30f3ux30d5ux30e9ux6574ux5099}}
+
+以下の提案をする。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Broad Band の Internet Access を公共インフラとして、無償または低価格で提供。 経済的格差が教育格差、経済的格差の固定化とならないように、学習機会の公平化 をめざし、Broad Band での Internet Access が、提供されることを要望する。
+\item
+  RStudio (for R), Jupyter (for python) などの基本的なサーバーを、どこからでも、 だれでも利用できるように、日本語環境も整備しながら、提供する。Data Science をはじめとした、学習・教育を支援するための Interactive な学習ツール開発などに は、サーバーが必要であり、Security などの面から、信頼できる機関が、管理運営 することが必要である。
+\item
+  分野の異なる、特に、文系の教員と理系の教員、社会科学系の複数の教員が、共同 で学びながら、教える、Team and Collaborative Teaching を推進するため、このよ うな枠組みについては、特別の補助を、文部科学省の予算枠内ではなく、官邸の特 別補助枠を用いて、行うことを要望する。学際科学の推進のためには、教員の教育 学習が必須であり、共働で学び、考え、教える、経験のための、経済的支援が必要 である。パイを拡大しないと不可能である。
+\item
+  大学が、一般のひとの学びを支援するため、MOOCs や、OCW その他、質の高い、 教育・学習コンテンツを無償で、提供できるように、支援する。初期においては、 その質の向上も目指して、大学・高専の職員も、受講できる枠組みを作るべきであ る。Interactive な教材で学ぶなど、また、考える機会を重視するなど、日本のその 方向での学習環境提供の質は、高くない。海外からも、一般の教員などが、学べる 環境を、提供し、科学研究費受給者であっても、教育の質の改善のための、研究補 助金を受けることができるようにする。
+\item
+  政府・行政機関や、公共性の高い企業が、積極的にデータを使いやすい形式で公開 し、データ分析に依拠した情報を、可視化してわかりやすく伝えるモデルを意識し た情報公開をし、メディアにも、Fact Base, Evidence Base というに留まらず、デー タに依拠し、適切な可視化をともなった情報伝達を促し、奨励することを要望する。 特に、AI の活用においても、極力、Black Box 化をさけ、どのようなデータを用 いているかなどを伝える努力をうながす。Fake News、Hate Speach、風評被害など を、極力抑えるために、有効な、事実とデータに基づいた情報提供を適切に行う。 政府公共団体の首長、職員や、政治家の勉強会提供も、必要であろう。このことは、 Data Sciece を学んだ学生たちの就職の道が広がr区事にもつながり、大学などで の学習意欲の向上にも資する。
+\end{enumerate}
+
+Learning Goals
+
+\begin{itemize}
+\tightlist
+\item
+  A. Data Science: What? and Why?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Data Science とは? 統計・ AI ? Data Scientists?
+  \item
+    Data Science が注目される背景? - 変化
+  \end{itemize}
+\item
+  B. Business の世界に おける Data Science
+\item
+  C. Data Science と社会:Data から見る世界、Data をもとにした 思考
+\item
+  D. Data Analysis 入門
+\end{itemize}
+
+\hypertarget{ux304aux308fux308aux306b-references}{%
+\section{おわりに References}\label{ux304aux308fux308aux306b-references}}
+
+{[}1{]} イノベーション政策強化推進のための有識者会議「AI戦略」(AI戦略実行会議) \url{https://www.kantei.go.jp/jp/singi/ai_senryaku/index.html}
+
+{[}2{]} 「AI 戦略 2019 ∼ 人・産業・地域・政府全てに AI」2019 年 6 月 11 日 \url{https://www}. kantei.go.jp/jp/singi/tougou-innovation/pdf/aisenryaku2019.pdf
+
+{[}3{]} 国内大学等において実施されている AI 等教育プログラムの主な事例 https: //www.kantei.go.jp/jp/singi/ai\_senryaku/suuri\_datascience\_ai/dai1/ sankou3.pdf
+
+{[}4{]} 「統計について学ぼう」厚生労働省サイト \url{https://www.mhlw.go.jp/toukei/} learning/index.html
+
+{[}5{]} 文部科学省
+
+{[}6{]} 鈴木寛「教養としてのデータ・サイエンス教育 \textasciitilde{} Moocs の活用を視野に入れて」日本数学会教育委員会シンポジウム(於:金沢大学)
+
+{[}7{]} AUTOMATE THIS: how algorithm came to rule our world by Christopher Steiner、 邦訳「アルゴリズムが世界を支配する」
+
+{[}8{]} Doing Data Science by Rachel Schutt and Cathy O'Neil、邦訳「データサイエンス 講義」
+
+{[}9{]} Weapon's of Math Destruction by Cathy O'Neil、邦訳「あなたを支配し、社会を破壊する、AI・ビッグデータの罠」
+
+{[}10{]} edX Professional Certificate in Data Science: \url{https://online-} learning.harvard.edu/series/professional-certificate-data-science edX Data Science Ethics: \url{https://www.edx.org/course/data-science-ethics}
+
+{[}11{]} Factfulness by Hans Rosling, et. al.~邦訳「ファクトフルネス」
+
+{[}12{]} How I learned to understand the world by Hans Rosling with Fanny Haergestam、邦訳「私はこうして世界を理解できるようになった」
+
+{[}13{]} Analyzing the Analyzers (O'Reilly) by Harlan Harris, Sean Murphy, and Marck Vais- man
+
+\hypertarget{susemi202006}{%
+\chapter{データサイエンスを学びませんか}\label{susemi202006}}
+
+鈴木寛\footnote{2019 年 3 月 31 日まで国際基督教大学教養学部教授(数学)College of Liberal Arts, International Christian University、 2019 年 4 月 1 日より国際基督教大学名誉教授}
+
+2020年3月（「数学セミナー」2020年6月号に掲載）
+
+\hypertarget{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9-ai}{%
+\section{データサイエンス? AI?}\label{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9-ai}}
+
+データサイエンス(Data Science)ということばを聞いたことがありますか。このことばが頻繁に使われる ようになって、まだ 10 年ほどしかたっていません。データサイエンスの定義も定まっていませんが、簡単に 表現すると「データを解析して課題を探求し、コミュニケーションを図りながら適切な解決方法を発見する科 学」、また「AI(Artificial Intelligence 人工知能)の応用を支える科学」、「コンピュータ技術とともに、統計、 数理モデル、アルゴリズムといった数学的考え方に支えられた、意思決定の科学(Decision Making Science)」 です。この広がりが、統計学という範囲を飛び越えているのでしょう。
+
+少し古い例から始めると、手書きの郵便番号の自動読み取りで困難な「2」と「7」の識別も、コンピュータ の発達によって膨大な教師データ(Training Data,「2」か「7」かの判定が付加され正誤が判定できるデータ) を使うことが可能になり、この課題に適した数理モデルの開発・適用も進み、統計的評価によって「2」か「7」 か判断(決定)するアルゴリズム(手続き)の精度が格段に増しました。これは画像認識の一つですが、ご存 じのように、今は、顔識別もほとんど間違わないようになってきたと言われています。音声認識も、翻訳もか なり進んでいます。現在、注目を集めているものとしては、Google, Amazon から殆どすべての宣伝に取り入 れられている、リコメンダ・システム(Recommendation System)があります。皆さんも「あなたへのおす すめ」という形で、日常的に経験しているのではないでしょうか。診断・投薬管理・治療方法といった、医療 システムの開発、法律・財務、その他の相談業務、犯罪捜査、防犯システム、災害予知、防災などの分野にも 応用が始まり、国や公共機関の政策決定にも不可欠になっています。世界の資源や、貧困、食糧、環境、経済、 そして、感染症の予防や拡大防止といった問題においても、さまざまなデータを分析して、結果をわかりやす く表現することで共有し、どのような方策・施策が適切であるかを検討し、決定に生かされることが望まれる と共に、可能になっています ({[}1, 2{]})。
+
+データサイエンスをみなさんに学んでいただきたい、三つの理由を書きます。
+まず第一に AI や意思決定の背後にある科学を学ぶことが重要だからです。最近は、Buzz Word として「AI」 が頻繁に使われますが、人間とは独立なコンピュータ(機械)が考えたような表現をせず、背景にある課題と 考え方を理解するために、データサイエンスを学ぶ必要があります。考えることを科学する人工知能研究は、 さらに重要度を増していくでしょうが、AI に仕事を奪われるとか、AI がこれが一番よいと言っているのだか ら仕方がない、というような、思考停止に陥らないためにも、背後にある科学を学んでいただきたい。
+
+二番目は、世界の変化に適切に対応するためです。一方で、インターネットの発達によって、つねに生成さ れている情報のデータを膨大に集め、それをコンピュータで扱い、解析し、新しい価値を発見することが 可 能になっています (Exporatory Data Analysis) 。他方で、皆さんの食卓に上るものも、身の回りのものも世
+界中から集めてきているものですし、旅行や労働者だけでなく、人の移動が活発化し、多様な背景、考え方を 持った人との合意・共働のために、コミュニケーションがたいせつになっています。データをわかりやすく示 して、理解を共有し、課題と共に向き合うことが必要不可欠になっています (Data Visualization)。
+
+三番目は、データや AI を適切に活用するためには、多くの人の理解と協力が必要だからです。AI は有用で あるとともに、社会への影響がとても大きいので、さまざまな問題をひきおこし始めており、その背景を理解 し、協力して向き合っていくひとが、あらゆる分野に必要だからです ({[}1{]},{[}4{]}\footnote{ 原題は ``Weapons of Math Destruction'' 数学破壊兵器. 大量破壊兵器 (Weapons of Mass Destruction) にかけています。)})。データを根拠とすることは、 数値化しやすい価値が強調され、単純な功利主義的な判断が優先される危険があり、公平・尊厳・人権・倫理・ 感情・共感・文化など、数値化が困難ではあるが、ひとにとって本質的なことを置き去りにしないため、どの ような配慮、方策、制度、法律などが必要かを、検討する必要があります ({[}8{]})。膨大な、データから判断する こと自体が、客観的で価値が高いように思われますが、おそらく人間には、理解しづらいことで、納得感、安 心感などが、失われる可能性もあり、母集団をいくつかの因子からではなくトータルにみる視点を意識して育 むことが必須です。
+
+\hypertarget{ux30d1ux30d6ux30eaux30c3ux30afux30c7ux30fcux30bf}{%
+\section{パブリック・データ}\label{ux30d1ux30d6ux30eaux30c3ux30afux30c7ux30fcux30bf}}
+
+皆さんは、ハンス・ロスリング等が書いた「ファクトフルネス -- 10 の思い込みを乗り越え、データを基 に世界を正しく見る習慣」{[}5{]} という本を読んだことがありますか? お勧めです。まだの方は、Gapminder のサイト(\url{https://www.gapminder.org)の一番上にある} 13 問からなる 10 分ほどのテストに挑戦してみ ませんか。日本語でも受けることができます。ひとは、さまざまな、先入観 (bias) にとらわれていると、ロ スリングは言っています。ロスリングの TED などでのビデオ講義もお勧めです。一つだけリンクを付けて おきます ({[}9{]})。Gapminder のサイトを見ると、バブル・チャートと呼ばれるグラフが登場し、世界の状況 を、わかりやすく見ることができます。このようにして、世界の困難な課題に取り組むことが可能になって いくのです。ロスリングはスウェーデン生まれの公衆衛生の専門家で、大学で統計学と医学を学び、モザン ビークで地域医療に従事し、リベリアなどでエボラ出血熱とも戦い、公衆衛生を学生に教えてきた人です。 2017 年になくなりましたが、ロスリングの著書には、Google と協力し公開したものが、Google Public Data (\url{https://www.google.com/publicdata/directory?hl=en_US6\%5B原語を英語に設定すると膨大なリストが現れ、上に} Gapminder のバブルチャートが現れると思います。{]}) だとあります ({[}6{]})。
+
+世界中の公的機関がパブリック・データを公開しており、誰でも、データを見ることができ、また、データ を取得して、分析し、考えることもできるようになってきています。日本の政府統計(パブリック・データ) は、e-Stat (\url{https://www.e-stat.go.jp}) にあります\footnote{国際連合は、各専門機関 (specialized agencies) ごとにデータをまとめています。World Bank \url{https://data.worldbank.org} など検索してみてください。}。
+
+\hypertarget{ux3069ux306eux3088ux3046ux306bux3057ux3066ux5b66ux3073ux307eux3059ux304b}{%
+\section{どのようにして学びますか?}\label{ux3069ux306eux3088ux3046ux306bux3057ux3066ux5b66ux3073ux307eux3059ux304b}}
+
+データサイエンスの学びの鍵は、データに興味を持つことだと思います。AI はどのようなデータを用いて いるのだろうか考えたり、ニュースなどで数値データやグラフに出会ったら、どのようにして得られたデータ なのか、データやグラフから読み取れることはなにか、グラフはわかりやすく表示されているか、同じような データからどのような関連する情報が得られるかを考えてみてください。公開されている元データを探して見 てみるとよいでしょう。最近は、データの公開が進んでいるだけでなく、ダッシュボード\footnote{Gapminder の Tools にあるバブルチャートもその一つです。日本の政府統計のダッシュボード: \url{https://dashboard.e-stat}.
+  go.jp}といって、データ の項目を操作してグラフ表示の仕方を選ぶことができるものも増えています。興味を持った項目について、グラフを作成してデータを分析してみたいとなるとよいですね。
+
+データサイエンスは、誰でも、インターネットネット上で、殆ど無償で学ぶことができます\footnote{日本でも大学・高専では、文系・理系を問わず「数理・データサイエンス・AI」の初歩を学んで卒業するようにカリキュラムを変 更する計画が進んでいます。} 。そのほんの
+一部を紹介します。キーワードは、Free--Open--Online\footnote{基本的に、無償で、公開されているものを活用し、インターネット上で学ぶことです。} です。データサイエンスは、理論を学ぶより、実証 的 (Empirical) な学びですので、実際にデータに触れることがたいせつです。
+
+データの分析には、Excel など、市販の表計算ソフトを利用することも可能ですが、R や、python という 無償のフリーソフト\footnote{フリーにはいろいろな意味があります。Free Software Foundation \url{https://www.fsf.org/about/}}が一般的になっています。鍵は、操作の再現可能性(Reproducible)とプログラムを理 解できるように記述すること (Literate Programming) です。チーム内や、世界の人々と共有・協力するため には、常に、再現と利用が可能な形式で結果を提供することが重要だからです。プログラミング経験者は、最 初から、python で学ぶことも可能ですが、まずは、統計分析のために開発された R がお勧めです。
+
+R は、インターネット上からダウンロードして、自分のコンピュータにインストールして使うことができま すし、使いやすくするための、RStudio IDE\footnote{Integrated Development Environment /統合開発環境} も同様に、無償で提供されています。しかし、まず、インス トールしないで使える RStudio.cloud の紹介をします。インターネットにつながっていればどこでも同じ環境 で使えますので、大学や高等学校だけでなく、自宅や公立の図書館などからでもインターネットに接続できれ ば利用が可能です。
+
+まず、RStudio.cloud のアカウントを取得します。\url{http://RStudio.cloud} にアクセスし、右上の Sign Up を選択し、メール・アドレスを入力し、パスワードを決めます。Google などのアカウントと連携することも 可能です。Project を一つ作りましょう。New Project をクリックして、名前を決めてください。少し待つと、 RStudio 画面に変わります。ここまでで、第一ステップ完了です。
+
+次に、上の メニューの Tools から、Install Packages \ldots{} を選び、swirl と入れてください。それから、Console と書いてあるところに、library(swirl) といれ、Enter(または改行)。さらに、swirl() として、Enter です。指 示に従うと、R の基本を学ぶことができます。英語であることに、抵抗がある方もいると思いますが、それほ ど難しくはありません。また、\url{https://foods4all.github.io} に日本語の説明がありますから、是非、挑戦 してください。一般の人が学ぶデータサイエンスは、日本では始まったばかりですが、英語ではすばらしいサ イトがたくさんあります。英語での学びを始めることで、あなたの世界が広がりますよ。
+
+次に、RStudio.cloud の左上の三本線を選択すると、Learn として、学びのメニューがあります。Cheat Sheets(早見表)もあり、とても便利です。Learn の下にある、Primer(入門書)を選択して The Basic(基 本)を学んでみてください。雰囲気がわかります。RStudio.cloud を終了するときは、右上の名前のところに ある、Log Out を選択します。
+
+これで基本は終了です。もっと学びたい人のために、本を 2 冊紹介します。1 冊目は「R ではじめるデータ サイエンス」({[}3{]}) です。この本の原著は、インターネット上に無償で公開されています。tidyverse という論 理的に構成された パッケージ集を活用した R によるデータサイエンスの全体像がわかります。英語であって も、インターネット上のものが便利に感じてくると思います。データサイエンスの英語はあまり難しくありま せんし、プログラムを、コピー・ペーストして使うことも可能です。2 冊目は「データサイエンス講義」({[}2{]}) です。社会においてデータサイエンスがどのように使われているかについて書かれています。
+
+コースとしてしっかり学びたい人には、MOOCs (Massive Open Online Courses) がお勧めです。日本語 の JMOOC(\url{https://www.jmooc.jp)にもデータサイエンスのコースがいくつか出ています。わたしのお} 勧めは、HarvardX Data Science {[}7{]} です。9 コースのシリーズで一通り学ぶことができます。最初の 2 コース\footnote{Data Science: R Basics, Visualization} を学べば、入門終了です。このコースに、正式に登録して修了証を取得するのは有償ですが、無償での聴 講(Audit)でも、実際に、R のプログラミングの演習ができ、教科書も、ビデオも何度でも見ることが可能で す。ビデオ講義の原稿 (Script) も画面の右に流れますし、これも含めすべてダウンロード可能です。わからな くなったら、止めて単語を調べたり、Google などで翻訳をみることもできます。MOOCs の他のコースの聴 講は、いろいろと制限が付くものもありますが、皆さんにあったものを見つけることができるとよいですね。
+
+\url{https://foods4all.github.io} に、少し詳しく紹介してありますので、参考にして下さい。わたしも Free-Open-Online のものを活用し勉強をはじめて一年になったところです。一緒に学びませんか。
+
+\hypertarget{ux304aux308fux308aux306b-1}{%
+\section{おわりに}\label{ux304aux308fux308aux306b-1}}
+
+データサイエンスは、数学にはない要素をいくつも含んでいますが、数学に興味をもち、勉強をしているひ とにとっては抵抗なく学ぶことができると思います。必要に応じて少しずつ学んでいけばよいので、まず、数 学や統計をあるレベルまで学ばないと、データサイエンスを学べないことはありません。データサイエンスの 世界に飛び込んでみませんか。
+
+専門的に学んでいくと、統計学や、様々な数学が必要になっていきますが、大学一年生で学ぶ、線形代数と 微分積分の初歩を知っていれば、しばらくは十分です\footnote{はじめは、高校 2 年生の数学で十分だと思います。}。自分でデータから考えてみようという意欲がたいせ つです。ニュースでグラフなどを見たら、その元のデータを探して、いろいろグラフを作ってみると勉強にな りますよ。データの見方(データからわかる事実)はたくさんあり、報道されているのは、そのほんの一部分ですから。
+
+わたしは、他者と協力し、データを活用して課題と向き合う社会の責任ある構成員となることが、データサ イエンスを学ぶまず第一の目的であると思います。
+
+あなたも、データサイエンスを学びませんか。
+
+\hypertarget{ux53c2ux8003ux6587ux732e}{%
+\section*{参考文献}\label{ux53c2ux8003ux6587ux732e}}
+\addcontentsline{toc}{section}{参考文献}
+
+{[}1{]}「アルゴリズムが世界を支配する」Christopher Steiner 著、永峯涼訳、角川 書店、2013.
+
+{[}2{]}「データサイエンス講義」Rachel Schutt, Cathy O'Neil 著、瀬戸山雅人他訳、オライリー・ジャパン、2014.
+
+{[}3{]}「R ではじめるデータサイエンス」Hadley Wickham 他著、大橋真也他訳 、オライリージャパン、2017. 原
+著 ''R for Data Science'' (\url{https://r4ds.had.co.nz}) および Jeffrey B. Arnold による 練習問題の解答
+(\url{https://jrnold.github.io/r4ds-exercise-solutions/}) はオンラインで公開されています。
+
+{[}4{]}「あなたを支配し、社会を破壊する、AI・ビッグデータの罠」Cathy O'Neil 著、久保尚子訳、インターシ
+フト、2018 年.
+
+{[}5{]}「Factfulness(ファクトフルネス)-- 10 の思い込みを乗り越え、データを基に世界を正しく見る習慣」Hans
+Rosling 他著、上杉周作・関美和訳、日経 BP、2019.
+
+{[}6{]}「私はこうして世界を理解できるようになった」Hans Rosling 他著、枇谷玲子訳、青土社、2019.
+
+{[}7{]} データサイエンスのオンライン・コース:edX Professional Certificate in Data Science:
+\url{https://online-learning.harvard.edu/series/professional-certificate-data-science}
+
+{[}8{]} データサイエンス倫理のオンライン・コース:edX Data Science Ethics: \url{https://www.edx.org/course/data-science-ethics}
+
+{[}9{]} Hans Rosling による TED Talk(日本語字幕付き): \url{https://www.ted.com/talks/hans_rosling_} the\_best\_stats\_you\_ve\_ever\_seen?language=ja
+
+\hypertarget{da4r}{%
+\chapter{Data Analysis for Researchers}\label{da4r}}
+
+\hypertarget{ux30b3ux30fcux30b9ux306bux3064ux3044ux3066}{%
+\section{コースについて}\label{ux30b3ux30fcux30b9ux306bux3064ux3044ux3066}}
+
+国際基督教大学（International Christian University）の大学院共通科目（QALL401）のコースで、開講言語は英語。コースの日本語名は、「研究者のためのデータ分析」。
+
+何回か、ほんの一部を担当していたが、2020年度からは、中心となって、担当している。また、近年は、冬学期に開講している。
+
+\hypertarget{ux30b3ux30fcux30b9ux30b3ux30f3ux30c6ux30f3ux30c4}{%
+\section{コース・コンテンツ}\label{ux30b3ux30fcux30b9ux30b3ux30f3ux30c6ux30f3ux30c4}}
+
+2021年度担当時の、スライドや、資料をまとめたものを、Bookdown 形式でまとめたものを作成、2022年度は、少し構成を変えた。2021年度のものも一部利用しているが、新しい形式の Bookdown で電子書籍を作成した。
+いずれも、このページの下にリンクがある。
+
+\texttt{bookdown} は、\texttt{R\ Markdown} をベースにした、電子書籍のRのパッケージ名で、現在は、多数の電子書籍が出版されている。
+
+教科書とか、講義録というには、まだ、程遠いが、2022年度の授業は、終了したばかりであるが、2023年度も担当することになっており、現在は、非常勤講師として、このコースのみを担当しているので、極力、12月に開講するまでに、資料としても使えるような内容に、整えていきたいと考えている。
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://icu-hsuzuki.github.io/da4r2021/}{Data Analysis for Researchers 2021}
+\item
+  \href{https://icu-hsuzuki.github.io/da4r2022/}{Data Analysis for Researchers 2022}
+\end{itemize}
+
+\hypertarget{intro2r}{%
+\chapter{Introduction to R}\label{intro2r}}
+
+\hypertarget{ux7279ux5225ux8b1bux7fa970ux5206x2}{%
+\section{特別講義（70分x2）}\label{ux7279ux5225ux8b1bux7fa970ux5206x2}}
+
+Data Analysis for Researchers \ref{da4r} を一緒に担当している、経済学の先生に、依頼されて、2022年11月2日に行った、特別講義である。学生は、経済学のコースを履修している大学院生。講義は英語。日本人大学院生もいるが、大半は、外国人である。背景はまちまちで、R や、他の、分析ソフトを使った経験のある人もいるが、ほとんどは、R の初心者。大学院生のうちの数人は、冬学期（12月開講）に、Data Analysis for Researchers を履修していた。
+
+みな、自分の、コンピュータを持ってきて、実習をしながらと考えて、組み立てたが、あまりに、背景の差があり、ほどんどは、デモンストレーションに終始した。
+
+英語では、このような、入門コースの資料がたくさんあるので、少しだけ、参考資料として、提供した。
+
+Data Analysis for Researchers の講義録のようなものに、今回の講義録に詳しく説明を加えたものを、Introduction として、加えるようにしていくとよいと考えている。
+
+\hypertarget{ux8b1bux7fa9ux8cc7ux6599}{%
+\section{講義資料}\label{ux8b1bux7fa9ux8cc7ux6599}}
+
+RMarkdown の一形式である、RNotebook で作成した、講義資料である。
+リンク先のファイルは、右上に、{[}Code{]} ボタンがあり、そこから、内容を記述した、ソースファイルである、RMarkdown 形式のファイルをダウンロードすることができる。したがって、そのファイルを、RStudio などに取り込めば、実際のコードを、実行して、結果を表示することができる。自分で、コード・チャンクを付け加えて、実行することもできるので、練習も可能である。
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://ds-sl.github.io/intro2r/intro2r.nb.html}{RNotebook リンク}
+\end{itemize}
+
+\hypertarget{eco232}{%
+\chapter{中級マクロ経済学特別講義}\label{eco232}}
+
+\hypertarget{ux7279ux5225ux8b1bux7fa9ux306bux3064ux3044ux3066}{%
+\section{特別講義について}\label{ux7279ux5225ux8b1bux7fa9ux306bux3064ux3044ux3066}}
+
+Data Analysis for Researchers \ref{da4r} を一緒に担当している、経済学の先生に、依頼されて、2023年2月20日、22日、24日に、一時限（70分）ずつ行った、特別講義である。
+
+学生は、マクロ経済学原論（初級マクロ経済学）を履修ししており、また、多くが、計量経済学で、R を、使った経験を持っている。ただし、計量経済学は、Web 上での、\href{https://research.google.com/colaboratory/faq.html}{Google Colab} で、R を利用したとのことである。Windows 上で、R を R Studio で使うときに、発生する問題をさけるため、Google Colab を利用しているとのことである。
+
+Public Data 公開されている実際のデータを使った経験がほとんどないとのことなので、自分で、みてみたい、World Development Indicator を探して、Template に入れて、みてみることを課題とし、講義も、それを中心に据えて、進めた。
+
+はじめての日本語での、データサイエンスの講義で、Windows 上で、R を R Studio を使う場合も、いくつかの問題も把握することとなった。ほとんどの、学生は、問題なく、使えたが。解決しない場合を考えて、Posit Cloud（旧 RStudio Cloud）の説明もした。20人ほどの受講生で、自分の PC では使えず、Posit Cloud を使った学生は一人。
+
+\hypertarget{ux8b1bux7fa9ux8cc7ux6599-1}{%
+\section{講義資料}\label{ux8b1bux7fa9ux8cc7ux6599-1}}
+
+\begin{itemize}
+\item
+  R Studio で R をはじめてみよう \href{https://ds-sl.github.io/intro2r/getstarted.html}{Slide + Vido}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    R Markdown についての説明とビデオも付属
+  \end{itemize}
+\item
+  R ではじめるデータ・サイエンス \href{https://ds-sl.github.io/intro2r/eco232.nb.html}{RNotebook リンク}
+\item
+  課題について \href{https://ds-sl.github.io/intro2r/resp_assignment.nb.html}{RNotebook リンク}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    経済学の学生だけあって、非常に、多くの、WDI コードを選択している。
+  \item
+    近日中に、応答や、質問への回答もしたいと考えている。
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{ds4aj}{%
+\chapter{データサイエンスをはじめましょう}\label{ds4aj}}
+
+\hypertarget{data-science-for-all}{%
+\section*{Data Science for All}\label{data-science-for-all}}
+\addcontentsline{toc}{section}{Data Science for All}
+
+日本語での入門的な教科書を書き始めました。まだ、ほとんど、内容はありませんが、「中級マクロ経済学特別講義」\ref{eco232} で、 日本語での特別講義も経験したので、その内容を土台として、Data Analysis for Researchers \ref{da4r} の翻訳なども含めていきたいと願っている。
+
+\hypertarget{ux30eaux30f3ux30af}{%
+\section{リンク}\label{ux30eaux30f3ux30af}}
+
+\begin{itemize}
+\item
+  \href{https://icu-hsuzuki.github.io/ds4aj/index.html}{データサイエンスをはじめましょう - Data Science for All -}
+\item
+  \href{https://foods4all.github.io/}{Let's enjoy data science together! データサイエンス、一緒に学びませんか}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    最初に2019年の後半に作成したホームページ。この形式に限界を感じ、2020年途中で、改訂を中止。
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{chatgpt}{%
+\chapter{Chat GPT}\label{chatgpt}}
+
+Chat GPT を使いながら、考えたことを、実例を交えて書いていきます。英語で使うことが多いですが、英語の場合には、\href{https://www.deepl.com/translator}{DeepL} による翻訳をつけてあります。このページでは、翻訳には、手を入れない方針にしています。
+
+\begin{itemize}
+\tightlist
+\item
+  \protect\hyperlink{firstchat}{First Chat}・\protect\hyperlink{firstchatj}{訳：はじめてのチャット}
+\item
+  \protect\hyperlink{digitalhealth}{Digital Health}・\protect\hyperlink{digitalhealthj}{訳：デジタル・ヘルス}
+\item
+  \protect\hyperlink{nationalbond}{日本の国債について}：ほとんど日本語
+\item
+  \protect\hyperlink{bigmacindex}{Big Mac Index}・\protect\hyperlink{bigmacindexj}{訳：ビッグマック・インデックス}
+\end{itemize}
+
+\hypertarget{firstchat}{%
+\section{First Chat - はじめてのチャット　}\label{firstchat}}
+
+{[}HS{]} Explain the difference between equality and fairness by an example story
+
+\protect\hyperlink{chatgpt}{Chat GPT} Equality refers to the idea that everyone should be treated the same, regardless of their personal characteristics or circumstances. Fairness, on the other hand, refers to the idea that people should be treated justly and in a way that is reasonable and appropriate given the specific situation.
+
+Here is an example story that illustrates the difference between equality and fairness:
+
+There are two children, Anna and Billy, who are both competing in a race at school. Anna is a fast runner, while Billy is slower. The teacher decides to give both children a head start in the race, with Anna starting 10 meters ahead of the starting line and Billy starting 5 meters ahead.
+
+In this situation, equality would dictate that both children should start at the same point, regardless of their running abilities. However, fairness would dictate that the teacher's decision to give each child a different head start is appropriate, as it takes into account the fact that Anna is a faster runner and gives Billy a chance to catch up.
+
+While equality aims to treat everyone the same, fairness recognizes that different people may have different needs or abilities and seeks to treat them in a way that is fair and just.
+
+{[}HS{]} What is the difference between a differentiable function and a continuous function in reals
+
+\protect\hyperlink{chatgpt}{Chat GPT} A function is said to be differentiable at a point if it is possible to define a derivative of the function at that point. The derivative of a function at a point is a measure of how the function is changing at that point. A function is differentiable if it is possible to define a derivative at every point in its domain.
+
+On the other hand, a function is continuous at a point if it is possible to draw the graph of the function without lifting your pencil from the paper. This means that there are no sudden jumps or breaks in the graph of the function at that point. A function is continuous if it is continuous at every point in its domain.
+
+So, in summary, a differentiable function is one for which the derivative can be defined at every point, while a continuous function is one that does not have any breaks or jumps in its graph.
+
+Both differentiability and continuity are important concepts in calculus and are often used to describe the behavior of functions. However, they are not the same thing and a function can be either one or both. For example, a function can be differentiable but not continuous, or continuous but not differentiable.
+
+{[}HS{]} what is the difference between data science and statistical analysis? explain by examples
+
+\protect\hyperlink{chatgpt}{Chat GPT} Data science and statistical analysis are related fields that involve the collection, processing, and analysis of data. However, they have some important differences.
+
+Data science is a broad field that encompasses a wide range of techniques and methods for working with data. It includes statistical analysis, but it also includes other methods such as machine learning, data visualization, and data engineering. Data scientists use a variety of tools and techniques to analyze data, with the goal of extracting insights, making predictions, and solving problems.
+
+For example, a data scientist might use machine learning algorithms to analyze a large dataset in order to predict customer behavior, or they might use data visualization techniques to create interactive graphics that help to communicate the results of an analysis.
+
+Statistical analysis, on the other hand, is a more specific field that focuses on the use of statistical methods to analyze data. Statistical analysts use statistical techniques such as regression analysis, hypothesis testing, and analysis of variance (ANOVA) to understand relationships between variables and make predictions.
+
+For example, a statistical analyst might use regression analysis to understand the relationship between a company's sales and its advertising budget, or they might use hypothesis testing to determine whether there is a significant difference between the means of two groups.
+
+In summary, data science is a broad field that encompasses a wide range of techniques and methods for working with data, while statistical analysis is a more specific field that focuses on the use of statistical methods to analyze data.
+
+{[}HS{]} Write a short essay on the FIFA World Cup 2022 like Makuranosoushi of Seishonagon in Japanese
+
+\protect\hyperlink{chatgpt}{Chat GPT} The FIFA World Cup 2022 is a highly anticipated international soccer tournament that will be held in Qatar. This will be the first time that the World Cup has been held in the Middle East, and it is expected to be a memorable and exciting event.
+
+The tournament will feature 32 teams from around the world, who will compete in a series of matches to determine the ultimate champion. The teams will be divided into eight groups, with the top two teams from each group advancing to the knockout round.
+
+The World Cup 2022 is sure to be filled with drama and excitement, as the world's best soccer players come together to compete on the biggest stage. The tournament will feature many talented and skilled players, including stars such as Lionel Messi, Cristiano Ronaldo, and Neymar Jr.
+
+The World Cup 2022 will also be notable for its innovative and cutting-edge technology, as the tournament will feature the use of video assistant referees (VAR) and goal-line technology to ensure fair and accurate play.
+
+Overall, the World Cup 2022 is sure to be a memorable and exciting event, and soccer fans around the world are eagerly anticipating its arrival.
+
+{[}HS{]} What is Makuranosoushi of Seishonagon?
+
+\protect\hyperlink{chatgpt}{Chat GPT} Makura no Soushi (枕草子), also known as The Pillow Book, is a Japanese literature classic written by Sei Shonagon during the Heian period (794-1185). It is a collection of personal observations, anecdotes, and reflections written in a diary-like format.
+
+The Pillow Book covers a wide range of topics, including the beauty of nature, the customs and manners of the court, and the author's own personal experiences and thoughts. It is known for its wit, charm, and insight, and is considered a masterpiece of Japanese literature.
+
+Sei Shonagon was a court lady and a contemporary of Murasaki Shikibu, the author of The Tale of Genji. Both The Pillow Book and The Tale of Genji are considered important works of literature from the Heian period and are widely studied and admired in Japan and around the world.
+
+{[}HS{]} In R, correct the following codes.
+
+\protect\hyperlink{chatgpt}{Chat GPT} It would be helpful if you could provide the specific codes that you would like me to correct. Without knowing what the code is supposed to do or what errors it is producing, it is difficult for me to provide a useful correction. Could you please provide more context or detail about the problem you are trying to solve?
+
+{[}HS{]} Sorry, the code is: y\textless-``DA4R'':print y
+
+\protect\hyperlink{chatgpt}{Chat GPT} To correct the code, you can remove the quotation marks around ``DA4R'' and change the assignment operator \textless- to the more standard =. The corrected code would be:
+
+\begin{verbatim}
+scss
+Copy code
+
+y = DA4R
+
+print(y)
+\end{verbatim}
+
+This code will assign the value DA4R to the variable y, and then print the value of y to the console.
+
+Note that in R, it is generally recommended to use the assignment operator \textless- rather than =, as it can be easier to read and understand. However, = is also a valid assignment operator in R, so either one can be used depending on your preference.
+
+{[}HS{]} How can we insert line break without sending the message in chat got?
+
+\protect\hyperlink{chatgpt}{Chat GPT} There are a few ways to insert a line break in a message without sending it in a chat or messaging app:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Use the ``Enter'' or ``Return'' key on your keyboard. This will create a new line in the message, but will not send it until you press the ``Send'' button or key.
+\item
+  Use a line break character. Depending on the app or platform you are using, you may be able to insert a line break by typing a special character, such as \n or \r. For example, you could type Hello\nWorld to create a line break between the two words.
+\item
+  Use a line break code. Some apps and platforms support the use of special codes to insert line breaks. For example, in HTML, you can use the code to create a line break.
+\item
+  Use a formatting option. Many chat and messaging apps have formatting options that allow you to create a line break by applying a specific format to your text. For example, you may be able to use the ``Bullets'' or ``Numbering'' options to create a line break.
+\end{enumerate}
+
+It's important to note that the specific method you use to insert a line break may depend on the app or platform you are using, as well as the capabilities of the device or computer you are using.
+
+{[}HS{]} Let me try.
+
+\protect\hyperlink{chatgpt}{Chat GPT} Sure, go ahead and try using one of the methods I described to insert a line break in your message. If you have any questions or run into any issues, feel free to ask for additional help.
+
+{[}HS{]} I entered the line and then used return key. Then automatically the message was sent.
+
+\protect\hyperlink{chatgpt}{Chat GPT} It sounds like the chat or messaging app you are using is set to automatically send messages when the ``Enter'' or ``Return'' key is pressed. This is a common feature in many apps and can be convenient for quickly sending messages, but it can also lead to accidental sends if you are not careful.
+
+To avoid this issue, you can try one of the following options:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Use a different key to create a line break. Depending on the app or platform you are using, you may be able to use a different key to create a line break without sending the message. For example, you might be able to use the ``Shift + Enter'' or ``Ctrl + Enter'' keys to create a line break.
+\item
+  Change the app's settings. Some apps allow you to change the way the ``Enter'' or ``Return'' key works, such as by requiring you to use a different key or combination of keys to send messages. You may be able to find this option in the app's settings or preferences menu.
+\item
+  Use a different app. If the app you are using does not have a way to change the way the ``Enter'' or ``Return'' key works, you may want to consider using a different app that does offer this option. There are many chat and messaging apps available, and some of them may offer more control over when messages are sent.
+\end{enumerate}
+
+I hope this helps! Let me know if you have any other questions or need further assistance.
+
+{[}HS{]} OK. Shift + Enter worked
+
+{[}HS{]} next try is Ctrl + Enter
+
+\protect\hyperlink{chatgpt}{Chat GPT} Glad to hear that the ``Shift + Enter'' combination worked for you! It's good to know that you have a few different options for creating line breaks in your messages without sending them.
+
+Regarding the ``Ctrl + Enter'' combination, this is another option that can be used to create a line break in some apps and platforms. However, it is important to note that the specific key combinations that are supported for creating line breaks may vary depending on the app or platform you are using.
+
+If the ``Ctrl + Enter'' combination does not work for you, you may want to check the app's documentation or help resources to see if it supports this or any other key combinations for creating line breaks. You could also try searching online for tips or tricks specific to the app or platform you are using.
+
+I hope this helps! Let me know if you have any other questions or need further assistance.
+
+{[}HS{]} Ctrl+Enter did not work. Thanks anyhow.
+
+\protect\hyperlink{chatgpt}{Chat GPT} I'm sorry that the ``Ctrl + Enter'' combination did not work for you. It's possible that this key combination is not supported by the app or platform you are using, or that it has been disabled or overridden by another setting.
+
+If you are unable to find a way to create line breaks using the keys on your keyboard, you may want to try using one of the other methods I mentioned earlier, such as using a line break character or code, or using a formatting option in the app.
+
+For example, if the app supports it, you might be able to use the \n character to create a line break, like this:
+
+\begin{verbatim}
+Copy code
+
+Hello\nWorld
+\end{verbatim}
+
+Or, you might be able to use a formatting option such as ``Bullets'' or ``Numbering'' to create a line break.
+
+If you are still having trouble, you could try looking for help resources or documentation for the app or platform you are using, or consider trying a different app or platform that offers more control over line breaks.
+
+I hope this helps! Let me know if you have any other questions or need further assistance.
+
+{[}HS{]} Can you respond to messages not in English, say German, Chinese, Japanese, Korean, Bahasa Indonesia, Greek, Swahili, Hebrew? Since I am learning these languages.
+
+\protect\hyperlink{chatgpt}{Chat GPT} As an AI language model, I am able to understand and respond to text input in a variety of languages, including German, Chinese, Japanese, Korean, Bahasa Indonesia, Greek, Swahili, and Hebrew. However, my ability to understand and produce text in these languages may vary depending on the complexity and clarity of the input, as well as my own capabilities and limitations as a language model.
+
+I am trained on a large dataset of texts in a variety of languages, and I use this training to generate responses to user input. However, I do not have the same level of understanding and fluency in all languages, and my responses may not always be perfect or fully accurate.
+
+If you are learning a new language and would like to practice with me, I would be happy to try to understand and respond to your input. Just keep in mind that I may not always be able to produce a perfectly accurate or fluent response, particularly if the input is complex or difficult to understand.
+
+I hope this helps! Let me know if you have any other questions or need further assistance.
+
+{[}HS{]} 国債で
+
+\protect\hyperlink{chatgpt}{Chat GPT} I'm sorry, but I'm unable to understand your input. Could you please provide more context or clarify your question?
+
+{[}HS{]} 予算の
+
+\protect\hyperlink{chatgpt}{Chat GPT} I'm sorry, but I'm still unable to understand your input. Could you please provide more context or clarify your question in a way that I can understand? Alternatively, you can try asking your question in English, and I will do my best to help you.
+
+{[}HS{]} 赤字を埋めるのはどんなリスクが有るの
+
+\protect\hyperlink{chatgpt}{Chat GPT} ご質問ありがとうございます。赤字を埋めることは、財政上の問題を解決するために行われる可能性があります。しかし、これを行うことにはリスクも伴います。
+
+一つのリスクとして、赤字を埋めるために借りることが必要である場合があります。この場合、借りる場合には借り入れ先に対する返済義務があるため、その返済に対するリスクがあります。また、借り入れ先からの利子や手数料を支払わなければならないため、財政負担が増えることもあります。
+
+また、赤字を埋めるために新しい収入源を見つける必要がある場合もあります。この場合、その新しい収入源を確保することに対するリスクがあります。また、新しい収入源を得るために新しいプロジェクトや事業を開始する場合もありますが、それらのプロジェクトや事業が成功するかどうかにもリスクがあります。
+
+さらに、赤字を埋めるために財政再建を行う場合もあります。この場合、財政再建によって税金や公的なサービスの提供などに対する負担が増えることもあります。また、財政再建に伴い、予定されている政策やプログラムを中止することがあるため、それらを支援している団体や個人に対する影響もあります。
+
+以上が赤字を埋めることに伴うリスクの一部です。赤字を
+
+{[}HS{]} Would you tell me the importance of data science education for all students?
+
+\protect\hyperlink{chatgpt}{Chat GPT} Data science education can be important for all students for a variety of reasons. Here are a few key benefits of data science education:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Data literacy: Data science education can help students develop important skills in data literacy, which is the ability to understand and use data to make informed decisions. In today's world, data is increasingly being used to drive decisions in all kinds of organizations, and being able to understand and work with data is becoming an increasingly important skill.
+\item
+  Problem-solving: Data science education can also help students develop problem-solving skills. Data science involves using data and analytical tools to identify patterns and trends, and to solve complex problems. These skills can be useful in a wide range of fields and industries.
+\item
+  Career opportunities: Data science is a growing field, and there is increasing demand for professionals with data science skills. Data science education can help students prepare for careers in data science or related fields, and can open up a wide range of career opportunities.
+\item
+  Real-world application: Data science education can also help students understand how data is used in the real world, and how it can be applied to solve problems and make decisions in a variety of contexts. This can help students develop a more holistic understanding of the role that data plays in society.
+\end{enumerate}
+
+Overall, data science education can be an important part of a well-rounded education, and can help students develop important skills and knowledge that can be useful in a variety of fields and industries.
+
+{[}HS{]} Can we teach data science without mathematics?
+
+\protect\hyperlink{chatgpt}{Chat GPT} It is generally challenging to teach data science without some level of mathematics. This is because data science often involves working with mathematical concepts and techniques, such as statistical analysis, probability theory, and machine learning algorithms.
+
+However, the level of mathematics required for data science can vary depending on the specific area of focus within data science and the complexity of the problems being addressed. Some data science applications may require more advanced mathematical skills, while others may be more accessible to those with a basic understanding of math concepts.
+
+Therefore, it may be possible to teach some aspects of data science without a strong foundation in mathematics, but a solid understanding of math is generally helpful for understanding and working with data science concepts and techniques. This is especially true for more advanced topics in data science, such as machine learning and statistical modeling.
+
+Overall, while a strong foundation in mathematics can be beneficial for learning data science, it is not necessarily a requirement for all areas of the field. The specific math skills needed will depend on the specific goals and objectives of the data science education program, as well as the level of complexity of the problems being addressed.
+
+{[}HS{]} What do you think about the data science education using world development indicator?
+
+\protect\hyperlink{chatgpt}{Chat GPT} Using world development indicators as part of data science education can be a useful and informative approach. World development indicators are statistical measures that track the progress and status of countries around the world in various areas such as economic development, health, education, and the environment.
+
+Using world development indicators in data science education can help students understand how data can be used to track and understand global trends and patterns, and can provide valuable insights into the challenges and opportunities facing different countries around the world.
+
+In addition, working with world development indicators can help students develop skills in data analysis, visualization, and communication, as they explore and interpret the data. These skills can be valuable in a wide range of career fields and industries.
+
+Overall, incorporating world development indicators into data science education can be a useful and informative way to engage students in the study of data and its applications, and can help them develop important skills and knowledge.
+
+{[}HS{]} Would you give such a example? A topic of data science education using WDI?
+
+\protect\hyperlink{chatgpt}{Chat GPT} Certainly! Here is an example of a topic in data science education that could use world development indicators:
+
+Topic: Analyzing and visualizing trends in global economic development
+
+Objective: Using data from the World Bank's World Development Indicators (WDI) database, students will analyze and visualize trends in economic development across countries over time.
+
+Activities:
+
+\begin{itemize}
+\tightlist
+\item
+  Students will access the WDI database and select a set of indicators related to economic development, such as GDP per capita, poverty rate, and unemployment rate.
+\item
+  Students will use data visualization tools to create charts and graphs showing the trends in these indicators over time for a selection of countries.
+\item
+  Students will analyze the trends and patterns in the data, and consider possible factors that may be driving the changes.
+\item
+  Students will write a report or presentation summarizing their findings and discussing the implications of the trends for economic development in the countries studied.
+\end{itemize}
+
+This topic could be adapted to different levels of difficulty and detail depending on the students' backgrounds and interests, and could be expanded to include additional indicators and countries as needed.
+
+I hope this example gives you an idea of how world development indicators could be used in data science education. Let me know if you have any other questions or need further assistance.
+
+\hypertarget{firstchatj}{%
+\subsection{訳：はじめてのチャット}\label{firstchatj}}
+
+{[}HS{]} 平等と公平の違いを例話で説明しなさい。
+
+\protect\hyperlink{chatgpt}{Chat GPT} 平等とは、個人の特性や状況にかかわらず、誰もが同じように扱われるべきであるという考え方のことです。一方、「公平」とは、特定の状況下で合理的かつ適切な方法で公平に扱われるべきであるという考え方です。
+
+ここで、平等と公平の違いを説明する例話を紹介します。
+
+アナとビリーという二人の子供がいて、学校のレースで競い合っています。アンナは走るのが速く、ビリーは遅い。先生は、アンナはスタートラインの10メートル先、ビリーは5メートル先からスタートするように、二人の子供にスタートを与えることにしました。
+
+この場合、2人の走力に関係なく、同じ地点からスタートすることが平等となります。しかし、公平であれば、アンナの方が速く走れることを考慮し、ビリーに追いつくチャンスを与えるという先生の判断は適切であると言えます。
+
+平等がすべての人を同じように扱うことを目指すのに対し、公平は、異なる人々が異なるニーズや能力を持っていることを認識し、公平かつ公正な方法で彼らを扱おうとするものである。
+
+{[}HS{]} データサイエンスと統計解析の違いは何ですか？ 例を挙げて説明します。
+
+\protect\hyperlink{chatgpt}{Chat GPT} データサイエンスと統計解析は、データの収集、処理、分析を行う関連分野である。しかし、両者にはいくつかの重要な違いがあります。
+
+データサイエンスは、データを扱うための様々な技術や手法を包含する広い分野です。統計解析も含まれますが、機械学習、データ可視化、データエンジニアリングなど、他の手法も含まれます。データサイエンティストは、さまざまなツールやテクニックを使ってデータを分析し、洞察を得て、予測を立て、問題を解決することを目的としています。
+
+例えば、データサイエンティストは、機械学習アルゴリズムを使って大規模なデータセットを分析し、顧客の行動を予測したり、データ可視化技術を使って分析結果を伝えるのに役立つインタラクティブなグラフィックを作成したりすることがあります。
+
+一方、統計解析は、データを分析するための統計的手法に焦点を当てた、より具体的な分野である。統計解析者は、回帰分析、仮説検定、分散分析（ANOVA）などの統計的手法を使用して、変数間の関係を理解し、予測を行います。
+
+例えば、統計アナリストは回帰分析を使って企業の売上と広告予算の関係を把握したり、仮説検定を使って2つのグループの平均値に有意差があるかどうかを判断したりします。
+
+要約すると、データサイエンスは、データを扱うための幅広い技術や手法を包含する広い分野であり、統計解析は、データを分析するための統計的手法の使用に焦点を当てた、より具体的な分野であると言えます。
+
+{[}HS{]} FIFAワールドカップ2022について、日本語で清少納言の枕詞のような短いエッセイを書いてみましょう。
+
+\protect\hyperlink{chatgpt}{Chat GPT} FIFAワールドカップ2022は、カタールで開催される待望の国際サッカー大会である。中東でワールドカップが開催されるのは初めてで、記念すべき熱い戦いが期待されています。
+
+大会には世界各国から32チームが参加し、最終的なチャンピオンを決定するために試合を重ねます。各チームは8つのグループに分けられ、各グループの上位2チームがノックアウトラウンドに進みます。
+
+2022年ワールドカップは、世界最高のサッカー選手たちが一堂に会し、大舞台で競い合う、ドラマと興奮に満ちた大会になることでしょう。リオネル・メッシ、クリスティアーノ・ロナウド、ネイマール・ジュニアといったスター選手をはじめ、多くの才能と技術を持った選手たちがこの大会に参加する。
+
+また、2022年ワールドカップは、公平で正確なプレーを保証するために、ビデオアシスタントレフリー（VAR）やゴールラインテクノロジーを採用するなど、革新的で最先端のテクノロジーを駆使した大会としても注目されるでしょう。
+
+2022年ワールドカップは、記憶に残るエキサイティングな大会になることは間違いなく、世界中のサッカーファンがその到来を心待ちにしています。
+
+{[}HS{]} 清少納言の『枕草子』とは？
+
+\protect\hyperlink{chatgpt}{Chat GPT} 枕草子』（まくらのそうし）は、平安時代に清少納言が著した日本文学の古典であり、『枕草子』とも呼ばれる。枕草子』は、平安時代に清少納言によって書かれた古典文学であり、私的な観察、逸話、考察を日記のような形式で綴ったものである。
+
+枕草子には、自然の美しさ、宮中の風俗、作者自身の体験や考えなど、さまざまな話題が盛り込まれている。その機知と魅力、洞察力には定評があり、日本文学の名作とされている。
+
+清少納言は、源氏物語の作者である紫式部と同時代の宮廷女官である。枕草子』と『源氏物語』はともに平安時代の重要な文学作品とされ、日本だけでなく世界でも広く研究され、賞賛されている。
+
+{[}HS{]} Rで、次のコードを修正しなさい。
+
+\protect\hyperlink{chatgpt}{Chat GPT} 添削してほしいコードを具体的に教えてもらえると助かります。そのコードが何をすることになっているのか、どのようなエラーを発生させているのかが分からないと、私は有用な修正を提供することが難しいのです。解決しようとしている問題について、より多くの文脈または詳細を教えてください。
+
+{[}HS{]} 申し訳ありませんが、コードは次のとおりです： y\textless-``DA4R'':print y
+
+コードを修正するには、``DA4R''の周りの引用符を削除し、代入演算子\textless-をより標準的な=に変更します。 修正されたコードは次のようになります。
+
+\begin{verbatim}
+scss
+Copy code
+
+y = DA4R
+
+print(y)
+\end{verbatim}
+
+This code will assign the value DA4R to the variable y, and then print the value of y to the console.
+
+Note that in R, it is generally recommended to use the assignment operator \textless- rather than =, as it can be easier to read and understand. However, = is also a valid assignment operator in R, so either one can be used depending on your preference.
+
+{[}HS{]} チャットやメッセージアプリで送信せずに、メッセージに改行を挿入する方法はいくつかあります。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  キーボードの「Enter」キーまたは「Return」キーを使用する。これにより、メッセージに改行が入りますが、「送信」ボタンまたはキーを押すまで送信されません。
+\item
+  Use a line break character. Depending on the app or platform you are using, you may be able to insert a line break by typing a special character, such as \texttt{\textbackslash{}n} or \texttt{\textbackslash{}r}. For example, you could type Hello\nWorld to create a line break between the two words.
+\item
+  Use a line break code. アプリやプラットフォームによっては、特殊なコードを使って改行することができます。例えば、HTMLの場合、改行するための
+\end{enumerate}
+
+というコードで改行できます。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  書式設定オプションを使用する。多くのチャットやメッセージングアプリには、テキストに特定の書式を適用して改行を作成できる書式設定オプションがあります。例えば、「箇条書き」や「番号付け」オプションを使って、改行を作成できる場合があります。
+\end{enumerate}
+
+ただし、改行の具体的な方法は、使用しているアプリやプラットフォーム、およびデバイスやコンピュータの機能によって異なる場合があることに注意してください。
+
+{[}HS{]} 試してみましょう。
+
+\protect\hyperlink{chatgpt}{Chat GPT} メッセージに改行を挿入する方法について説明しましたので、試してみてください。何か質問や問題があれば、遠慮なく追加で相談してください。
+
+改行を入力し、リターンキーを使用しました。すると、自動的にメッセージが送信されました。
+
+お使いのチャットやメッセージアプリが、「Enter」または「Return」キーが押されると自動的にメッセージを送信するように設定されている可能性があります。これは多くのアプリに共通する機能で、素早くメッセージを送信するのに便利ですが、気をつけないと誤送信につながることもあります。
+
+この問題を避けるには、次のいずれかの方法を試してみてください。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  別のキーで改行する。お使いのアプリやプラットフォームによっては、別のキーを使って、メッセージを送信せずに改行を行うことができる場合があります。例えば、「Shift + Enter」キーや「Ctrl + Enter」キーで改行できる場合があります。
+\item
+  アプリの設定を変更する アプリによっては、「Enter」キーや「Return」キーの動作を変更することができ、メッセージの送信に別のキーやキーの組み合わせを使用するように要求することができるものもあります。このオプションは、アプリの設定またはプリファレンスメニューで見つけることができるかもしれません。
+\item
+  別のアプリを使用する。お使いのアプリに「Enter」キーや「Return」キーの動作を変更する方法がない場合、このオプションを提供する別のアプリを使用することを検討することもできます。チャットやメッセージアプリは数多くあり、メッセージの送信タイミングをより細かく制御できるものもあります。
+\end{enumerate}
+
+ご参考になれば幸いです。他にご質問やサポートが必要な場合は、ご連絡ください。
+
+{[}HS{]} OKです。Shift + Enter を実行
+
+{[}HS{]} 次のトライはCtrl + Enter
+
+\protect\hyperlink{chatgpt}{Chat GPT} Shift + Enter の組み合わせでうまくいったとのことで、うれしく思います。メッセージを送信せずに改行するためのいくつかのオプションがあることをご存知でよかったです。
+
+Ctrl + Enter の組み合わせについても、一部のアプリやプラットフォームで改行を作成するために使用できるオプションです。ただし、使用しているアプリやプラットフォームによって、改行できるキーの組み合わせが異なる場合がありますので、注意が必要です。
+
+Ctrl + Enter の組み合わせでうまくいかない場合は、アプリのドキュメントやヘルプを参照して、改行を作成するための他のキーの組み合わせに対応しているかどうかを確認することができます。また、お使いのアプリやプラットフォームに固有のヒントや裏技をオンラインで検索することもできます。
+
+ご参考になれば幸いです。他にご質問やサポートが必要な場合は、ご連絡ください。
+
+{[}HS{]} Ctrl+Enterは機能しませんでした。とにかくありがとうございます。
+
+\protect\hyperlink{chatgpt}{Chat GPT} Ctrl + Enter」の組み合わせがうまくいかなかったようで、申し訳ありません。このキーの組み合わせは、お使いのアプリやプラットフォームでサポートされていないか、他の設定によって無効化または上書きされている可能性があります。
+
+キーボードのキーを使って改行する方法が見つからない場合は、先に述べた他の方法、たとえば改行文字やコードを使ったり、アプリの書式設定オプションを使ったりしてみるとよいでしょう。
+
+例えば、アプリが対応していれば、以下のように「←」文字で改行できるかもしれません。
+
+\begin{verbatim}
+Copy code
+
+Hello\nWorld
+\end{verbatim}
+
+または、「箇条書き」や「番号」などの書式オプションを使用して、改行を作成することもできます。
+
+それでも問題が解決しない場合は、使用しているアプリやプラットフォームのヘルプやドキュメントを探してみるか、改行をよりコントロールできる別のアプリやプラットフォームを試してみることを検討してみてください。
+
+お役に立てれば幸いです。他にご質問やサポートが必要な場合は、ご連絡ください。
+
+{[}HS{]} 英語以外の言語、例えばドイツ語、中国語、日本語、韓国語、インドネシア語、ギリシャ語、スワヒリ語、ヘブライ語のメッセージに返信することは可能ですか？私はこれらの言語を学んでいるので。
+
+\protect\hyperlink{chatgpt}{Chat GPT} AI言語モデルとして、私はドイツ語、中国語、日本語、韓国語、インドネシア語、ギリシャ語、スワヒリ語、ヘブライ語など、さまざまな言語のテキスト入力を理解し、応答することができます。しかし、これらの言語のテキストを理解し生成する能力は、入力の複雑さと明瞭さ、そして言語モデルとしての私自身の能力と限界によって異なる場合があります。
+
+私はさまざまな言語のテキストの大規模なデータセットで訓練を受けており、この訓練を使ってユーザーの入力に対する応答を生成しています。しかし、私はすべての言語を同じレベルで理解し、流暢に話せるわけではありませんし、私の応答が常に完璧で、完全に正確であるとは限りません。
+
+もしあなたが新しい言語を学んでいて、私と一緒に練習したいのであれば、私は喜んであなたの入力を理解し、それに応えようとするでしょう。ただ、特に入力が複雑であったり、理解するのが難しい場合、私は常に完璧に正確で流暢な返答ができるわけではないことを心に留めておいてください。
+
+ご参考になれば幸いです。他にご質問やサポートが必要な場合は、ご連絡ください。
+
+{[}日本語入力{]}
+
+{[}HS{]} 国債で
+
+\protect\hyperlink{chatgpt}{Chat GPT} I'm sorry, but I'm unable to understand your input. Could you please provide more context or clarify your question?
+
+{[}HS{]} 予算の
+
+\protect\hyperlink{chatgpt}{Chat GPT} I'm sorry, but I'm still unable to understand your input. Could you please provide more context or clarify your question in a way that I can understand? Alternatively, you can try asking your question in English, and I will do my best to help you.
+
+{[}HS{]} 赤字を埋めるのはどんなリスクが有るの
+
+\protect\hyperlink{chatgpt}{Chat GPT} ご質問ありがとうございます。赤字を埋めることは、財政上の問題を解決するために行われる可能性があります。しかし、これを行うことにはリスクも伴います。
+
+一つのリスクとして、赤字を埋めるために借りることが必要である場合があります。この場合、借りる場合には借り入れ先に対する返済義務があるため、その返済に対するリスクがあります。また、借り入れ先からの利子や手数料を支払わなければならないため、財政負担が増えることもあります。
+
+また、赤字を埋めるために新しい収入源を見つける必要がある場合もあります。この場合、その新しい収入源を確保することに対するリスクがあります。また、新しい収入源を得るために新しいプロジェクトや事業を開始する場合もありますが、それらのプロジェクトや事業が成功するかどうかにもリスクがあります。
+
+さらに、赤字を埋めるために財政再建を行う場合もあります。この場合、財政再建によって税金や公的なサービスの提供などに対する負担が増えることもあります。また、財政再建に伴い、予定されている政策やプログラムを中止することがあるため、それらを支援している団体や個人に対する影響もあります。
+
+以上が赤字を埋めることに伴うリスクの一部です。赤字を
+
+{[}HS{]} すべての学生にとってデータサイエンス教育が重要であることを教えていただけませんか？
+
+\protect\hyperlink{chatgpt}{Chat GPT} データサイエンス教育は、さまざまな理由から、すべての学生にとって重要なものになり得ます。ここでは、データサイエンス教育の主な利点をいくつか紹介します。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  データリテラシー。データサイエンス教育は、データリテラシー（情報に基づいた意思決定を行うためにデータを理解し利用する能力）の重要なスキルを身につけるのに役立ちます。今日の世界では、あらゆる組織で意思決定のためにデータがますます活用されるようになっており、データを理解して扱う能力はますます重要なスキルになってきています。
+\item
+  問題解決力。データサイエンス教育は、問題解決能力の育成にもつながります。データサイエンスは、データと分析ツールを使ってパターンや傾向を特定し、複雑な問題を解決することを目的としています。これらのスキルは、幅広い分野や産業で役に立ちます。
+\item
+  キャリアの機会 データサイエンスは成長分野であり、データサイエンスのスキルを持つ専門家への需要が高まっています。データサイエンス教育は、データサイエンスやその関連分野でのキャリアに備えることができ、幅広いキャリアの可能性を開くことができます。
+\item
+  実世界での応用 データサイエンス教育は、データが実世界でどのように利用されているか、また、様々な文脈で問題解決や意思決定にどのように応用できるかを理解するのにも役立ちます。これは、学生が社会でデータが果たす役割について、より全体的な理解を深めるのに役立ちます。
+\end{enumerate}
+
+全体として、データサイエンス教育は総合的な教育の重要な一部となり、学生がさまざまな分野や産業で役立つ重要なスキルや知識を身につけるのに役立ちます。
+
+{[}HS{]} 数学なしでデータサイエンスを教えることができるのか？
+
+\protect\hyperlink{chatgpt}{Chat GPT} 一般的に、ある程度の数学がないとデータサイエンスを教えることは困難です。データサイエンスは、統計解析、確率論、機械学習アルゴリズムなど、数学的な概念や技術を扱うことが多いからです。
+
+しかし、データサイエンスに必要な数学のレベルは、データサイエンス内の特定の重点分野と、取り組んでいる問題の複雑さによって異なる場合があります。データサイエンスのアプリケーションによっては、より高度な数学的スキルが必要とされる場合もあれば、数学の概念の基本的な理解があれば、より理解しやすいものもあります。
+
+したがって、数学の基礎がなくてもデータサイエンスのある側面を教えることは可能かもしれませんが、一般的に数学の確かな理解は、データサイエンスの概念や技術を理解し作業する上で役に立ちます。これは、機械学習や統計モデリングなど、データサイエンスのより高度なトピックに特に当てはまります。
+
+全体として、数学の強固な基礎はデータサイエンスの学習に有益ですが、この分野のすべての領域で必ずしも必要というわけではありません。必要とされる具体的な数学のスキルは、データサイエンス教育プログラムの具体的な目標や目的、また取り組む問題の複雑さのレベルによって異なります。
+
+{[}HS{]} 世界の開発指標を用いたデータサイエンス教育についてどう思いますか？
+
+\protect\hyperlink{chatgpt}{Chat GPT} データサイエンス教育の一環として世界開発指標を使用することは、有用で有益なアプローチとなりえます。世界開発指標とは、経済発展、健康、教育、環境など様々な分野における世界各国の進捗や状況を把握するための統計指標です。
+
+データサイエンス教育で世界開発指標を使用することは、世界のトレンドやパターンを追跡・理解するためにデータがどのように使用されるかを理解するのに役立ち、世界のさまざまな国が直面する課題や機会について貴重な洞察を提供することができるのです。
+
+さらに、世界の開発指標に取り組むことで、生徒がデータを探索し解釈する際に、データ分析、視覚化、およびコミュニケーションのスキルを身につけることができます。これらのスキルは、幅広いキャリア分野や産業で価値を発揮することができます。
+
+全体として、データサイエンス教育に世界の開発指標を取り入れることは、学生にデータとその応用の研究に参加してもらうための有用で有益な方法であり、重要なスキルと知識を身につけるのに役立ちます。
+
+{[}HS{]} そのような例を挙げていただけますか？WDIを使ったデータサイエンス教育の話題？
+
+\protect\hyperlink{chatgpt}{Chat GPT} もちろんです！（笑 ここでは、世界開発指標を利用したデータサイエンス教育のトピックの例を紹介します。
+
+トピック 世界経済発展の傾向の分析と可視化
+
+目的 世界銀行の世界開発指標(WDI)データベースのデータを使用して、生徒は時系列での各国の経済発展の傾向を分析し、視覚化します。
+
+アクティビティ
+
+\begin{itemize}
+\tightlist
+\item
+  生徒は WDI データベースにアクセスし、一人当たり GDP、貧困率、失業率など、経済発展に関連する一連の指標を選択します。
+\item
+  生徒は、データの可視化ツールを使用して、選択した国のこれらの指標の経時的な傾向を示す図表を作成します。
+\item
+  生徒は、以下の分析を行います。 データの傾向やパターンを分析し、変化を促す可能性のある要因を考察します。
+\item
+  生徒は、調査結果をまとめたレポートまたはプレゼンテーションを作成し、調査対象国の経済発展に対する傾向の意味について話し合います。
+\end{itemize}
+
+このテーマは、生徒の経歴や興味に応じて難易度や詳細を変更することができ、必要に応じて他の指標や国を追加して拡張することも可能です。
+
+この例から、データサイエンス教育で世界の開発指標をどのように利用できるのか、ご理解いただけると幸いです。他に質問がある場合や、さらなる支援が必要な場合は、私にお知らせください。
+
+\hypertarget{digitalhealth}{%
+\section{Digital Health - デジタル・ヘルス　}\label{digitalhealth}}
+
+2023.02.05
+
+{[}HS{]} I want to know about the so-called digital health. For example, measuring the condition by the wearable device. Is there any academic research on the epidemiology using such devices?
+
+{[}ChatGPT{]} Yes, there have been multiple studies and academic research done in the field of digital health, specifically regarding the use of wearable devices for monitoring health conditions. These studies have focused on a variety of topics such as the accuracy of wearable device readings, the potential for these devices to improve disease management and health outcomes, and the role of wearable devices in population health and epidemiology studies. For example, wearable devices have been used to monitor physical activity levels, heart rate, and sleep patterns, which can provide valuable insights into population health and disease trends. Additionally, wearable devices have been used to track the spread of infectious diseases and to monitor disease outbreaks, providing valuable information for public health decision-making.
+
+{[}HS{]} Would you give a couple of examples with sources?
+
+{[}ChatGPT{]} Certainly! Here are a few examples of academic studies related to digital health and wearable devices:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  ``Validation of Wearable Sensors for Continuous Monitoring of Physical Activity and Sleep'' - This study, published in the Journal of Medical Internet Research in 2016, aimed to validate the accuracy of wearable devices for monitoring physical activity and sleep. The results showed that wearable devices can provide reliable and valid measurements of physical activity and sleep patterns.
+\item
+  ``The Potential of Wearable Devices in Chronic Disease Management: A Systematic Review'' - This study, published in the Journal of Medical Systems in 2016, reviewed the literature on the use of wearable devices in the management of chronic diseases such as diabetes, heart disease, and respiratory disease. The results showed that wearable devices have the potential to improve disease management and health outcomes in these conditions.
+\item
+  ``Using Wearable Devices to Track the Spread of Infectious Diseases'' - This study, published in the Journal of Medical Internet Research in 2018, investigated the potential of wearable devices for tracking the spread of infectious diseases. The results showed that wearable devices can provide valuable data for disease surveillance and outbreak response.
+\end{enumerate}
+
+These are just a few examples, but there are many more studies in the field of digital health and wearable devices. I hope this information is helpful!
+
+{[}HS{]} Is there any discussion on regulations and moral standards for such privacy research?
+
+{[}ChatGPT{]} Yes, there has been significant discussion and debate surrounding the regulations and ethical considerations for digital health research, particularly with regards to privacy. The use of wearable devices and other digital health technologies generates a large amount of personal data, which raises important privacy concerns.
+
+For example, there are concerns about the security of personal health information and the potential for this information to be used for unauthorized purposes. There are also concerns about the potential for discrimination based on the information collected by wearable devices, such as discrimination in employment or insurance based on health status.
+
+To address these concerns, there are a number of regulations and guidelines that have been developed to ensure the privacy and security of personal health information in digital health research. For example, the General Data Protection Regulation (GDPR) in the European Union and the Health Insurance Portability and Accountability Act (HIPAA) in the United States are two examples of privacy regulations that apply to digital health research.
+
+In addition to these regulations, there are also ethical guidelines and codes of conduct for digital health research that outline the responsibilities of researchers and organizations in protecting the privacy and security of personal health information. For example, the World Medical Association has developed the Declaration of Helsinki, which provides ethical guidelines for medical research involving human subjects, and the Council for International Organizations of Medical Sciences has developed the International Ethical Guidelines for Health-Related Research Involving Humans, which provides similar guidelines for international health research.
+
+Overall, the regulations and ethical considerations for digital health research are constantly evolving and it is important for researchers and organizations to stay up to date on the latest developments in this field to ensure that privacy and security are protected.
+
+{[}HS{]} Can you give leading institutions planning to do such research worldwide?
+
+{[}ChatGPT{]} There are many institutions and organizations around the world that are conducting research in the field of digital health and wearable devices. Here are a few examples of leading institutions in this field:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Harvard Medical School - Harvard Medical School is one of the leading institutions for digital health research, with multiple research groups and initiatives dedicated to studying the impact of wearable devices and other digital health technologies on health and wellness.
+\item
+  Stanford University - Stanford University has a strong tradition of innovation in digital health, and its School of Medicine has multiple research programs focused on wearable devices and other digital health technologies.
+\item
+  MIT Media Lab - The MIT Media Lab is a research lab at the Massachusetts Institute of Technology that focuses on interdisciplinary research at the intersection of technology and health. They have several research groups dedicated to digital health, including the Biomedical Cybernetics group, which focuses on the development of wearable devices and other digital health technologies.
+\item
+  Imperial College London - Imperial College London is a leading institution for research in digital health, with multiple research programs and initiatives focused on wearable devices and other digital health technologies.
+\item
+  University of California, San Francisco - The University of California, San Francisco is a leading institution for digital health research, with multiple research programs focused on the development and implementation of wearable devices and other digital health technologies.
+\end{enumerate}
+
+These are just a few examples, and there are many other institutions and organizations around the world that are conducting research in the field of digital health and wearable devices.
+
+{[}HS{]} Do you know institutions or examples conducting research in a local region but in an intensive way to promote health?
+
+{[}ChatGPT{]} Yes, there are many institutions and organizations around the world that are conducting research on digital health and wearable devices with a focus on promoting health in a local region. Here are a few examples:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Kermanshah University of Medical Sciences, Iran - Kermanshah University of Medical Sciences has established a research center for digital health, which aims to promote health in the local region through the use of wearable devices and other digital health technologies. This center conducts research on a variety of topics related to digital health, including the development of wearable devices for disease management and the evaluation of the impact of digital health interventions on health outcomes.
+\item
+  National University of Singapore, Singapore - The National University of Singapore has established a research program in digital health, which aims to promote health in the local region through the use of wearable devices and other digital health technologies. This program conducts research on a variety of topics related to digital health, including the development of wearable devices for disease management and the evaluation of the impact of digital health interventions on health outcomes.
+\item
+  University of the Witwatersrand, South Africa - The University of the Witwatersrand has established a research program in digital health, which aims to promote health in the local region through the use of wearable devices and other digital health technologies. This program conducts research on a variety of topics related to digital health, including the development of wearable devices for disease management and the evaluation of the impact of digital health interventions on health outcomes.
+\end{enumerate}
+
+These are just a few examples, and there are many other institutions and organizations around the world that are conducting research in the field of digital health and wearable devices with a focus on promoting health in a local region.
+
+{[}HS{]} What do you predict the future of epidemiology in connection with this digital health or research using IT devices such as wearable devices monitoring health?
+
+{[}ChatGPT{]} The use of wearable devices and other digital health technologies has the potential to revolutionize epidemiology and the study of disease and health outcomes. Here are a few ways that digital health and wearable devices may shape the future of epidemiology:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Increased Data Collection: Wearable devices and other digital health technologies generate a large amount of data on individuals' health and behaviors, which can be used to better understand patterns of disease and health outcomes. This increased data collection has the potential to greatly enhance our understanding of the causes of disease and the factors that influence health outcomes.
+\item
+  Real-Time Monitoring: Wearable devices allow for real-time monitoring of individuals' health, which has the potential to greatly improve our ability to detect outbreaks of disease and track the spread of illness. This real-time monitoring has the potential to greatly enhance our ability to respond to public health emergencies and reduce the spread of disease.
+\item
+  Improved Data Analysis: With the increased data collection made possible by wearable devices and other digital health technologies, there will be a growing need for advanced data analysis methods and tools to make sense of this data. This will require new and innovative approaches to data analysis, including the use of machine learning and artificial intelligence.
+\item
+  Personalized Medicine: The data generated by wearable devices and other digital health technologies has the potential to inform the development of personalized medicine, where treatments are tailored to an individual's specific needs and health status. This has the potential to greatly improve health outcomes and reduce the risk of adverse events associated with treatments.
+\end{enumerate}
+
+Overall, the future of epidemiology in connection with digital health and wearable devices is very promising, with the potential to greatly enhance our understanding of disease and improve health outcomes. However, it is important to ensure that the privacy and security of personal health information are protected as we move forward with this research.
+
+{[}HS{]} Thank you very much. I want to come back to you after reviewing your comments.
+
+{[}ChatGPT{]} You're welcome! I'm here to help, so feel free to reach out to me again if you have any additional questions. Have a great day!
+
+\hypertarget{digitalhealthj}{%
+\subsection{デジタルヘルス（翻訳）}\label{digitalhealthj}}
+
+{[}HS{]} いわゆるデジタルヘルスについて知りたいのですが。例えば、ウェアラブルデバイスによる体調の測定などです。そのようなデバイスを用いた疫学に関する学術研究はあるのでしょうか？
+
+{[}ChatGPT{]} はい、デジタルヘルス分野、特に健康状態をモニタリングするためのウェアラブルデバイスの使用に関しては、複数の研究および学術的な調査が行われています。これらの研究は、ウェアラブルデバイスの読み取り精度、これらのデバイスによる疾病管理および健康状態の改善の可能性、集団健康および疫学研究におけるウェアラブルデバイスの役割など、さまざまなトピックに焦点を当てています。例えば、ウェアラブル端末は、身体活動レベル、心拍数、睡眠パターンのモニタリングに使用されており、集団の健康状態や疾病の傾向について貴重な洞察を得ることができます。さらに、ウェアラブル端末は、感染症の蔓延の追跡や病気の発生状況の監視にも利用されており、公衆衛生の意思決定に貴重な情報を提供しています。
+
+{[}HS{]} いくつか例を挙げていただけますか？
+
+{[}ChatGPT{]} もちろんです。デジタルヘルスとウェアラブルデバイスに関連する学術研究の例をいくつかご紹介しましょう。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  ``Validation of Wearable Sensors for Continuous Monitoring of Physical Activity and Sleep'' - 2016年にJournal of Medical Internet Researchに掲載されたこの研究は、身体活動や睡眠をモニタリングするためのウェアラブルデバイスの精度を検証することを目的としたものである。その結果、ウェアラブルデバイスは、身体活動や睡眠パターンの信頼性の高い有効な測定値を提供できることが示されました。
+\item
+  ``The Potential of Wearable Devices in Chronic Disease Management''（慢性疾患管理におけるウェアラブルデバイスの可能性。A Systematic Review'' - 2016年にJournal of Medical Systemsに掲載されたこの研究は、糖尿病、心臓病、呼吸器疾患などの慢性疾患の管理におけるウェアラブルデバイスの使用に関する文献をレビューしたものである。その結果、ウェアラブルデバイスはこれらの疾患における疾病管理および健康アウトカムを改善する可能性があることが示されました。
+\item
+  ``Using Wearable Devices to Track the Spread of Infectious Diseases'' - 2018年にJournal of Medical Internet Researchに掲載されたこの研究は、感染症の広がりを追跡するためのウェアラブルデバイスの可能性を調査したものである。その結果、ウェアラブルデバイスは、病気の監視やアウトブレイク対応に貴重なデータを提供できることがわかりました。
+\end{enumerate}
+
+これらはほんの一例ですが、デジタルヘルスとウェアラブルデバイスの分野では、他にも多くの研究が行われています。この情報がお役に立てれば幸いです
+
+{[}HS{]}このようなプライバシー研究に対する規制や道徳的基準についての議論はありますか？
+
+{[}ChatGPT{]}はい、デジタルヘルス研究、特にプライバシーに関する規制や倫理的配慮をめぐって、大きな議論や討論が行われています。ウェアラブルデバイスやその他のデジタルヘルス技術の使用は、大量の個人データを生成するため、プライバシーに関する重要な懸念が生じます。
+
+例えば、個人健康情報のセキュリティや、この情報が不正に使用される可能性についての懸念があります。また、ウェアラブル端末が収集した情報に基づいて、健康状態に基づく雇用や保険の差別が行われる可能性も懸念されます。
+
+これらの懸念に対応するため、デジタルヘルス研究において個人の健康情報のプライバシーとセキュリティを確保するための規制やガイドラインが数多く策定されています。例えば、欧州連合の一般データ保護規則（GDPR）、米国の医療保険の相互運用性と説明責任に関する法律（HIPAA）などは、デジタルヘルス研究に適用されるプライバシー規制の一例である。
+
+これらの規制に加えて、デジタルヘルス研究のための倫理ガイドラインや行動規範もあり、個人健康情報のプライバシーとセキュリティを保護する上での研究者や組織の責任について概説しています。例えば、世界医師会では、人間を対象とする医学研究の倫理指針として「ヘルシンキ宣言」を、国際医学会では「人間を対象とする健康関連研究のための国際倫理指針」を策定し、国際的な健康研究に対して同様の指針を提供しています。
+
+全体として、デジタルヘルス研究の規制や倫理的配慮は常に進化しており、研究者や組織はこの分野の最新動向を把握し、プライバシーとセキュリティを確実に保護することが重要です。
+
+{[}HS{]} 世界中でこのような研究を計画している代表的な機関を教えてください。
+
+{[}ChatGPT{]} デジタルヘルスやウェアラブルデバイスの分野で研究を行っている機関や組織は、世界中にたくさんあります。ここでは、この分野の先進的な機関の例をいくつか紹介します。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  ハーバード・メディカル・スクール - ハーバード・メディカル・スクールは、デジタルヘルス研究の主要機関の1つで、ウェアラブルデバイスやその他のデジタルヘルス技術が健康やウェルネスに与える影響を研究するための複数の研究グループやイニシアチブがあります。
+\item
+  スタンフォード大学 - スタンフォード大学は、デジタルヘルス分野におけるイノベーションの強い伝統があり、医学部には、ウェアラブルデバイスやその他のデジタルヘルス技術に焦点を当てた複数の研究プログラムがあります。
+\item
+  MITメディアラボ - MITメディアラボは、マサチューセッツ工科大学の研究室で、テクノロジーと健康の交差点における学際的な研究に焦点を当てています。ウェアラブルデバイスやその他のデジタルヘルス技術の開発に注力するBiomedical Cyberneticsグループなど、デジタルヘルスに特化した研究グループを複数有しています。
+\item
+  Imperial College London - Imperial College Londonは、デジタルヘルス研究の主要機関であり、ウェアラブルデバイスやその他のデジタルヘルス技術に焦点を当てた複数の研究プログラムやイニシアチブを有しています。
+\item
+  カリフォルニア大学サンフランシスコ校 - カリフォルニア大学サンフランシスコ校は、デジタルヘルス研究の主要機関であり、ウェアラブルデバイスやその他のデジタルヘルス技術の開発・導入に焦点を当てた複数の研究プログラムを有しています。
+\end{enumerate}
+
+これらはほんの一例であり、他にもデジタルヘルスやウェアラブルデバイスの分野で研究を行っている機関や組織が世界中に数多く存在します。
+
+{[}HS{]} 地方でも集中的に健康増進のための研究を行っている機関や事例をご存知ですか？
+
+{[}ChatGPT{]} はい、デジタルヘルスやウェアラブルデバイスの研究を、地域の健康増進にフォーカスして行っている機関や団体が、世界中にたくさんあります。その例をいくつかご紹介します。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  イラン ケルマンシャー医科大学 - ケルマンシャー医科大学では、ウェアラブルデバイスなどのデジタルヘルス技術を活用し、地域の健康増進を目指すデジタルヘルス研究センターを設立しています。本センターでは、疾病管理のためのウェアラブルデバイスの開発や、デジタルヘルスによる介入が健康状態に及ぼす影響の評価など、デジタルヘルスに関する様々なテーマについて研究を行っています。
+\item
+  シンガポール国立大学（シンガポール） - シンガポール国立大学は、ウェアラブルデバイスやその他のデジタルヘルス技術を活用し、地域の健康増進を目指すデジタルヘルス分野の研究プログラムを設立しています。このプログラムでは、疾病管理のためのウェアラブルデバイスの開発や、デジタルヘルスによる介入が健康アウトカムに与える影響の評価など、デジタルヘルスに関する様々なテーマについて研究を行っています。
+\item
+  ウィットウォータースランド大学（南アフリカ） - ウィットウォータースランド大学は、デジタルヘルスの研究プログラムを設立し、ウェアラブルデバイスやその他のデジタルヘルス技術の利用を通じて、地域の健康増進を図ることを目的としています。このプログラムでは、疾病管理のためのウェアラブルデバイスの開発や、デジタルヘルスによる介入が健康状態に及ぼす影響の評価など、デジタルヘルスに関するさまざまなテーマについて研究を行っています。
+\end{enumerate}
+
+これらはほんの一例で、他にもデジタルヘルスやウェアラブルデバイスの分野で、地域の健康増進に焦点を当てた研究を行っている機関や組織が世界中にたくさんあります。
+
+{[}HS{]} このデジタルヘルスや、健康をモニタリングするウェアラブルデバイスなどのIT機器を用いた研究に関連して、疫学は今後どのようになると予測されますか？
+
+{[}ChatGPT{]} ウェアラブルデバイスなどのデジタルヘルス技術の活用は、疫学や病気・健康結果の研究に革命を起こす可能性があります。ここでは、デジタルヘルスとウェアラブルデバイスが疫学の未来を形作る可能性があるいくつかの方法を紹介します。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    データ収集の増加。データ収集の増加：ウェアラブル端末やその他のデジタルヘルス技術は、個人の健康状態や行動に関する大量のデータを生成し、それらを用いて疾患や健康アウトカムのパターンをよりよく理解することができる。このようなデータ収集の増加は、病気の原因や健康状態に影響を与える要因に関する我々の理解を大きく深める可能性がある。
+  \end{enumerate}
+\item
+  リアルタイムのモニタリング。ウェアラブル端末は、個人の健康状態をリアルタイムでモニタリングできるため、疾病の発生を検知し、疾病の広がりを追跡する能力を大幅に向上させる可能性がある。このリアルタイム・モニタリングは、公衆衛生上の緊急事態への対応能力を大幅に向上させ、病気の蔓延を抑えることができる可能性があります。
+\item
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    データ解析の改善。ウェアラブルデバイスやその他のデジタルヘルス技術によるデータ収集の増加に伴い、このデータを理解するための高度なデータ分析手法とツールの必要性が高まっています。そのためには、機械学習や人工知能の活用など、データ分析に対する新しい革新的なアプローチが必要となります。
+  \end{enumerate}
+\item
+  個別化医療。ウェアラブル端末やその他のデジタルヘルス技術によって生成されたデータは、個人の特定のニーズや健康状態に合わせて治療を行う個別化医療の発展に寄与する可能性があります。これは、健康上の成果を大幅に改善し、治療に伴う有害事象のリスクを低減する可能性がある。
+\end{enumerate}
+
+全体として、デジタルヘルスやウェアラブル端末に関連する疫学の未来は非常に有望であり、疾病に対する理解を大きく深め、健康アウトカムを改善する可能性があります。しかし、この研究を進めるにあたっては、個人の健康情報のプライバシーとセキュリティが確実に保護されることが重要です。
+
+{[}HS{]} ありがとうございました。皆さんのコメントを確認した後、またお伺いしたいと思います。
+
+{[}ChatGPT{]}どういたしまして。また何かありましたら、お気軽にお声掛けください。良い一日をお過ごしください。
+
+www.DeepL.com/Translator（無料版）で翻訳しました。
+
+\hypertarget{nationalbond}{%
+\section{日本の国債について　}\label{nationalbond}}
+
+{[}HS{]} 日本の国債60年償還ルールについて教えてください。
+
+\protect\hyperlink{chatgpt}{Chat GPT} 日本の国債は通常、60年後に償還されます。これは国債の契約上の条件であり、到着期日に債権者は国から償還される債務額を受け取ることができます。一部の国債は、特別な条件が設定されている場合を除き、償還されないこともあります。詳細については、各国債の説明書を参照してください。
+
+{[}HS{]} 日本の国債発行高が増え、返すことができないのではないかと心配しています。大丈夫なのでしょうか。
+
+\protect\hyperlink{chatgpt}{Chat GPT} 国債発行高の増加は、国債市場においては一般的な現象です。日本政府は、財政の調整や負債の返済などに国債を発行することがあります。このような発行により、国債市場は拡大し、国債発行高も増加することがあります。
+
+ただし、日本政府は国債発行高を増やすことによって借金返済能力を損なうことはありません。日本は長期にわたり安定した経済発展を実現しており、国債償還能力においても問題はないと考えられています。ただし、国債市場に関する投資判断は、常に市場状況や経済状況などを考慮する必要があります。
+
+{[}HS{]} これは、日本だけに限ったことではありませんが、特に民主的な国家において、政権は、国民の支持を得るために、人気取りのような政策をしてお金を使ったり、国民が喜ぶ減税をして、選挙での票を得ようとします。長期的視点に立った、財政規範を適切に整えることには、消極的なように見えます。課題と、改善方法はあるのでしょうか。お考えをお聞かせ下さい。
+
+\protect\hyperlink{chatgpt}{Chat GPT} 政治による財政規範の改善には、いくつかの課題があります。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  短期的な政治目的に対する焦点：政治家は選挙時期に近いと、短期的な政治目的に対する焦点が強くなり、長期的な観点を忘れがちになります。
+\item
+  投票者の期待に対する反応：政治家は投票者の期待に対する反応を求められることがあり、短期的な政策措置をとることがあります。
+\item
+  財政規範の柔軟性：財政規範は、政治的な決定によって変更されることがあり、柔軟性がありすぎると適切な財政管理ができない場合があります。
+\end{enumerate}
+
+これらの問題に対する改善方法としては、以下のようなものが考えられます。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  長期的な財政規範の確立：政治家は、長期的な財政規範を確立し、政治的な変動に対しても堅実な経済策を実施できるようにすることが重要です。
+\item
+  投票者とのコミュニケーションの改善：政治家は投票者とのコミュニケーションを改善し、財政規範に対する理解を深めることが大切です。
+\item
+  財政規範の独立性の強化：財政規範は政治的な影響から独立し、独自の経済判断をすることが大切です。これは、専門家や独
+\end{enumerate}
+
+{[}HS{]} 途中で切れてしまっているようですが、応答をまったほうが良いですか。
+
+\protect\hyperlink{chatgpt}{Chat GPT} はい、それが望ましいです。ご不便をおかけし申し訳ありません。前の文章を完成させます。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  財政規範の独立性の強化：財政規範は政治的な影響から独立し、独自の経済判断をすることが大切です。これは、専門家や独立した機関による管理が望ましいです。
+\end{enumerate}
+
+以上が、日本の国債発行高が増え、返すことができないという問題に対する改善方法についての考え方です。長期的な視点に立って、財政規範を適切に整えることが重要です。
+
+{[}HS{]} ありがとうございます。あなたの出身はアメリカのように思われますが、正しいですか。
+
+\protect\hyperlink{chatgpt}{Chat GPT} 私は人工知能モデルであり、国籍を持っていません。OpenAIによってトレーニングされ、世界中の人々に対して役立つ情報を提供することを目的としています。
+
+{[}HS{]} 了解しました。では、世界の国々において、このような財政規範の設定が国民の支持を受け、健全に運営されていると思われる国の例はありますか。
+
+\protect\hyperlink{chatgpt}{Chat GPT} はい、いくつかの例があります。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  スウェーデン：スウェーデンは長期的な視点に立って、適切な財政規範を整えており、国民の支持も得ています。彼らは財政赤字を最小限に抑え、債務の負担を回避するために、国内生産毛額（GDP）の50％以下に抑えています。
+\item
+  ドイツ：ドイツは正確な財政規範を適用しており、健全な経済状況を維持しています。彼らは債務の負担を回避するために、常に国内生産毛額（GDP）の60％以下に抑えています。
+\item
+  シンガポール：シンガポールは長期的な視点に立って、適切な財政規範を整えており、国民の支持も得ています。彼らは財政赤字を最小限に抑え、債務の負担を回避するために、国内生産毛額（GDP）の60％以下に抑えています。
+\end{enumerate}
+
+これらはあくまで例であり、他の国々も同様に健全な財政規範を整えており、国民の支持を得ています。
+
+{[}HS{]} 三つの国の例をあげてくださいましたが、それらの財政規範を整えていった歴史を、一つ説明してくださいませんか。例として学びたいのですが。
+
+\protect\hyperlink{chatgpt}{Chat GPT} はい、それでは、三つの国のうちの一つ、スウェーデンを例に説明します。
+
+スウェーデンは、20世紀から財政規範を整え、国民の信頼を得ることに注力してきました。1950年代には、税制の改革や、社会保障制度の改善が行われ、国民の信頼を高めました。また、1980年代には、国債発行を抑制するために財政規範が厳格化されました。そのため、国民にとって信頼性の高い財政状況が維持され、財政再建時にも国民の支持が得られました。
+
+このように、スウェーデンは長期的な視点に立った財政規範の設定と適切な運営により、国民の信頼を得ることができました。
+
+{[}HS{]} ありがとうございます。このように財政規範を整えていくには、それを支持する国民の教育も大切なように思われますが、たとえばスウェーデンではそのための教育も行われているのでしょうか。
+
+\protect\hyperlink{chatgpt}{Chat GPT} Hmm\ldots something seems to have gone wrong. Maybe try me again in a little bit.
+
+\protect\hyperlink{chatgpt}{Chat GPT} はい、スウェーデンでは財政規範に関する教育が重視されています。スウェーデンは、国民に財政知識を持たせることが、健全な経済発展につながると考えられています。したがって、学校教育において財政に関するトピックスがカバーされたり、国民向けのキャンペーンやイベントも行われています。また、国民に財政規範に関する知識を持たせることにより、政策に対する理解を深め、適切な支持や判断ができるようになることも期待されています。
+
+{[}HS{]} ありがとうございます。学校教育における財政に関するトピックをどう扱っているか、例を示してくださいませんか。高校レベルぐらいがよいと思いますが、ご存じのもので結構です。
+
+\protect\hyperlink{chatgpt}{Chat GPT} スウェーデンでは、学校教育において財政に関するトピックが重視されています。例えば、高校レベルでは、国民生活に関連するトピックに焦点を当てた経済学の授業が開講されています。ここでは、国民にとって財政に重要なトピックに関する知識とスキルが学べます。例えば、政府財政、国民所得、税負担などに関するトピックが学べます。また、財政規範に関するトピックも扱われ、国家財政のバランスを保つために必要な措置について議論がされます。
+
+{[}HS{]} なるほど。実際のデータなども示されているのでしょうか。もし示されているのであれば、例を教えてくださいませんか。
+
+\protect\hyperlink{chatgpt}{Chat GPT} 申し訳ございませんが、具体的な教育内容や、学校教育で使用されるデータに関してはわかりません。教育内容に関しては各国の教育政策や教育システムによって異なりますので、スウェーデンの教育省などの政府機関のWebサイトを参照するか、スウェーデンの大学や教育機関に問い合わせることが最も確実な方法だと思われます。
+
+{[}HS{]} ありがとうございます。では、スウェーデンの教育省のなどの政府機関の関連しそうな Web サイトを教えていただけませんか。できれば、英語で読めるページが良いですが。
+
+\protect\hyperlink{chatgpt}{Chat GPT} スウェーデンの教育関連の情報は、政府公式サイトで確認することができます。下記のURLは、スウェーデンの教育省の公式サイトです。
+
+\url{https://www.government.se/government-policy/education/}
+
+このサイトでは、スウェーデンの教育政策、制度、プログラムなどが詳しく紹介されており、英語で読めます。この他にも、公式サイト内の検索エンジンを利用することで、特定のトピックに関連した情報も確認することができます。
+
+{[}HS{]} ありがとうございました。調べてみます。また、質問するかもしれません。
+
+\protect\hyperlink{chatgpt}{Chat GPT} どういたしまして。お気軽に質問してください。私はここにいますので、お答え致します。
+
+{[}HS{]} どうも、日本語での質問だと、応答に時間がかかるように思われますが、英語の方が得意ですか。他にも得意な言語があれば、教えてください。
+
+\protect\hyperlink{chatgpt}{Chat GPT} Yes, I am more proficient in English and can respond faster in English. I am also trained to understand and respond in other languages including French, Spanish, German, Italian, Portuguese, Dutch, and Russian.
+
+{[}HS{]} Thank you. Then I will get back to you in English next time.
+
+\protect\hyperlink{chatgpt}{Chat GPT} You're welcome! I'm here to help. Don't hesitate to reach out to me in English or any other language I am capable of.
+
+\hypertarget{bigmacindex}{%
+\section{Big Mac Index　}\label{bigmacindex}}
+
+{[}HS{]} in R would you teach me how to rewrite data.table .SD in tidyverse
+
+{[}ChatGPT{]} Certainly! In data.table, .SD refers to the subset of data for each group of a grouped data.table. In tidyverse, you can use the dplyr package to achieve similar functionality.
+
+Assuming you have loaded the tidyverse package, here is an example of how you can rewrite a data.table code block that uses .SD:
+
+\begin{verbatim}
+R
+Copy code
+library(tidyverse)
+
+
+# Load example data
+
+data(mtcars)
+
+mtcars_dt <- as.data.table(mtcars)
+
+
+# Original data.table code
+
+mtcars_dt[, lapply(.SD, mean), by = cyl]
+
+
+# Equivalent code using tidyverse
+
+mtcars %>%
+
+  group_by(cyl) %>%
+
+  summarize(across(everything(), mean))
+\end{verbatim}
+
+In this example, we first load the tidyverse package and convert the mtcars data frame to a data.table. The original data.table code calculates the mean of each column for each group defined by the cyl columng. The equivalent code using tidyverse first groups the data by cyl, then uses summarize() and across() to calculate the mean of every column.
+
+Note that across() takes a column selection helper, such as everything(), to specify which columns to apply the function to. In this case, everything() means ``apply the function to every column''.
+
+{[}HS{]} can you rewrite the following, which is taken from economist big mac indices.
+
+{[}ChatGPT{]} Certainly! Here's an example of how you can rewrite the data.table code used to calculate the Big Mac index from The Economist using tidyverse:
+
+\begin{verbatim}
+R
+Copy code
+library(tidyverse)
+
+
+# Load data
+
+big_mac_data <- read.csv("big-mac-full-index.csv")
+
+
+# Original data.table code
+
+big_mac_data[, .(raw_index = mean(local_price / dollar_ex)), by = date]
+
+
+# Equivalent code using tidyverse
+
+big_mac_data %>%
+
+  group_by(date) %>%
+
+  summarize(raw_index = mean(local_price / dollar_ex))
+\end{verbatim}
+
+In this example, we first load the tidyverse package and read in the data using read.csv(). The original data.table code calculates the Big Mac index by dividing the local price by the exchange rate for each observation, then takes the mean of these ratios for each date. The equivalent code using tidyverse groups the data by date, then uses summarize() to calculate the mean of the local\_price / dollar\_ex ratio for each group.
+
+Note that in tidyverse, summarize() is used to calculate summary statistics for each group, while mutate() is used to create new variables based on existing variables. In this case, we are calculating a summary statistic (mean()) for the local\_price / dollar\_ex ratio, so we use summarize().
+
+{[}HS{]}
+for(currency in base\_currencies) \{
+big\_mac\_index{[} , \# we don't want a subset, so our first argument is blank
+(currency) := \# we'll add a new column named for the base set
+dollar\_price / \# we divide the dollar price in each row by
+\# the dollar price on the \emph{base currency}'s row (.SD is a data.table
+.SD{[}currency\_code == currency{]}\$dollar\_price - \# that contains only the current group)
+1, \# one means parity (neither over- nor under-valued), so we subtract one
+\# to get an over/under-valuation value
+by=date \# and of course, we'll group these rows by date
+{]}
+\}
+
+{[}ChatGPT{]} Here's an example of how you can rewrite the data.table code that calculates the Big Mac index for multiple base currencies using tidyverse:
+
+\begin{verbatim}
+R
+Copy code
+library(tidyverse)
+
+# Load data
+big_mac_data <- read.csv("big-mac-full-index.csv")
+
+# Define base currencies to loop through
+base_currencies <- unique(big_mac_data$currency_code)
+
+# Equivalent code using tidyverse
+big_mac_data <- big_mac_data %>%
+  split(.$date) %>%
+  map_df(~ {    .x %>%
+      mutate(across(contains("price"), ~ dollar_price / .x[dollar_price != 0 & currency_code == "USD", "dollar_price"]) - 1) %>%
+      pivot_longer(cols = ends_with("_price"), names_to = "price_type", values_to = "price_value") %>%
+      filter(price_type == "local_price") %>%
+      select(-price_type) %>%
+      pivot_wider(names_from = "currency_code", values_from = "price_value")
+}, .id = "date")
+
+# Clean up column names
+names(big_mac_data) <- gsub("\\.", "_", names(big_mac_data))
+\end{verbatim}
+
+In this example, we first load the tidyverse package and read in the data using read.csv(). The original data.table code calculates the Big Mac index for multiple base currencies by looping through base\_currencies and adding a new column to the big\_mac\_index data.table for each base currency. The equivalent code using tidyverse uses split() and map\_df() to group the data by date, then apply a series of transformations to calculate the Big Mac index for each base currency.
+
+In the map\_df() call, we use mutate() and across() to divide the dollar price for each observation by the dollar price for the base currency's row, and subtract 1 to get the over/undervaluation value. We then use pivot\_longer() to convert the wide-format data to long format, filter for the local\_price values, and use pivot\_wider() to convert the data back to wide format with a column for each currency. Finally, we use gsub() to clean up the column names by replacing periods with underscores.
+
+Note that in tidyverse, it is generally recommended to avoid using loops and instead use functions like map() and purrr::walk() to iterate over data frames or lists. In this case, we use split() and map\_df() to group the data by date and apply a transformation to each group.
+
+{[}HS{]} Give me time to understand what you wrote. I will get back to you later.
+
+{[}ChatGPT{]} No problem, take your time! Let me know if you have any questions or if there's anything I can clarify.
+
+\hypertarget{bigmacindexj}{%
+\subsection{訳：ビッグマック・インデックス}\label{bigmacindexj}}
+
+{[}HS{]} Rでtidyverseのdata.table .SDを書き換える方法を教えてください。
+
+{[}ChatGPT{]} 確かに! data.tableにおいて、.SDはグループ化されたdata.tableの各グループのデータのサブセットを指します。Tidyverseでは、dplyrパッケージを使用することで同様の機能を実現することができます。
+
+tidyverseパッケージをロードしたと仮定して、.SDを使用するdata.tableコードブロックをどのように書き換えることができるかの例を以下に示します。
+
+\begin{verbatim}
+R
+Copy code
+library(tidyverse)
+
+# Load example data
+data(mtcars)
+mtcars_dt <- as.data.table(mtcars)
+
+# Original data.table code
+mtcars_dt[, lapply(.SD, mean), by = cyl]
+
+# Equivalent code using tidyverse
+mtcars %>%
+  group_by(cyl) %>%
+  summarize(across(everything(), mean))
+\end{verbatim}
+
+この例では、まずtidyverseパッケージをロードし、mtcarsデータフレームをdata.tableに変換しています。オリジナルのdata.tableのコードは、cyl列によって定義された各グループの各列の平均を計算します。Tidyverseを使った同等のコードは、まずデータをcylでグループ化し、それからsummarize()とacross()を使って、すべての列の平均を計算します。
+
+across()は、関数を適用する列を指定するために、everything()のような列選択ヘルパーを取ることに注意してください。この場合、everything() は「すべての列に関数を適用する」ことを意味します。
+
+{[}HS{]} エコノミストのビッグマックインデックスから引用した以下のように書き換えてもらえますか？
+
+{[}ChatGPT{]} もちろんです。以下は、The Economistのビッグマック指数を計算するために使われているdata.tableのコードを、tidyverseを使って書き換える例です。
+
+\begin{verbatim}
+R
+Copy code
+library(tidyverse)
+
+# Load data
+big_mac_data <- read.csv("big-mac-full-index.csv")
+
+# Define base currencies to loop through
+base_currencies <- unique(big_mac_data$currency_code)
+
+# Equivalent code using tidyverse
+big_mac_data <- big_mac_data %>%
+  split(.$date) %>%
+  map_df(~ {    .x %>%
+      mutate(across(contains("price"), ~ dollar_price / .x[dollar_price != 0 & currency_code == "USD", "dollar_price"]) - 1) %>%
+      pivot_longer(cols = ends_with("_price"), names_to = "price_type", values_to = "price_value") %>%
+      filter(price_type == "local_price") %>%
+      select(-price_type) %>%
+      pivot_wider(names_from = "currency_code", values_from = "price_value")
+}, .id = "date")
+
+# Clean up column names
+names(big_mac_data) <- gsub("\\.", "_", names(big_mac_data))
+\end{verbatim}
+
+この例では、まずtidyverseパッケージをロードし、read.csv()を使ってデータを読み込んでいます。オリジナルのdata.tableコードは、base\_currenciesをループし、各基本通貨についてbig\_mac\_index data.tableに新しい列を追加することによって複数の基本通貨についてのビッグマックインデックスを計算します。Tidyverseを使った同等のコードは、split()とmap\_df()を使ってデータを日付でグループ化し、一連の変換を適用して各基本通貨のBig Mac指数を計算します。
+
+map\_df()の呼び出しでは、mutate()とacross()を使って、各観測のドル価格を基準通貨の行のドル価格で割り、1を引いて過不足値を得ています。次に、pivot\_longer() を使用して、ワイドフォーマットのデータをロングフォーマットに変換し、local\_price の値をフィルタリングし、pivot\_wider() を使用して、データを各通貨の列を持つワイドフォーマットに変換しなおします。最後に、gsub() を使って、ピリオドをアンダースコアに置き換えてカラム名をクリーンアップしています。
+
+Tidyverseでは、一般的にループの使用を避け、代わりにmap()やpurrr::walk()などの関数を使用してデータフレームやリストに対して反復処理を行うことが推奨されていることに注意してください。この場合、split() と map\_df() を使って、データを日付ごとにグループ化し、各グループに変換を適用します。
+
+{[}HS{]} あなたが書いたものを理解するのに時間をください。後で返事をします。
+
+{[}ChatGPT{]} 大丈夫です、ゆっくりしていってください。何か質問があったり、明確にできることがあれば教えてください。
+
+\hypertarget{bookdown}{%
+\chapter{Bookdown}\label{bookdown}}
+
+\hypertarget{about}{%
+\section{About}\label{about}}
+
+This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports; for example, a math equation \(a^2 + b^2 = c^2\).
+
+\hypertarget{usage}{%
+\subsection{Usage}\label{usage}}
+
+Each \textbf{bookdown} chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter \emph{must} start with a first-level heading: \texttt{\#\ A\ good\ chapter}, and can contain one (and only one) first-level heading.
+
+Use second-level and higher headings within chapters like: \texttt{\#\#\ A\ short\ section} or \texttt{\#\#\#\ An\ even\ shorter\ section}.
+
+The \texttt{index.Rmd} file is required, and is also your first book chapter. It will be the homepage when you render the book.
+
+\hypertarget{render-book}{%
+\subsection{Render book}\label{render-book}}
+
+You can render the HTML version of this example book without changing anything:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Find the \textbf{Build} pane in the RStudio IDE, and
+\item
+  Click on \textbf{Build Book}, then select your output format, or select ``All formats'' if you'd like to use multiple formats from the same book source files.
+\end{enumerate}
+
+Or build the book from the R console:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{render\_book}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+To render this example to PDF as a \texttt{bookdown::pdf\_book}, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
+
+\hypertarget{preview-book}{%
+\subsection{Preview book}\label{preview-book}}
+
+As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in ``Preview book'', or from the R console:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{serve\_book}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{hello-bookdown}{%
+\section{Hello bookdown}\label{hello-bookdown}}
+
+All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (\texttt{\#}) per .Rmd file.
+
+\hypertarget{a-section}{%
+\subsection{A section}\label{a-section}}
+
+All chapter sections start with a second-level (\texttt{\#\#}) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
+
+\hypertarget{an-unnumbered-section}{%
+\subsubsection*{An unnumbered section}\label{an-unnumbered-section}}
+\addcontentsline{toc}{subsubsection}{An unnumbered section}
+
+Chapters and sections are numbered by default. To un-number a heading, add a \texttt{\{.unnumbered\}} or the shorter \texttt{\{-\}} at the end of the heading, like in this section.
+
+\hypertarget{cross}{%
+\section{Cross-references}\label{cross}}
+
+Cross-references make it easier for your readers to find and link to elements in your book.
+
+\hypertarget{chapters-and-sub-chapters}{%
+\subsection{Chapters and sub-chapters}\label{chapters-and-sub-chapters}}
+
+There are two steps to cross-reference any heading:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Label the heading: \texttt{\#\ Hello\ world\ \{\#nice-label\}}.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Leave the label off if you like the automated heading generated based on your heading title: for example, \texttt{\#\ Hello\ world} = \texttt{\#\ Hello\ world\ \{\#hello-world\}}.
+  \item
+    To label an un-numbered heading, use: \texttt{\#\ Hello\ world\ \{-\#nice-label\}} or \texttt{\{\#\ Hello\ world\ .unnumbered\}}.
+  \end{itemize}
+\item
+  Next, reference the labeled heading anywhere in the text using \texttt{\textbackslash{}@ref(nice-label)}; for example, please see Chapter \ref{cross}.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    If you prefer text as the link instead of a numbered reference use: \protect\hyperlink{cross}{any text you want can go here}.
+  \end{itemize}
+\end{enumerate}
+
+\hypertarget{captioned-figures-and-tables}{%
+\subsection{Captioned figures and tables}\label{captioned-figures-and-tables}}
+
+Figures and tables \emph{with captions} can also be cross-referenced from elsewhere in your book using \texttt{\textbackslash{}@ref(fig:chunk-label)} and \texttt{\textbackslash{}@ref(tab:chunk-label)}, respectively.
+
+See Figure \ref{fig:nice-fig}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mar =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
+\FunctionTok{plot}\NormalTok{(pressure, }\AttributeTok{type =} \StringTok{\textquotesingle{}b\textquotesingle{}}\NormalTok{, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{90-bookdown_files/figure-latex/nice-fig-1} 
+
+}
+
+\caption{Here is a nice figure!}\label{fig:nice-fig}
+\end{figure}
+
+Don't miss Table \ref{tab:nice-tab}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}
+  \FunctionTok{head}\NormalTok{(pressure, }\DecValTok{10}\NormalTok{), }\AttributeTok{caption =} \StringTok{\textquotesingle{}Here is a nice table!\textquotesingle{}}\NormalTok{,}
+  \AttributeTok{booktabs =} \ConstantTok{TRUE}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{table}
+
+\caption{\label{tab:nice-tab}Here is a nice table!}
+\centering
+\begin{tabular}[t]{rr}
+\toprule
+temperature & pressure\\
+\midrule
+0 & 0.0002\\
+20 & 0.0012\\
+40 & 0.0060\\
+60 & 0.0300\\
+80 & 0.0900\\
+\addlinespace
+100 & 0.2700\\
+120 & 0.7500\\
+140 & 1.8500\\
+160 & 4.2000\\
+180 & 8.8000\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{parts}{%
+\section{Parts}\label{parts}}
+
+You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file.
+
+Add a numbered part: \texttt{\#\ (PART)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
+
+Add an unnumbered part: \texttt{\#\ (PART\textbackslash{}*)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
+
+Add an appendix as a special kind of un-numbered part: \texttt{\#\ (APPENDIX)\ Other\ stuff\ \{-\}} (followed by \texttt{\#\ A\ chapter}). Chapters in an appendix are prepended with letters instead of numbers.
+
+\hypertarget{footnotes-and-citations}{%
+\section{Footnotes and citations}\label{footnotes-and-citations}}
+
+\hypertarget{footnotes}{%
+\subsection{Footnotes}\label{footnotes}}
+
+Footnotes are put inside the square brackets after a caret \texttt{\^{}{[}{]}}. Like this one \footnote{This is a footnote.}.
+
+\hypertarget{citations}{%
+\subsection{Citations}\label{citations}}
+
+Reference items in your bibliography file(s) using \texttt{@key}.
+
+For example, we are using the \textbf{bookdown} package \citep{R-bookdown} (check out the last code chunk in index.Rmd to see how this citation key was added) in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015} (this citation was added manually in an external file book.bib).
+Note that the \texttt{.bib} files need to be listed in the index.Rmd with the YAML \texttt{bibliography} key.
+
+The \texttt{bs4\_book} theme makes footnotes appear inline when you click on them. In this example book, we added \texttt{csl:\ chicago-fullnote-bibliography.csl} to the \texttt{index.Rmd} YAML, and include the \texttt{.csl} file. To download a new style, we recommend: \url{https://www.zotero.org/styles/}
+
+The RStudio Visual Markdown Editor can also make it easier to insert citations: \url{https://rstudio.github.io/visual-markdown-editing/\#/citations}
+
+\hypertarget{blocks}{%
+\section{Blocks}\label{blocks}}
+
+\hypertarget{equations}{%
+\subsection{Equations}\label{equations}}
+
+Here is an equation.
+
+\begin{equation} 
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+  \label{eq:binom}
+\end{equation}
+
+You may refer to using \texttt{\textbackslash{}@ref(eq:binom)}, like see Equation \eqref{eq:binom}.
+
+\hypertarget{theorems-and-proofs}{%
+\subsection{Theorems and proofs}\label{theorems-and-proofs}}
+
+Labeled theorems can be referenced in text using \texttt{\textbackslash{}@ref(thm:tri)}, for example, check out this smart theorem \ref{thm:tri}.
+
+\begin{theorem}
+\protect\hypertarget{thm:tri}{}\label{thm:tri}For a right triangle, if \(c\) denotes the \emph{length} of the hypotenuse
+and \(a\) and \(b\) denote the lengths of the \textbf{other} two sides, we have
+\[a^2 + b^2 = c^2\]
+\end{theorem}
+
+Read more here \url{https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html}.
+
+\hypertarget{callout-blocks}{%
+\subsection{Callout blocks}\label{callout-blocks}}
+
+The \texttt{bs4\_book} theme also includes special callout blocks, like this \texttt{.rmdnote}.
+
+You can use \textbf{markdown} inside a block.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{head}\NormalTok{(beaver1, }\AttributeTok{n =} \DecValTok{5}\NormalTok{)}
+\CommentTok{\#\textgreater{}   day time  temp activ}
+\CommentTok{\#\textgreater{} 1 346  840 36.33     0}
+\CommentTok{\#\textgreater{} 2 346  850 36.34     0}
+\CommentTok{\#\textgreater{} 3 346  900 36.35     0}
+\CommentTok{\#\textgreater{} 4 346  910 36.42     0}
+\CommentTok{\#\textgreater{} 5 346  920 36.55     0}
+\end{Highlighting}
+\end{Shaded}
+
+It is up to the user to define the appearance of these blocks for LaTeX output.
+
+You may also use: \texttt{.rmdcaution}, \texttt{.rmdimportant}, \texttt{.rmdtip}, or \texttt{.rmdwarning} as the block name.
+
+The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: \url{https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html}
+
+\hypertarget{sharing-your-book}{%
+\section{Sharing your book}\label{sharing-your-book}}
+
+\hypertarget{publishing}{%
+\subsection{Publishing}\label{publishing}}
+
+HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
+
+\hypertarget{pages}{%
+\subsection{404 pages}\label{pages}}
+
+By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
+
+\hypertarget{metadata-for-sharing}{%
+\subsection{Metadata for sharing}\label{metadata-for-sharing}}
+
+Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
+
+This \texttt{bs4\_book} provides enhanced metadata for social sharing, so that each chapter shared will have a unique description, auto-generated based on the content.
+
+Specify your book's source repository on GitHub as the \texttt{repo} in the \texttt{\_output.yml} file, which allows users to view each chapter's source file or suggest an edit. Read more about the features of this output format here:
+
+\url{https://pkgs.rstudio.com/bookdown/reference/bs4_book.html}
+
+Or use:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{bs4\_book}
+\end{Highlighting}
+\end{Shaded}
+
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}

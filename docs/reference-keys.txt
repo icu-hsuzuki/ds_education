@@ -1,6 +1,7 @@
 fig:nice-fig
 tab:nice-tab
 eq:binom
+thm:tri
 introduction
 math2019
 音声付き画面収録ビデオyoutube
@@ -78,7 +79,13 @@ eco232
 ds4aj
 リンク
 chatgpt
-epidemiology---疫学
+firstchat
+firstchatj
+digitalhealth
+digitalhealthj
+nationalbond
+bigmacindex
+bigmacindexj
 bookdown
 about
 usage
