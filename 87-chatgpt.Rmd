@@ -1231,7 +1231,7 @@ It is worth noting that using a local CRAN mirror can also improve the availabil
 
 When you set up OneDrive, you can choose which folders to sync with the cloud, including the Documents folder. This means that any files stored in the Documents folder will be uploaded to OneDrive and can be accessed from other devices where you have signed in to OneDrive.
 
-However, the home directory of the user (often located in "C:\Users<username>") includes more than just the Documents folder. It contains various subfolders such as Desktop, Downloads, Music, Pictures, and Videos, which also contain important user data. By default, only the Documents folder is synced with OneDrive.
+However, the home directory of the user (often located in "C:\\Users<username>") includes more than just the Documents folder. It contains various subfolders such as Desktop, Downloads, Music, Pictures, and Videos, which also contain important user data. By default, only the Documents folder is synced with OneDrive.
 
 So while using OneDrive to backup your Documents folder is a useful way to ensure your important files are stored safely and accessible from anywhere, it does not mean that your entire home directory is stored in OneDrive.
 
@@ -1252,7 +1252,7 @@ If you're unsure about how to manage your user's home directory or have concerns
 1. Create a new folder outside of OneDrive where you want your user's home directory to be located.
 2. Copy the contents of your current user's home directory from OneDrive to the new folder you created.
 3. Open the registry editor by pressing the Windows key + R, typing "regedit" and pressing Enter.
-4. Navigate to the following registry key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList
+4. Navigate to the following registry key: HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\ProfileList
 5. Find the key for your user account, which will be named with a long string of characters ending in ".bak". Note that the ".bak" extension will only be present if there is already a profile folder for your account in the default location.
 6. Right-click on the key for your user account and select "Rename". Remove the ".bak" extension from the end of the key name.
 7. Double-click on the "ProfileImagePath" value in the right pane and change the path to the new location of your user's home directory.
@@ -1293,7 +1293,7 @@ CRAN 自体がパッケージの投稿や更新に対して厳格な基準を維
 
 OneDriveのセットアップ時に、Documentsフォルダを含む、クラウドと同期するフォルダを選択することができます。つまり、Documents フォルダに保存されたファイルは OneDrive にアップロードされ、OneDrive にサインインしている他のデバイスからアクセスできるようになります。
 
-ただし、ユーザーのホームディレクトリ（多くの場合、「C: \Users 」にあります）には、Documents フォルダ以外のものも含まれています。Desktop、Downloads、Music、Pictures、Videosなど様々なサブフォルダーが含まれており、これらにも重要なユーザーデータが含まれています。デフォルトでは、ドキュメント・フォルダのみがOneDriveと同期されます。
+ただし、ユーザーのホームディレクトリ（多くの場合、「C: \\Users 」にあります）には、Documents フォルダ以外のものも含まれています。Desktop、Downloads、Music、Pictures、Videosなど様々なサブフォルダーが含まれており、これらにも重要なユーザーデータが含まれています。デフォルトでは、ドキュメント・フォルダのみがOneDriveと同期されます。
 
 そのため、OneDrive を使用して Documents フォルダをバックアップすることは、重要なファイルを安全に保存し、どこからでもアクセスできるようにするための便利な方法ですが、ホーム ディレクトリ全体が OneDrive に保存されるわけではありません。
 
