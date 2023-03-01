@@ -113,3 +113,4 @@ sharing-your-book
 publishing
 pages
 metadata-for-sharing
+cover-image-path-to-the-social-sharing-image-like-imagescover.jpg
