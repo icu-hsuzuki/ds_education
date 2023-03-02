@@ -91,7 +91,7 @@ Note that in R, it is generally recommended to use the assignment operator <- ra
 
 1. Use the "Enter" or "Return" key on your keyboard. This will create a new line in the message, but will not send it until you press the "Send" button or key.
 2. Use a line break character. Depending on the app or platform you are using, you may be able to insert a line break by typing a special character, such as `\n` or `\r`. For example, you could type Hello\\nWorld to create a line break between the two words.
-3. Use a line break code. Some apps and platforms support the use of special codes to insert line breaks. For example, in HTML, you can use the <br> code to create a line break.
+3. Use a line break code. Some apps and platforms support the use of special codes to insert line breaks. For example, in HTML, you can use the `<br>` code to create a line break.
 4. Use a formatting option. Many chat and messaging apps have formatting options that allow you to create a line break by applying a specific format to your text. For example, you may be able to use the "Bullets" or "Numbering" options to create a line break.
 
 It's important to note that the specific method you use to insert a line break may depend on the app or platform you are using, as well as the capabilities of the device or computer you are using.
@@ -295,7 +295,7 @@ print(y)
 2. Use a line break character. Depending on the app or platform you are using, you may be able to insert a line break by typing a special character, such as `\n` or `\r`. For example, you could type Hello\\nWorld to create a line break between the two words.
 
 3. Use a line break code. アプリやプラットフォームによっては、特殊なコードを使って改行することができます。例えば、HTMLの場合、改行するための 
-
+`<br> `
 というコードで改行できます。
 
 4. 書式設定オプションを使用する。多くのチャットやメッセージングアプリには、テキストに特定の書式を適用して改行を作成できる書式設定オプションがあります。例えば、「箇条書き」や「番号付け」オプションを使って、改行を作成できる場合があります。
@@ -341,8 +341,6 @@ Ctrl + Enter の組み合わせでうまくいかない場合は、アプリの�
 例えば、アプリが対応していれば、以下のように「←」文字で改行できるかもしれません。
 
 ```
-Copy code
-
 Hello\nWorld
 ```
 
