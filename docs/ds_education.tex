@@ -204,6 +204,135 @@
 
 最初は、みなさんも、変数（variable）や、オブジェクト（object）に名前をつけるときは、半角英数を使い、日本語は、使わないようにすることをお勧めします。
 
+\hypertarget{issues}{%
+\chapter{教養としてのデータサイエンス教育の課題}\label{issues}}
+
+\emph{RIMS 共同研究 (公開型) 教育数学の一側面　-- 高等教育における数学の多様性と普遍性 -- での講演予稿}
+
+\hypertarget{ux306fux3058ux3081ux306b}{%
+\section{はじめに}\label{ux306fux3058ux3081ux306b}}
+
+2019年3月に定年を迎えるにあたって、一旦大学からはなれ、「AI によって変わっていく世界」について考えるため、以前から計画していたように、MOOCs（Massive Open Online Courses）を中心に据えて、データサイエンスを学び始めた。
+
+その秋、2019年9月17日に開催された、日本数学会教育委員会主催教育シンポジウム「文理共通して行う数理・データサイエンス教育」で、データサイエンスを学び始めた経験を踏まえて、講演する機会をいただいた。その後、2020年3月に開催予定だった京都数理解析研究所での研究集会「教育数学の一側面 ‒ 高等教育における数学の多様性と 普遍性 ‒ (II)」での講演依頼をいただき、準備していたが、コロナ感染拡大への懸念から、中止となった。同時期に、数理・データサイエンス・AI教育強化拠点コンソーシアムのよる、「数理・データサイエンス・AI（リテラシーレベル）モデルカリキュラム 　～　データ思考の涵養　～（案）」に対する、意見募集に投稿。さらに「数学セミナー」からの依頼で、原稿を書く機会が与えられた。
+
+すでに、退職はしていたが、数学を専門とする大学人で、データサイエンス教育に強い関心をもちながら、学んでいるものとして、発言してきた。
+
+その後、在職中も、少し関係していたこともあり、あることが契機となり、2020年度から、毎年、冬に、大学院一般向け（分野の指定なし）の授業、「研究者のためのデータ分析（Data Analysis for Researchers）」を担当している。複数の教員で担当しているが、核となる、コンピュータ言語 R を使った、Exploratory Data Analysis (探索的データ分析) の実際を教える部分は、わたしが担当している。受講生は20人程度、殆どが、外国人。それも、多国籍で、英語で教えている。
+
+一緒に担当している、経済学の教員から、経済学の大学院のコースで、２コマ（70分x2）``Introduction to R'' を特別講師として教えてほしいと依頼され、英語で講義、さらに、日本語で開講している「中級マクロ経済学」の需要でも、R で「計量経済学」を履修している学生向けに、バブリック・データによる実際の分析の講義依頼を受け、3コマ（70分x3）に、課題も課して、日本語で授業をする機会を得た。
+
+これらが、契機となり、また、bookdown という R のパッケージと、Git-GitHub 連携で、電子出版が容易にできるようになったこともあり、``Data Analysis for Researchers'' の講義録のようなものを、英語で、それ以外に「データサイエンスを学びませんか」を日本語による、電子書籍を書き始めている。
+
+まだ、始まったばかりではあるが、このような経験を踏まえて、データサインエスを学び始めた数学を担当していた大学人という立場ではなく、実際に、データサイエンスを教えているものとして、わたしの考えをお話ししたいと思う。
+
+\hypertarget{ux8ab2ux984cux306eux6574ux7406}{%
+\section{課題の整理}\label{ux8ab2ux984cux306eux6574ux7406}}
+
+\hypertarget{ux80ccux666f}{%
+\subsection{背景}\label{ux80ccux666f}}
+
+課題をリストする前に、まずは、なぜ、いま、データサイエンスか、さらに、なぜ、すべての人、特に、大学などで学ぶ理系・文系を問わず、学生が、学ばなければならないかを短く、まとめてみたいと思う。
+
+\begin{quote}
+AI（人工知能）で、大きく変化しつつある社会において、ひとびとが、個人で、そして、協力して、どのように生きていくかを考え、準備するために、その背後にある、データサイエンスと、その考え方の基本を学ぶ必要がある。
+\end{quote}
+
+インターネット上での、リコメンデーションなどに、AI が使われていることはご存知のかたが多いと思うが、自動車などの、自動運転も、もう少しで実用化されるとも言われ、最近では、Chat GPT などの、対話型 AI についても、各所で語られている。
+
+ひとことで言うと、行動決定や、意思決定に、大きく関わる存在になっていると共に、誤りや不適切なことが、AI から出てくることもあり、それに、どのように、向き合って行ったら良いのか、倫理や、価値を、どう判断して行ったら良いかも含め、向き合うべき課題であることは、確実であろう。
+
+\hypertarget{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux6559ux80b2ux306eux8ab2ux984c}{%
+\subsection{データサイエンス教育の課題}\label{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux6559ux80b2ux306eux8ab2ux984c}}
+
+DX（デジタル化）や、IT化が、日本は遅れていると言われている中で、データサイエンスの課題には、どのようなものがあるのか。
+
+\hypertarget{ux65e5ux672cux306eux6559ux80b2ux306eux9045ux308cux306bux95a2ux3059ux308bux8a8dux8b58}{%
+\subsubsection{日本の教育の遅れに関する認識}\label{ux65e5ux672cux306eux6559ux80b2ux306eux9045ux308cux306bux95a2ux3059ux308bux8a8dux8b58}}
+
+\begin{itemize}
+\tightlist
+\item
+  学際科学分野、特に、理系文系の融合分野が遅れている、それにともない、異分野の教員の教育における協力体制未発達
+\item
+  批判的に考え、意思決定の根拠を他者にも理解できるように説明しながら学ぶリベラルアーツ教育が未発達
+\item
+  文理の分断がとくに高校以降の教育現場で激しく、文系の学生には、理系アレルギーまたは数学への恐怖心が強い学生が多く、理系の学生には、社会の問題と大学で学ぶことの関係の認識が希薄
+\item
+  コンピュータ教育がなされておらず、コンピュータは、ホームページ閲覧とワープロとしての利用が殆ど
+\item
+  社会、政府、メディアなどにおいて、データおよび、その可視化（Visualization）によるコミュニケーションの
+\end{itemize}
+
+\hypertarget{ux91cdux8981ux6027ux304cux8a8dux8b58ux4e0dux8db3}{%
+\subsubsection{重要性が認識不足}\label{ux91cdux8981ux6027ux304cux8a8dux8b58ux4e0dux8db3}}
+
+\begin{itemize}
+\tightlist
+\item
+  授業などの公開（OCW）が未発達な中で、MOOCs を一部始めているが、非常に限定的、教育方法を学ぶことも遅れている
+\item
+  教育から学習へという視点への移行が遅れ、（数理系では学問の性質上顕著に）学生と共に学ぶ経験が少ない
+\item
+  英語で学ぶことが限定的で、世界に目が開かれておらず、世界から学ぶ姿勢が欠如している
+\item
+  海外での教育から学ぶことができておらず、大学教育において顕著
+\end{itemize}
+
+\hypertarget{ux826fux3044ux3068ux3068ux308bux3053ux3068ux304cux3067ux304dux308bux9762ux3082ux3042ux308b}{%
+\subsubsection{良いととることができる面もある}\label{ux826fux3044ux3068ux3068ux308bux3053ux3068ux304cux3067ux304dux308bux9762ux3082ux3042ux308b}}
+
+\begin{itemize}
+\tightlist
+\item
+  単純な功利主義（naive utilitarianism）に対する抵抗が強く、株式をはじめとして、AIでのコントロールに消極的である
+\item
+  過度な自己主張を嫌い、協力、チームワークがだいじにされる。（個性や多様性を生かすチームでの働きは遅れている）
+\item
+  小中学校での、基礎教育は世界的にもある程度の水準を保っており、ある程度、仮定できる基礎学力もある
+\end{itemize}
+
+\hypertarget{ux5927ux5b66ux306aux3069ux3067ux306eux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux6559ux80b2}{%
+\subsection{大学などでの、データサイエンス教育}\label{ux5927ux5b66ux306aux3069ux3067ux306eux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux6559ux80b2}}
+
+多くの学生は会社に就職し、そこで、マーケティング戦略を練るためや、経営の効率化、高収益化、また、新製品開発などに、AI を使うようだろう。公的機関や他のサービス機関でも、似た傾向にあるように思われる。現在では、農業や、漁業、林業などでも、同様の傾向が見られる。では、そのようなことを教えるのが良いのだろうか。
+
+個人的には、そうは考えない。上で述べたようなことが重要でないと言うわけではないが、個別の課題に、向き合う前に、意思決定や、価値観の背後にある、考え方について、経験することで、現場でも、AI がなぜ、そのような提案をするのかも、ある程度理解し、間違いはどのような場所に起こるのか、どのようなことは、任せても良いのかなどの判断ができるようになることが大切であると思う。
+
+\hypertarget{ux4e09ux3064ux306eux63d0ux6848}{%
+\section{三つの提案}\label{ux4e09ux3064ux306eux63d0ux6848}}
+
+\hypertarget{aiux4ebaux5de5ux77e5ux80fdux3068ux306eux4ed8ux304dux5408ux3044ux65b9ux3092ux5b66ux3076}{%
+\subsection{AI（人工知能）との付き合い方を学ぶ}\label{aiux4ebaux5de5ux77e5ux80fdux3068ux306eux4ed8ux304dux5408ux3044ux65b9ux3092ux5b66ux3076}}
+
+\hypertarget{ux4e16ux754cux3084ux3072ux3068ux3073ux3068ux306eux8ab2ux984cux306bux3064ux3044ux3066ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux3092ux5b66ux3076}{%
+\subsection{世界や、ひとびとの課題について、データサイエンスを学ぶ}\label{ux4e16ux754cux3084ux3072ux3068ux3073ux3068ux306eux8ab2ux984cux306bux3064ux3044ux3066ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux3092ux5b66ux3076}}
+
+\hypertarget{ux81eaux5206ux3084aiux4ebaux5de5ux77e5ux80fdux306eux5224ux65adux306bux983cux3089ux306aux3044ux624bux6cd5ux3092ux5b66ux3076}{%
+\subsection{自分や、AI（人工知能）の判断に頼らない手法を学ぶ}\label{ux81eaux5206ux3084aiux4ebaux5de5ux77e5ux80fdux306eux5224ux65adux306bux983cux3089ux306aux3044ux624bux6cd5ux3092ux5b66ux3076}}
+
+\hypertarget{ux53c2ux8003ux6587ux732e}{%
+\section*{参考文献}\label{ux53c2ux8003ux6587ux732e}}
+\addcontentsline{toc}{section}{参考文献}
+
+\hypertarget{coursedesign}{%
+\chapter{生涯学び続ける基盤を構築するデータサイエンス・コースの開発}\label{coursedesign}}
+
+\hypertarget{free-open-online-ux6559ux6750ux306eux6d3bux7528ux306aux3069ux3082ux8996ux91ceux306bux5165ux308cux3066}{%
+\section*{\textasciitilde Free Open Online 教材の活用なども視野に入れて\textasciitilde{}}\label{free-open-online-ux6559ux6750ux306eux6d3bux7528ux306aux3069ux3082ux8996ux91ceux306bux5165ux308cux3066}}
+\addcontentsline{toc}{section}{\textasciitilde Free Open Online 教材の活用なども視野に入れて\textasciitilde{}}
+
+ここでは、前章で提案した、三つの学びについて、具体的に考えていきたい。
+
+\hypertarget{aiux4ebaux5de5ux77e5ux80fdux3068ux306eux4ed8ux304dux5408ux3044ux65b9ux3092ux5b66ux3076-1}{%
+\section{AI（人工知能）との付き合い方を学ぶ}\label{aiux4ebaux5de5ux77e5ux80fdux3068ux306eux4ed8ux304dux5408ux3044ux65b9ux3092ux5b66ux3076-1}}
+
+\hypertarget{ux4e16ux754cux3084ux3072ux3068ux3073ux3068ux306eux8ab2ux984cux306bux3064ux3044ux3066ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux3092ux5b66ux3076-1}{%
+\section{世界や、ひとびとの課題について、データサイエンスを学ぶ}\label{ux4e16ux754cux3084ux3072ux3068ux3073ux3068ux306eux8ab2ux984cux306bux3064ux3044ux3066ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux3092ux5b66ux3076-1}}
+
+\hypertarget{ux81eaux5206ux3084aiux4ebaux5de5ux77e5ux80fdux306eux5224ux65adux306bux983cux3089ux306aux3044ux624bux6cd5ux3092ux5b66ux3076-1}{%
+\section{自分や、AI（人工知能）の判断に頼らない手法を学ぶ}\label{ux81eaux5206ux3084aiux4ebaux5de5ux77e5ux80fdux306eux5224ux65adux306bux983cux3089ux306aux3044ux624bux6cd5ux3092ux5b66ux3076-1}}
+
 \hypertarget{appendix-appendix}{%
 \appendix}
 
@@ -227,8 +356,8 @@
 \hypertarget{ux8b1bux6f14ux6982ux8981}{%
 \section{講演概要}\label{ux8b1bux6f14ux6982ux8981}}
 
-\hypertarget{ux306fux3058ux3081ux306b}{%
-\subsection{はじめに}\label{ux306fux3058ux3081ux306b}}
+\hypertarget{ux306fux3058ux3081ux306b-1}{%
+\subsection{はじめに}\label{ux306fux3058ux3081ux306b-1}}
 
 \hypertarget{ux80ccux666fux73feux72b6}{%
 \subsubsection{背景・現状}\label{ux80ccux666fux73feux72b6}}
@@ -1091,8 +1220,8 @@ And now Apple CEO Tim Cook is spreading the word that would-be programmers reall
 
 最後に、同時期に「数理・データサイエンス・AI（リテラシーレベル）モデルカリキュラム 　～　データ思考の涵養　～（案）」に関する意見として、送付した私見を付記する。
 
-\hypertarget{ux306fux3058ux3081ux306b-1}{%
-\section{はじめに}\label{ux306fux3058ux3081ux306b-1}}
+\hypertarget{ux306fux3058ux3081ux306b-2}{%
+\section{はじめに}\label{ux306fux3058ux3081ux306b-2}}
 
 首相官邸発の「 イノベーション政策強化推進のための有識者会議『AI戦略』」{[}1{]} では、 2019 年 6 月 11 付けの文書「AI 戦略 2019 ∼ 人・産業・地域・政府全てに AI」で「デジタル社会の基礎知識 (いわゆる『読み・書き・そろばん』的な素養) である『数理・データサイエ ンス・AI』に関する知識・技能、新たな社会の在り方や製品・サービスをデザイン するために必要な基礎力など、持続可能な社会の創り手として必要な力を全ての国民が育み、社会のあらゆる分野で人材が活躍することを目指し、以下の三項目を 2025 年にむけ て実現する目標として掲げている。
 
@@ -1433,8 +1562,8 @@ HP: \url{http://www.mi.u-tokyo.ac.jp/consortium/mc_literacy.html}
   \end{itemize}
 \end{itemize}
 
-\hypertarget{ux65e5ux672cux306eux6559ux80b2ux306eux9045ux308cux306bux95a2ux3059ux308bux8a8dux8b58}{%
-\subsection{日本の教育の遅れに関する認識}\label{ux65e5ux672cux306eux6559ux80b2ux306eux9045ux308cux306bux95a2ux3059ux308bux8a8dux8b58}}
+\hypertarget{ux65e5ux672cux306eux6559ux80b2ux306eux9045ux308cux306bux95a2ux3059ux308bux8a8dux8b58-1}{%
+\subsection{日本の教育の遅れに関する認識}\label{ux65e5ux672cux306eux6559ux80b2ux306eux9045ux308cux306bux95a2ux3059ux308bux8a8dux8b58-1}}
 
 \begin{itemize}
 \tightlist
@@ -1450,8 +1579,8 @@ HP: \url{http://www.mi.u-tokyo.ac.jp/consortium/mc_literacy.html}
   社会、政府、メディアなどにおいて、データおよび、その可視化（Visualization）によるコミュニケーションの
 \end{itemize}
 
-\hypertarget{ux91cdux8981ux6027ux304cux8a8dux8b58ux4e0dux8db3}{%
-\subsection{重要性が認識不足}\label{ux91cdux8981ux6027ux304cux8a8dux8b58ux4e0dux8db3}}
+\hypertarget{ux91cdux8981ux6027ux304cux8a8dux8b58ux4e0dux8db3-1}{%
+\subsection{重要性が認識不足}\label{ux91cdux8981ux6027ux304cux8a8dux8b58ux4e0dux8db3-1}}
 
 \begin{itemize}
 \tightlist
@@ -1465,8 +1594,8 @@ HP: \url{http://www.mi.u-tokyo.ac.jp/consortium/mc_literacy.html}
   海外での教育から学ぶことができておらず、大学教育において顕著
 \end{itemize}
 
-\hypertarget{ux826fux3044ux3068ux3068ux308bux3053ux3068ux304cux3067ux304dux308bux9762ux3082ux3042ux308b}{%
-\subsection{良いととることができる面もある}\label{ux826fux3044ux3068ux3068ux308bux3053ux3068ux304cux3067ux304dux308bux9762ux3082ux3042ux308b}}
+\hypertarget{ux826fux3044ux3068ux3068ux308bux3053ux3068ux304cux3067ux304dux308bux9762ux3082ux3042ux308b-1}{%
+\subsection{良いととることができる面もある}\label{ux826fux3044ux3068ux3068ux308bux3053ux3068ux304cux3067ux304dux308bux9762ux3082ux3042ux308b-1}}
 
 \begin{itemize}
 \tightlist
@@ -1543,8 +1672,8 @@ R は、インターネット上からダウンロードして、自分のコン
 
 あなたも、データサイエンスを学びませんか。
 
-\hypertarget{ux53c2ux8003ux6587ux732e}{%
-\section*{参考文献}\label{ux53c2ux8003ux6587ux732e}}
+\hypertarget{ux53c2ux8003ux6587ux732e-1}{%
+\section*{参考文献}\label{ux53c2ux8003ux6587ux732e-1}}
 \addcontentsline{toc}{section}{参考文献}
 
 {[}1{]}「アルゴリズムが世界を支配する」Christopher Steiner 著、永峯涼訳、角川 書店、2013.

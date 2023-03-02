@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 2 教養としてのデータサイエンス教育の課題 | データ・サイエンス教育</title>
+<meta name="author" content="鈴木 寛（Hiroshi Suzuki）">
+<meta name="description" content="RIMS 共同研究 (公開型) 教育数学の一側面　– 高等教育における数学の多様性と普遍性 – での講演予稿  2.1 はじめに 2019年3月に定年を迎えるにあたって、一旦大学からはなれ、「AI によって変わっていく世界」について考えるため、以前から計画していたように、MOOCs（Massive Open Online Courses）を中心に据えて、データサイエンスを学び始めた。...">
+<meta name="generator" content="bookdown 0.32 with bs4_book()">
+<meta property="og:title" content="Chapter 2 教養としてのデータサイエンス教育の課題 | データ・サイエンス教育">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://icu-hsuzuki.github.io/ds_education/issues.html">
+<meta property="og:description" content="RIMS 共同研究 (公開型) 教育数学の一側面　– 高等教育における数学の多様性と普遍性 – での講演予稿  2.1 はじめに 2019年3月に定年を迎えるにあたって、一旦大学からはなれ、「AI によって変わっていく世界」について考えるため、以前から計画していたように、MOOCs（Massive Open Online Courses）を中心に据えて、データサイエンスを学び始めた。...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 2 教養としてのデータサイエンス教育の課題 | データ・サイエンス教育">
+<meta name="twitter:description" content="RIMS 共同研究 (公開型) 教育数学の一側面　– 高等教育における数学の多様性と普遍性 – での講演予稿  2.1 はじめに 2019年3月に定年を迎えるにあたって、一旦大学からはなれ、「AI によって変わっていく世界」について考えるため、以前から計画していたように、MOOCs（Massive Open Online Courses）を中心に据えて、データサイエンスを学び始めた。...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.2/transition.js"></script><script src="libs/bs3compat-0.4.2/tabs.js"></script><script src="libs/bs3compat-0.4.2/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">データ・サイエンス教育</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">この文書について</a></li>
+<li><a class="" href="introduction.html"><span class="header-section-number">1</span> はじめに</a></li>
+<li><a class="active" href="issues.html"><span class="header-section-number">2</span> 教養としてのデータサイエンス教育の課題</a></li>
+<li><a class="" href="coursedesign.html"><span class="header-section-number">3</span> 生涯学び続ける基盤を構築するデータサイエンス・コースの開発</a></li>
+<li class="book-part">APPENDIX</li>
+<li><a class="" href="math2019.html"><span class="header-section-number">A</span> 教養としてのデータサイエンス教育</a></li>
+<li><a class="" href="math2020.html"><span class="header-section-number">B</span> 教養としてのデータサイエンス教育の目的と課題</a></li>
+<li><a class="" href="susemi202006.html"><span class="header-section-number">C</span> データサイエンスを学びませんか</a></li>
+<li><a class="" href="da4r.html"><span class="header-section-number">D</span> Data Analysis for Researchers</a></li>
+<li><a class="" href="intro2r.html"><span class="header-section-number">E</span> Introduction to R</a></li>
+<li><a class="" href="eco232.html"><span class="header-section-number">F</span> 中級マクロ経済学特別講義</a></li>
+<li><a class="" href="ds4aj.html"><span class="header-section-number">G</span> データサイエンスをはじめましょう</a></li>
+<li><a class="" href="chatgpt.html"><span class="header-section-number">H</span> Chat GPT</a></li>
+<li><a class="" href="bookdown.html"><span class="header-section-number">I</span> Bookdown</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/icu-hsuzuki/ds_education">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="issues" class="section level1" number="2">
+<h1>
+<span class="header-section-number">2</span> 教養としてのデータサイエンス教育の課題<a class="anchor" aria-label="anchor" href="#issues"><i class="fas fa-link"></i></a>
+</h1>
+<p><em>RIMS 共同研究 (公開型) 教育数学の一側面　– 高等教育における数学の多様性と普遍性 – での講演予稿</em></p>
+<div id="はじめに" class="section level2" number="2.1">
+<h2>
+<span class="header-section-number">2.1</span> はじめに<a class="anchor" aria-label="anchor" href="#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB"><i class="fas fa-link"></i></a>
+</h2>
+<p>2019年3月に定年を迎えるにあたって、一旦大学からはなれ、「AI によって変わっていく世界」について考えるため、以前から計画していたように、MOOCs（Massive Open Online Courses）を中心に据えて、データサイエンスを学び始めた。</p>
+<p>その秋、2019年9月17日に開催された、日本数学会教育委員会主催教育シンポジウム「文理共通して行う数理・データサイエンス教育」で、データサイエンスを学び始めた経験を踏まえて、講演する機会をいただいた。その後、2020年3月に開催予定だった京都数理解析研究所での研究集会「教育数学の一側面 ‒ 高等教育における数学の多様性と 普遍性 ‒ (II)」での講演依頼をいただき、準備していたが、コロナ感染拡大への懸念から、中止となった。同時期に、数理・データサイエンス・AI教育強化拠点コンソーシアムのよる、「数理・データサイエンス・AI（リテラシーレベル）モデルカリキュラム 　～　データ思考の涵養　～（案）」に対する、意見募集に投稿。さらに「数学セミナー」からの依頼で、原稿を書く機会が与えられた。</p>
+<p>すでに、退職はしていたが、数学を専門とする大学人で、データサイエンス教育に強い関心をもちながら、学んでいるものとして、発言してきた。</p>
+<p>その後、在職中も、少し関係していたこともあり、あることが契機となり、2020年度から、毎年、冬に、大学院一般向け（分野の指定なし）の授業、「研究者のためのデータ分析（Data Analysis for Researchers）」を担当している。複数の教員で担当しているが、核となる、コンピュータ言語 R を使った、Exploratory Data Analysis (探索的データ分析) の実際を教える部分は、わたしが担当している。受講生は20人程度、殆どが、外国人。それも、多国籍で、英語で教えている。</p>
+<p>一緒に担当している、経済学の教員から、経済学の大学院のコースで、２コマ（70分x2）“Introduction to R” を特別講師として教えてほしいと依頼され、英語で講義、さらに、日本語で開講している「中級マクロ経済学」の需要でも、R で「計量経済学」を履修している学生向けに、バブリック・データによる実際の分析の講義依頼を受け、3コマ（70分x3）に、課題も課して、日本語で授業をする機会を得た。</p>
+<p>これらが、契機となり、また、bookdown という R のパッケージと、Git-GitHub 連携で、電子出版が容易にできるようになったこともあり、“Data Analysis for Researchers” の講義録のようなものを、英語で、それ以外に「データサイエンスを学びませんか」を日本語による、電子書籍を書き始めている。</p>
+<p>まだ、始まったばかりではあるが、このような経験を踏まえて、データサインエスを学び始めた数学を担当していた大学人という立場ではなく、実際に、データサイエンスを教えているものとして、わたしの考えをお話ししたいと思う。</p>
+</div>
+<div id="課題の整理" class="section level2" number="2.2">
+<h2>
+<span class="header-section-number">2.2</span> 課題の整理<a class="anchor" aria-label="anchor" href="#%E8%AA%B2%E9%A1%8C%E3%81%AE%E6%95%B4%E7%90%86"><i class="fas fa-link"></i></a>
+</h2>
+<div id="背景" class="section level3" number="2.2.1">
+<h3>
+<span class="header-section-number">2.2.1</span> 背景<a class="anchor" aria-label="anchor" href="#%E8%83%8C%E6%99%AF"><i class="fas fa-link"></i></a>
+</h3>
+<p>課題をリストする前に、まずは、なぜ、いま、データサイエンスか、さらに、なぜ、すべての人、特に、大学などで学ぶ理系・文系を問わず、学生が、学ばなければならないかを短く、まとめてみたいと思う。</p>
+<blockquote>
+<p>AI（人工知能）で、大きく変化しつつある社会において、ひとびとが、個人で、そして、協力して、どのように生きていくかを考え、準備するために、その背後にある、データサイエンスと、その考え方の基本を学ぶ必要がある。</p>
+</blockquote>
+<p>インターネット上での、リコメンデーションなどに、AI が使われていることはご存知のかたが多いと思うが、自動車などの、自動運転も、もう少しで実用化されるとも言われ、最近では、Chat GPT などの、対話型 AI についても、各所で語られている。</p>
+<p>ひとことで言うと、行動決定や、意思決定に、大きく関わる存在になっていると共に、誤りや不適切なことが、AI から出てくることもあり、それに、どのように、向き合って行ったら良いのか、倫理や、価値を、どう判断して行ったら良いかも含め、向き合うべき課題であることは、確実であろう。</p>
+</div>
+<div id="データサイエンス教育の課題" class="section level3" number="2.2.2">
+<h3>
+<span class="header-section-number">2.2.2</span> データサイエンス教育の課題<a class="anchor" aria-label="anchor" href="#%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E6%95%99%E8%82%B2%E3%81%AE%E8%AA%B2%E9%A1%8C"><i class="fas fa-link"></i></a>
+</h3>
+<p>DX（デジタル化）や、IT化が、日本は遅れていると言われている中で、データサイエンスの課題には、どのようなものがあるのか。</p>
+<div id="日本の教育の遅れに関する認識" class="section level4" number="2.2.2.1">
+<h4>
+<span class="header-section-number">2.2.2.1</span> 日本の教育の遅れに関する認識<a class="anchor" aria-label="anchor" href="#%E6%97%A5%E6%9C%AC%E3%81%AE%E6%95%99%E8%82%B2%E3%81%AE%E9%81%85%E3%82%8C%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E8%AA%8D%E8%AD%98"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>学際科学分野、特に、理系文系の融合分野が遅れている、それにともない、異分野の教員の教育における協力体制未発達</li>
+<li>批判的に考え、意思決定の根拠を他者にも理解できるように説明しながら学ぶリベラルアーツ教育が未発達</li>
+<li>文理の分断がとくに高校以降の教育現場で激しく、文系の学生には、理系アレルギーまたは数学への恐怖心が強い学生が多く、理系の学生には、社会の問題と大学で学ぶことの関係の認識が希薄</li>
+<li>コンピュータ教育がなされておらず、コンピュータは、ホームページ閲覧とワープロとしての利用が殆ど</li>
+<li>社会、政府、メディアなどにおいて、データおよび、その可視化（Visualization）によるコミュニケーションの</li>
+</ul>
+</div>
+<div id="重要性が認識不足" class="section level4" number="2.2.2.2">
+<h4>
+<span class="header-section-number">2.2.2.2</span> 重要性が認識不足<a class="anchor" aria-label="anchor" href="#%E9%87%8D%E8%A6%81%E6%80%A7%E3%81%8C%E8%AA%8D%E8%AD%98%E4%B8%8D%E8%B6%B3"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>授業などの公開（OCW）が未発達な中で、MOOCs を一部始めているが、非常に限定的、教育方法を学ぶことも遅れている</li>
+<li>教育から学習へという視点への移行が遅れ、（数理系では学問の性質上顕著に）学生と共に学ぶ経験が少ない</li>
+<li>英語で学ぶことが限定的で、世界に目が開かれておらず、世界から学ぶ姿勢が欠如している</li>
+<li>海外での教育から学ぶことができておらず、大学教育において顕著</li>
+</ul>
+</div>
+<div id="良いととることができる面もある" class="section level4" number="2.2.2.3">
+<h4>
+<span class="header-section-number">2.2.2.3</span> 良いととることができる面もある<a class="anchor" aria-label="anchor" href="#%E8%89%AF%E3%81%84%E3%81%A8%E3%81%A8%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%A7%E3%81%8D%E3%82%8B%E9%9D%A2%E3%82%82%E3%81%82%E3%82%8B"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>単純な功利主義（naive utilitarianism）に対する抵抗が強く、株式をはじめとして、AIでのコントロールに消極的である</li>
+<li>過度な自己主張を嫌い、協力、チームワークがだいじにされる。（個性や多様性を生かすチームでの働きは遅れている）</li>
+<li>小中学校での、基礎教育は世界的にもある程度の水準を保っており、ある程度、仮定できる基礎学力もある</li>
+</ul>
+</div>
+</div>
+<div id="大学などでのデータサイエンス教育" class="section level3" number="2.2.3">
+<h3>
+<span class="header-section-number">2.2.3</span> 大学などでの、データサイエンス教育<a class="anchor" aria-label="anchor" href="#%E5%A4%A7%E5%AD%A6%E3%81%AA%E3%81%A9%E3%81%A7%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E6%95%99%E8%82%B2"><i class="fas fa-link"></i></a>
+</h3>
+<p>多くの学生は会社に就職し、そこで、マーケティング戦略を練るためや、経営の効率化、高収益化、また、新製品開発などに、AI を使うようだろう。公的機関や他のサービス機関でも、似た傾向にあるように思われる。現在では、農業や、漁業、林業などでも、同様の傾向が見られる。では、そのようなことを教えるのが良いのだろうか。</p>
+<p>個人的には、そうは考えない。上で述べたようなことが重要でないと言うわけではないが、個別の課題に、向き合う前に、意思決定や、価値観の背後にある、考え方について、経験することで、現場でも、AI がなぜ、そのような提案をするのかも、ある程度理解し、間違いはどのような場所に起こるのか、どのようなことは、任せても良いのかなどの判断ができるようになることが大切であると思う。</p>
+</div>
+</div>
+<div id="三つの提案" class="section level2" number="2.3">
+<h2>
+<span class="header-section-number">2.3</span> 三つの提案<a class="anchor" aria-label="anchor" href="#%E4%B8%89%E3%81%A4%E3%81%AE%E6%8F%90%E6%A1%88"><i class="fas fa-link"></i></a>
+</h2>
+<div id="ai人工知能との付き合い方を学ぶ" class="section level3" number="2.3.1">
+<h3>
+<span class="header-section-number">2.3.1</span> AI（人工知能）との付き合い方を学ぶ<a class="anchor" aria-label="anchor" href="#ai%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD%E3%81%A8%E3%81%AE%E4%BB%98%E3%81%8D%E5%90%88%E3%81%84%E6%96%B9%E3%82%92%E5%AD%A6%E3%81%B6"><i class="fas fa-link"></i></a>
+</h3>
+</div>
+<div id="世界やひとびとの課題についてデータサイエンスを学ぶ" class="section level3" number="2.3.2">
+<h3>
+<span class="header-section-number">2.3.2</span> 世界や、ひとびとの課題について、データサイエンスを学ぶ<a class="anchor" aria-label="anchor" href="#%E4%B8%96%E7%95%8C%E3%82%84%E3%81%B2%E3%81%A8%E3%81%B3%E3%81%A8%E3%81%AE%E8%AA%B2%E9%A1%8C%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E3%82%92%E5%AD%A6%E3%81%B6"><i class="fas fa-link"></i></a>
+</h3>
+</div>
+<div id="自分やai人工知能の判断に頼らない手法を学ぶ" class="section level3" number="2.3.3">
+<h3>
+<span class="header-section-number">2.3.3</span> 自分や、AI（人工知能）の判断に頼らない手法を学ぶ<a class="anchor" aria-label="anchor" href="#%E8%87%AA%E5%88%86%E3%82%84ai%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD%E3%81%AE%E5%88%A4%E6%96%AD%E3%81%AB%E9%A0%BC%E3%82%89%E3%81%AA%E3%81%84%E6%89%8B%E6%B3%95%E3%82%92%E5%AD%A6%E3%81%B6"><i class="fas fa-link"></i></a>
+</h3>
+</div>
+</div>
+<div id="参考文献" class="section level2 unnumbered">
+<h2>参考文献<a class="anchor" aria-label="anchor" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><i class="fas fa-link"></i></a>
+</h2>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="introduction.html"><span class="header-section-number">1</span> はじめに</a></div>
+<div class="next"><a href="coursedesign.html"><span class="header-section-number">3</span> 生涯学び続ける基盤を構築するデータサイエンス・コースの開発</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#issues"><span class="header-section-number">2</span> 教養としてのデータサイエンス教育の課題</a></li>
+<li><a class="nav-link" href="#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB"><span class="header-section-number">2.1</span> はじめに</a></li>
+<li>
+<a class="nav-link" href="#%E8%AA%B2%E9%A1%8C%E3%81%AE%E6%95%B4%E7%90%86"><span class="header-section-number">2.2</span> 課題の整理</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="header-section-number">2.2.1</span> 背景</a></li>
+<li><a class="nav-link" href="#%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E6%95%99%E8%82%B2%E3%81%AE%E8%AA%B2%E9%A1%8C"><span class="header-section-number">2.2.2</span> データサイエンス教育の課題</a></li>
+<li><a class="nav-link" href="#%E5%A4%A7%E5%AD%A6%E3%81%AA%E3%81%A9%E3%81%A7%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E6%95%99%E8%82%B2"><span class="header-section-number">2.2.3</span> 大学などでの、データサイエンス教育</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#%E4%B8%89%E3%81%A4%E3%81%AE%E6%8F%90%E6%A1%88"><span class="header-section-number">2.3</span> 三つの提案</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#ai%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD%E3%81%A8%E3%81%AE%E4%BB%98%E3%81%8D%E5%90%88%E3%81%84%E6%96%B9%E3%82%92%E5%AD%A6%E3%81%B6"><span class="header-section-number">2.3.1</span> AI（人工知能）との付き合い方を学ぶ</a></li>
+<li><a class="nav-link" href="#%E4%B8%96%E7%95%8C%E3%82%84%E3%81%B2%E3%81%A8%E3%81%B3%E3%81%A8%E3%81%AE%E8%AA%B2%E9%A1%8C%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E3%82%92%E5%AD%A6%E3%81%B6"><span class="header-section-number">2.3.2</span> 世界や、ひとびとの課題について、データサイエンスを学ぶ</a></li>
+<li><a class="nav-link" href="#%E8%87%AA%E5%88%86%E3%82%84ai%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD%E3%81%AE%E5%88%A4%E6%96%AD%E3%81%AB%E9%A0%BC%E3%82%89%E3%81%AA%E3%81%84%E6%89%8B%E6%B3%95%E3%82%92%E5%AD%A6%E3%81%B6"><span class="header-section-number">2.3.3</span> 自分や、AI（人工知能）の判断に頼らない手法を学ぶ</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE">参考文献</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/icu-hsuzuki/ds_education/blob/master/02-issues.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/icu-hsuzuki/ds_education/edit/master/02-issues.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>データ・サイエンス教育</strong>" was written by 鈴木 寛（Hiroshi Suzuki）. It was last built on 2023-03-02.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>
