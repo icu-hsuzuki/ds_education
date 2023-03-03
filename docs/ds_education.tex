@@ -3,7 +3,7 @@
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[
-]{book}
+]{bxjsbook}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
 \usepackage{iftex}
@@ -120,19 +120,19 @@
 \date{2023-03-03}
 
 \usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}{Lemma}[chapter]
-\newtheorem{corollary}{Corollary}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
-\newtheorem{conjecture}{Conjecture}[chapter]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{conjecture}{Conjecture}[section]
 \theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
+\newtheorem{definition}{Definition}[section]
 \theoremstyle{definition}
-\newtheorem{example}{Example}[chapter]
+\newtheorem{example}{Example}[section]
 \theoremstyle{definition}
-\newtheorem{exercise}{Exercise}[chapter]
+\newtheorem{exercise}{Exercise}[section]
 \theoremstyle{definition}
-\newtheorem{hypothesis}{Hypothesis}[chapter]
+\newtheorem{hypothesis}{Hypothesis}[section]
 \theoremstyle{remark}
 \newtheorem*{remark}{Remark}
 \newtheorem*{solution}{Solution}
@@ -140,12 +140,12 @@
 \maketitle
 
 {
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 \tableofcontents
 }
 \hypertarget{ux3053ux306eux6587ux66f8ux306bux3064ux3044ux3066}{%
-\chapter*{この文書について}\label{ux3053ux306eux6587ux66f8ux306bux3064ux3044ux3066}}
-\addcontentsline{toc}{chapter}{この文書について}
+\section*{この文書について}\label{ux3053ux306eux6587ux66f8ux306bux3064ux3044ux3066}}
+\addcontentsline{toc}{section}{この文書について}
 
 データサイエンス教育について考えながら、課題や手法なども含めて、少しずつ書いていきたいと思う。
 
@@ -156,8 +156,8 @@
 みなさんも一緒にデータサイエンスについて考えていただければと願っています。
 
 \hypertarget{ux8457ux8005ux306bux3064ux3044ux3066}{%
-\section*{著者について}\label{ux8457ux8005ux306bux3064ux3044ux3066}}
-\addcontentsline{toc}{section}{著者について}
+\subsection*{著者について}\label{ux8457ux8005ux306bux3064ux3044ux3066}}
+\addcontentsline{toc}{subsection}{著者について}
 
 著者は、大学の学生の時以来、数学を学び、大学で教え、2019年春に退職。それ以来、少しずつ、データサイエンスを学んでいます。
 
@@ -165,36 +165,42 @@
 
 その後、あることが契機となり、2020年度から、毎年、冬に、大学院一般向け（分野の指定なし）の授業、「研究者のためのデータ分析（Data Analysis for Researchers）」を担当しています。複数の教員で担当しますが、基本的な部分は、わたしが教えています。受講生は20人程度ですが、殆どが、外国人。それも、多国籍で、多くても一国から三人程度。英語で教えています。
 
+それ以外にも、依頼されて、入門的なコースを、英語や、さらに、日本語でも、教える機会がありました。
+
+AI（人工知能）が、社会のあらゆる場面で使われるようになっていますが、今後、その傾向はより強くなっていくでしょう。難しいのは、AI の出す結論に至る、思考経路を、一歩ずつ辿ることは、不可能で、理解することが困難だと言うことです。しかし、その背後にある、データサイエンスを学ぶことで、どのようなデータから、どのような評価を行って、結論に至ったかは、ある程度推測できる面があります。単に、AI にできること、できないことを、見つけようとしたり、AI の間違いを指摘して、完璧ではないとして、利用を躊躇するのではなく、ちょっと、異質ではあるが、どのように、お付き合いをしていったら良いかを、学んでいくことが肝要だと考えています。
+
+AI とも、お付き合いしながら、その背後にある、データサイエンスについて、一緒に学んでいく、そのような、データサイエンス教育を目指すことができればと願っています。
+
 \hypertarget{pdfepub-ux7248ux306bux3064ux3044ux3066}{%
-\section*{PDF、ePub 版について}\label{pdfepub-ux7248ux306bux3064ux3044ux3066}}
-\addcontentsline{toc}{section}{PDF、ePub 版について}
+\subsection*{PDF、ePub 版について}\label{pdfepub-ux7248ux306bux3064ux3044ux3066}}
+\addcontentsline{toc}{subsection}{PDF、ePub 版について}
 
 実は、PDF 版と、ePub 版も作成しています。しかし、扱いが異なるので、ある程度完成するまでは、ほとんど更新しない予定です。いずれ、これらも、更新したものを公開できると良いのですが。試験公開版は、下のリンクにあります。
 
 \begin{itemize}
 \tightlist
 \item
-  \href{https://icu-hsuzuki.github.io/ds4aj/ds4aj.pdf}{PDF 版}
+  \href{https://icu-hsuzuki.github.io/ds_education/ds_education.pdf}{PDF 版}
 \item
-  \href{https://icu-hsuzuki.github.io/ds4aj/ds4aj.epub}{ePub 版}
+  \href{https://icu-hsuzuki.github.io/ds_education/ds_education.epub}{ePub 版}
 \end{itemize}
 
 \hypertarget{introduction}{%
-\chapter{はじめに}\label{introduction}}
+\section{はじめに}\label{introduction}}
 
 まず、課題を整理したいと思う。
 
 \hypertarget{ux30b3ux30f3ux30d4ux30e5ux30fcux30bfux8a00ux8a9eux306bux3064ux3044ux3066}{%
-\section*{コンピュータ言語について}\label{ux30b3ux30f3ux30d4ux30e5ux30fcux30bfux8a00ux8a9eux306bux3064ux3044ux3066}}
-\addcontentsline{toc}{section}{コンピュータ言語について}
+\subsection*{コンピュータ言語について}\label{ux30b3ux30f3ux30d4ux30e5ux30fcux30bfux8a00ux8a9eux306bux3064ux3044ux3066}}
+\addcontentsline{toc}{subsection}{コンピュータ言語について}
 
 統計解析のために開発された R を使います。いずれは、python についても触れたいと思いますが、プログラミングの経験がない方も含めて、最初にデータサイエンスを学ぶには、R は最適だと考えています。特に、R Studio IDE（integrated development environment, 統合開発環境） で、R を使うことがとても、簡単になっています。さらに、簡単なものであれば、Posit Cloud で試したり、共有することも可能です。また、再現性（Reproducibility）や、なにを実行しているのかの説明を同時に記述すること（Literate Programming）は、非常に重要ですが、その記述も、R Markdown によって、可能になっています。この文書も、R Markdown の一つの形式の、bookdown を利用しています。最後に、Bookdown に関連して、膨大な数の、参考書も、無償で提供されており、オンラインで読むことができることも、R をお薦めする理由です。
 
 ただし、日本語のものは、まだ十分とは言えない状況です。この文書を書き始めたのも、すこしでも、お役に立つことができればとの、気持ちが背景にあります。
 
 \hypertarget{ux8a00ux8a9eux306bux3064ux3044ux3066}{%
-\section*{言語について}\label{ux8a00ux8a9eux306bux3064ux3044ux3066}}
-\addcontentsline{toc}{section}{言語について}
+\subsection*{言語について}\label{ux8a00ux8a9eux306bux3064ux3044ux3066}}
+\addcontentsline{toc}{subsection}{言語について}
 
 ご覧の通り、本書は、日本語で書かれています。用語は、英語、あるいは、英語を追記、または、英語をカタカナにしただけのものを使用する可能性が大きいですが、説明は、極力、日本語で書いていく予定です。
 
@@ -205,12 +211,12 @@
 最初は、みなさんも、変数（variable）や、オブジェクト（object）に名前をつけるときは、半角英数を使い、日本語は、使わないようにすることをお勧めします。
 
 \hypertarget{issues}{%
-\chapter{教養としてのデータサイエンス教育の課題}\label{issues}}
+\section{教養としてのデータサイエンス教育の課題}\label{issues}}
 
 \emph{RIMS 共同研究 (公開型) 教育数学の一側面　-- 高等教育における数学の多様性と普遍性 -- での講演予稿}
 
 \hypertarget{ux306fux3058ux3081ux306b}{%
-\section{はじめに}\label{ux306fux3058ux3081ux306b}}
+\subsection{はじめに}\label{ux306fux3058ux3081ux306b}}
 
 2019年3月に定年を迎えるにあたって、一旦大学からはなれ、「AI によって変わっていく世界」について考えるため、以前から計画していたように、MOOCs（Massive Open Online Courses）を中心に据えて、データサイエンスを学び始めた。
 
@@ -227,10 +233,10 @@
 このような経験を踏まえて、データサインエスを学び始めた数学を担当していた大学人という立場ではなく、実際に、データサイエンスを教えている経験を踏まえて、わたしの考えをお話ししたいと思う。まだ、始めたばかりではあるが「データサイエンス教育」も執筆していきたいと考えている\footnote{データサイエンス教育（今回の講演に関する資料を含む） - \url{https://icu-hsuzuki.github.io/ds_education/}}。
 
 \hypertarget{ux8ab2ux984cux306eux6574ux7406}{%
-\section{課題の整理}\label{ux8ab2ux984cux306eux6574ux7406}}
+\subsection{課題の整理}\label{ux8ab2ux984cux306eux6574ux7406}}
 
 \hypertarget{ux80ccux666f}{%
-\subsection{背景}\label{ux80ccux666f}}
+\subsubsection{背景}\label{ux80ccux666f}}
 
 課題をリストする前に、まずは、なぜ、いま、データサイエンスか。さらに、なぜ、すべての人、特に、大学などで学ぶ理系、文系を問わず、学生が、学ばなければならないかを短くまとめると次のようになるとわたしは考えている。
 
@@ -241,7 +247,7 @@ AI（人工知能）で、大きく変化しつつある社会において、ひ
 インターネット上での、リコメンデーション、近い将来において実用化されるという自動車などの自動運転、最近では、Chat GPT などの、対話型 AI も実用化され、教育現場の対応も、喫緊の課題になっている。有効であるゆえに、行動決定や、意思決定に、大きく関わる存在になっていると共に、誤りや不適切なことが、AI の活用から生じることもあり、価値判断とともに、それに、どのように、向き合っていったら良いのか、規制は必要なのだろうか。これらは、コンピュータエンジニアなどの専門家だけに、任せられない、社会としての課題になっていると言うことだろう。
 
 \hypertarget{ux5927ux5b66ux306aux3069ux3067ux306eux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux6559ux80b2}{%
-\subsection{大学などでの、データサイエンス教育}\label{ux5927ux5b66ux306aux3069ux3067ux306eux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux6559ux80b2}}
+\subsubsection{大学などでの、データサイエンス教育}\label{ux5927ux5b66ux306aux3069ux3067ux306eux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux6559ux80b2}}
 
 DX（デジタル化）や、IT化が、日本は遅れていると言われている中で、データサイエンスの課題には、どのようなものがあるのか。まず、数学や統計学を学ぶことが不可欠なのだろうか。
 
@@ -254,14 +260,14 @@ DX（デジタル化）や、IT化が、日本は遅れていると言われて�
 個人的には、そうは考えない。上で述べたようなことが重要でないと言うわけではないが、個別の課題に、向き合う前に、意思決定や、価値観の背後にある、考え方について、経験することで、現場でも、AI がなぜ、そのような提案をするのかも、ある程度理解し、間違いはどのような場所に起こるのか、どのようなことは、任せても良いのかなどの判断ができるようになることが大切であると思う。
 
 \hypertarget{coursedesign}{%
-\chapter{生涯学び続ける基盤を構築するデータサイエンス・コースの開発}\label{coursedesign}}
+\section{生涯学び続ける基盤を構築するデータサイエンス・コースの開発}\label{coursedesign}}
 
 \hypertarget{free-open-online-ux6559ux6750ux306eux6d3bux7528ux306aux3069ux3082ux8996ux91ceux306bux5165ux308cux3066}{%
-\section*{\textasciitilde Free Open Online 教材の活用なども視野に入れて\textasciitilde{}}\label{free-open-online-ux6559ux6750ux306eux6d3bux7528ux306aux3069ux3082ux8996ux91ceux306bux5165ux308cux3066}}
-\addcontentsline{toc}{section}{\textasciitilde Free Open Online 教材の活用なども視野に入れて\textasciitilde{}}
+\subsection*{\textasciitilde Free Open Online 教材の活用なども視野に入れて\textasciitilde{}}\label{free-open-online-ux6559ux6750ux306eux6d3bux7528ux306aux3069ux3082ux8996ux91ceux306bux5165ux308cux3066}}
+\addcontentsline{toc}{subsection}{\textasciitilde Free Open Online 教材の活用なども視野に入れて\textasciitilde{}}
 
 \hypertarget{ux306fux3058ux3081ux306b-1}{%
-\section{はじめに}\label{ux306fux3058ux3081ux306b-1}}
+\subsection{はじめに}\label{ux306fux3058ux3081ux306b-1}}
 
 専門分野にもつながりうる、リテラシーレベルのデータサイエンスについて、二段階にわけて（半期二コース程度）、お話ししたいと思う。
 
@@ -279,7 +285,7 @@ DX（デジタル化）や、IT化が、日本は遅れていると言われて�
 ゲームや、SNS、音楽やビデオ視聴だけでなく、学びに、携帯電話や、コンピュータを活用するように促すカリキュラムを考える。それには、まずは、楽しさ。そして、一人ひとりの異なる、知的興味に、対応できる学びの企画が必要である。また、これからの世界を考えると、他者と、どのように協力しながら学んでいくかも、配慮する必要がある。
 
 \hypertarget{ux5b9fux969bux306eux5b66ux3073}{%
-\section{実際の学び}\label{ux5b9fux969bux306eux5b66ux3073}}
+\subsection{実際の学び}\label{ux5b9fux969bux306eux5b66ux3073}}
 
 講演では、実際に学びを経験してみたいと考えている。R や R Studio が、インストールされたコンピュータがあると良いが、インストールされていなくても、\href{https://posit.cloud/}{Posit Cloud} というインターネット上のサービスも Email アドレスだけで利用できる。携帯電話などで、ネットにつながっているだけでも、ある程度、体験できると思う。
 
@@ -309,7 +315,7 @@ DX（デジタル化）や、IT化が、日本は遅れていると言われて�
 AI の体験の一例として、語学学習アプリ（無償で十分使える）\href{https://www.duolingo.com/}{Duolingo} で、AI を使った学びを二週間ほど経験し、評価し、課題を話し合うなども有効であると思われる。
 
 \hypertarget{ux304aux308fux308aux306bux30fcchat-gpt-ux304bux3089ux306eux63d0ux6848}{%
-\section{おわりにーChat GPT からの提案}\label{ux304aux308fux308aux306bux30fcchat-gpt-ux304bux3089ux306eux63d0ux6848}}
+\subsection{おわりにーChat GPT からの提案}\label{ux304aux308fux308aux306bux30fcchat-gpt-ux304bux3089ux306eux63d0ux6848}}
 
 \textbf{Chat GPT} 学生のモチベーションを高め、データサイエンスにワクワクさせるためには、魅力的でインタラクティブなカリキュラムを提供することが重要です。ここでは、そのようなカリキュラムをどのように設計したらよいかを提案します。
 
@@ -332,13 +338,13 @@ AI の体験の一例として、語学学習アプリ（無償で十分使え�
 これらの要素をカリキュラムに取り入れることで、魅力的でインタラクティブな学習環境を構築することができ、データサイエンスについてもっと学びたいという学生の意欲をかき立てることができます。
 
 \hypertarget{introai}{%
-\chapter{AI とは何だろう}\label{introai}}
+\section{AI とは何だろう}\label{introai}}
 
 \hypertarget{ai-ux3092ux4f53ux9a13ux3057ux3066ux307fux3088ux3046}{%
-\section{AI を体験してみよう}\label{ai-ux3092ux4f53ux9a13ux3057ux3066ux307fux3088ux3046}}
+\subsection{AI を体験してみよう}\label{ai-ux3092ux4f53ux9a13ux3057ux3066ux307fux3088ux3046}}
 
 \hypertarget{ux8a9eux5b66ux5b66ux7fd2ux30a2ux30d7ux30ea-duolingo}{%
-\subsection{語学学習アプリ Duolingo}\label{ux8a9eux5b66ux5b66ux7fd2ux30a2ux30d7ux30ea-duolingo}}
+\subsubsection{語学学習アプリ Duolingo}\label{ux8a9eux5b66ux5b66ux7fd2ux30a2ux30d7ux30ea-duolingo}}
 
 一つ目は、語学学習アプリ（無償で十分使える）Duolingo。
 
@@ -375,7 +381,7 @@ AI の体験の一例として、語学学習アプリ（無償で十分使え�
 \end{itemize}
 
 \hypertarget{chat-gpt-ux306aux3069ux3092ux5b66ux3073ux306bux3082ux6d3bux7528ux3059ux308b}{%
-\subsection{Chat GPT などを、学びにも活用する}\label{chat-gpt-ux306aux3069ux3092ux5b66ux3073ux306bux3082ux6d3bux7528ux3059ux308b}}
+\subsubsection{Chat GPT などを、学びにも活用する}\label{chat-gpt-ux306aux3069ux3092ux5b66ux3073ux306bux3082ux6d3bux7528ux3059ux308b}}
 
 \begin{itemize}
 \item
@@ -405,32 +411,32 @@ AI の体験の一例として、語学学習アプリ（無償で十分使え�
 
 
 \hypertarget{math2019}{%
-\chapter{教養としてのデータサイエンス教育}\label{math2019}}
+\section{教養としてのデータサイエンス教育}\label{math2019}}
 
 \hypertarget{moocsux306eux6d3bux7528ux3092ux8996ux91ceux306bux5165ux308cux3066}{%
-\section*{～MOOCsの活用を視野に入れて～}\label{moocsux306eux6d3bux7528ux3092ux8996ux91ceux306bux5165ux308cux3066}}
-\addcontentsline{toc}{section}{～MOOCsの活用を視野に入れて～}
+\subsection*{～MOOCsの活用を視野に入れて～}\label{moocsux306eux6d3bux7528ux3092ux8996ux91ceux306bux5165ux308cux3066}}
+\addcontentsline{toc}{subsection}{～MOOCsの活用を視野に入れて～}
 
 日本数学会教育委員会主催教育シンポジウム：文理共通して行う数理・データサイエンス教育における講演　時：2019年9月17日
 
 \href{https://www.mathsoc.jp/overview/committee/education/sympo/2019sep.html}{シンポジウム・リンク}
 
 \hypertarget{ux97f3ux58f0ux4ed8ux304dux753bux9762ux53ceux9332ux30d3ux30c7ux30aayoutube}{%
-\section{音声付き画面収録ビデオ（YouTube）}\label{ux97f3ux58f0ux4ed8ux304dux753bux9762ux53ceux9332ux30d3ux30c7ux30aayoutube}}
+\subsection{音声付き画面収録ビデオ（YouTube）}\label{ux97f3ux58f0ux4ed8ux304dux753bux9762ux53ceux9332ux30d3ux30c7ux30aayoutube}}
 
 \href{https://icu-hsuzuki.github.io/datascience/ed/msj2019.pdf}{スライド PDF}
 
 \hypertarget{ux8b1bux6f14ux6982ux8981}{%
-\section{講演概要}\label{ux8b1bux6f14ux6982ux8981}}
+\subsection{講演概要}\label{ux8b1bux6f14ux6982ux8981}}
 
 \hypertarget{ux306fux3058ux3081ux306b-2}{%
-\subsection{はじめに}\label{ux306fux3058ux3081ux306b-2}}
+\subsubsection{はじめに}\label{ux306fux3058ux3081ux306b-2}}
 
 \hypertarget{ux80ccux666fux73feux72b6}{%
-\subsubsection{背景・現状}\label{ux80ccux666fux73feux72b6}}
+\paragraph{背景・現状}\label{ux80ccux666fux73feux72b6}}
 
 \hypertarget{ux653fux5e9cux6587ux90e8ux79d1ux5b66ux7701}{%
-\paragraph{政府・文部科学省}\label{ux653fux5e9cux6587ux90e8ux79d1ux5b66ux7701}}
+\subparagraph{政府・文部科学省}\label{ux653fux5e9cux6587ux90e8ux79d1ux5b66ux7701}}
 
 \begin{itemize}
 \item
@@ -499,7 +505,7 @@ https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html
 \end{enumerate}
 
 \hypertarget{ux6570ux7406ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux6559ux80b2ux5f37ux5316ux62e0ux70b9ux30b3ux30f3ux30bdux30fcux30b7ux30a2ux30e0}{%
-\subsubsection{数理・データサイエンス教育強化拠点コンソーシアム}\label{ux6570ux7406ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux6559ux80b2ux5f37ux5316ux62e0ux70b9ux30b3ux30f3ux30bdux30fcux30b7ux30a2ux30e0}}
+\paragraph{数理・データサイエンス教育強化拠点コンソーシアム}\label{ux6570ux7406ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux6559ux80b2ux5f37ux5316ux62e0ux70b9ux30b3ux30f3ux30bdux30fcux30b7ux30a2ux30e0}}
 
 \url{http://www.mi.u-tokyo.ac.jp/consortium/index.html}
 
@@ -511,7 +517,7 @@ https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html
 \end{itemize}
 
 \hypertarget{ux6559ux79d1ux66f8ux306eux51faux7248ux306aux3069}{%
-\subsubsection{教科書の出版など}\label{ux6559ux79d1ux66f8ux306eux51faux7248ux306aux3069}}
+\paragraph{教科書の出版など}\label{ux6559ux79d1ux66f8ux306eux51faux7248ux306aux3069}}
 
 \begin{itemize}
 \tightlist
@@ -520,20 +526,20 @@ https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html
 \end{itemize}
 
 \hypertarget{ux500bux4ebaux7684ux306aux7d4cux9a13}{%
-\subsection{個人的な経験}\label{ux500bux4ebaux7684ux306aux7d4cux9a13}}
+\subsubsection{個人的な経験}\label{ux500bux4ebaux7684ux306aux7d4cux9a13}}
 
 \hypertarget{ux6559ux80b2-ir}{%
-\subsubsection{教育 IR}\label{ux6559ux80b2-ir}}
+\paragraph{教育 IR}\label{ux6559ux80b2-ir}}
 
 学修・教育センターの柱の一つに、大学の IR とは別に、教育 IR を含める
 
 \hypertarget{ux500bux4ebaux7684ux306aux5b66ux3073}{%
-\subsubsection{個人的な学び}\label{ux500bux4ebaux7684ux306aux5b66ux3073}}
+\paragraph{個人的な学び}\label{ux500bux4ebaux7684ux306aux5b66ux3073}}
 
 2019 年 3 月末に退職後 MOOCs のコースなどを利用して、学習中
 
 \hypertarget{ux6559ux80b2ux7814ux7a76ux8005ux306eux305fux3081ux306eux30c7ux30fcux30bfux6d3bux7528ux3068ux5206ux6790data-analysis-for-researchers}{%
-\subsubsection{教育:研究者のためのデータ活用と分析(Data Analysis for Researchers)}\label{ux6559ux80b2ux7814ux7a76ux8005ux306eux305fux3081ux306eux30c7ux30fcux30bfux6d3bux7528ux3068ux5206ux6790data-analysis-for-researchers}}
+\paragraph{教育:研究者のためのデータ活用と分析(Data Analysis for Researchers)}\label{ux6559ux80b2ux7814ux7a76ux8005ux306eux305fux3081ux306eux30c7ux30fcux30bfux6d3bux7528ux3068ux5206ux6790data-analysis-for-researchers}}
 
 \begin{itemize}
 \tightlist
@@ -552,7 +558,7 @@ https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html
 \end{itemize}
 
 \hypertarget{ux30b9ux30b1ux30b8ux30e5ux30fcux30eb}{%
-\subsubsection{スケジュール}\label{ux30b9ux30b1ux30b8ux30e5ux30fcux30eb}}
+\paragraph{スケジュール}\label{ux30b9ux30b1ux30b8ux30e5ux30fcux30eb}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -576,7 +582,7 @@ https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html
 \end{enumerate}
 
 \hypertarget{ux30b3ux30fcux30b9ux306eux7279ux5fb4}{%
-\subsubsection{コースの特徴}\label{ux30b3ux30fcux30b9ux306eux7279ux5fb4}}
+\paragraph{コースの特徴}\label{ux30b3ux30fcux30b9ux306eux7279ux5fb4}}
 
 オープン・データ、R Studio (サーバーと PC)上での R の活用、R Markdown での文書作成、実例の提供、ゲ スト講義、プロジェクト、教員の協力
 授業で使ったデータ
@@ -619,10 +625,10 @@ start = 1960, end = 2017)
 \end{itemize}
 
 \hypertarget{ux6559ux990aux3068ux3057ux3066ux306eux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9}{%
-\subsection{教養としてのデータ・サイエンス}\label{ux6559ux990aux3068ux3057ux3066ux306eux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9}}
+\subsubsection{教養としてのデータ・サイエンス}\label{ux6559ux990aux3068ux3057ux3066ux306eux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9}}
 
 \hypertarget{ux4e00ux822cux306eux5b66ux751fux5bfeux8c61ux306eux30b3ux30fcux30b9}{%
-\subsubsection{一般の学生対象のコース}\label{ux4e00ux822cux306eux5b66ux751fux5bfeux8c61ux306eux30b3ux30fcux30b9}}
+\paragraph{一般の学生対象のコース}\label{ux4e00ux822cux306eux5b66ux751fux5bfeux8c61ux306eux30b3ux30fcux30b9}}
 
 なぜ 社会的要請? 教養人としてのリテラシー?
 
@@ -647,7 +653,7 @@ start = 1960, end = 2017)
 \end{itemize}
 
 \hypertarget{ux30b3ux30fcux30b9ux30c7ux30b6ux30a4ux30f3}{%
-\paragraph{コース・デザイン}\label{ux30b3ux30fcux30b9ux30c7ux30b6ux30a4ux30f3}}
+\subparagraph{コース・デザイン}\label{ux30b3ux30fcux30b9ux30c7ux30b6ux30a4ux30f3}}
 
 \begin{itemize}
 \tightlist
@@ -658,7 +664,7 @@ start = 1960, end = 2017)
 \end{itemize}
 
 \hypertarget{ux8ab2ux984cux79c1ux898b}{%
-\subsubsection{課題(私見)}\label{ux8ab2ux984cux79c1ux898b}}
+\paragraph{課題(私見)}\label{ux8ab2ux984cux79c1ux898b}}
 
 \textbf{皆さんも様々なお考えがあると思います}
 
@@ -698,7 +704,7 @@ start = 1960, end = 2017)
 \end{itemize}
 
 \hypertarget{ux7406ux60f3ux7684ux5b66ux4feeux8005ux30e2ux30c7ux30ebux3092ux60f3ux5b9a}{%
-\subsubsection{理想的学修者モデルを想定}\label{ux7406ux60f3ux7684ux5b66ux4feeux8005ux30e2ux30c7ux30ebux3092ux60f3ux5b9a}}
+\paragraph{理想的学修者モデルを想定}\label{ux7406ux60f3ux7684ux5b66ux4feeux8005ux30e2ux30c7ux30ebux3092ux60f3ux5b9a}}
 
 \textbf{教養? Liberal Arts?}
 
@@ -715,7 +721,7 @@ start = 1960, end = 2017)
 \end{itemize}
 
 \hypertarget{ux30afux30e9ux30b9ux5185ux3067ux306eux5b66ux3073ux306eux6a5fux4f1aux306eux63d0ux4f9b}{%
-\subsubsection{クラス内での学びの機会の提供}\label{ux30afux30e9ux30b9ux5185ux3067ux306eux5b66ux3073ux306eux6a5fux4f1aux306eux63d0ux4f9b}}
+\paragraph{クラス内での学びの機会の提供}\label{ux30afux30e9ux30b9ux5185ux3067ux306eux5b66ux3073ux306eux6a5fux4f1aux306eux63d0ux4f9b}}
 
 \textbf{Teaching to Learning}
 
@@ -732,7 +738,7 @@ start = 1960, end = 2017)
 \end{itemize}
 
 \hypertarget{ux5b66ux3073ux306eux652fux63f4}{%
-\subsubsection{学びの支援}\label{ux5b66ux3073ux306eux652fux63f4}}
+\paragraph{学びの支援}\label{ux5b66ux3073ux306eux652fux63f4}}
 
 \textbf{Students with Various Backgrounds}
 
@@ -745,7 +751,7 @@ start = 1960, end = 2017)
 \end{itemize}
 
 \hypertarget{literacy}{%
-\subsubsection{Literacy}\label{literacy}}
+\paragraph{Literacy}\label{literacy}}
 
 \textbf{Expand your horizon!}
 
@@ -786,7 +792,7 @@ start = 1960, end = 2017)
 \end{itemize}
 
 \hypertarget{resources}{%
-\subsubsection{Resources}\label{resources}}
+\paragraph{Resources}\label{resources}}
 
 \textbf{IT / Cloud}
 
@@ -801,7 +807,7 @@ start = 1960, end = 2017)
 \end{itemize}
 
 \hypertarget{ux7dcfux52d9ux7701ux30aaux30fcux30d7ux30f3ux30c7ux30fcux30bfux306eux5b9aux7fa9}{%
-\subsubsection{総務省:オープン・データの定義}\label{ux7dcfux52d9ux7701ux30aaux30fcux30d7ux30f3ux30c7ux30fcux30bfux306eux5b9aux7fa9}}
+\paragraph{総務省:オープン・データの定義}\label{ux7dcfux52d9ux7701ux30aaux30fcux30d7ux30f3ux30c7ux30fcux30bfux306eux5b9aux7fa9}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -816,7 +822,7 @@ start = 1960, end = 2017)
 \end{enumerate}
 
 \hypertarget{world-bank-open-data-defined}{%
-\subsubsection{\texorpdfstring{World Bank: \href{http://opendatatoolkit.worldbank.org}{Open Data Defined}}{World Bank: Open Data Defined}}\label{world-bank-open-data-defined}}
+\paragraph{\texorpdfstring{World Bank: \href{http://opendatatoolkit.worldbank.org}{Open Data Defined}}{World Bank: Open Data Defined}}\label{world-bank-open-data-defined}}
 
 The term ``Open Data'' has a very precise meaning. Data or content is open if anyone is free to use, re-use or redistribute it, subject at most to measures that preserve provenance and openness.
 
@@ -829,7 +835,7 @@ The term ``Open Data'' has a very precise meaning. Data or content is open if an
 \end{enumerate}
 
 \hypertarget{ux30aaux30fcux30d7ux30f3ux30c7ux30fcux30bfux306eux4f8b}{%
-\subsubsection{オープン・データの例}\label{ux30aaux30fcux30d7ux30f3ux30c7ux30fcux30bfux306eux4f8b}}
+\paragraph{オープン・データの例}\label{ux30aaux30fcux30d7ux30f3ux30c7ux30fcux30bfux306eux4f8b}}
 
 \textbf{List of Open Data Catalogue}
 
@@ -890,7 +896,7 @@ The term ``Open Data'' has a very precise meaning. Data or content is open if an
 \end{itemize}
 
 \hypertarget{free-software-online-access-r}{%
-\paragraph{Free Software, Online Access R}\label{free-software-online-access-r}}
+\subparagraph{Free Software, Online Access R}\label{free-software-online-access-r}}
 
 \begin{itemize}
 \tightlist
@@ -903,7 +909,7 @@ The term ``Open Data'' has a very precise meaning. Data or content is open if an
 \end{itemize}
 
 \hypertarget{python}{%
-\paragraph{Python}\label{python}}
+\subparagraph{Python}\label{python}}
 
 \begin{itemize}
 \tightlist
@@ -916,7 +922,7 @@ The term ``Open Data'' has a very precise meaning. Data or content is open if an
 \end{itemize}
 
 \hypertarget{free-software}{%
-\paragraph{Free Software}\label{free-software}}
+\subparagraph{Free Software}\label{free-software}}
 
 \begin{itemize}
 \tightlist
@@ -927,7 +933,7 @@ The term ``Open Data'' has a very precise meaning. Data or content is open if an
 \end{itemize}
 
 \hypertarget{ux30a4ux30f3ux30bfux30fcux30cdux30c3ux30c8ux4e0aux3067ux306eux5b66ux7fd2}{%
-\paragraph{インターネット上での学習}\label{ux30a4ux30f3ux30bfux30fcux30cdux30c3ux30c8ux4e0aux3067ux306eux5b66ux7fd2}}
+\subparagraph{インターネット上での学習}\label{ux30a4ux30f3ux30bfux30fcux30cdux30c3ux30c8ux4e0aux3067ux306eux5b66ux7fd2}}
 
 \textbf{Online Learning Source}
 
@@ -953,7 +959,7 @@ The term ``Open Data'' has a very precise meaning. Data or content is open if an
 \end{itemize}
 
 \hypertarget{moocs}{%
-\paragraph{MOOCs}\label{moocs}}
+\subparagraph{MOOCs}\label{moocs}}
 
 \textbf{大学などが提供している大規模公開オンライン講座}
 
@@ -971,12 +977,12 @@ The term ``Open Data'' has a very precise meaning. Data or content is open if an
 \end{itemize}
 
 \hypertarget{massive-open-online-courses-moocs-ux304bux3089ux5b66ux3076}{%
-\subsection{Massive Open Online Courses (MOOCs) から学ぶ}\label{massive-open-online-courses-moocs-ux304bux3089ux5b66ux3076}}
+\subsubsection{Massive Open Online Courses (MOOCs) から学ぶ}\label{massive-open-online-courses-moocs-ux304bux3089ux5b66ux3076}}
 
 \textbf{Moocs の活用と注意点}
 
 \hypertarget{moocs-ux306eux6d3bux7528ux3092ux52e7ux3081ux308bux7406ux7531}{%
-\subsubsection{MOOCs の活用を勧める理由**}\label{moocs-ux306eux6d3bux7528ux3092ux52e7ux3081ux308bux7406ux7531}}
+\paragraph{MOOCs の活用を勧める理由**}\label{moocs-ux306eux6d3bux7528ux3092ux52e7ux3081ux308bux7406ux7531}}
 
 \textbf{英語の数学の教科書と似た利点}
 
@@ -993,7 +999,7 @@ The term ``Open Data'' has a very precise meaning. Data or content is open if an
 \end{itemize}
 
 \hypertarget{moocs-ux6d3bux7528ux6642ux306bux8003ux3048ux308bux3079ux304dux3053ux3068}{%
-\subsubsection{MOOCs 活用時に考えるべきこと}\label{moocs-ux6d3bux7528ux6642ux306bux8003ux3048ux308bux3079ux304dux3053ux3068}}
+\paragraph{MOOCs 活用時に考えるべきこと}\label{moocs-ux6d3bux7528ux6642ux306bux8003ux3048ux308bux3079ux304dux3053ux3068}}
 
 \textbf{学修者に適したコースの推薦}
 
@@ -1011,10 +1017,10 @@ The term ``Open Data'' has a very precise meaning. Data or content is open if an
 \end{itemize}
 
 \hypertarget{moocs-ux306e-ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux30b3ux30fcux30b9ux306eux4f8b}{%
-\subsubsection{Moocs の データ・サイエンス・コースの例}\label{moocs-ux306e-ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux30b3ux30fcux30b9ux306eux4f8b}}
+\paragraph{Moocs の データ・サイエンス・コースの例}\label{moocs-ux306e-ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux30b3ux30fcux30b9ux306eux4f8b}}
 
 \hypertarget{coursera}{%
-\paragraph{Coursera}\label{coursera}}
+\subparagraph{Coursera}\label{coursera}}
 
 \textbf{Stanford U. が中心}
 
@@ -1033,7 +1039,7 @@ The term ``Open Data'' has a very precise meaning. Data or content is open if an
 \end{itemize}
 
 \hypertarget{edx}{%
-\paragraph{edX}\label{edx}}
+\subparagraph{edX}\label{edx}}
 
 \textbf{MIT と Harvard U. が中心}
 
@@ -1050,10 +1056,10 @@ The term ``Open Data'' has a very precise meaning. Data or content is open if an
 \end{itemize}
 
 \hypertarget{professional-certificate-in-data-science}{%
-\subsubsection{Professional Certificate in Data Science}\label{professional-certificate-in-data-science}}
+\paragraph{Professional Certificate in Data Science}\label{professional-certificate-in-data-science}}
 
 \hypertarget{ux57faux672cux60c5ux5831-harvardx-through-edx}{%
-\paragraph{基本情報: HarvardX, through edX}\label{ux57faux672cux60c5ux5831-harvardx-through-edx}}
+\subparagraph{基本情報: HarvardX, through edX}\label{ux57faux672cux60c5ux5831-harvardx-through-edx}}
 
 \textbf{演習も無償で殆どすべて提供}
 
@@ -1066,7 +1072,7 @@ The term ``Open Data'' has a very precise meaning. Data or content is open if an
 \end{itemize}
 
 \hypertarget{r-ux3067ux5b66ux3073data-camp-ux3067-assessment}{%
-\paragraph{R で学び、Data Camp で Assessment}\label{r-ux3067ux5b66ux3073data-camp-ux3067-assessment}}
+\subparagraph{R で学び、Data Camp で Assessment}\label{r-ux3067ux5b66ux3073data-camp-ux3067-assessment}}
 
 \begin{verbatim}
 1. Data Science: R Basics; データ解析ソフト R の基本
@@ -1081,7 +1087,7 @@ The term ``Open Data'' has a very precise meaning. Data or content is open if an
 \end{verbatim}
 
 \hypertarget{ux30b3ux30fcux30b9ux306eux524dux534aux3067ux4f7fux308fux308cux308bux30c7ux30fcux30bfux4f8b}{%
-\paragraph{コースの前半で使われるデータ例}\label{ux30b3ux30fcux30b9ux306eux524dux534aux3067ux4f7fux308fux308cux308bux30c7ux30fcux30bfux4f8b}}
+\subparagraph{コースの前半で使われるデータ例}\label{ux30b3ux30fcux30b9ux306eux524dux534aux3067ux4f7fux308fux308cux308bux30c7ux30fcux30bfux4f8b}}
 
 \textbf{Professional Certificate in Data Science}
 
@@ -1120,7 +1126,7 @@ Required R Packages for Examples: tidyverse, dslabs: \url{https://cran.r-project
 \end{itemize}
 
 \hypertarget{jmooc}{%
-\paragraph{JMOOC}\label{jmooc}}
+\subparagraph{JMOOC}\label{jmooc}}
 
 \textbf{日本発の MOOC}
 
@@ -1172,7 +1178,7 @@ Required R Packages for Examples: tidyverse, dslabs: \url{https://cran.r-project
 \end{itemize}
 
 \hypertarget{jmooc-https-www.-jmooc.-jp}{%
-\paragraph{JMOOC: https: // www. jmooc. jp}\label{jmooc-https-www.-jmooc.-jp}}
+\subparagraph{JMOOC: https: // www. jmooc. jp}\label{jmooc-https-www.-jmooc.-jp}}
 
 \textbf{10 月 8 日開講}
 
@@ -1183,14 +1189,14 @@ Required R Packages for Examples: tidyverse, dslabs: \url{https://cran.r-project
 \end{itemize}
 
 \hypertarget{ux6559ux990aux3068ux3057ux3066ux306eux30c7ux30fcux30bfux30b5ux30a4ux30f3ux30a8ux30f3ux30b9ux306eux30b3ux30fcux30b9ux3092ux4f01ux753bux3059ux308bux306bux3042ux305fux3063ux3066}{%
-\subsection{「教養としてのデータ・サインエンス」のコースを企画するにあたって}\label{ux6559ux990aux3068ux3057ux3066ux306eux30c7ux30fcux30bfux30b5ux30a4ux30f3ux30a8ux30f3ux30b9ux306eux30b3ux30fcux30b9ux3092ux4f01ux753bux3059ux308bux306bux3042ux305fux3063ux3066}}
+\subsubsection{「教養としてのデータ・サインエンス」のコースを企画するにあたって}\label{ux6559ux990aux3068ux3057ux3066ux306eux30c7ux30fcux30bfux30b5ux30a4ux30f3ux30a8ux30f3ux30b9ux306eux30b3ux30fcux30b9ux3092ux4f01ux753bux3059ux308bux306bux3042ux305fux3063ux3066}}
 
 \textbf{全学の学生のためのコースの企画について}
 
 \textbf{配慮すべきこと}
 
 \hypertarget{ux5b66ux7fd2ux76eeux6a19}{%
-\subsubsection{学習目標}\label{ux5b66ux7fd2ux76eeux6a19}}
+\paragraph{学習目標}\label{ux5b66ux7fd2ux76eeux6a19}}
 
 \begin{itemize}
 \tightlist
@@ -1209,7 +1215,7 @@ Required R Packages for Examples: tidyverse, dslabs: \url{https://cran.r-project
 \end{itemize}
 
 \hypertarget{r-markdown-or-jupyter-notebook-for-python}{%
-\subsubsection{R Markdown Or jupyter notebook for python}\label{r-markdown-or-jupyter-notebook-for-python}}
+\paragraph{R Markdown Or jupyter notebook for python}\label{r-markdown-or-jupyter-notebook-for-python}}
 
 \begin{itemize}
 \tightlist
@@ -1222,7 +1228,7 @@ Required R Packages for Examples: tidyverse, dslabs: \url{https://cran.r-project
 \end{itemize}
 
 \hypertarget{ux5168ux5b66ux306eux5b66ux751fux306eux305fux3081ux306eux30b3ux30fcux30b9ux306eux4f01ux753bux306bux3064ux3044ux3066}{%
-\subsubsection{全学の学生のためのコースの企画について}\label{ux5168ux5b66ux306eux5b66ux751fux306eux305fux3081ux306eux30b3ux30fcux30b9ux306eux4f01ux753bux306bux3064ux3044ux3066}}
+\paragraph{全学の学生のためのコースの企画について}\label{ux5168ux5b66ux306eux5b66ux751fux306eux305fux3081ux306eux30b3ux30fcux30b9ux306eux4f01ux753bux306bux3064ux3044ux3066}}
 
 \textbf{配慮すべきこと}
 
@@ -1253,10 +1259,10 @@ Quote: On Listening to Lectures, by Plutarch プルタルコス The correct anal
 \end{quote}
 
 \hypertarget{ux304aux308fux308aux306b}{%
-\subsection{おわりに}\label{ux304aux308fux308aux306b}}
+\subsubsection{おわりに}\label{ux304aux308fux308aux306b}}
 
 \hypertarget{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux6559ux80b2ux3068ux5927ux5b66ux306eux672aux6765}{%
-\subsubsection{データ・サイエンス教育と大学の未来}\label{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux6559ux80b2ux3068ux5927ux5b66ux306eux672aux6765}}
+\paragraph{データ・サイエンス教育と大学の未来}\label{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9ux6559ux80b2ux3068ux5927ux5b66ux306eux672aux6765}}
 
 \begin{quote}
 Quote: Apple co-founders Steve Jobs and Steve Wozniak didn't have degrees when they launched what has become one of the most valuable companies in the world.
@@ -1265,7 +1271,7 @@ And now Apple CEO Tim Cook is spreading the word that would-be programmers reall
 \end{quote}
 
 \hypertarget{ux3072ux3068ux3053ux3068}{%
-\subsubsection{ひとこと}\label{ux3072ux3068ux3053ux3068}}
+\paragraph{ひとこと}\label{ux3072ux3068ux3053ux3068}}
 
 \begin{quote}
 データ・サイエンスや AI に関して、大学で教えるべきことは何なのでしょうか。 本日は「教養としてのデータサイエンス教育」というタイトルでお話しましたが、どのレベルであっても、真
@@ -1275,11 +1281,11 @@ And now Apple CEO Tim Cook is spreading the word that would-be programmers reall
 \end{quote}
 
 \hypertarget{math2020}{%
-\chapter{教養としてのデータサイエンス教育の目的と課題}\label{math2020}}
+\section{教養としてのデータサイエンス教育の目的と課題}\label{math2020}}
 
 \hypertarget{moocsux306eux6d3bux7528ux3092ux8996ux91ceux306bux5165ux308cux3066-1}{%
-\section*{～MOOCsの活用を視野に入れて～}\label{moocsux306eux6d3bux7528ux3092ux8996ux91ceux306bux5165ux308cux3066-1}}
-\addcontentsline{toc}{section}{～MOOCsの活用を視野に入れて～}
+\subsection*{～MOOCsの活用を視野に入れて～}\label{moocsux306eux6d3bux7528ux3092ux8996ux91ceux306bux5165ux308cux3066-1}}
+\addcontentsline{toc}{subsection}{～MOOCsの活用を視野に入れて～}
 
 \begin{quote}
 3 月 12 日 京都数理解析研究所での研究集会「教育数学の一側面 ‒ 高等教育における数学の多様性と 普遍性 ‒ (II)」での講演が covid-19 のため中止となったが、記録として概要を書き残す。本講は、午前中 に予定されたもので、午後の講演予定タイトルは「生涯学び続ける基盤を構築するデータサイエンス・コー スの開発」
@@ -1288,7 +1294,7 @@ And now Apple CEO Tim Cook is spreading the word that would-be programmers reall
 最後に、同時期に「数理・データサイエンス・AI（リテラシーレベル）モデルカリキュラム 　～　データ思考の涵養　～（案）」に関する意見として、送付した私見を付記する。
 
 \hypertarget{ux306fux3058ux3081ux306b-3}{%
-\section{はじめに}\label{ux306fux3058ux3081ux306b-3}}
+\subsection{はじめに}\label{ux306fux3058ux3081ux306b-3}}
 
 首相官邸発の「 イノベーション政策強化推進のための有識者会議『AI戦略』」{[}1{]} では、 2019 年 6 月 11 付けの文書「AI 戦略 2019 ∼ 人・産業・地域・政府全てに AI」で「デジタル社会の基礎知識 (いわゆる『読み・書き・そろばん』的な素養) である『数理・データサイエ ンス・AI』に関する知識・技能、新たな社会の在り方や製品・サービスをデザイン するために必要な基礎力など、持続可能な社会の創り手として必要な力を全ての国民が育み、社会のあらゆる分野で人材が活躍することを目指し、以下の三項目を 2025 年にむけ て実現する目標として掲げている。
 
@@ -1310,7 +1316,7 @@ And now Apple CEO Tim Cook is spreading the word that would-be programmers reall
   成する大学へ} と考えると、小中高で始まっている統計教育 {[}4{]}、コンピュータ教育、英語教育、大学入学試験改革や、STEAM 教育の重要性など、教育内容の改編が、大学・高専に到達したと言えるかもしれない。上の 1, 3 が大学教育の中に組み込まれていくなかで、大学教育(以後、この言葉で高専も含むものとする)における位置づけと、その内容について考える上で、まずは「数理・データサイエンス・AI」という言葉で表現されているものの内容を確認するとともに、その目的とわが国の大学教育における課題について考察したい。「データサイエンス・AI」という言葉に代表される専門領域に精通しているわけではないが、文理を問わず、学生全員が必修として学ぶと言うことだけでも大きなインパクトを持つものである。また大学に於いて教養教育は様々な形で語られてきてはいるものの「リベラルアーツ教育の充実」という文脈で「数理」とその応用をどう捕らえたらよいのか、この問いは、大学での教育に関わって以来、常に考えてきたので、その点を中心に考察する。
 
 \hypertarget{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9}{%
-\section{データサイエンス}\label{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9}}
+\subsection{データサイエンス}\label{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9}}
 
 本稿の表題には「データサイエンス」という用語を用いているが、首相官邸から発せられた文書は「AI 戦略」となっており、文部科学省では「数理・データサイエンス」の名称が使われてきたが、2019 年度から AI が加わり「数理・データサイエンス・AI」となっている。初等中等教育では「統計」教育の充実が進められてきた経緯からも、数理、データサイエンス、AI と統計、これらの言葉をどう理解し、大学教育を整備していくかを整理する必要があると思う。
 
@@ -1328,12 +1334,12 @@ And now Apple CEO Tim Cook is spreading the word that would-be programmers reall
 AI については、すでに述べたが、ブラックボックス化して、応用から得られる限られた評価基準での効率・利得を強調しすぎることなく、脳の働きを含めた、思考するとは、学ぶとはという基本的な、ひとの営み、また、そのある部分を実装する研究など、人工知能の研究は、経済活動や単なる技術などとは、独立にも進んで行くべきものである。特定のことに特化して力を発揮する AI の開発から、現在は、複合的な問題を取り扱う AI へと進んでおり、将来的には、Artificial General Intelligence (AGI) と呼ばれる、人間の脳の働きのような、一般的な問題を取り扱うことが少しずつ可能になっていくであろう。「AI が考えた」ことの背景を分解して説明し共有し、適切な選択肢を共に選び取っていこうとする人材を育てることこそが、AIを活用する人材を育む高等教育機関の責任ではないだろうか。人間とは何者で、これから世界はどのように変化して行くのだろうか。
 
 \hypertarget{ux5927ux5b66ux6559ux80b2ux306bux304aux3051ux308bux8ab2ux984c}{%
-\section{大学教育における課題}\label{ux5927ux5b66ux6559ux80b2ux306bux304aux3051ux308bux8ab2ux984c}}
+\subsection{大学教育における課題}\label{ux5927ux5b66ux6559ux80b2ux306bux304aux3051ux308bux8ab2ux984c}}
 
 前節で課題の概要についてもふれたが、大学教育においては特に、どのような学生の育成をめざすかを明確にしながら教育課程を構築すること、学際科学として最終的には大学全体としての関わり方、数理分野の教員の教育への関わりかた、このためのコストとインフラ整備に関するビジョンを明確にすることについて以下に述べる。
 
 \hypertarget{ux3069ux306eux3088ux3046ux306aux5b66ux751fux3092ux80b2ux6210ux3059ux308bux304b}{%
-\subsection{どのような学生を育成するか}\label{ux3069ux306eux3088ux3046ux306aux5b66ux751fux3092ux80b2ux6210ux3059ux308bux304b}}
+\subsubsection{どのような学生を育成するか}\label{ux3069ux306eux3088ux3046ux306aux5b66ux751fux3092ux80b2ux6210ux3059ux308bux304b}}
 
 まず、私論であるが、データサイエンス教育の目的を短い文章で表現すると以下のように
 なる。
@@ -1355,7 +1361,7 @@ AI については、すでに述べたが、ブラックボックス化して�
 前節でデータサイエンスについて記述したことからも理解できるように、データサイエンスには、様々な視点が必要である。いろいろなところで引用されている、`Skills and Self - ID Top Factors' {[}13{]} にもあるように、データサイエンスには、様々な技能や視点が必要であり、それを一人で賄うことは、不可能であり、課題によってまた分野によって、必要なスキルを、互いに補い合い、その過程で欠けている視点や、能力を認識する必要がある。({[}8{]} 参照)すなわち、データサイエンスで必要な技能をひとりで充足させることはできず、GAFA などでは常識となっているが、様々な分野の人たちが協力するチームでの活動が重要でもある。その中で、理系・文系をとわず、どのような学びが鍵となるかを 学ぶ経験も重要な資産となる可能性が高い。
 
 \hypertarget{ux5168ux5b66ux304cux3069ux3046ux95a2ux308fux308bux304b}{%
-\subsection{全学がどう関わるか}\label{ux5168ux5b66ux304cux3069ux3046ux95a2ux308fux308bux304b}}
+\subsubsection{全学がどう関わるか}\label{ux5168ux5b66ux304cux3069ux3046ux95a2ux308fux308bux304b}}
 
 特定の分野の学習が全学必修になるという、大学教育においては、近年には経験したことがない状況と、大学全体として、まずは真摯に向き合うことが必要である。中心的な課題とは離れるので、ここで書いておくが、大学院生も分野を問わず、履修または聴講できるようにすること、TA も他のクラスを積極的に聴講できるようにし、関係する TA 同志で議論し、授業の改善を提案できるようにしておくことが重要である。実習を加えることが欠かせないとすると、だれでも担当できるわけではないが、極力広い専門分野の大学院生が関わることができるようにすることが望ましく、受講生にとっても望ましいと思われる。また、すでに受講している学部学生も、技術的なサポートなどとしては、アルバイトとして関わることも検討することも良いと思われる。経験のある専任教員では担当を賄い得ない背景で、全学としてきめ細かなサポート体制を構築することは成否を分ける課題である。
 
@@ -1368,14 +1374,14 @@ AI については、すでに述べたが、ブラックボックス化して�
 「数理・データサイエンス・AI」教育の推進が、文系と理系のさらなる分断が起こらないように、特別に配慮する必要がある。それを、軽減して、お互いに、Respect をもって、教育にあたることのできる、すばらしい機会だと思う。
 
 \hypertarget{ux6570ux7406ux5206ux91ceux306eux6559ux54e1ux306eux95a2ux308fux308aux65b9ux306bux95a2ux3059ux308bux8ab2ux984c}{%
-\subsection{数理分野の教員の関わり方に関する課題}\label{ux6570ux7406ux5206ux91ceux306eux6559ux54e1ux306eux95a2ux308fux308aux65b9ux306bux95a2ux3059ux308bux8ab2ux984c}}
+\subsubsection{数理分野の教員の関わり方に関する課題}\label{ux6570ux7406ux5206ux91ceux306eux6559ux54e1ux306eux95a2ux308fux308aux65b9ux306bux95a2ux3059ux308bux8ab2ux984c}}
 
 数理分野をどう特定するか困難であるが、データサイエンスに関わることを考えると、本来は、統計学が重要であるが、日本では、まだ独立した分野と見なされていない面もあるので、ここでは、数学(統計分野を含む)、情報を中心に理系分野を想定するものとする。個人的に、現在は、定年退職して、関わっていないが、大学での数学教員を長くしてきたこともあり、数学を中心に考えてしまうことは、お許し願う。
 
 最初に注意すべき事は、担当教員も学生と共に、少しずつ学ぶことをこころがけるとともに、数学・コンピュータ・英語が不得意で(またはそう思い込んでいて)、学ぶことを拒否してしまう学生に、配慮することである。不得手だと感じているものを、学ぶことは、誰にとっても苦痛である。
 
 \hypertarget{ux30b3ux30b9ux30c8ux3068ux30a4ux30f3ux30d5ux30e9ux6574ux5099}{%
-\subsection{コストとインフラ整備}\label{ux30b3ux30b9ux30c8ux3068ux30a4ux30f3ux30d5ux30e9ux6574ux5099}}
+\subsubsection{コストとインフラ整備}\label{ux30b3ux30b9ux30c8ux3068ux30a4ux30f3ux30d5ux30e9ux6574ux5099}}
 
 以下の提案をする。
 
@@ -1416,7 +1422,7 @@ Learning Goals
 \end{itemize}
 
 \hypertarget{ux304aux308fux308aux306b-references}{%
-\section{おわりに References}\label{ux304aux308fux308aux306b-references}}
+\subsection{おわりに References}\label{ux304aux308fux308aux306b-references}}
 
 {[}1{]} イノベーション政策強化推進のための有識者会議「\href{https://www8.cao.go.jp/cstp/ai/index.html}{AI戦略}」(AI戦略実行会議)
 
@@ -1445,7 +1451,7 @@ Learning Goals
 {[}13{]} Analyzing the Analyzers (O'Reilly) by Harlan Harris, Sean Murphy, and Marck Vais- man \href{https://www.oreilly.com/library/view/analyzing-the-analyzers/9781449368388/}{Publisher's Site}
 
 \hypertarget{ux53c2ux8003ux30e2ux30c7ux30ebux30abux30eaux30adux30e5ux30e9ux30e0-ux30eaux30c6ux30e9ux30b7ux30fcux30ecux30d9ux30ebux6848ux306bux95a2ux3059ux308bux610fux898b}{%
-\section{参考：モデルカリキュラム （リテラシーレベル）案に関する意見}\label{ux53c2ux8003ux30e2ux30c7ux30ebux30abux30eaux30adux30e5ux30e9ux30e0-ux30eaux30c6ux30e9ux30b7ux30fcux30ecux30d9ux30ebux6848ux306bux95a2ux3059ux308bux610fux898b}}
+\subsection{参考：モデルカリキュラム （リテラシーレベル）案に関する意見}\label{ux53c2ux8003ux30e2ux30c7ux30ebux30abux30eaux30adux30e5ux30e9ux30e0-ux30eaux30c6ux30e9ux30b7ux30fcux30ecux30d9ux30ebux6848ux306bux95a2ux3059ux308bux610fux898b}}
 
 以下は、「数理・データサイエンス・AI（リテラシーレベル）モデルカリキュラム 　～　データ思考の 涵養　～（案）」に関する意見 に対して、送付した意見である。参考に付す。（2020年3月）
 
@@ -1459,7 +1465,7 @@ HP: \url{http://www.mi.u-tokyo.ac.jp/consortium/mc_literacy.html}
 \end{quote}
 
 \hypertarget{ux6848ux306bux5bfeux3059ux308bux79c1ux898b}{%
-\subsection{\texorpdfstring{（\href{http://www.mi.u-tokyo.ac.jp/consortium/pdf/model_curriculum.pdf}{案}）に対する私見}{（案）に対する私見}}\label{ux6848ux306bux5bfeux3059ux308bux79c1ux898b}}
+\subsubsection{\texorpdfstring{（\href{http://www.mi.u-tokyo.ac.jp/consortium/pdf/model_curriculum.pdf}{案}）に対する私見}{（案）に対する私見}}\label{ux6848ux306bux5bfeux3059ux308bux79c1ux898b}}
 
 \begin{itemize}
 \tightlist
@@ -1630,7 +1636,7 @@ HP: \url{http://www.mi.u-tokyo.ac.jp/consortium/mc_literacy.html}
 \end{itemize}
 
 \hypertarget{ux65e5ux672cux306eux6559ux80b2ux306eux9045ux308cux306bux95a2ux3059ux308bux8a8dux8b58}{%
-\subsection{日本の教育の遅れに関する認識}\label{ux65e5ux672cux306eux6559ux80b2ux306eux9045ux308cux306bux95a2ux3059ux308bux8a8dux8b58}}
+\subsubsection{日本の教育の遅れに関する認識}\label{ux65e5ux672cux306eux6559ux80b2ux306eux9045ux308cux306bux95a2ux3059ux308bux8a8dux8b58}}
 
 \begin{itemize}
 \tightlist
@@ -1655,7 +1661,7 @@ HP: \url{http://www.mi.u-tokyo.ac.jp/consortium/mc_literacy.html}
 \end{itemize}
 
 \hypertarget{ux826fux3044ux3068ux3068ux308bux3053ux3068ux304cux3067ux304dux308bux9762ux3082ux3042ux308b}{%
-\subsection{良いととることができる面もある}\label{ux826fux3044ux3068ux3068ux308bux3053ux3068ux304cux3067ux304dux308bux9762ux3082ux3042ux308b}}
+\subsubsection{良いととることができる面もある}\label{ux826fux3044ux3068ux3068ux308bux3053ux3068ux304cux3067ux304dux308bux9762ux3082ux3042ux308b}}
 
 \begin{itemize}
 \tightlist
@@ -1668,14 +1674,14 @@ HP: \url{http://www.mi.u-tokyo.ac.jp/consortium/mc_literacy.html}
 \end{itemize}
 
 \hypertarget{susemi202006}{%
-\chapter{データサイエンスを学びませんか}\label{susemi202006}}
+\section{データサイエンスを学びませんか}\label{susemi202006}}
 
 鈴木寛\footnote{2019 年 3 月 31 日まで国際基督教大学教養学部教授(数学)College of Liberal Arts, International Christian University、 2019 年 4 月 1 日より国際基督教大学名誉教授}
 
 2020年3月（「数学セミナー」2020年6月号に掲載）
 
 \hypertarget{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9-ai}{%
-\section{データサイエンス? AI?}\label{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9-ai}}
+\subsection{データサイエンス? AI?}\label{ux30c7ux30fcux30bfux30b5ux30a4ux30a8ux30f3ux30b9-ai}}
 
 データサイエンス(Data Science)ということばを聞いたことがありますか。このことばが頻繁に使われる ようになって、まだ 10 年ほどしかたっていません。データサイエンスの定義も定まっていませんが、簡単に 表現すると「データを解析して課題を探求し、コミュニケーションを図りながら適切な解決方法を発見する科 学」、また「AI(Artificial Intelligence 人工知能)の応用を支える科学」、「コンピュータ技術とともに、統計、 数理モデル、アルゴリズムといった数学的考え方に支えられた、意思決定の科学(Decision Making Science)」 です。この広がりが、統計学という範囲を飛び越えているのでしょう。
 
@@ -1690,14 +1696,14 @@ HP: \url{http://www.mi.u-tokyo.ac.jp/consortium/mc_literacy.html}
 三番目は、データや AI を適切に活用するためには、多くの人の理解と協力が必要だからです。AI は有用で あるとともに、社会への影響がとても大きいので、さまざまな問題をひきおこし始めており、その背景を理解 し、協力して向き合っていくひとが、あらゆる分野に必要だからです ({[}1{]},{[}4{]}\footnote{ 原題は ``Weapons of Math Destruction'' 数学破壊兵器. 大量破壊兵器 (Weapons of Mass Destruction) にかけています。)})。データを根拠とすることは、 数値化しやすい価値が強調され、単純な功利主義的な判断が優先される危険があり、公平・尊厳・人権・倫理・ 感情・共感・文化など、数値化が困難ではあるが、ひとにとって本質的なことを置き去りにしないため、どの ような配慮、方策、制度、法律などが必要かを、検討する必要があります ({[}8{]})。膨大な、データから判断する こと自体が、客観的で価値が高いように思われますが、おそらく人間には、理解しづらいことで、納得感、安 心感などが、失われる可能性もあり、母集団をいくつかの因子からではなくトータルにみる視点を意識して育 むことが必須です。
 
 \hypertarget{ux30d1ux30d6ux30eaux30c3ux30afux30c7ux30fcux30bf}{%
-\section{パブリック・データ}\label{ux30d1ux30d6ux30eaux30c3ux30afux30c7ux30fcux30bf}}
+\subsection{パブリック・データ}\label{ux30d1ux30d6ux30eaux30c3ux30afux30c7ux30fcux30bf}}
 
 皆さんは、ハンス・ロスリング等が書いた「ファクトフルネス -- 10 の思い込みを乗り越え、データを基 に世界を正しく見る習慣」{[}5{]} という本を読んだことがありますか? お勧めです。まだの方は、Gapminder のサイト(\url{https://www.gapminder.org)の一番上にある} 13 問からなる 10 分ほどのテストに挑戦してみ ませんか。日本語でも受けることができます。ひとは、さまざまな、先入観 (bias) にとらわれていると、ロ スリングは言っています。ロスリングの TED などでのビデオ講義もお勧めです。一つだけリンクを付けて おきます ({[}9{]})。Gapminder のサイトを見ると、バブル・チャートと呼ばれるグラフが登場し、世界の状況 を、わかりやすく見ることができます。このようにして、世界の困難な課題に取り組むことが可能になって いくのです。ロスリングはスウェーデン生まれの公衆衛生の専門家で、大学で統計学と医学を学び、モザン ビークで地域医療に従事し、リベリアなどでエボラ出血熱とも戦い、公衆衛生を学生に教えてきた人です。 2017 年になくなりましたが、ロスリングの著書には、Google と協力し公開したものが、Google Public Data (\url{https://www.google.com/publicdata/directory?hl=en_US6\%5B原語を英語に設定すると膨大なリストが現れ、上に} Gapminder のバブルチャートが現れると思います。{]}) だとあります ({[}6{]})。
 
 世界中の公的機関がパブリック・データを公開しており、誰でも、データを見ることができ、また、データ を取得して、分析し、考えることもできるようになってきています。日本の政府統計(パブリック・データ) は、e-Stat (\url{https://www.e-stat.go.jp}) にあります\footnote{国際連合は、各専門機関 (specialized agencies) ごとにデータをまとめています。World Bank \url{https://data.worldbank.org} など検索してみてください。}。
 
 \hypertarget{ux3069ux306eux3088ux3046ux306bux3057ux3066ux5b66ux3073ux307eux3059ux304b}{%
-\section{どのようにして学びますか?}\label{ux3069ux306eux3088ux3046ux306bux3057ux3066ux5b66ux3073ux307eux3059ux304b}}
+\subsection{どのようにして学びますか?}\label{ux3069ux306eux3088ux3046ux306bux3057ux3066ux5b66ux3073ux307eux3059ux304b}}
 
 データサイエンスの学びの鍵は、データに興味を持つことだと思います。AI はどのようなデータを用いて いるのだろうか考えたり、ニュースなどで数値データやグラフに出会ったら、どのようにして得られたデータ なのか、データやグラフから読み取れることはなにか、グラフはわかりやすく表示されているか、同じような データからどのような関連する情報が得られるかを考えてみてください。公開されている元データを探して見 てみるとよいでしょう。最近は、データの公開が進んでいるだけでなく、ダッシュボード\footnote{Gapminder の Tools にあるバブルチャートもその一つです。日本の政府統計のダッシュボード: \url{https://dashboard.e-stat}.
   go.jp}といって、データ の項目を操作してグラフ表示の仕方を選ぶことができるものも増えています。興味を持った項目について、グラフを作成してデータを分析してみたいとなるとよいですね。
@@ -1722,7 +1728,7 @@ R は、インターネット上からダウンロードして、自分のコン
 \url{https://foods4all.github.io} に、少し詳しく紹介してありますので、参考にして下さい。わたしも Free-Open-Online のものを活用し勉強をはじめて一年になったところです。一緒に学びませんか。
 
 \hypertarget{ux304aux308fux308aux306b-1}{%
-\section{おわりに}\label{ux304aux308fux308aux306b-1}}
+\subsection{おわりに}\label{ux304aux308fux308aux306b-1}}
 
 データサイエンスは、数学にはない要素をいくつも含んでいますが、数学に興味をもち、勉強をしているひとにとっては抵抗なく学ぶことができると思います。必要に応じて少しずつ学んでいけばよいので、まず、数学や統計をあるレベルまで学ばないと、データサイエンスを学べないことはありません。データサイエンスの世界に飛び込んでみませんか。
 
@@ -1733,8 +1739,8 @@ R は、インターネット上からダウンロードして、自分のコン
 あなたも、データサイエンスを学びませんか。
 
 \hypertarget{ux53c2ux8003ux6587ux732e}{%
-\section*{参考文献}\label{ux53c2ux8003ux6587ux732e}}
-\addcontentsline{toc}{section}{参考文献}
+\subsection*{参考文献}\label{ux53c2ux8003ux6587ux732e}}
+\addcontentsline{toc}{subsection}{参考文献}
 
 {[}1{]}「アルゴリズムが世界を支配する」Christopher Steiner 著、永峯涼訳、角川 書店、2013.
 
@@ -1758,17 +1764,17 @@ Rosling 他著、上杉周作・関美和訳、日経 BP、2019.
 {[}9{]} Hans Rosling による TED Talk(日本語字幕付き): \url{https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen?language=ja}
 
 \hypertarget{da4r}{%
-\chapter{Data Analysis for Researchers}\label{da4r}}
+\section{Data Analysis for Researchers}\label{da4r}}
 
 \hypertarget{ux30b3ux30fcux30b9ux306bux3064ux3044ux3066}{%
-\section{コースについて}\label{ux30b3ux30fcux30b9ux306bux3064ux3044ux3066}}
+\subsection{コースについて}\label{ux30b3ux30fcux30b9ux306bux3064ux3044ux3066}}
 
 国際基督教大学（International Christian University）の大学院共通科目（QALL401）のコースで、開講言語は英語。コースの日本語名は、「研究者のためのデータ分析」。
 
 何回か、ほんの一部を担当していたが、2020年度からは、中心となって、担当している。また、近年は、冬学期に開講している。
 
 \hypertarget{ux30b3ux30fcux30b9ux30b3ux30f3ux30c6ux30f3ux30c4}{%
-\section{コース・コンテンツ}\label{ux30b3ux30fcux30b9ux30b3ux30f3ux30c6ux30f3ux30c4}}
+\subsection{コース・コンテンツ}\label{ux30b3ux30fcux30b9ux30b3ux30f3ux30c6ux30f3ux30c4}}
 
 2021年度担当時の、スライドや、資料をまとめたものを、Bookdown 形式でまとめたものを作成、2022年度は、少し構成を変えた。2021年度のものも一部利用しているが、新しい形式の Bookdown で電子書籍を作成した。
 いずれも、このページの下にリンクがある。
@@ -1786,10 +1792,10 @@ Rosling 他著、上杉周作・関美和訳、日経 BP、2019.
 \end{itemize}
 
 \hypertarget{intro2r}{%
-\chapter{Introduction to R}\label{intro2r}}
+\section{Introduction to R}\label{intro2r}}
 
 \hypertarget{ux7279ux5225ux8b1bux7fa970ux5206x2}{%
-\section{特別講義（70分x2）}\label{ux7279ux5225ux8b1bux7fa970ux5206x2}}
+\subsection{特別講義（70分x2）}\label{ux7279ux5225ux8b1bux7fa970ux5206x2}}
 
 Data Analysis for Researchers \ref{da4r} を一緒に担当している、経済学の先生に、依頼されて、2022年11月2日に行った、特別講義である。学生は、経済学のコースを履修している大学院生。講義は英語。日本人大学院生もいるが、大半は、外国人である。背景はまちまちで、R や、他の、分析ソフトを使った経験のある人もいるが、ほとんどは、R の初心者。大学院生のうちの数人は、冬学期（12月開講）に、Data Analysis for Researchers を履修していた。
 
@@ -1800,7 +1806,7 @@ Data Analysis for Researchers \ref{da4r} を一緒に担当している、経済
 Data Analysis for Researchers の講義録のようなものに、今回の講義録に詳しく説明を加えたものを、Introduction として、加えるようにしていくとよいと考えている。
 
 \hypertarget{ux8b1bux7fa9ux8cc7ux6599}{%
-\section{講義資料}\label{ux8b1bux7fa9ux8cc7ux6599}}
+\subsection{講義資料}\label{ux8b1bux7fa9ux8cc7ux6599}}
 
 RMarkdown の一形式である、RNotebook で作成した、講義資料である。
 リンク先のファイルは、右上に、{[}Code{]} ボタンがあり、そこから、内容を記述した、ソースファイルである、RMarkdown 形式のファイルをダウンロードすることができる。したがって、そのファイルを、RStudio などに取り込めば、実際のコードを、実行して、結果を表示することができる。自分で、コード・チャンクを付け加えて、実行することもできるので、練習も可能である。
@@ -1812,10 +1818,10 @@ RMarkdown の一形式である、RNotebook で作成した、講義資料であ
 \end{itemize}
 
 \hypertarget{eco232}{%
-\chapter{中級マクロ経済学特別講義}\label{eco232}}
+\section{中級マクロ経済学特別講義}\label{eco232}}
 
 \hypertarget{ux7279ux5225ux8b1bux7fa9ux306bux3064ux3044ux3066}{%
-\section{特別講義について}\label{ux7279ux5225ux8b1bux7fa9ux306bux3064ux3044ux3066}}
+\subsection{特別講義について}\label{ux7279ux5225ux8b1bux7fa9ux306bux3064ux3044ux3066}}
 
 Data Analysis for Researchers \ref{da4r} を一緒に担当している、経済学の先生に、依頼されて、2023年2月20日、22日、24日に、一時限（70分）ずつ行った、特別講義である。
 
@@ -1826,7 +1832,7 @@ Public Data 公開されている実際のデータを使った経験がほと�
 はじめての日本語での、データサイエンスの講義で、Windows 上で、R を R Studio を使う場合も、いくつかの問題も把握することとなった。ほとんどの、学生は、問題なく、使えたが。解決しない場合を考えて、Posit Cloud（旧 RStudio Cloud）の説明もした。20人ほどの受講生で、自分の PC では使えず、Posit Cloud を使った学生は一人。
 
 \hypertarget{ux8b1bux7fa9ux8cc7ux6599-1}{%
-\section{講義資料}\label{ux8b1bux7fa9ux8cc7ux6599-1}}
+\subsection{講義資料}\label{ux8b1bux7fa9ux8cc7ux6599-1}}
 
 \begin{itemize}
 \item
@@ -1852,16 +1858,16 @@ Public Data 公開されている実際のデータを使った経験がほと�
 \end{itemize}
 
 \hypertarget{ds4aj}{%
-\chapter{データサイエンスをはじめましょう}\label{ds4aj}}
+\section{データサイエンスをはじめましょう}\label{ds4aj}}
 
 \hypertarget{data-science-for-all}{%
-\section*{Data Science for All}\label{data-science-for-all}}
-\addcontentsline{toc}{section}{Data Science for All}
+\subsection*{Data Science for All}\label{data-science-for-all}}
+\addcontentsline{toc}{subsection}{Data Science for All}
 
 日本語での入門的な教科書を書き始めました。まだ、ほとんど、内容はありませんが、「中級マクロ経済学特別講義」\ref{eco232} で、 日本語での特別講義も経験したので、その内容を土台として、Data Analysis for Researchers \ref{da4r} の翻訳なども含めていきたいと願っている。
 
 \hypertarget{ux30eaux30f3ux30af}{%
-\section{リンク}\label{ux30eaux30f3ux30af}}
+\subsection{リンク}\label{ux30eaux30f3ux30af}}
 
 \begin{itemize}
 \item
@@ -1877,7 +1883,7 @@ Public Data 公開されている実際のデータを使った経験がほと�
 \end{itemize}
 
 \hypertarget{chatgpt}{%
-\chapter{Chat GPT}\label{chatgpt}}
+\section{Chat GPT}\label{chatgpt}}
 
 Chat GPT を使いながら、考えたことを、実例を交えて書いていきます。英語で使うことが多いですが、英語の場合には、\href{https://www.deepl.com/translator}{DeepL} による翻訳をつけてあります。このページでは、翻訳には、手を入れない方針にしています。
 
@@ -1903,7 +1909,7 @@ Chat GPT を使いながら、考えたことを、実例を交えて書いて�
 \end{enumerate}
 
 \hypertarget{firstchat}{%
-\section{First Chat - はじめてのチャット　}\label{firstchat}}
+\subsection{First Chat - はじめてのチャット　}\label{firstchat}}
 
 {[}HS{]} Explain the difference between equality and fairness by an example story
 
@@ -2150,7 +2156,7 @@ This topic could be adapted to different levels of difficulty and detail dependi
 I hope this example gives you an idea of how world development indicators could be used in data science education. Let me know if you have any other questions or need further assistance.
 
 \hypertarget{firstchatj}{%
-\subsection{訳：はじめてのチャット}\label{firstchatj}}
+\subsubsection{訳：はじめてのチャット}\label{firstchatj}}
 
 {[}HS{]} 平等と公平の違いを例話で説明しなさい。
 
@@ -2384,7 +2390,7 @@ Hello\nWorld
 この例から、データサイエンス教育で世界の開発指標をどのように利用できるのか、ご理解いただけると幸いです。他に質問がある場合や、さらなる支援が必要な場合は、私にお知らせください。
 
 \hypertarget{digitalhealth}{%
-\section{Digital Health - デジタル・ヘルス　}\label{digitalhealth}}
+\subsection{Digital Health - デジタル・ヘルス　}\label{digitalhealth}}
 
 2023.02.05
 
@@ -2483,7 +2489,7 @@ Overall, the future of epidemiology in connection with digital health and wearab
 {[}ChatGPT{]} You're welcome! I'm here to help, so feel free to reach out to me again if you have any additional questions. Have a great day!
 
 \hypertarget{digitalhealthj}{%
-\subsection{デジタルヘルス（翻訳）}\label{digitalhealthj}}
+\subsubsection{デジタルヘルス（翻訳）}\label{digitalhealthj}}
 
 {[}HS{]} いわゆるデジタルヘルスについて知りたいのですが。例えば、ウェアラブルデバイスによる体調の測定などです。そのようなデバイスを用いた疫学に関する学術研究はあるのでしょうか？
 
@@ -2592,7 +2598,7 @@ Overall, the future of epidemiology in connection with digital health and wearab
 www.DeepL.com/Translator（無料版）で翻訳しました。
 
 \hypertarget{nationalbond}{%
-\section{日本の国債について　}\label{nationalbond}}
+\subsection{日本の国債について　}\label{nationalbond}}
 
 {[}HS{]} 日本の国債60年償還ルールについて教えてください。
 
@@ -2710,7 +2716,7 @@ www.DeepL.com/Translator（無料版）で翻訳しました。
 \protect\hyperlink{chatgpt}{Chat GPT} You're welcome! I'm here to help. Don't hesitate to reach out to me in English or any other language I am capable of.
 
 \hypertarget{bigmacindex}{%
-\section{Big Mac Index　}\label{bigmacindex}}
+\subsection{Big Mac Index　}\label{bigmacindex}}
 
 {[}HS{]} in R would you teach me how to rewrite data.table .SD in tidyverse
 
@@ -2823,7 +2829,7 @@ Note that in tidyverse, it is generally recommended to avoid using loops and ins
 {[}ChatGPT{]} No problem, take your time! Let me know if you have any questions or if there's anything I can clarify.
 
 \hypertarget{bigmacindexj}{%
-\subsection{訳：ビッグマック・インデックス}\label{bigmacindexj}}
+\subsubsection{訳：ビッグマック・インデックス}\label{bigmacindexj}}
 
 {[}HS{]} Rでtidyverseのdata.table .SDを書き換える方法を教えてください。
 
@@ -2894,7 +2900,7 @@ Tidyverseでは、一般的にループの使用を避け、代わりにmap()や
 {[}ChatGPT{]} 大丈夫です、ゆっくりしていってください。何か質問があったり、明確にできることがあれば教えてください。
 
 \hypertarget{mapdataofwir2022}{%
-\section{map data of WIR2022}\label{mapdataofwir2022}}
+\subsection{map data of WIR2022}\label{mapdataofwir2022}}
 
 {[}HS{]} I want to study World Inequality Report 2022
 
@@ -3078,7 +3084,7 @@ ChatGPT Jan 9 Version. Free Research Preview. Our goal is to make AI systems mor
 \end{verbatim}
 
 \hypertarget{mapdataofwir2022j}{%
-\section{WIR2022の地図データについて}\label{mapdataofwir2022j}}
+\subsection{WIR2022の地図データについて}\label{mapdataofwir2022j}}
 
 {[}HS{]} 世界不平等報告書2022を勉強したい
 
@@ -3257,7 +3263,7 @@ left\_join関数を使うと、World Inequality Reportのデータと地図デ�
 良い一日をお過ごしください。
 
 \hypertarget{miscellanous}{%
-\section{Miscellanous}\label{miscellanous}}
+\subsection{Miscellanous}\label{miscellanous}}
 
 {[}HS{]} What is the default value of the span in geom\_smooth?
 
@@ -3333,7 +3339,7 @@ If you have any important files in your old OneDrive-based home directory, make 
 Keep in mind that changing the location of your user's home directory may cause issues with certain applications or system functions. Therefore, it's generally recommended to keep your user's home directory in its default location unless you have a specific reason to move it. If you're unsure about how to manage your user's home directory or have concerns about its location, it's a good idea to consult with a qualified IT professional or Microsoft support.
 
 \hypertarget{miscellanousj}{%
-\subsection{訳：雑}\label{miscellanousj}}
+\subsubsection{訳：雑}\label{miscellanousj}}
 
 {[}HS{]} geom\_smoothのspanのデフォルト値を教えてください。
 
@@ -3408,7 +3414,7 @@ R または R Studio で Sys.getenv() を実行すると、現在のセッショ
 ユーザーのホームディレクトリの場所を変更すると、特定のアプリケーションやシステム機能で問題が発生する可能性があることに留意してください。したがって、一般的には、移動する特別な理由がない限り、ユーザーのホーム・ディレクトリをデフォルトの場所に維持することをお勧めします。ユーザーのホーム・ディレクトリの管理方法について不明な点がある場合、またはその場所について懸念がある場合は、資格を持つIT専門家またはMicrosoftのサポートに相談することをお勧めします。
 
 \hypertarget{windowsaccount}{%
-\section{Windows 漢字アカウント名}\label{windowsaccount}}
+\subsection{Windows 漢字アカウント名}\label{windowsaccount}}
 
 {[}HS{]} 日本語のWindows System でアカウントネームを漢字にすると、Home Path に、漢字が入るように思いますが、それは、Windows 10, 11 など、どれでも一緒ですか。
 
@@ -3594,7 +3600,7 @@ Rの場合は、R\_USERやR\_LIBS\_USERを環境変数に設定することで�
 \protect\hyperlink{chatgpt}{Chat GPT} どういたしまして。何か他に質問があれば、遠慮なくお聞きください。
 
 \hypertarget{dseducation}{%
-\section{Data Science Education}\label{dseducation}}
+\subsection{Data Science Education}\label{dseducation}}
 
 {[}HS{]} I am designing data science education or curriculum for all students at universities in Japan. All students include non-science major students.
 
@@ -3857,7 +3863,7 @@ By incorporating these elements into your curriculum, you can help to create an 
 \protect\hyperlink{chatgpt}{Chat GPT} You're welcome! I'm here to help, so please feel free to reach out to me if you have any further questions or concerns. Good luck with your data science education curriculum!
 
 \hypertarget{dseducationj}{%
-\subsection{訳：データサイエンス教育}\label{dseducationj}}
+\subsubsection{訳：データサイエンス教育}\label{dseducationj}}
 
 {[}HS{]} 私は、日本の大学の全学生を対象としたデータサイエンス教育やカリキュラムを設計しています。理系でない学生も含めて、すべての学生を対象にしています。
 
@@ -4110,15 +4116,15 @@ By incorporating these elements into your curriculum, you can help to create an 
 \protect\hyperlink{chatgpt}{Chat GPT} どういたしまして。私がお手伝いしますので、さらにご質問やご不明な点があれば、お気軽にご連絡ください。データサイエンス教育カリキュラムの作成、頑張ってください
 
 \hypertarget{bookdown}{%
-\chapter{Bookdown}\label{bookdown}}
+\section{Bookdown}\label{bookdown}}
 
 \hypertarget{about}{%
-\section{About}\label{about}}
+\subsection{About}\label{about}}
 
 This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports; for example, a math equation \(a^2 + b^2 = c^2\).
 
 \hypertarget{usage}{%
-\subsection{Usage}\label{usage}}
+\subsubsection{Usage}\label{usage}}
 
 Each \textbf{bookdown} chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter \emph{must} start with a first-level heading: \texttt{\#\ A\ good\ chapter}, and can contain one (and only one) first-level heading.
 
@@ -4127,7 +4133,7 @@ Use second-level and higher headings within chapters like: \texttt{\#\#\ A\ shor
 The \texttt{index.Rmd} file is required, and is also your first book chapter. It will be the homepage when you render the book.
 
 \hypertarget{render-book}{%
-\subsection{Render book}\label{render-book}}
+\subsubsection{Render book}\label{render-book}}
 
 You can render the HTML version of this example book without changing anything:
 
@@ -4150,7 +4156,7 @@ Or build the book from the R console:
 To render this example to PDF as a \texttt{bookdown::pdf\_book}, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
 
 \hypertarget{preview-book}{%
-\subsection{Preview book}\label{preview-book}}
+\subsubsection{Preview book}\label{preview-book}}
 
 As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in ``Preview book'', or from the R console:
 
@@ -4161,28 +4167,28 @@ As you work, you may start a local server to live preview this HTML book. This p
 \end{Shaded}
 
 \hypertarget{hello-bookdown}{%
-\section{Hello bookdown}\label{hello-bookdown}}
+\subsection{Hello bookdown}\label{hello-bookdown}}
 
 All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (\texttt{\#}) per .Rmd file.
 
 \hypertarget{a-section}{%
-\subsection{A section}\label{a-section}}
+\subsubsection{A section}\label{a-section}}
 
 All chapter sections start with a second-level (\texttt{\#\#}) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
 
 \hypertarget{an-unnumbered-section}{%
-\subsubsection*{An unnumbered section}\label{an-unnumbered-section}}
-\addcontentsline{toc}{subsubsection}{An unnumbered section}
+\paragraph*{An unnumbered section}\label{an-unnumbered-section}}
+\addcontentsline{toc}{paragraph}{An unnumbered section}
 
 Chapters and sections are numbered by default. To un-number a heading, add a \texttt{\{.unnumbered\}} or the shorter \texttt{\{-\}} at the end of the heading, like in this section.
 
 \hypertarget{cross}{%
-\section{Cross-references}\label{cross}}
+\subsection{Cross-references}\label{cross}}
 
 Cross-references make it easier for your readers to find and link to elements in your book.
 
 \hypertarget{chapters-and-sub-chapters}{%
-\subsection{Chapters and sub-chapters}\label{chapters-and-sub-chapters}}
+\subsubsection{Chapters and sub-chapters}\label{chapters-and-sub-chapters}}
 
 There are two steps to cross-reference any heading:
 
@@ -4210,7 +4216,7 @@ There are two steps to cross-reference any heading:
 \end{enumerate}
 
 \hypertarget{captioned-figures-and-tables}{%
-\subsection{Captioned figures and tables}\label{captioned-figures-and-tables}}
+\subsubsection{Captioned figures and tables}\label{captioned-figures-and-tables}}
 
 Figures and tables \emph{with captions} can also be cross-referenced from elsewhere in your book using \texttt{\textbackslash{}@ref(fig:chunk-label)} and \texttt{\textbackslash{}@ref(tab:chunk-label)}, respectively.
 
@@ -4267,7 +4273,7 @@ temperature & pressure\\
 \end{table}
 
 \hypertarget{parts}{%
-\section{Parts}\label{parts}}
+\subsection{Parts}\label{parts}}
 
 You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file.
 
@@ -4278,15 +4284,15 @@ Add an unnumbered part: \texttt{\#\ (PART\textbackslash{}*)\ Act\ one\ \{-\}} (f
 Add an appendix as a special kind of un-numbered part: \texttt{\#\ (APPENDIX)\ Other\ stuff\ \{-\}} (followed by \texttt{\#\ A\ chapter}). Chapters in an appendix are prepended with letters instead of numbers.
 
 \hypertarget{footnotes-and-citations}{%
-\section{Footnotes and citations}\label{footnotes-and-citations}}
+\subsection{Footnotes and citations}\label{footnotes-and-citations}}
 
 \hypertarget{footnotes}{%
-\subsection{Footnotes}\label{footnotes}}
+\subsubsection{Footnotes}\label{footnotes}}
 
 Footnotes are put inside the square brackets after a caret \texttt{\^{}{[}{]}}. Like this one \footnote{This is a footnote.}.
 
 \hypertarget{citations}{%
-\subsection{Citations}\label{citations}}
+\subsubsection{Citations}\label{citations}}
 
 Reference items in your bibliography file(s) using \texttt{@key}.
 
@@ -4298,10 +4304,10 @@ The \texttt{bs4\_book} theme makes footnotes appear inline when you click on the
 The RStudio Visual Markdown Editor can also make it easier to insert citations: \url{https://rstudio.github.io/visual-markdown-editing/\#/citations}
 
 \hypertarget{blocks}{%
-\section{Blocks}\label{blocks}}
+\subsection{Blocks}\label{blocks}}
 
 \hypertarget{equations}{%
-\subsection{Equations}\label{equations}}
+\subsubsection{Equations}\label{equations}}
 
 Here is an equation.
 
@@ -4313,7 +4319,7 @@ Here is an equation.
 You may refer to using \texttt{\textbackslash{}@ref(eq:binom)}, like see Equation \eqref{eq:binom}.
 
 \hypertarget{theorems-and-proofs}{%
-\subsection{Theorems and proofs}\label{theorems-and-proofs}}
+\subsubsection{Theorems and proofs}\label{theorems-and-proofs}}
 
 Labeled theorems can be referenced in text using \texttt{\textbackslash{}@ref(thm:tri)}, for example, check out this smart theorem \ref{thm:tri}.
 
@@ -4326,7 +4332,7 @@ and \(a\) and \(b\) denote the lengths of the \textbf{other} two sides, we have
 Read more here \url{https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html}.
 
 \hypertarget{callout-blocks}{%
-\subsection{Callout blocks}\label{callout-blocks}}
+\subsubsection{Callout blocks}\label{callout-blocks}}
 
 The \texttt{bs4\_book} theme also includes special callout blocks, like this \texttt{.rmdnote}.
 
@@ -4351,20 +4357,20 @@ You may also use: \texttt{.rmdcaution}, \texttt{.rmdimportant}, \texttt{.rmdtip}
 The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: \url{https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html}
 
 \hypertarget{sharing-your-book}{%
-\section{Sharing your book}\label{sharing-your-book}}
+\subsection{Sharing your book}\label{sharing-your-book}}
 
 \hypertarget{publishing}{%
-\subsection{Publishing}\label{publishing}}
+\subsubsection{Publishing}\label{publishing}}
 
 HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
 
 \hypertarget{pages}{%
-\subsection{404 pages}\label{pages}}
+\subsubsection{404 pages}\label{pages}}
 
 By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
 
 \hypertarget{metadata-for-sharing}{%
-\subsection{Metadata for sharing}\label{metadata-for-sharing}}
+\subsubsection{Metadata for sharing}\label{metadata-for-sharing}}
 
 Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
 

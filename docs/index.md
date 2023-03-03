@@ -3,7 +3,7 @@ title: "データ・サイエンス教育"
 author: "鈴木 寛（Hiroshi Suzuki）"
 date: "2023-03-03"
 site: bookdown::bookdown_site
-documentclass: book
+documentclass: bxjsbook #book
 bibliography: [book.bib, packages.bib]
 url: https://icu-hsuzuki.github.io/ds_education/
 # cover-image: path to the social sharing image like images/cover.jpg
@@ -31,10 +31,16 @@ csl: chicago-fullnote-bibliography.csl
 
 その後、あることが契機となり、2020年度から、毎年、冬に、大学院一般向け（分野の指定なし）の授業、「研究者のためのデータ分析（Data Analysis for Researchers）」を担当しています。複数の教員で担当しますが、基本的な部分は、わたしが教えています。受講生は20人程度ですが、殆どが、外国人。それも、多国籍で、多くても一国から三人程度。英語で教えています。
 
+それ以外にも、依頼されて、入門的なコースを、英語や、さらに、日本語でも、教える機会がありました。
+
+AI（人工知能）が、社会のあらゆる場面で使われるようになっていますが、今後、その傾向はより強くなっていくでしょう。難しいのは、AI の出す結論に至る、思考経路を、一歩ずつ辿ることは、不可能で、理解することが困難だと言うことです。しかし、その背後にある、データサイエンスを学ぶことで、どのようなデータから、どのような評価を行って、結論に至ったかは、ある程度推測できる面があります。単に、AI にできること、できないことを、見つけようとしたり、AI の間違いを指摘して、完璧ではないとして、利用を躊躇するのではなく、ちょっと、異質ではあるが、どのように、お付き合いをしていったら良いかを、学んでいくことが肝要だと考えています。
+
+AI とも、お付き合いしながら、その背後にある、データサイエンスについて、一緒に学んでいく、そのような、データサイエンス教育を目指すことができればと願っています。
+
 
 ## PDF、ePub 版について {-}
 
 実は、PDF 版と、ePub 版も作成しています。しかし、扱いが異なるので、ある程度完成するまでは、ほとんど更新しない予定です。いずれ、これらも、更新したものを公開できると良いのですが。試験公開版は、下のリンクにあります。
 
-* [PDF 版](https://icu-hsuzuki.github.io/ds4aj/ds4aj.pdf)
-* [ePub 版](https://icu-hsuzuki.github.io/ds4aj/ds4aj.epub)
+* [PDF 版](https://icu-hsuzuki.github.io/ds_education/ds_education.pdf)
+* [ePub 版](https://icu-hsuzuki.github.io/ds_education/ds_education.epub)
