@@ -13,6 +13,8 @@ biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
 ---
 
+
+
 # この文書について  {-} 
 
 データサイエンス教育について考えながら、課題や手法なども含めて、少しずつ書いていきたいと思う。

@@ -13,6 +13,13 @@ biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
 ---
 
+```{r include=FALSE}
+library(tidyverse)
+library(showtext) 
+font_add_google('Noto Sans')
+showtext_auto()
+```
+
 # この文書について  {-} 
 
 データサイエンス教育について考えながら、課題や手法なども含めて、少しずつ書いていきたいと思う。
