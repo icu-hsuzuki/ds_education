@@ -15,7 +15,7 @@ csl: chicago-fullnote-bibliography.csl
 
 
 
-# この文書について  {-} 
+# この文書について  {.unnumbered} 
 
 データサイエンス教育について考えながら、課題や手法なども含めて、少しずつ書いていきたいと思う。
 
