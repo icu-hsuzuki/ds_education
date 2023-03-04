@@ -139,6 +139,8 @@ miscellanousj
 windowsaccount
 dseducation
 dseducationj
+centralasia
+centralasiaj
 bookdown
 about
 usage
