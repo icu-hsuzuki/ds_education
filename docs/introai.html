@@ -4,17 +4,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 4 数理、データサイエンス、AI | データ・サイエンス教育</title>
+<title>Chapter 5 数理、データサイエンス、AI | データ・サイエンス教育</title>
 <meta name="author" content="鈴木 寛（Hiroshi Suzuki）">
-<meta name="description" content="4.1 はじめに まず、個人的なことから、書こうと思う。 わたしが、データサイエンスを勉強したいと考えるようになったのは、2016年3月に、トップ棋士の李世乭（イ・セドル）に対する、五番勝負で、Alpha Go が ４勝１敗で勝利したことに端を発する。Alpha Go は、過去の人間の打碁を学んで、強くなっていったと報道されたが、次の年には、Alpha Zero...">
+<meta name="description" content="5.1 はじめに まず、個人的なことから、書こうと思う。 わたしが、データサイエンスを勉強したいと考えるようになったのは、2016年3月に、トップ棋士の李世乭（イ・セドル）に対する、五番勝負で、Alpha Go が ４勝１敗で勝利したことに端を発する。Alpha Go は、過去の人間の打碁を学んで、強くなっていったと報道されたが、次の年には、Alpha Zero...">
 <meta name="generator" content="bookdown 0.32 with bs4_book()">
-<meta property="og:title" content="Chapter 4 数理、データサイエンス、AI | データ・サイエンス教育">
+<meta property="og:title" content="Chapter 5 数理、データサイエンス、AI | データ・サイエンス教育">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://icu-hsuzuki.github.io/ds_education/introai.html">
-<meta property="og:description" content="4.1 はじめに まず、個人的なことから、書こうと思う。 わたしが、データサイエンスを勉強したいと考えるようになったのは、2016年3月に、トップ棋士の李世乭（イ・セドル）に対する、五番勝負で、Alpha Go が ４勝１敗で勝利したことに端を発する。Alpha Go は、過去の人間の打碁を学んで、強くなっていったと報道されたが、次の年には、Alpha Zero...">
+<meta property="og:description" content="5.1 はじめに まず、個人的なことから、書こうと思う。 わたしが、データサイエンスを勉強したいと考えるようになったのは、2016年3月に、トップ棋士の李世乭（イ・セドル）に対する、五番勝負で、Alpha Go が ４勝１敗で勝利したことに端を発する。Alpha Go は、過去の人間の打碁を学んで、強くなっていったと報道されたが、次の年には、Alpha Zero...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 4 数理、データサイエンス、AI | データ・サイエンス教育">
-<meta name="twitter:description" content="4.1 はじめに まず、個人的なことから、書こうと思う。 わたしが、データサイエンスを勉強したいと考えるようになったのは、2016年3月に、トップ棋士の李世乭（イ・セドル）に対する、五番勝負で、Alpha Go が ４勝１敗で勝利したことに端を発する。Alpha Go は、過去の人間の打碁を学んで、強くなっていったと報道されたが、次の年には、Alpha Zero...">
+<meta name="twitter:title" content="Chapter 5 数理、データサイエンス、AI | データ・サイエンス教育">
+<meta name="twitter:description" content="5.1 はじめに まず、個人的なことから、書こうと思う。 わたしが、データサイエンスを勉強したいと考えるようになったのは、2016年3月に、トップ棋士の李世乭（イ・セドル）に対する、五番勝負で、Alpha Go が ４勝１敗で勝利したことに端を発する。Alpha Go は、過去の人間の打碁を学んで、強くなっていったと報道されたが、次の年には、Alpha Zero...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.2/transition.js"></script><script src="libs/bs3compat-0.4.2/tabs.js"></script><script src="libs/bs3compat-0.4.2/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -70,8 +70,9 @@
 <li><a class="" href="introduction.html"><span class="header-section-number">1</span> はじめに</a></li>
 <li><a class="" href="issues.html"><span class="header-section-number">2</span> 教養としてのデータサイエンス教育の課題</a></li>
 <li><a class="" href="coursedesign.html"><span class="header-section-number">3</span> 生涯学び続ける基盤を構築するデータサイエンス・コースの開発</a></li>
-<li><a class="active" href="introai.html"><span class="header-section-number">4</span> 数理、データサイエンス、AI</a></li>
-<li><a class="" href="opendata.html"><span class="header-section-number">5</span> オープンデータ　</a></li>
+<li><a class="" href="issuesinjp.html"><span class="header-section-number">4</span> 日本でのデータサイエンス教育の課題にどう向き合うか</a></li>
+<li><a class="active" href="introai.html"><span class="header-section-number">5</span> 数理、データサイエンス、AI</a></li>
+<li><a class="" href="opendata.html"><span class="header-section-number">6</span> オープンデータ　</a></li>
 <li class="book-part">APPENDIX</li>
 <li><a class="" href="math2019.html"><span class="header-section-number">A</span> 教養としてのデータサイエンス教育</a></li>
 <li><a class="" href="math2020.html"><span class="header-section-number">B</span> 教養としてのデータサイエンス教育の目的と課題</a></li>
@@ -89,13 +90,13 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="introai" class="section level1" number="4">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="introai" class="section level1" number="5">
 <h1>
-<span class="header-section-number">4</span> 数理、データサイエンス、AI<a class="anchor" aria-label="anchor" href="#introai"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5</span> 数理、データサイエンス、AI<a class="anchor" aria-label="anchor" href="#introai"><i class="fas fa-link"></i></a>
 </h1>
-<div id="はじめに-2" class="section level2" number="4.1">
+<div id="はじめに-3" class="section level2" number="5.1">
 <h2>
-<span class="header-section-number">4.1</span> はじめに<a class="anchor" aria-label="anchor" href="#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB-2"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.1</span> はじめに<a class="anchor" aria-label="anchor" href="#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB-3"><i class="fas fa-link"></i></a>
 </h2>
 <p>まず、個人的なことから、書こうと思う。</p>
 <p>わたしが、データサイエンスを勉強したいと考えるようになったのは、2016年3月に、トップ棋士の李世乭（イ・セドル）に対する、五番勝負で、Alpha Go が ４勝１敗で勝利したことに端を発する。Alpha Go は、過去の人間の打碁を学んで、強くなっていったと報道されたが、次の年には、Alpha Zero が登場し、人間の打碁のデータを用いず、コンピュータ同士で、打つことによって、強くなっていき、Alpha Go を十分しのぐ状態になったのである。</p>
@@ -123,14 +124,14 @@
 <p>AI と、どうお付き合いをしていったら良いでしょうか。それは、分かりません。しかし、ちょっと、変わっていて、常識が通じないような、ひとと出会った時に、どうしますか。わたしは、否定したり、排除したり、敵対したりするのではなく、「あなたのことを教えてください」と、伝えながら、少しずつ関係を築いていくことだと考えています。そして、AI に対しても、そのように、できればと考えています。</p>
 <p>簡単に、いうと、それが、データサイエンスを学び始めた経緯です。</p>
 </div>
-<div id="安全な-ai" class="section level2" number="4.2">
+<div id="安全な-ai" class="section level2" number="5.2">
 <h2>
-<span class="header-section-number">4.2</span> 安全な AI?<a class="anchor" aria-label="anchor" href="#%E5%AE%89%E5%85%A8%E3%81%AA-ai"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.2</span> 安全な AI?<a class="anchor" aria-label="anchor" href="#%E5%AE%89%E5%85%A8%E3%81%AA-ai"><i class="fas fa-link"></i></a>
 </h2>
 <p>AIを使い、開発していく時に、どのようなことに注意する必要があるのだろうか。AI (Artificial Intelligence) や、そのロボットへの応用の専門家である、Stewart Russel<a class="footnote-ref" tabindex="0" data-toggle="popover" data-content='&lt;p&gt;Stuart Jonathan Russell OBE (born 1962) is a British computer scientist known for his contributions to artificial intelligence (AI).[5][3] He is a professor of computer science at the University of California, Berkeley and was from 2008 to 2011 an adjunct professor of neurological surgery at the University of California, San Francisco. He holds the Smith-Zadeh Chair in Engineering at University of California, Berkeley. He founded and leads the Center for Human-Compatible Artificial Intelligence (CHAI) at UC Berkeley. Russell is the co-author with Peter Norvig of the most popular textbook in the field of AI: Artificial Intelligence: A Modern Approach used in more than 1,500 universities in 135 countries. (Wikipedia: &lt;a href="https://en.wikipedia.org/wiki/Stuart_J._Russell" class="uri"&gt;https://en.wikipedia.org/wiki/Stuart_J._Russell&lt;/a&gt;)&lt;/p&gt;'><sup>8</sup></a> は、その著書（Human Compatible: Artificial Intelligence and the Problem of Control）や、講演で、次のようなテーゼを唱えている。</p>
-<div id="安全な-ai-を創るための三つの基本原則" class="section level3" number="4.2.1">
+<div id="安全な-ai-を創るための三つの基本原則" class="section level3" number="5.2.1">
 <h3>
-<span class="header-section-number">4.2.1</span> 安全な AI を創るための三つの基本原則<a class="anchor" aria-label="anchor" href="#%E5%AE%89%E5%85%A8%E3%81%AA-ai-%E3%82%92%E5%89%B5%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E4%B8%89%E3%81%A4%E3%81%AE%E5%9F%BA%E6%9C%AC%E5%8E%9F%E5%89%87"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.2.1</span> 安全な AI を創るための三つの基本原則<a class="anchor" aria-label="anchor" href="#%E5%AE%89%E5%85%A8%E3%81%AA-ai-%E3%82%92%E5%89%B5%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E4%B8%89%E3%81%A4%E3%81%AE%E5%9F%BA%E6%9C%AC%E5%8E%9F%E5%89%87"><i class="fas fa-link"></i></a>
 </h3>
 <div class="rmdimportant">
 <p><strong><a href="https://www.newworldai.com/three-principles-for-creating-safer-artificial-intelligence-stuart-russell/">3 principles for creating safer AI</a> | Stuart Russell</strong></p>
@@ -156,14 +157,14 @@
 <p>それは、ロボットや、AI だけでなく、わたしたちに、課された使命でもあると思われます。みなさんは、ひとにとって、たいせつなことがなんであるか、知っていますか。</p>
 </div>
 </div>
-<div id="ai-を体験してみよう" class="section level2" number="4.3">
+<div id="ai-を体験してみよう" class="section level2" number="5.3">
 <h2>
-<span class="header-section-number">4.3</span> AI を体験してみよう<a class="anchor" aria-label="anchor" href="#ai-%E3%82%92%E4%BD%93%E9%A8%93%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.3</span> AI を体験してみよう<a class="anchor" aria-label="anchor" href="#ai-%E3%82%92%E4%BD%93%E9%A8%93%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86"><i class="fas fa-link"></i></a>
 </h2>
 <p>「あなた（AI）のことを教えてください」まずは、体験してみることですかね。</p>
-<div id="語学学習アプリ-duolingo" class="section level3" number="4.3.1">
+<div id="語学学習アプリ-duolingo" class="section level3" number="5.3.1">
 <h3>
-<span class="header-section-number">4.3.1</span> 語学学習アプリ Duolingo<a class="anchor" aria-label="anchor" href="#%E8%AA%9E%E5%AD%A6%E5%AD%A6%E7%BF%92%E3%82%A2%E3%83%97%E3%83%AA-duolingo"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.3.1</span> 語学学習アプリ Duolingo<a class="anchor" aria-label="anchor" href="#%E8%AA%9E%E5%AD%A6%E5%AD%A6%E7%BF%92%E3%82%A2%E3%83%97%E3%83%AA-duolingo"><i class="fas fa-link"></i></a>
 </h3>
 <p>一つ目は、語学学習アプリ（無償で十分使える）Duolingo。</p>
 <p>携帯電話などの、モバイル（App Store、Google Play で取得）で利用することが一般的だが、コンピュータでも使うことが可能。</p>
@@ -184,9 +185,9 @@
 </li>
 </ul>
 </div>
-<div id="chat-gpt-などを学びにも活用する" class="section level3" number="4.3.2">
+<div id="chat-gpt-などを学びにも活用する" class="section level3" number="5.3.2">
 <h3>
-<span class="header-section-number">4.3.2</span> Chat GPT などを、学びにも活用する<a class="anchor" aria-label="anchor" href="#chat-gpt-%E3%81%AA%E3%81%A9%E3%82%92%E5%AD%A6%E3%81%B3%E3%81%AB%E3%82%82%E6%B4%BB%E7%94%A8%E3%81%99%E3%82%8B"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.3.2</span> Chat GPT などを、学びにも活用する<a class="anchor" aria-label="anchor" href="#chat-gpt-%E3%81%AA%E3%81%A9%E3%82%92%E5%AD%A6%E3%81%B3%E3%81%AB%E3%82%82%E6%B4%BB%E7%94%A8%E3%81%99%E3%82%8B"><i class="fas fa-link"></i></a>
 </h3>
 <ul>
 <li>ChatGPT を使ってみる</li>
@@ -194,17 +195,17 @@
 <li>他の、無償で利用できる、AI を調べてみる</li>
 </ul>
 </div>
-<div id="cookie-についてしらべてみる" class="section level3" number="4.3.3">
+<div id="cookie-についてしらべてみる" class="section level3" number="5.3.3">
 <h3>
-<span class="header-section-number">4.3.3</span> Cookie についてしらべてみる<a class="anchor" aria-label="anchor" href="#cookie-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%97%E3%82%89%E3%81%B9%E3%81%A6%E3%81%BF%E3%82%8B"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.3.3</span> Cookie についてしらべてみる<a class="anchor" aria-label="anchor" href="#cookie-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%97%E3%82%89%E3%81%B9%E3%81%A6%E3%81%BF%E3%82%8B"><i class="fas fa-link"></i></a>
 </h3>
 <p>身近なものとして、レコメンデーションシステムがありますが、そこでも、使われている、Cookie はどのようなものなのでしょうか。調べてみましょう。</p>
 <p>マーケティングなどで、Cookie の情報を使っている卒業生などに、講演してもらうのも良いでしょう。</p>
 </div>
 </div>
-<div id="まとめ" class="section level2" number="4.4">
+<div id="まとめ" class="section level2" number="5.4">
 <h2>
-<span class="header-section-number">4.4</span> まとめ<a class="anchor" aria-label="anchor" href="#%E3%81%BE%E3%81%A8%E3%82%81"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.4</span> まとめ<a class="anchor" aria-label="anchor" href="#%E3%81%BE%E3%81%A8%E3%82%81"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li>どのようなことに、AI は使われていくだろうか。
@@ -220,24 +221,24 @@
 </div>
 
   <div class="chapter-nav">
-<div class="prev"><a href="coursedesign.html"><span class="header-section-number">3</span> 生涯学び続ける基盤を構築するデータサイエンス・コースの開発</a></div>
-<div class="next"><a href="opendata.html"><span class="header-section-number">5</span> オープンデータ　</a></div>
+<div class="prev"><a href="issuesinjp.html"><span class="header-section-number">4</span> 日本でのデータサイエンス教育の課題にどう向き合うか</a></div>
+<div class="next"><a href="opendata.html"><span class="header-section-number">6</span> オープンデータ　</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#introai"><span class="header-section-number">4</span> 数理、データサイエンス、AI</a></li>
-<li><a class="nav-link" href="#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB-2"><span class="header-section-number">4.1</span> はじめに</a></li>
+<li><a class="nav-link" href="#introai"><span class="header-section-number">5</span> 数理、データサイエンス、AI</a></li>
+<li><a class="nav-link" href="#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB-3"><span class="header-section-number">5.1</span> はじめに</a></li>
 <li>
-<a class="nav-link" href="#%E5%AE%89%E5%85%A8%E3%81%AA-ai"><span class="header-section-number">4.2</span> 安全な AI?</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#%E5%AE%89%E5%85%A8%E3%81%AA-ai-%E3%82%92%E5%89%B5%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E4%B8%89%E3%81%A4%E3%81%AE%E5%9F%BA%E6%9C%AC%E5%8E%9F%E5%89%87"><span class="header-section-number">4.2.1</span> 安全な AI を創るための三つの基本原則</a></li></ul>
+<a class="nav-link" href="#%E5%AE%89%E5%85%A8%E3%81%AA-ai"><span class="header-section-number">5.2</span> 安全な AI?</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#%E5%AE%89%E5%85%A8%E3%81%AA-ai-%E3%82%92%E5%89%B5%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E4%B8%89%E3%81%A4%E3%81%AE%E5%9F%BA%E6%9C%AC%E5%8E%9F%E5%89%87"><span class="header-section-number">5.2.1</span> 安全な AI を創るための三つの基本原則</a></li></ul>
 </li>
 <li>
-<a class="nav-link" href="#ai-%E3%82%92%E4%BD%93%E9%A8%93%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86"><span class="header-section-number">4.3</span> AI を体験してみよう</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#%E8%AA%9E%E5%AD%A6%E5%AD%A6%E7%BF%92%E3%82%A2%E3%83%97%E3%83%AA-duolingo"><span class="header-section-number">4.3.1</span> 語学学習アプリ Duolingo</a></li>
-<li><a class="nav-link" href="#chat-gpt-%E3%81%AA%E3%81%A9%E3%82%92%E5%AD%A6%E3%81%B3%E3%81%AB%E3%82%82%E6%B4%BB%E7%94%A8%E3%81%99%E3%82%8B"><span class="header-section-number">4.3.2</span> Chat GPT などを、学びにも活用する</a></li>
-<li><a class="nav-link" href="#cookie-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%97%E3%82%89%E3%81%B9%E3%81%A6%E3%81%BF%E3%82%8B"><span class="header-section-number">4.3.3</span> Cookie についてしらべてみる</a></li>
+<a class="nav-link" href="#ai-%E3%82%92%E4%BD%93%E9%A8%93%E3%81%97%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86"><span class="header-section-number">5.3</span> AI を体験してみよう</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#%E8%AA%9E%E5%AD%A6%E5%AD%A6%E7%BF%92%E3%82%A2%E3%83%97%E3%83%AA-duolingo"><span class="header-section-number">5.3.1</span> 語学学習アプリ Duolingo</a></li>
+<li><a class="nav-link" href="#chat-gpt-%E3%81%AA%E3%81%A9%E3%82%92%E5%AD%A6%E3%81%B3%E3%81%AB%E3%82%82%E6%B4%BB%E7%94%A8%E3%81%99%E3%82%8B"><span class="header-section-number">5.3.2</span> Chat GPT などを、学びにも活用する</a></li>
+<li><a class="nav-link" href="#cookie-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%97%E3%82%89%E3%81%B9%E3%81%A6%E3%81%BF%E3%82%8B"><span class="header-section-number">5.3.3</span> Cookie についてしらべてみる</a></li>
 </ul>
 </li>
-<li><a class="nav-link" href="#%E3%81%BE%E3%81%A8%E3%82%81"><span class="header-section-number">4.4</span> まとめ</a></li>
+<li><a class="nav-link" href="#%E3%81%BE%E3%81%A8%E3%82%81"><span class="header-section-number">5.4</span> まとめ</a></li>
 </ul>
 
       <div class="book-extra">
@@ -255,7 +256,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>データ・サイエンス教育</strong>" was written by 鈴木 寛（Hiroshi Suzuki）. It was last built on 2023-03-03.</p>
+    <p>"<strong>データ・サイエンス教育</strong>" was written by 鈴木 寛（Hiroshi Suzuki）. It was last built on 2023-03-04.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

@@ -120,7 +120,7 @@
 
 \title{データ・サイエンス教育}
 \author{鈴木 寛（Hiroshi Suzuki）}
-\date{2023-03-03}
+\date{2023-03-04}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Theorem}[section]
@@ -336,11 +336,168 @@ AI の体験の一例として、語学学習アプリ（無償で十分使え�
 
 これらの要素をカリキュラムに取り入れることで、魅力的でインタラクティブな学習環境を構築することができ、データサイエンスについてもっと学びたいという学生の意欲をかき立てることができます。
 
-\hypertarget{introai}{%
-\section{数理、データサイエンス、AI}\label{introai}}
+\hypertarget{issuesinjp}{%
+\section{日本でのデータサイエンス教育の課題にどう向き合うか}\label{issuesinjp}}
+
+\begin{quote}
+データサイエンス教育一般ではなく、日本の大学において、リテラシー・レベルのデータサイエンス教育をどのように始めていったら良いかに絞って、考えていきたいと思います。
+\end{quote}
+
+以下は、これまで、わたしが、学び、教え、経験しながら、考えてきたことを基礎としていますが、一般的ではないかもしれないことを、最初にお断りしておきます。
 
 \hypertarget{ux306fux3058ux3081ux306b-2}{%
 \subsection{はじめに}\label{ux306fux3058ux3081ux306b-2}}
+
+課題をリストする前に、まずは、なぜ、いま、データサイエンスか。さらに、なぜ、すべての人、特に、大学などで学ぶ理系、文系を問わず、学生が、学ばなければならないかを短くまとめると次のようになるとわたしは考えている。
+
+\begin{quote}
+AI（人工知能）で、大きく変化しつつある社会において、ひとびとが、個人で、そして、協力して、どのように生きていくかを考え、準備するために、その背後にある、データサイエンスと、その考え方の基本を学ぶ必要がある。
+\end{quote}
+
+そして、これに付け加えると、
+
+\begin{quote}
+日本は、国や社会のデジタル化、教育機関におけるデータサイエンス教育に関して、非常に遅れをとっている。
+\end{quote}
+
+ということだと思います。みなさんは、どう思われますか。
+
+\hypertarget{ux8ab2ux984cux306eux6574ux7406-1}{%
+\subsection{課題の整理}\label{ux8ab2ux984cux306eux6574ux7406-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  教育から学習へ
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  学ぶことに、中心がなく、教員がわからないことは、学生は学びようがない。
+\item
+  専門から離れられず、多様性、社会の変化に適合した、教育になっていない。
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  世界の中、人間の課題として、向き合うことが限られている
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  ローカルな議論に終始することが多く、世界規模の課題にむきあうために、起業したり、世界の一因として活動することに向かわない。
+\item
+  ローカルな課題であっても、世界では同じような課題にどう向き合っているかを考える視点が欠如している。
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  英語の学習に時間をかけるが使う機会はない
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  大学においてすら、教員が使わないので、英語を学習に活用する機会がほとんどない
+\item
+  綺麗な英語を話したいなどの願望は、一部にあるが、学習のために、活用することはない。
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  コンピュータは、ホームページの検索、閲覧、ワープロとしての利用でとまっている
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  教員が十分使えないので、学生も趣味の範囲でしか使わない
+\item
+  ワープロにちょっと表計算のようなものが限度
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  携帯端末は、SNS や ゲーム、写真、音楽プレーやどまり
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  趣味以上のものにはならない
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  事実や、データを根拠にした、批判的思考になじめない
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  相手に配慮することは大切だが、丁寧に、論拠を確認しながら、ここは、ただしいが、ここは間違い、ここは、確認できない、他の視点から考えるなどの訓練がされていない。
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  数学が閉じた世界になってしまっている
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  教員が楽しめることと、実際に使われることとの差が大きい
+\item
+  楽しい、自分にとって有用と思えることしか教えない。一方、学生は、楽しいと思えないもの、自分にとって有用だと思えないことは学ばない。
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  時代の変化の中で、教育の中でどう組みたてていくかが考えられない。
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  教育は、次の世代を担う人たちのためであるはずだが、次の世界を考えずに教育に携わっている
+\item
+  世の中の変化のスピードが加速しているという考え方は受け入れられない
+\end{itemize}
+
+\hypertarget{ux5b66ux751fux3068ux4e00ux7dd2ux306bux5b66ux3073ux59cbux3081ux307eux305bux3093ux304b}{%
+\subsection{学生と、一緒に学び始めませんか}\label{ux5b66ux751fux3068ux4e00ux7dd2ux306bux5b66ux3073ux59cbux3081ux307eux305bux3093ux304b}}
+
+数学者、数学の教育者としてからいったんはなれ、ひとりの人間として
+
+\hypertarget{introai}{%
+\section{数理、データサイエンス、AI}\label{introai}}
+
+\hypertarget{ux306fux3058ux3081ux306b-3}{%
+\subsection{はじめに}\label{ux306fux3058ux3081ux306b-3}}
 
 まず、個人的なことから、書こうと思う。
 
@@ -538,8 +695,8 @@ AIを使い、開発していく時に、どのようなことに注意する必
 \hypertarget{ux8b1bux6f14ux6982ux8981}{%
 \subsection{講演概要}\label{ux8b1bux6f14ux6982ux8981}}
 
-\hypertarget{ux306fux3058ux3081ux306b-3}{%
-\subsubsection{はじめに}\label{ux306fux3058ux3081ux306b-3}}
+\hypertarget{ux306fux3058ux3081ux306b-4}{%
+\subsubsection{はじめに}\label{ux306fux3058ux3081ux306b-4}}
 
 \hypertarget{ux80ccux666fux73feux72b6}{%
 \paragraph{背景・現状}\label{ux80ccux666fux73feux72b6}}
@@ -1402,8 +1559,8 @@ And now Apple CEO Tim Cook is spreading the word that would-be programmers reall
 
 最後に、同時期に「数理・データサイエンス・AI（リテラシーレベル）モデルカリキュラム 　～　データ思考の涵養　～（案）」に関する意見として、送付した私見を付記する。
 
-\hypertarget{ux306fux3058ux3081ux306b-4}{%
-\subsection{はじめに}\label{ux306fux3058ux3081ux306b-4}}
+\hypertarget{ux306fux3058ux3081ux306b-5}{%
+\subsection{はじめに}\label{ux306fux3058ux3081ux306b-5}}
 
 首相官邸発の「 イノベーション政策強化推進のための有識者会議『AI戦略』」{[}1{]} では、 2019 年 6 月 11 付けの文書「AI 戦略 2019 ∼ 人・産業・地域・政府全てに AI」で「デジタル社会の基礎知識 (いわゆる『読み・書き・そろばん』的な素養) である『数理・データサイエ ンス・AI』に関する知識・技能、新たな社会の在り方や製品・サービスをデザイン するために必要な基礎力など、持続可能な社会の創り手として必要な力を全ての国民が育み、社会のあらゆる分野で人材が活躍することを目指し、以下の三項目を 2025 年にむけ て実現する目標として掲げている。
 

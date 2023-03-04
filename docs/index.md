@@ -1,7 +1,7 @@
 --- 
 title: "データ・サイエンス教育"
 author: "鈴木 寛（Hiroshi Suzuki）"
-date: "2023-03-03"
+date: "2023-03-04"
 site: bookdown::bookdown_site
 documentclass: bxjsbook #book
 bibliography: [book.bib, packages.bib]
