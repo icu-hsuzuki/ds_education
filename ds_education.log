@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.18)  4 MAR 2023 18:28
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.18)  5 MAR 2023 00:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1154,11 +1154,10 @@ Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-)
+[4])
 \tf@toc=\write4
 \openout4 = `ds_education.toc'.
 
-[4]
 LaTeX Font Info:    Font shape `TU/PingFangSC(0)/m/n' will be
 (Font)              scaled to size 10.81546pt on input line 150.
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
@@ -1201,31 +1200,15 @@ flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 [11]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
 LaTeX Font Info:    Font shape `TU/SongtiSCLight(0)/b/n' will be
 (Font)              scaled to size 10.18492pt on input line 354.
 [12] [13] [14]
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-[15]
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-[16] [17]
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-[18] [19]
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
 Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
 x-text;!
-[20]
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
 
 Package fontspec Warning: Font "STFangsong" does not contain requested Script
 (fontspec)                "CJK".
@@ -1261,186 +1244,124 @@ Package fontspec Info: Font family 'STFangsong(0)' created for font
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/STFangsong(0)/m/n' will be
-(Font)              scaled to size 10.23074pt on input line 841.
+(Font)              scaled to size 10.23074pt on input line 639.
 Missing character: There is no ・ (U+30FB) in font STFangsong/OT:language=dflt;!
-Missing character: There is no ・ (U+30FB) in font STFangsong/OT:language=dflt;!
-Missing character: There is no ・ (U+30FB) in font STFangsong/OT:language=dflt;!
-Missing character: There is no ・ (U+30FB) in font STFangsong/OT:language=dflt;!
-Missing character: There is no ・ (U+30FB) in font STFangsong/OT:language=dflt;!
-Missing character: There is no ・ (U+30FB) in font STFangsong/OT:language=dflt;!
-Missing character: There is no ・ (U+30FB) in font STFangsong/OT:language=dflt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ∼ (U+223C) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ∼ (U+223C) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ∼ (U+223C) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ∼ (U+223C) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-[21]
 Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
 x-text;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
+[15]
 Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
 x-text;!
-Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
-x-text;!
+[16]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
-x-text;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
-x-text;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+[17] [18] [19] [20] [21]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
 [22]
-Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
-x-text;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
-x-text;!
 [23]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
+[24] [25]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-[24]
-Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
-x-text;!
-[25]
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
-x-text;!
-Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
-x-text;!
 [26]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
 [27]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
 Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
 x-text;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font STFangsong/OT:language=dflt;!
+Missing character: There is no ・ (U+30FB) in font STFangsong/OT:language=dflt;!
+Missing character: There is no ・ (U+30FB) in font STFangsong/OT:language=dflt;!
+Missing character: There is no ・ (U+30FB) in font STFangsong/OT:language=dflt;!
+Missing character: There is no ・ (U+30FB) in font STFangsong/OT:language=dflt;!
+Missing character: There is no ・ (U+30FB) in font STFangsong/OT:language=dflt;!
+Missing character: There is no ・ (U+30FB) in font STFangsong/OT:language=dflt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
 [28]
+Missing character: There is no ∼ (U+223C) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no ∼ (U+223C) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ∼ (U+223C) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ∼ (U+223C) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
@@ -1456,22 +1377,19 @@ flt;!
 [29]
 Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
 x-text;!
-Missing character: There is no ・ (U+30FB) in font STFangsong/OT:language=dflt;!
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
 [30]
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
@@ -1487,35 +1405,33 @@ x-text;!
 [31]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
-x-text;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
 Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
 x-text;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
 [32]
 Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
 x-text;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
 Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
 x-text;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ‒ (U+2012) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ‒ (U+2012) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ∼ (U+223C) in font [lmroman10-regular]:mapping=t
-ex-text;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
@@ -1524,40 +1440,16 @@ Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
 [33]
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ∼ (U+223C) in font [lmroman8-regular]:mapping=te
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
 x-text;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
@@ -1567,60 +1459,44 @@ Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-[34]
+[34] [35]
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ∼ (U+223C) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-[35]
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
 [36]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
+Missing character: There is no ・ (U+30FB) in font STFangsong/OT:language=dflt;!
 [37]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
@@ -1628,31 +1504,31 @@ flt;!
 [38]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 [39]
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
+Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
+x-text;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
+Missing character: There is no ‒ (U+2012) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no ‒ (U+2012) in font [lmroman10-regular]:mapping=t
+ex-text;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 [40]
@@ -1674,103 +1550,87 @@ Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
 [41]
+Missing character: There is no ∼ (U+223C) in font [lmroman8-regular]:mapping=te
+x-text;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=t
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ∼ (U+223C) in font [lmroman10-regular]:mapping=t
 ex-text;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ③ (U+2462) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ④ (U+2463) in font [lmroman10-regular]:mapping=t
-ex-text;!
-Missing character: There is no ⑤ (U+2464) in font [lmroman10-regular]:mapping=t
-ex-text;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 [42]
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゚ (U+309A) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ゚ (U+309A) in font Songti SC Light/OT:language=d
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
@@ -1779,78 +1639,16 @@ flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 [43]
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゚ (U+309A) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 [44]
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゚ (U+309A) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 [45]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
@@ -1874,11 +1672,234 @@ Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
 [47]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+[48]
+Missing character: There is no ∼ (U+223C) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ① (U+2460) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ② (U+2461) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no ③ (U+2462) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no ④ (U+2463) in font [lmroman10-regular]:mapping=t
+ex-text;!
+Missing character: There is no ⑤ (U+2464) in font [lmroman10-regular]:mapping=t
+ex-text;!
+[49]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゚ (U+309A) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+[50]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゚ (U+309A) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゚ (U+309A) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+[51]
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゚ (U+309A) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+[52]
+Missing character: There is no ゙ (U+3099) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+[53]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+[54]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no の (U+306E) in font [lmroman10-regular]:mapping=t
@@ -1943,13 +1964,7 @@ Missing character: There is no 上 (U+4E0A) in font [lmroman10-regular]:mapping=
 ex-text;!
 Missing character: There is no に (U+306B) in font [lmroman10-regular]:mapping=t
 ex-text;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-[48]
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
+[55]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
@@ -1960,7 +1975,13 @@ Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-[49]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+[56]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no に (U+306B) in font [lmroman10-regular]:mapping=t
@@ -2023,9 +2044,10 @@ Missing character: There is no の (U+306E) in font [lmroman10-regular]:mapping=
 ex-text;!
 Missing character: There is no お (U+304A) in font [lmroman10-regular]:mapping=t
 ex-text;!
-[50]
+[57]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
+[58]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
@@ -2035,28 +2057,25 @@ flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 2159--2160
+Underfull \hbox (badness 10000) in paragraph at lines 2598--2599
 []\TU/SongtiSCLight(0)/m/n/10.53937 国 際 基 督 教 大 学  |（\TU/lmr/m/n/10.53937 Inter
 national Christian University\TU/SongtiSCLight(0)/m/n/10.53937 ）|  の 大 学 院 共 通 
 科 目
  []
 
 
-Underfull \hbox (badness 1286) in paragraph at lines 2159--2160
+Underfull \hbox (badness 1286) in paragraph at lines 2598--2599
 |\TU/SongtiSCLight(0)/m/n/10.53937 （\TU/lmr/m/n/10.53937 QALL401\TU/SongtiSCLig
 ht(0)/m/n/10.53937 ）|  の コ ー ス で、|  開 講 言 語 は 英 語。|  コ ー ス の 日 本 語 名 は、 「研 究 者
  []
 
-[51] [52]
+[59]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-[53]
+[60]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
+[61]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
@@ -2065,22 +2084,6 @@ Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-[54]
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-[55] [56] [57] [58] [59] [60] [61] [62] [63] [64]
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-[65] [66] [67] [68] [69] [70]
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-[71] [72] [73] [74] [75] [76] [77]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
@@ -2089,31 +2092,49 @@ Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-[78]
+[62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-[79]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-[80] [81] [82] [83] [84] [85]
+[73] [74] [75] [76] [77] [78]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+[79] [80] [81] [82] [83] [84] [85]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+[86]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+[87] [88] [89] [90] [91] [92]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.53937> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 3166.
-[86] [87] [88] [89] [90] [91] [92]
-Overfull \hbox (78.87064pt too wide) in paragraph at lines 3362--3363
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 3605.
+[93] [94] [95] [96] [97] [98] [99]
+Overfull \hbox (78.87064pt too wide) in paragraph at lines 3801--3802
 []\TU/lmr/m/n/10.53937 You can use mutate() function from dplyr package and usi
 ng levels(data$[][][][][][][][][][][][][][][]$country<-
  []
 
-[93] [94]
-Overfull \hbox (471.15645pt too wide) in paragraph at lines 3471--3471
+[100] [101] [102]
+Overfull \hbox (471.15645pt too wide) in paragraph at lines 3910--3910
 []\TU/lmtt/m/n/10.53937 ChatGPT Jan 9 Version. Free Research Preview. Our goal 
 is to make AI systems more natural and safe to interact with. Your feedback wil
 l help us improve.[] 
  []
 
-[95]
+[103]
 Missing character: There is no ） (U+FF09) in font [lmroman10-regular]:mapping=t
 ex-text;!
 Missing character: There is no か (U+304B) in font [lmroman10-regular]:mapping=t
@@ -2168,117 +2189,118 @@ Missing character: There is no ま (U+307E) in font [lmroman10-regular]:mapping=
 ex-text;!
 Missing character: There is no す (U+3059) in font [lmroman10-regular]:mapping=t
 ex-text;!
-[96]
+[104]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-[97]
+[105]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-[98]
-Underfull \hbox (badness 10000) in paragraph at lines 3546--3547
+
+Underfull \hbox (badness 10000) in paragraph at lines 3985--3986
 []\TU/lmtt/m/n/10.53937 dplyr \TU/SongtiSCLight(0)/m/n/10.53937 パ ッ ケ ー ジ の \TU
 /lmtt/m/n/10.53937 mutate() \TU/SongtiSCLight(0)/m/n/10.53937 関 数 を 使 い、| \TU/l
 mtt/m/n/10.53937 levels(data$country) \TU/SongtiSCLight(0)/m/n/10.53937 と
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3546--3547
+Underfull \hbox (badness 10000) in paragraph at lines 3985--3986
 \TU/lmtt/m/n/10.53937 data$country<-factor(data$country, levels = levels) \TU/S
 ongtiSCLight(0)/m/n/10.53937 で 国 名 を 含 む
  []
 
-
-Underfull \hbox (badness 6658) in paragraph at lines 3556--3557
+[106]
+Underfull \hbox (badness 6658) in paragraph at lines 3995--3996
 []\TU/lmtt/m/n/10.53937 mutate() \TU/SongtiSCLight(0)/m/n/10.53937 関 数 は デ ー タ 
 フ レ ー ム に 新 し い 列 を 追 加 す る た め に 使 用 で き、|
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 3556--3557
+Underfull \hbox (badness 2221) in paragraph at lines 3995--3996
 \TU/lmtt/m/n/10.53937 case_when() \TU/SongtiSCLight(0)/m/n/10.53937 関 数 は 国 名 を
  変 更 す る た め の 条 件 を 指 定 す る た め に 使 用 で き
  []
 
-[99] [100] [101]
+[107] [108]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-[102] [103]
-Overfull \hbox (81.7441pt too wide) in paragraph at lines 3705--3707
+[109] [110]
+Overfull \hbox (81.7441pt too wide) in paragraph at lines 4144--4146
 []\TU/lmr/m/n/10.53937 Navigate to the following registry key: \TU/lmtt/m/n/10.
 53937 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows
  []
 
-[104] [105]
+[111] [112]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+[113]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
+[114]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-[106]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-[107] [108] [109] [110]
-Underfull \hbox (badness 1082) in paragraph at lines 3928--3929
+[115] [116] [117]
+Underfull \hbox (badness 1082) in paragraph at lines 4367--4368
 []\TU/SongtiSCLight(0)/m/n/10.53937 一 方、| \TU/lmr/m/n/10.53937 R_LIBS_USER \TU/
 SongtiSCLight(0)/m/n/10.53937 は、| \TU/lmr/m/n/10.53937 .libPaths() \TU/SongtiSC
 Light(0)/m/n/10.53937 を 使 用 し て 変 更 す る こ と が で き ま す。|
  []
 
-[111] [112] [113] [114] [115] [116] [117] [118] [119] [120] [121] [122]
+[118] [119] [120] [121] [122] [123] [124] [125] [126] [127] [128] [129]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-[123]
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-[124]
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-[125] [126]
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-[127]
-Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
-flt;!
-[128] [129] [130]
+[130]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 [131]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
+[132]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-[132] [133]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+[133]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+[134] [135]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+[136] [137]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+[138]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+[139] [140]
 Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
 x-text;!
-
-Overfull \hbox (9.32794pt too wide) in paragraph at lines 4593--4594
+[141]
+Overfull \hbox (9.32794pt too wide) in paragraph at lines 5032--5033
 []\TU/lmr/m/n/10.53937 To label an un-numbered heading, use: \TU/lmtt/m/n/10.53
 937 # Hello world {-#nice-label}
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 4596--4597
+Underfull \hbox (badness 3364) in paragraph at lines 5035--5036
 []\TU/lmr/m/n/10.53937 Next, reference the labeled heading anywhere in the text
  using
  []
 
-[134]
 File: 90-bookdown_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
 <use 90-bookdown_files/figure-latex/nice-fig-1.pdf>
 LaTeX Font Info:    Font shape `TU/SongtiSCLight(0)/m/n' will be
-(Font)              scaled to size 8.72992pt on input line 4625.
-[135] [136] [137] (./ds_education.bbl [138]) [139
+(Font)              scaled to size 8.72992pt on input line 5064.
+[142] [143] [144] [145] (./ds_education.bbl [146]) [147
 
 ] (./ds_education.aux)
 
@@ -2286,12 +2308,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 24327 strings out of 476179
- 505426 string characters out of 5809543
- 949432 words of memory out of 5000000
- 44662 multiletter control sequences out of 15000+600000
+ 24362 strings out of 476179
+ 507047 string characters out of 5809543
+ 949738 words of memory out of 5000000
+ 44697 multiletter control sequences out of 15000+600000
  479586 words of font info for 132 fonts, out of 8000000 for 9000
  1353 hyphenation exceptions out of 8191
- 86i,10n,140p,1091b,930s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,10n,140p,1091b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ds_education.pdf (139 pages).
+Output written on ds_education.pdf (147 pages).

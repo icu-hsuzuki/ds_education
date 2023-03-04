@@ -120,7 +120,7 @@
 
 \title{データ・サイエンス教育}
 \author{鈴木 寛（Hiroshi Suzuki）}
-\date{2023-03-04}
+\date{2023-03-05}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Theorem}[section]
@@ -614,6 +614,443 @@ AI（人工知能）で、\textbf{大きく変化しつつある社会}におい
   電子的に提供されているコンテンツであれば、これらを使うことで、英語に対する、ハードルをかなり下げることができる
 \end{itemize}
 
+\hypertarget{ux30abux30eaux30adux30e5ux30e9ux30e0ux4f8bux306eux78baux8a8d}{%
+\subsection{カリキュラム例の確認}\label{ux30abux30eaux30adux30e5ux30e9ux30e0ux4f8bux306eux78baux8a8d}}
+
+\hypertarget{edx-professional-certificate-in-data-science}{%
+\subsubsection{edX: Professional Certificate in Data Science}\label{edx-professional-certificate-in-data-science}}
+
+\hypertarget{ux57faux672cux60c5ux5831-harvardx-through-edx}{%
+\paragraph{基本情報: HarvardX, through edX}\label{ux57faux672cux60c5ux5831-harvardx-through-edx}}
+
+\textbf{演習も無償で殆どすべて提供}
+
+\begin{itemize}
+\tightlist
+\item
+  URL: \url{https://online-learning.harvard.edu/series/professional-certificate-data-science}
+\item
+  Book: \url{https://rafalab.github.io/dsbook/} (R Markdown Document)
+\end{itemize}
+
+\hypertarget{r-ux3067ux5b66ux3073data-camp-ux3067-assessment}{%
+\paragraph{R で学び、Data Camp で Assessment}\label{r-ux3067ux5b66ux3073data-camp-ux3067-assessment}}
+
+\begin{verbatim}
+1. Data Science: R Basics; データ解析ソフト R の基本
+2. Data Science: Visualization; データの視覚化
+3. Data Science: Probability; 確率・大数の法則
+4. Data Science: Inference and Modeling; 推定と数学モデル
+5. Data Science: Productivity Tools; Unix, Git, GitHub, R Markdown 
+6. Data Science: Wrangling; データの整理
+7. Data Science: Linear Regression; 線形回帰
+8. Data Science: Machine Learning; 機械学習
+9. Data Science: Capstone まとめと次のステップへの架け橋
+\end{verbatim}
+
+\hypertarget{ux30b3ux30fcux30b9ux306eux524dux534aux3067ux4f7fux308fux308cux308bux30c7ux30fcux30bfux4f8b}{%
+\paragraph{コースの前半で使われるデータ例}\label{ux30b3ux30fcux30b9ux306eux524dux534aux3067ux4f7fux308fux308cux308bux30c7ux30fcux30bfux4f8b}}
+
+\textbf{Professional Certificate in Data Science}
+
+8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 2 weeks
+Required R Packages for Examples: tidyverse, dslabs: \url{https://cran.r-project.org/web/packages/} dslabs/dslabs.pdf
+
+\begin{itemize}
+\tightlist
+\item
+  男女の身長のデータ
+\item
+  アメリカにおける 2010 年の銃による殺人事件の FBI の報告書
+\item
+  Gapminder: Almost nobody knows the basic global facts! (Gapminder Test)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    TED 増え続ける世界人口(Hans Rosling) \url{https://www.gapminder.org}
+  \item
+    Health and income outcomes for 184 countries from 1960 to 2016
+  \item
+    Country, Year, Infant deaths per 1000, Life expectancy in years, Average of children per woman,
+    Country population, GDP, Continent, Geographical region
+  \end{itemize}
+\item
+  Brexit の国民投票の事前調査と実際のデータ
+\item
+  2016 年の大統領選挙の事前調査と結果のデータ
+\item
+  UC Berkeley の大学院入試における男女差
+\item
+  オランダにおける研究費獲得率に関する男女差
+\item
+  プロ野球の新人の打率予測
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\FunctionTok{library}\NormalTok{(dslabs)}
+\NormalTok{list\_dslabs }\OtherTok{\textless{}{-}} \FunctionTok{data}\NormalTok{(}\AttributeTok{package=}\StringTok{\textquotesingle{}dslabs\textquotesingle{}}\NormalTok{)}
+\NormalTok{list\_dslabs}\SpecialCharTok{$}\NormalTok{results }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{as\_tibble}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{select}\NormalTok{(}\DecValTok{3}\SpecialCharTok{:}\DecValTok{4}\NormalTok{)}
+\CommentTok{\#\textgreater{} \# A tibble: 29 x 2}
+\CommentTok{\#\textgreater{}    Item              Title                                  }
+\CommentTok{\#\textgreater{}    \textless{}chr\textgreater{}             \textless{}chr\textgreater{}                                  }
+\CommentTok{\#\textgreater{}  1 admissions        Gender bias among graduate school admi\textasciitilde{}}
+\CommentTok{\#\textgreater{}  2 brca              Breast Cancer Wisconsin Diagnostic Dat\textasciitilde{}}
+\CommentTok{\#\textgreater{}  3 brexit\_polls      Brexit Poll Data                       }
+\CommentTok{\#\textgreater{}  4 death\_prob        2015 US Period Life Table              }
+\CommentTok{\#\textgreater{}  5 divorce\_margarine Divorce rate and margarine consumption\textasciitilde{}}
+\CommentTok{\#\textgreater{}  6 gapminder         Gapminder Data                         }
+\CommentTok{\#\textgreater{}  7 greenhouse\_gases  Greenhouse gas concentrations over 200\textasciitilde{}}
+\CommentTok{\#\textgreater{}  8 heights           Self{-}Reported Heights                  }
+\CommentTok{\#\textgreater{}  9 historic\_co2      Atmospheric carbon dioxide concentrati\textasciitilde{}}
+\CommentTok{\#\textgreater{} 10 mnist\_27          Useful example for illustrating machin\textasciitilde{}}
+\CommentTok{\#\textgreater{} \# ... with 19 more rows}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{dslabs-ux306bux542bux307eux308cux308bux30c7ux30fcux30bfux306eux65e5ux672cux8a9eux8a33deepl}{%
+\paragraph{\texorpdfstring{\texttt{dslabs} に含まれるデータの日本語訳（DeepL）}{dslabs に含まれるデータの日本語訳（DeepL）}}\label{dslabs-ux306bux542bux307eux308cux308bux30c7ux30fcux30bfux306eux65e5ux672cux8a9eux8a33deepl}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  ``UCバークレーへの大学院入学者におけるジェンダーバイアス'', Gender bias among graduate school admissions to UC Berkeley.\\
+\item
+  ``UCI機械学習リポジトリからの乳がんウィスコンシン診断データセット'', Breast Cancer Wisconsin Diagnostic Dataset from UCI Machine Learning Repository\\
+\item
+  「Brexit Poll Data（ブレグジット世論調査データ）」, Brexit Poll Data
+\item
+  ``2015年米国期間生命表'', 2015 US Period Life Table
+\item
+  「離婚率・マーガリン消費データ」``, Divorce rate and margarine consumption data\\
+\item
+  「ギャップマインダー・データ」, Gapminder Data\\
+\item
+  ``2000年以上の温室効果ガス濃度'', Greenhouse gas concentrations over 2000 years\\
+\item
+  ``自己申告制ハイツ'', Self-Reported Heights
+\item
+  ``80万年にわたる大気中の二酸化炭素濃度'', Atmospheric carbon dioxide concentration over 800,000 years\\
+\item
+  ``MNISTデータに基づく機械学習アルゴリズムの説明に役立つ例'', Useful example for illustrating machine learning algorithms based on MNIST data\\
+\item
+  ``映画の視聴率'', Movie ratings
+\item
+  「2010年米国銃殺数（州別）」, US gun murders by state for 2010
+\item
+  ``欠損値がいくつかあるカウントデータ'', Count data with some missing values
+\item
+  ``2010年ニューヨーク州リージェンツ試験成績'', NYC Regents exams scores 2010
+\item
+  「ギャップマインダー・データ」``Gapminder Data''
+\item
+  ``イタリアンオリーブ'', Italian olive
+\item
+  「ギャップマインダー・データ」``Gapminder Data''\\
+\item
+  ``成人男性の身長（フィート）（外れ値あり）'', Adult male heights in feet with outliers\\
+\item
+  ``2008年大統領選の人気投票に関する世論調査データ'', Poll data for popular vote in 2008 presidential election\\
+\item
+  「Fivethirtyeight 2016年世論調査データ」, Fivethirtyeight 2016 Poll Data
+\item
+  「オランダの研究費におけるジェンダーバイアス」``Gender bias in research funding in Netherlands''\\
+\item
+  ``自己申告制のハイツ'', Self-reported Heights
+\item
+  「オランダの研究費におけるジェンダーバイアス」``Gender bias in research funding in Netherlands''\\
+\item
+  ``Fivethirtyeight 2016年世論調査データ'', Fivethirtyeight 2016 Poll Data
+\item
+  ``星の物理的性質'', Physical Properties of Stars
+\item
+  ``世界の気温異常と炭素排出量、1751-2018'', Global temperature anomaly and carbon emissions, 1751-2018\\
+\item
+  ``7種類の組織から採取した189の生体サンプルの遺伝子発現プロファイル'', Gene expression profiles for 189 biological samples taken from seven different tissue types.
+\item
+  ``2009年から2017年までのトランプのツイート'', Trump Tweets from 2009 to 2017
+\item
+  ``米国各州の伝染病データ'', Contagious disease data for US states
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  学ぶ課題に適したデータが選ばれている
+\item
+  受講者の多様な興味に答えられるようなデータが選ばれている
+\item
+  環境課題や、公平性を重視するデータが選ばれている
+\item
+  比較的新しいデータも含まれるようにしている
+\end{itemize}
+
+\hypertarget{chat-gpt-ux306eux63d0ux6848}{%
+\subsubsection{Chat GPT の提案}\label{chat-gpt-ux306eux63d0ux6848}}
+
+\textbf{Chat GPT} 学生のモチベーションを高め、データサイエンスにワクワクさせるためには、魅力的でインタラクティブなカリキュラムを提供することが重要です。ここでは、そのようなカリキュラムをどのように設計したらよいかを提案します。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  問題解決型学習：学生が共感でき、データサイエンスの手法を使って解決できる実世界の問題から始める。貧困と教育の関係の把握、都市の交通パターンの予測、エネルギー消費の傾向の分析などが考えられます。
+\item
+  インタラクティブな可視化。Tableau、PowerBI、D3.js\footnote{これらは、いずれも、Business Intelligence と言われるツールで、無償でも使える。D3.js は、Java Script をつかっており、多少の、プログラムスキルが必要。Tableau は、ビジネスでの利用を中心としている。PowerBI は、Microsoft のもの。おそらくPowerBI が大学で使うには、Tableau、D3.js と比較するとよいと思われるが、個人的には、勧めない。} などのデータ可視化ツールを使用して、データを調査、理解するよう生徒に促します。これらのツールを使用してインタラクティブなダッシュボードやビジュアライゼーションを作成すると、データのパターンや関係性を確認することができます。
+\item
+  グループプロジェクト：少人数のグループでデータサイエンス、プロジェクトに取り組むことを奨励します。これにより、協力的で協調的な学習環境が構築され、学生同士が互いに学び合い、学んだことを実践の場で応用する機会を得ることができます。
+\item
+  ゲストスピーカー：データサイエンス分野の専門家を招き、学生を対象に講演してもらう。データサイエンスがどのような職業なのか、より深く理解することができます。
+\item
+  ハンズオンワークショップ。教室で学んだことを応用できるような、実践的なワークショップを提供する。例えば、データ分析にRを使うワークショップや、データの可視化にTableauを使うワークショップを開催することができます。
+\item
+  学生主導のディスカッション：学生がディスカッションをリードし、自分たちの成果をクラスで共有することを奨励する。これにより、協力的な学習環境を構築することができ、学生同士が知識やアイデアを共有する機会を得ることができます。
+\end{enumerate}
+
+これらの要素をカリキュラムに取り入れることで、魅力的でインタラクティブな学習環境を構築することができ、データサイエンスについてもっと学びたいという学生の意欲をかき立てることができます。
+
+\begin{itemize}
+\tightlist
+\item
+  実社会の問題と関連づける
+\item
+  インタラクティブな可視化を重視
+\item
+  少人数グループプロジェクト
+\item
+  実際のデータサイエンティストをゲストスピーカとして呼ぶ
+\item
+  R を使ったり、可視化ツールを使う、ワークショップと連動させる
+\item
+  学生主導のディスカッションを奨励する
+\end{itemize}
+
+\hypertarget{world-bank-ux30c7ux30fcux30bf}{%
+\subsubsection{World Bank データ}\label{world-bank-ux30c7ux30fcux30bf}}
+
+\hypertarget{open-government-data-toolkit-open-data-defined}{%
+\subsubsection{\texorpdfstring{\href{http://opendatatoolkit.worldbank.org}{Open Government Data Toolkit}: \href{http://opendatatoolkit.worldbank.org/en/essentials.html}{Open Data Defined}}{Open Government Data Toolkit: Open Data Defined}}\label{open-government-data-toolkit-open-data-defined}}
+
+The term \textbf{Open Data} has a very precise meaning. Data or content is open if anyone is free to use, re-use or redistribute it, subject at most to measures that preserve provenance and openness.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The data must be \emph{legally open}, which means they must be placed in the public domain or under liberal terms of use with minimal restrictions.
+\item
+  The data must be \emph{technically open}, which means they must be published in electronic formats that are machine readable and non-proprietary, so that anyone can access and use the data using common, freely available software tools. Data must also be publicly available and accessible on a public server, without password or firewall restrictions. To make Open Data easier to find, most organizations create and manage Open Data catalogs.
+\end{enumerate}
+
+オープンデータの定義
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  オープンデータという言葉は、非常に正確な意味を持っています。データまたはコンテンツは、誰でも自由に使用、再利用、再配布でき、せいぜい出所とオープン性を維持するための措置に従うだけであればオープンです。
+\item
+  データは法的にオープンでなければなりません。つまり、パブリックドメインに置かれるか、最小限の制限で自由な使用条件のもとに置かれなければなりません。
+  データは技術的にオープンでなければならない。つまり、誰でも自由に使える一般的なソフトウェアツールを使ってデータにアクセスし利用できるように、機械可読で非専有の電子フォーマットで公開されていなければならない。また、データは一般に公開され、パスワードやファイアウォールによる制限を受けずに、公共のサーバーでアクセスできなければなりません。オープンデータを見つけやすくするために、ほとんどの組織がオープンデータカタログを作成し管理しています。
+\end{enumerate}
+
+\hypertarget{ux30b3ux30fcux30b9ux306eux63d0ux6848}{%
+\subsection{コースの提案}\label{ux30b3ux30fcux30b9ux306eux63d0ux6848}}
+
+レベル：リテラシーレベルを二段階に設定して設計
+
+内容：基本的に下の二つとし、それを融合させた形で行う。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  AI（人工知能）との付き合い方を学ぶ
+\item
+  世界や、ひとびとの課題について、データサイエンスで学ぶ
+\end{enumerate}
+
+形式：グループワーク
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  少人数で、調べることと共に、問いを精査する場面で協力を促す
+\item
+  グループの一員として、AI を活用する
+\end{enumerate}
+
+第一レベル
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  AI に触れる：Duolingo、ChatGPT など
+\item
+  WDI: 日本に関するデータ - ダッシュボード
+\item
+  WDI: 指標を選択して、課題と向き合う
+\item
+  AI の基本を学ぶ
+\item
+  AI との付き合い方についての、ディスカッション
+\item
+  トピックを決めてグループ発表
+\end{enumerate}
+
+第二レベル
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  AI と データサイエンスについてのディスカッション
+\item
+  PositCloud 入門、スクリプトの利用
+\item
+  R Notebook 入門
+\item
+  WDI パッケージの利用
+\item
+  テンプレートの利用
+\item
+  tidyverse の基本の学び
+\item
+  可視化の学び
+\item
+  WDI 以外のデータの取得
+\item
+  プロジェクト
+\item
+  発表
+\end{enumerate}
+
+\hypertarget{coursedemo}{%
+\section{モデルコースのデモ　}\label{coursedemo}}
+
+\hypertarget{ai-ux306bux3064ux3044ux3066}{%
+\subsection{AI について}\label{ai-ux306bux3064ux3044ux3066}}
+
+\hypertarget{duolingo}{%
+\subsubsection{Duolingo}\label{duolingo}}
+
+\begin{itemize}
+\tightlist
+\item
+  Duolingo を使ってみる。二週間ほど。
+
+  \begin{itemize}
+  \tightlist
+  \item
+    どのような種類の問題があるか
+  \item
+    継続するために、どのような方法が考えられているか。
+  \item
+    なぜ、Follow や、Followed by のような仲間を作ることを奨励しているのか。
+  \item
+    仲間とのやりとりはどのように制限されているか。
+  \item
+    課金のためには、どのような方法が取られているか。
+  \item
+    採点には、どのような手法が取られているか。
+  \item
+    AI が使われているのは、どのような部分だと思われるか。
+  \item
+    気に入った点、気に入らない点、すばらしいと思えること、改善が必要だと思うこと。
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{chat-gpt}{%
+\subsubsection{Chat GPT}\label{chat-gpt}}
+
+\begin{itemize}
+\tightlist
+\item
+  どのようなことに、AI は使われていくだろうか。
+
+  \begin{itemize}
+  \tightlist
+  \item
+    有効と思われるものを挙げてみよう。
+  \item
+    問題、課題がある使われ方を挙げてみよう。
+  \item
+    不安を感じることはどのようなことだろうか。
+  \end{itemize}
+\item
+  どのように、付き合って行ったら良いだろうか。
+\end{itemize}
+
+\hypertarget{ux65e5ux672cux304bux3089ux4e16ux754cux3092ux898bux308b}{%
+\subsection{日本から世界を見る}\label{ux65e5ux672cux304bux3089ux4e16ux754cux3092ux898bux308b}}
+
+以下では、世界銀行の、世界開発指標を利用するが、他にも、\href{https://data.un.org}{UNdata}、\href{https://data.oecd.org}{OECD data}、\href{https://wid.world}{WID}、\href{https://ec.europa.eu/eurostat}{Eurostat}、\href{https://ourworldindata.org}{Our World in Data} なども、同様の、ダッシュボードを備えており、データの提供もしている。日本では、\href{https://www.e-stat.go.jp/}{e-Stat}、\href{https://dashboard.e-stat.go.jp}{ダッシュボード}
+
+\begin{itemize}
+\tightlist
+\item
+  日本のデータはどうでしょうか。
+\end{itemize}
+
+\hypertarget{world-bank-wdi---world-development-indicaters}{%
+\subsubsection{World Bank: WDI - World Development Indicaters}\label{world-bank-wdi---world-development-indicaters}}
+
+\begin{itemize}
+\tightlist
+\item
+  世界銀行（World Bank）: \url{https://www.worldbank.org}
+\item
+  \href{https://www.worldbank.org/en/who-we-are}{世界銀行について（Who we are）}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    極度の貧困状態の削減（To end extreme poverty）: 2030年までに、極度の貧困状態にある世界人口の割合を3\%に削減する。By reducing the share of the global population that lives in extreme poverty to 3 percent by 2030.
+  \item
+    繁栄を共に享受（To promote shared prosperity）: すべての国の最貧困層の40％の人々の所得を増加させることによって共栄を促進。By increasing the incomes of the poorest 40 percent of people in every country.
+  \end{itemize}
+\item
+  世界銀行オープンデータ（World Bank Open Data）: \url{https://data.worldbank.org}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Data Bank, World Development Indicators, etc.
+  \end{itemize}
+\end{itemize}
+
+日本について：\url{https://data.worldbank.org/country/japan?view=chart}
+
+\hypertarget{ux4e16ux754cux958bux767aux6307ux6a19world-development-indicator}{%
+\subsubsection{世界開発指標（World Development Indicator）}\label{ux4e16ux754cux958bux767aux6307ux6a19world-development-indicator}}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://datatopics.worldbank.org/world-development-indicators/}{World Development Indicators (WDI)} : 世界銀行が開発に関する各国間比較可能なデータの集大成である1400の時系列指標（the World Bank's premier compilation of cross-country comparable data on development; 1400 time series indicators）
+
+  \begin{itemize}
+  \tightlist
+  \item
+    テーマ別（Themes）: 貧困と格差、人間、環境、経済、国家と市場、グローバルリンク集（Poverty and Inequality, People, Environment, Economy, States and Markets, Global Links）
+  \item
+    オープンデータとデータバンク（Open Data \& DataBank）: Explore data, Query database
+  \item
+    Bulk Download: Excel, CSV
+  \item
+    API Documentation
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{ux4e16ux754cux306eux3055ux307eux3056ux307eux306aux8ab2ux984c}{%
+\subsection{世界のさまざまな課題}\label{ux4e16ux754cux306eux3055ux307eux3056ux307eux306aux8ab2ux984c}}
+
+\hypertarget{ux30c6ux30f3ux30d7ux30ecux30fcux30c8ux306bux3088ux308bux5b9fux7fd2}{%
+\subsection{テンプレートによる実習}\label{ux30c6ux30f3ux30d7ux30ecux30fcux30c8ux306bux3088ux308bux5b9fux7fd2}}
+
 \hypertarget{introai}{%
 \section{数理、データサイエンス、AI}\label{introai}}
 
@@ -951,7 +1388,9 @@ https://www8.cao.go.jp/cstp/kihonkeikaku/index5.html
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Introduction to R, Open Data and Free Software 2. Basic R Objects and Commands
+  Introduction to R, Open Data and Free Software
+\item
+  Basic R Objects and Commands
 \item
   Data Frame Manipulation
 \item
@@ -1445,8 +1884,8 @@ The term ``Open Data'' has a very precise meaning. Data or content is open if an
 \hypertarget{professional-certificate-in-data-science}{%
 \paragraph{Professional Certificate in Data Science}\label{professional-certificate-in-data-science}}
 
-\hypertarget{ux57faux672cux60c5ux5831-harvardx-through-edx}{%
-\subparagraph{基本情報: HarvardX, through edX}\label{ux57faux672cux60c5ux5831-harvardx-through-edx}}
+\hypertarget{ux57faux672cux60c5ux5831-harvardx-through-edx-1}{%
+\subparagraph{基本情報: HarvardX, through edX}\label{ux57faux672cux60c5ux5831-harvardx-through-edx-1}}
 
 \textbf{演習も無償で殆どすべて提供}
 
@@ -1458,8 +1897,8 @@ The term ``Open Data'' has a very precise meaning. Data or content is open if an
   Book: \url{https://rafalab.github.io/dsbook/} (R Markdown Document)
 \end{itemize}
 
-\hypertarget{r-ux3067ux5b66ux3073data-camp-ux3067-assessment}{%
-\subparagraph{R で学び、Data Camp で Assessment}\label{r-ux3067ux5b66ux3073data-camp-ux3067-assessment}}
+\hypertarget{r-ux3067ux5b66ux3073data-camp-ux3067-assessment-1}{%
+\subparagraph{R で学び、Data Camp で Assessment}\label{r-ux3067ux5b66ux3073data-camp-ux3067-assessment-1}}
 
 \begin{verbatim}
 1. Data Science: R Basics; データ解析ソフト R の基本
@@ -1473,8 +1912,8 @@ The term ``Open Data'' has a very precise meaning. Data or content is open if an
 9. Data Science: Capstone まとめと次のステップへの架け橋
 \end{verbatim}
 
-\hypertarget{ux30b3ux30fcux30b9ux306eux524dux534aux3067ux4f7fux308fux308cux308bux30c7ux30fcux30bfux4f8b}{%
-\subparagraph{コースの前半で使われるデータ例}\label{ux30b3ux30fcux30b9ux306eux524dux534aux3067ux4f7fux308fux308cux308bux30c7ux30fcux30bfux4f8b}}
+\hypertarget{ux30b3ux30fcux30b9ux306eux524dux534aux3067ux4f7fux308fux308cux308bux30c7ux30fcux30bfux4f8b-1}{%
+\subparagraph{コースの前半で使われるデータ例}\label{ux30b3ux30fcux30b9ux306eux524dux534aux3067ux4f7fux308fux308cux308bux30c7ux30fcux30bfux4f8b-1}}
 
 \textbf{Professional Certificate in Data Science}
 

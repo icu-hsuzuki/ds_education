@@ -92,9 +92,169 @@
   - Grammary のように、英語母語話者でも、文章を書く時に使うようになっている、文章校正アプリも質が向上している
   - 電子的に提供されているコンテンツであれば、これらを使うことで、英語に対する、ハードルをかなり下げることができる
   
+  
+## カリキュラム例の確認
+
+### edX: Professional Certificate in Data Science
+
+#### 基本情報: HarvardX, through edX 
+
+**演習も無償で殆どすべて提供**
+
+*  URL: https://online-learning.harvard.edu/series/professional-certificate-data-science 
+*  Book: https://rafalab.github.io/dsbook/ (R Markdown Document)
+
+#### R で学び、Data Camp で Assessment
+
+    1. Data Science: R Basics; データ解析ソフト R の基本
+    2. Data Science: Visualization; データの視覚化
+    3. Data Science: Probability; 確率・大数の法則
+    4. Data Science: Inference and Modeling; 推定と数学モデル
+    5. Data Science: Productivity Tools; Unix, Git, GitHub, R Markdown 
+    6. Data Science: Wrangling; データの整理
+    7. Data Science: Linear Regression; 線形回帰
+    8. Data Science: Machine Learning; 機械学習
+    9. Data Science: Capstone まとめと次のステップへの架け橋
+
+#### コースの前半で使われるデータ例
+
+**Professional Certificate in Data Science**
+
+8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 8 weeks 2 weeks
+Required R Packages for Examples: tidyverse, dslabs: https://cran.r-project.org/web/packages/ dslabs/dslabs.pdf
+
+*  男女の身長のデータ
+*  アメリカにおける 2010 年の銃による殺人事件の FBI の報告書
+*  Gapminder: Almost nobody knows the basic global facts! (Gapminder Test)
+    -  TED 増え続ける世界人口(Hans Rosling) https://www.gapminder.org
+    -  Health and income outcomes for 184 countries from 1960 to 2016
+    -  Country, Year, Infant deaths per 1000, Life expectancy in years, Average of children per woman,
+Country population, GDP, Continent, Geographical region 
+
+*  Brexit の国民投票の事前調査と実際のデータ
+*  2016 年の大統領選挙の事前調査と結果のデータ
+*  UC Berkeley の大学院入試における男女差
+*  オランダにおける研究費獲得率に関する男女差
+*  プロ野球の新人の打率予測
+
+```{r message=FALSE}
+library(tidyverse)
+library(dslabs)
+list_dslabs <- data(package='dslabs')
+list_dslabs$results %>% as_tibble() %>% select(3:4)
+```
+
+#### `dslabs` に含まれるデータの日本語訳（DeepL）
+
+1. "UCバークレーへの大学院入学者におけるジェンダーバイアス", Gender bias among graduate school admissions to UC Berkeley.                                
+2. "UCI機械学習リポジトリからの乳がんウィスコンシン診断データセット", Breast Cancer Wisconsin Diagnostic Dataset from UCI Machine Learning Repository           
+3. 「Brexit Poll Data（ブレグジット世論調査データ）」, Brexit Poll Data
+4. "2015年米国期間生命表", 2015 US Period Life Table 
+5. 「離婚率・マーガリン消費データ」", Divorce rate and margarine consumption data        
+6. 「ギャップマインダー・データ」, Gapminder Data  
+7. "2000年以上の温室効果ガス濃度", Greenhouse gas concentrations over 2000 years          
+8.  "自己申告制ハイツ", Self-Reported Heights
+9. "80万年にわたる大気中の二酸化炭素濃度", Atmospheric carbon dioxide concentration over 800,000 years                               
+10. "MNISTデータに基づく機械学習アルゴリズムの説明に役立つ例", Useful example for illustrating machine learning algorithms based on MNIST data            
+11.  "映画の視聴率", Movie ratings
+12. 「2010年米国銃殺数（州別）」, US gun murders by state for 2010
+13. "欠損値がいくつかあるカウントデータ", Count data with some missing values 
+14. "2010年ニューヨーク州リージェンツ試験成績", NYC Regents exams scores 2010
+15. 「ギャップマインダー・データ」"Gapminder Data" 
+16. "イタリアンオリーブ", Italian olive
+17. 「ギャップマインダー・データ」"Gapminder Data"  
+18. "成人男性の身長（フィート）（外れ値あり）", Adult male heights in feet with outliers   
+19.  "2008年大統領選の人気投票に関する世論調査データ", Poll data for popular vote in 2008 presidential election                                   
+20. 「Fivethirtyeight 2016年世論調査データ」, Fivethirtyeight 2016 Poll Data
+21. 「オランダの研究費におけるジェンダーバイアス」"Gender bias in research funding in Netherlands"                                          
+22.  "自己申告制のハイツ", Self-reported Heights
+23. 「オランダの研究費におけるジェンダーバイアス」"Gender bias in research funding in Netherlands"                                          
+24. "Fivethirtyeight 2016年世論調査データ", Fivethirtyeight 2016 Poll Data
+25. "星の物理的性質", Physical Properties of Stars
+26. "世界の気温異常と炭素排出量、1751-2018", Global temperature anomaly and carbon emissions, 1751-2018                              
+27. "7種類の組織から採取した189の生体サンプルの遺伝子発現プロファイル", Gene expression profiles for 189 biological samples taken from seven different tissue types.
+28. "2009年から2017年までのトランプのツイート", Trump Tweets from 2009 to 2017
+29. "米国各州の伝染病データ", Contagious disease data for US states
+
+* 学ぶ課題に適したデータが選ばれている
+* 受講者の多様な興味に答えられるようなデータが選ばれている
+* 環境課題や、公平性を重視するデータが選ばれている
+* 比較的新しいデータも含まれるようにしている
+
+### Chat GPT の提案
+
+**Chat GPT** 学生のモチベーションを高め、データサイエンスにワクワクさせるためには、魅力的でインタラクティブなカリキュラムを提供することが重要です。ここでは、そのようなカリキュラムをどのように設計したらよいかを提案します。
+
+1. 問題解決型学習：学生が共感でき、データサイエンスの手法を使って解決できる実世界の問題から始める。貧困と教育の関係の把握、都市の交通パターンの予測、エネルギー消費の傾向の分析などが考えられます。
+
+2. インタラクティブな可視化。Tableau、PowerBI、D3.js^[これらは、いずれも、Business Intelligence と言われるツールで、無償でも使える。D3.js は、Java Script をつかっており、多少の、プログラムスキルが必要。Tableau は、ビジネスでの利用を中心としている。PowerBI は、Microsoft のもの。おそらくPowerBI が大学で使うには、Tableau、D3.js と比較するとよいと思われるが、個人的には、勧めない。] などのデータ可視化ツールを使用して、データを調査、理解するよう生徒に促します。これらのツールを使用してインタラクティブなダッシュボードやビジュアライゼーションを作成すると、データのパターンや関係性を確認することができます。
+
+3. グループプロジェクト：少人数のグループでデータサイエンス、プロジェクトに取り組むことを奨励します。これにより、協力的で協調的な学習環境が構築され、学生同士が互いに学び合い、学んだことを実践の場で応用する機会を得ることができます。
+
+4. ゲストスピーカー：データサイエンス分野の専門家を招き、学生を対象に講演してもらう。データサイエンスがどのような職業なのか、より深く理解することができます。
+
+5. ハンズオンワークショップ。教室で学んだことを応用できるような、実践的なワークショップを提供する。例えば、データ分析にRを使うワークショップや、データの可視化にTableauを使うワークショップを開催することができます。
+
+6. 学生主導のディスカッション：学生がディスカッションをリードし、自分たちの成果をクラスで共有することを奨励する。これにより、協力的な学習環境を構築することができ、学生同士が知識やアイデアを共有する機会を得ることができます。
+
+これらの要素をカリキュラムに取り入れることで、魅力的でインタラクティブな学習環境を構築することができ、データサイエンスについてもっと学びたいという学生の意欲をかき立てることができます。
+
+* 実社会の問題と関連づける
+* インタラクティブな可視化を重視
+* 少人数グループプロジェクト
+* 実際のデータサイエンティストをゲストスピーカとして呼ぶ
+* R を使ったり、可視化ツールを使う、ワークショップと連動させる
+* 学生主導のディスカッションを奨励する
+
+### World Bank データ
+
+### [Open Government Data Toolkit](http://opendatatoolkit.worldbank.org): [Open Data Defined](http://opendatatoolkit.worldbank.org/en/essentials.html)
+
+The term **Open Data** has a very precise meaning. Data or content is open if anyone is free to use, re-use or redistribute it, subject at most to measures that preserve provenance and openness.
+
+1. The data must be _legally open_, which means they must be placed in the public domain or under liberal terms of use with minimal restrictions.
+2. The data must be _technically open_, which means they must be published in electronic formats that are machine readable and non-proprietary, so that anyone can access and use the data using common, freely available software tools. Data must also be publicly available and accessible on a public server, without password or firewall restrictions. To make Open Data easier to find, most organizations create and manage Open Data catalogs.
+
+オープンデータの定義
+
+1. オープンデータという言葉は、非常に正確な意味を持っています。データまたはコンテンツは、誰でも自由に使用、再利用、再配布でき、せいぜい出所とオープン性を維持するための措置に従うだけであればオープンです。
+
+2. データは法的にオープンでなければなりません。つまり、パブリックドメインに置かれるか、最小限の制限で自由な使用条件のもとに置かれなければなりません。
+データは技術的にオープンでなければならない。つまり、誰でも自由に使える一般的なソフトウェアツールを使ってデータにアクセスし利用できるように、機械可読で非専有の電子フォーマットで公開されていなければならない。また、データは一般に公開され、パスワードやファイアウォールによる制限を受けずに、公共のサーバーでアクセスできなければなりません。オープンデータを見つけやすくするために、ほとんどの組織がオープンデータカタログを作成し管理しています。
 
 
+## コースの提案
 
+レベル：リテラシーレベルを二段階に設定して設計
 
+内容：基本的に下の二つとし、それを融合させた形で行う。
 
+1. AI（人工知能）との付き合い方を学ぶ
+2. 世界や、ひとびとの課題について、データサイエンスで学ぶ
 
+形式：グループワーク
+
+1. 少人数で、調べることと共に、問いを精査する場面で協力を促す
+2. グループの一員として、AI を活用する
+
+第一レベル
+
+1. AI に触れる：Duolingo、ChatGPT など
+2. WDI: 日本に関するデータ - ダッシュボード
+3. WDI: 指標を選択して、課題と向き合う
+4. AI の基本を学ぶ
+5. AI との付き合い方についての、ディスカッション
+6. トピックを決めてグループ発表
+
+第二レベル
+
+1. AI と データサイエンスについてのディスカッション
+2. PositCloud 入門、スクリプトの利用
+3. R Notebook 入門
+4. WDI パッケージの利用
+5. テンプレートの利用
+6. tidyverse の基本の学び
+7. 可視化の学び
+8. WDI 以外のデータの取得
+9. プロジェクト
+10. 発表
