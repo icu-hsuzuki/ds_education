@@ -31,8 +31,16 @@ ai-について
 duolingo
 chat-gpt
 日本から世界を見る
+持続的開発目標sdgs-データ
 world-bank-wdi---world-development-indicaters
 世界開発指標world-development-indicator
+世界開発指標の例
+gdp-per-capita-constant-2015-us
+central-government-debt-total-of-gdp
+co2-emissions-metric-tons-per-capita
+military-expenditure-of-gdp
+military-expenditure-current-usd
+proportion-of-seats-held-by-women-in-natinal-parliaments
 世界のさまざまな課題
 テンプレートによる実習
 introai
