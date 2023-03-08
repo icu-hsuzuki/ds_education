@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.18)  6 MAR 2023 23:42
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.18)  8 MAR 2023 09:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1154,7 +1154,10 @@ Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
-[4])
+[4]
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
+)
 \tf@toc=\write4
 \openout4 = `ds_education.toc'.
 
@@ -2108,6 +2111,8 @@ Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=
 flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
+Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
+flt;!
 [64] [65] [66] [67] [68] [69] [70] [71] [72] [73] [74]
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
@@ -2137,15 +2142,15 @@ Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=
 flt;!
 [90] [91] [92] [93] [94]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10.53937> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 3689.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 3691.
 [95] [96] [97] [98] [99] [100] [101]
-Overfull \hbox (78.87064pt too wide) in paragraph at lines 3885--3886
+Overfull \hbox (78.87064pt too wide) in paragraph at lines 3887--3888
 []\TU/lmr/m/n/10.53937 You can use mutate() function from dplyr package and usi
 ng levels(data$[][][][][][][][][][][][][][][]$country<-
  []
 
 [102] [103] [104]
-Overfull \hbox (471.15645pt too wide) in paragraph at lines 3994--3994
+Overfull \hbox (471.15645pt too wide) in paragraph at lines 3996--3996
 []\TU/lmtt/m/n/10.53937 ChatGPT Jan 9 Version. Free Research Preview. Our goal 
 is to make AI systems more natural and safe to interact with. Your feedback wil
 l help us improve.[] 
@@ -2215,26 +2220,26 @@ flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 [108]
-Underfull \hbox (badness 10000) in paragraph at lines 4069--4070
+Underfull \hbox (badness 10000) in paragraph at lines 4071--4072
 []\TU/lmtt/m/n/10.53937 dplyr \TU/SongtiSCLight(0)/m/n/10.53937 パ ッ ケ ー ジ の \TU
 /lmtt/m/n/10.53937 mutate() \TU/SongtiSCLight(0)/m/n/10.53937 関 数 を 使 い、| \TU/l
 mtt/m/n/10.53937 levels(data$country) \TU/SongtiSCLight(0)/m/n/10.53937 と
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4069--4070
+Underfull \hbox (badness 10000) in paragraph at lines 4071--4072
 \TU/lmtt/m/n/10.53937 data$country<-factor(data$country, levels = levels) \TU/S
 ongtiSCLight(0)/m/n/10.53937 で 国 名 を 含 む
  []
 
 
-Underfull \hbox (badness 6658) in paragraph at lines 4079--4080
+Underfull \hbox (badness 6658) in paragraph at lines 4081--4082
 []\TU/lmtt/m/n/10.53937 mutate() \TU/SongtiSCLight(0)/m/n/10.53937 関 数 は デ ー タ 
 フ レ ー ム に 新 し い 列 を 追 加 す る た め に 使 用 で き、|
  []
 
 
-Underfull \hbox (badness 2221) in paragraph at lines 4079--4080
+Underfull \hbox (badness 2221) in paragraph at lines 4081--4082
 \TU/lmtt/m/n/10.53937 case_when() \TU/SongtiSCLight(0)/m/n/10.53937 関 数 は 国 名 を
  変 更 す る た め の 条 件 を 指 定 す る た め に 使 用 で き
  []
@@ -2243,7 +2248,7 @@ Underfull \hbox (badness 2221) in paragraph at lines 4079--4080
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 [111] [112] [113]
-Overfull \hbox (81.7441pt too wide) in paragraph at lines 4228--4230
+Overfull \hbox (81.7441pt too wide) in paragraph at lines 4230--4232
 []\TU/lmr/m/n/10.53937 Navigate to the following registry key: \TU/lmtt/m/n/10.
 53937 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows
  []
@@ -2263,7 +2268,7 @@ flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 [117] [118] [119] [120]
-Underfull \hbox (badness 1082) in paragraph at lines 4451--4452
+Underfull \hbox (badness 1082) in paragraph at lines 4453--4454
 []\TU/SongtiSCLight(0)/m/n/10.53937 一 方、| \TU/lmr/m/n/10.53937 R_LIBS_USER \TU/
 SongtiSCLight(0)/m/n/10.53937 は、| \TU/lmr/m/n/10.53937 .libPaths() \TU/SongtiSC
 Light(0)/m/n/10.53937 を 使 用 し て 変 更 す る こ と が で き ま す。|
@@ -2302,23 +2307,48 @@ flt;!
 Missing character: There is no ・ (U+30FB) in font Songti SC Light/OT:language=d
 flt;!
 [149]
-Overfull \hbox (6.45259pt too wide) in paragraph at lines 5329--5330
+Overfull \hbox (6.45259pt too wide) in paragraph at lines 5331--5332
 \TU/SongtiSCLight(0)/m/n/10.53937 ば、|  遠 慮 な く 聞 い て く だ さ い ね。|  無 料 版 の \TU/l
 mr/m/n/10.53937 DeepL \TU/SongtiSCLight(0)/m/n/10.53937 翻 訳  |（\TU/lmr/m/n/10.5
 3937 www.DeepL.com/Translator\TU/SongtiSCLight(0)/m/n/10.53937 ）|
  []
 
-[150]
+[150] [151]
+Underfull \hbox (badness 1092) in paragraph at lines 5398--5400
+\TU/SongtiSCLight(0)/m/n/10.53937 関 数 を 使 用 す る こ と が で き ま す。|  例 え ば、|  国 の 人
+ 口 と \TU/lmr/m/n/10.53937 GDP \TU/SongtiSCLight(0)/m/n/10.53937 の 間 の 相
+ []
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 5398--5400
+\TU/SongtiSCLight(0)/m/n/10.53937 関 を 調 べ る 場 合、| \TU/lmr/m/n/10.53937 CORREL \
+TU/SongtiSCLight(0)/m/n/10.53937 関 数 を 以 下 の よ う に 使 用 し ま す：| \TU/lmr/m/n/10.5
+3937 =COR-
+ []
+
+[152] [153] [154]
+Overfull \hbox (39.56918pt too wide) in paragraph at lines 5546--5546
+[]\TU/lmtt/m/n/10.53937 http://api.worldbank.org/v2/en/indicator/SP.DYN.LE00.IN
+?downloadformat=csv[] 
+ []
+
+[155]
+Overfull \hbox (39.56918pt too wide) in paragraph at lines 5563--5563
+[]\TU/lmtt/m/n/10.53937 http://api.worldbank.org/v2/en/indicator/NY.GDP.PCAP.CD
+?downloadformat=csv[] 
+ []
+
+[156] [157]
 Missing character: There is no ■ (U+25A0) in font [lmsans10-regular]:mapping=te
 x-text;!
-[151]
-Overfull \hbox (9.32794pt too wide) in paragraph at lines 5419--5420
+[158]
+Overfull \hbox (9.32794pt too wide) in paragraph at lines 5706--5707
 []\TU/lmr/m/n/10.53937 To label an un-numbered heading, use: \TU/lmtt/m/n/10.53
 937 # Hello world {-#nice-label}
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 5422--5423
+Underfull \hbox (badness 3364) in paragraph at lines 5709--5710
 []\TU/lmr/m/n/10.53937 Next, reference the labeled heading anywhere in the text
  using
  []
@@ -2326,21 +2356,21 @@ Underfull \hbox (badness 3364) in paragraph at lines 5422--5423
 File: 90-bookdown_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
 <use 90-bookdown_files/figure-latex/nice-fig-1.pdf>
 LaTeX Font Info:    Font shape `TU/SongtiSCLight(0)/m/n' will be
-(Font)              scaled to size 8.72992pt on input line 5451.
-[152] [153] [154] [155] (./ds_education.bbl [156]) [157
+(Font)              scaled to size 8.72992pt on input line 5738.
+[159] [160] [161] [162] (./ds_education.bbl [163] [164
 
-] (./ds_education.aux)
+]) [165] (./ds_education.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 24391 strings out of 476179
- 508787 string characters out of 5809543
- 954991 words of memory out of 5000000
- 44726 multiletter control sequences out of 15000+600000
+ 24393 strings out of 476179
+ 508801 string characters out of 5809543
+ 954601 words of memory out of 5000000
+ 44728 multiletter control sequences out of 15000+600000
  479586 words of font info for 132 fonts, out of 8000000 for 9000
  1353 hyphenation exceptions out of 8191
  86i,10n,140p,1091b,1013s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ds_education.pdf (157 pages).
+Output written on ds_education.pdf (165 pages).

@@ -120,7 +120,7 @@
 
 \title{データ・サイエンス教育}
 \author{鈴木 寛（Hiroshi Suzuki）}
-\date{2023-03-06}
+\date{2023-03-08}
 
 \usepackage{amsthm}
 \newtheorem{theorem}{Theorem}[section]
@@ -2816,6 +2816,8 @@ Chat GPT を使いながら、考えたことを、実例を交えて書いて�
   \protect\hyperlink{dseducation}{Data Science Education}・\protect\hyperlink{dseducationj}{訳：データサイエンス教育}
 \item
   \protect\hyperlink{centralasia}{Central Asian Countries}・\protect\hyperlink{centralasiaj}{訳：中央アジア}
+\item
+  \protect\hyperlink{edacor}{探索的データ解析・相関係数}：日本語
 \end{enumerate}
 
 \hypertarget{firstchat}{%
@@ -5327,6 +5329,291 @@ All of the Central Asian countries became independent in 1991 as a result of the
 {[}HS{]} OK 理解できました。ありがとうございました。
 
 {[}ChatGPT{]} どういたしまして。お役に立ててうれしいです。また何か質問があれば、遠慮なく聞いてくださいね。 無料版のDeepL翻訳（www.DeepL.com/Translator）で翻訳しました。
+
+\hypertarget{edacor}{%
+\subsection{探索的データ解析・相関係数}\label{edacor}}
+
+{[}HS{]} データサイエンスで、EDA とはどのようなものですか。
+
+{[}ChatGPT{]} EDA (Exploratory Data Analysis) は、データサイエンスにおいて重要な段階の1つであり、データを理解するための分析方法のことを指します。EDA は、データの分布、統計的特性、変数間の相関関係、欠損値の状況、外れ値の存在など、データに関する基本的な情報を収集することにより、データセットの構造や特徴を理解するために行われます。
+
+EDA は、データの品質を確認し、欠損値や異常値などの問題を発見し、必要な前処理の手法を選択するための情報を提供することができます。また、EDA は、データの可視化を通じて、パターンやトレンドを発見することができ、データセットに関する新しい洞察を得ることができます。
+
+EDA は、データ分析の初期段階であるため、分析者が分析の目的を明確にすることが重要です。EDA の結果に基づいて、分析の方向性を決定することができます。EDA には、統計的手法、データ可視化手法、機械学習手法などが使用されます。
+
+{[}HS{]} EDA の手続き、Workflow のようなものはありますか。
+
+{[}ChatGPT{]} EDA の手続き、Workflow には一般的な決まりはありませんが、一般的な手順は次のようになることがあります。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  データの理解：まず、データセットの大まかな概要を理解する必要があります。これには、データの変数、欠損値の数、データタイプ、サンプル数などが含まれます。
+\item
+  データの前処理：データセット内の欠損値、外れ値、重複したデータ、不必要な変数などを処理する必要があります。これにより、分析が正確になります。
+\item
+  データの可視化：データセット内の変数の分布、相関関係、パターンなどを可視化することにより、データに関する新しい洞察を得ることができます。
+\item
+  データの探索的統計解析：データの要約統計量を計算し、変数の相関関係を調べることにより、データに関する新しい洞察を得ることができます。
+\item
+  モデルの構築：データに基づいて、予測モデルを構築することができます。モデルの構築は、分析の目的に合わせて変わることがあります。
+\item
+  結果の解釈：EDA の結果に基づいて、データに関する洞察を得ることができます。これらの洞察は、ビジネス上の決定をするための重要な情報源になることがあります。
+\end{enumerate}
+
+以上が一般的なEDAの手順ですが、データや分析の目的によっては、手順が異なることがあります。
+
+{[}HS{]} データサイエンス教育にEDAの考え方を活用したいと思っています。まず、どのような問いを間がてもらうのがよいかなと思っています。データセットは、WDI など、パブリックデータを考えています。
+
+{[}ChatGPT{]} データサイエンス教育にEDAの考え方を活用する場合、学生が自分で問いを考えることが大切です。以下は、WDIデータセットを使用する場合に考えられるいくつかの問いです。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  国ごとのGDPの推移を調べることはできますか？地域、年代別に分類することはできますか？
+\item
+  人口の増加に関するパターンを探すことはできますか？ある国の出生率と死亡率に関係があると考えられますか？
+\item
+  経済発展と教育水準の関係を調べることはできますか？教育の改善が、経済成長にどの程度影響すると考えられますか？
+\item
+  環境問題に関する指標を調べることはできますか？CO2排出量、森林面積、廃棄物処理など、環境に関する様々なデータを比較することができますか？
+\item
+  経済成長に対するエネルギー需要の影響を調べることはできますか？エネルギー消費量と経済成長率には相関関係があると考えられますか？
+\end{enumerate}
+
+以上のような問いを考えることで、学生はデータセットをより深く理解し、データに関する新しい洞察を得ることができます。また、EDAの手順を学ぶことで、データの前処理、可視化、探索的統計解析など、データサイエンスの基礎的なスキルを身につけることができます。
+
+{[}HS{]} たとえば、WDI のダッシュボードを使うと、ある程度、可視化ができますが、二つ以上の指標について、相関などを考えるのに、簡単な方法はありますか。初心者を想定して説明してください。
+
+{[}ChatGPT{]} WDIのダッシュボードでは、複数の指標に関する相関分析を行うことはできません。しかし、ExcelやGoogleスプレッドシートなどの表計算ソフトウェアを使用することで、比較的簡単に相関分析を行うことができます。以下は、初心者に向けたExcelを用いた相関分析の方法です。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  データを入力します。Excelの場合、各列にデータがある場合は、各列に対応するヘッダーを入力するだけです。例えば、国名、人口、GDP、一人当たりGDPなど。
+\item
+  相関係数を計算するための関数を使用します。Excelの場合、CORREL関数を使用することができます。例えば、国の人口とGDPの間の相関を調べる場合、CORREL関数を以下のように使用します：=CORREL(B2:B100,C2:C100)
+\item
+  相関係数を解釈します。相関係数は、-1から1の間の値を取ります。1に近いほど正の相関があり、-1に近いほど負の相関があります。0に近い場合、相関がないとされます。相関係数は、相関関係の強さを示すものであり、因果関係を示すものではありません。そのため、相関係数が高くても、必ずしも2つの指標に因果関係があるとは限りません。
+\item
+  可視化を行います。Excelなどの表計算ソフトウェアには、グラフ機能があります。相関分析の結果をグラフにプロットすることで、視覚的に関係を確認することができます。
+\end{enumerate}
+
+以上の手順を踏むことで、WDIのデータを用いた相関分析を簡単に行うことができます。しかし、相関分析を行う際には、必ず注意点や前提条件を確認し、因果関係を誤解しないようにする必要があります。
+
+{[}HS{]} 同じように、データサイエンス初心者が、オンラインのツールを使って、WDI の指標などの、相関係数などを調べることはできますか。
+
+{[}ChatGPT{]} はい、データサイエンス初心者でもオンラインのツールを使用することで、WDIの指標などの相関係数を調べることができます。以下にいくつかのツールを紹介します。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Google スプレッドシート: Google スプレッドシートは、無料で使用できる表計算ソフトウェアであり、CORREL関数を使用して相関係数を計算することができます。また、Google スプレッドシートには、グラフ機能があり、相関分析の結果をグラフにプロットすることができます。
+\item
+  Excel Online: Excel Onlineは、無料で使用できるオンライン版のExcelであり、CORREL関数を使用して相関係数を計算することができます。また、グラフ機能も利用できます。
+\item
+  QuickCalcs: QuickCalcsは、無料の統計解析ツールであり、相関係数を計算することができます。入力するデータは、CSVファイルやExcelファイルから読み込むことができます。
+\item
+  Datawrapper: Datawrapperは、無料のデータ可視化ツールであり、相関分析の結果をグラフにプロットすることができます。また、Datawrapperには、相関係数を計算する機能はありませんが、事前に相関係数を計算しておいて、グラフにプロットすることができます。
+\end{enumerate}
+
+これらのツールを使用することで、データサイエンス初心者でも簡単に相関係数の計算や可視化を行うことができます。ただし、相関分析を行う際には、注意点や前提条件を確認し、因果関係を誤解しないようにする必要があります。
+
+{[}HS{]} WDI では、一つの指標の CSV などと取得することは簡単ですが、二つ以上の指標を取得したり、二つ以上の　CSV を結合するなどの、簡単な方法を教えてくださいませんか。できれば、オンラインでできると良いのですが。
+
+{[}ChatGPT{]} 二つ以上の指標を取得したり、二つ以上のCSVを結合する場合、以下のオンラインツールを使用することができます。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  OpenRefine: OpenRefineは、オンラインで使用できるデータクレンジングツールです。OpenRefineを使用することで、複数のCSVファイルを結合したり、複数の指標を結合したりすることができます。また、OpenRefineには、データの検索、フィルタリング、クリーニングなどの機能もあります。
+\item
+  Power Query for Excel: Power Query for Excelは、Microsoft Excelのアドインであり、複数のデータソースからデータを結合することができます。Power Query for Excelを使用することで、複数のCSVファイルを結合したり、複数の指標を結合したりすることができます。
+\item
+  Datawrapper: Datawrapperは、無料のデータ可視化ツールであり、複数のCSVファイルを結合することができます。Datawrapperには、CSVファイルを読み込む機能があり、複数のCSVファイルを読み込んで結合することができます。また、Datawrapperには、指標を結合する機能はありませんが、前処理としてOpenRefineやPower Query for Excelを使用して、CSVファイルを結合することができます。
+\end{enumerate}
+
+これらのツールを使用することで、複数の指標を結合したり、複数のCSVファイルを結合したりすることができます。ただし、データの前処理には注意が必要であり、正しい結合方法を選択し、データの品質を確認する必要があります。
+
+{[}HS{]} では、どれか一つを取って、具体的な手続きを教えてくださいませんか。例として、WDI の平均寿命、Life Expectancy と、一人当たりの国内総生産 GDP per Capita を使うことにします。
+
+{[}ChatGPT{]} ここでは、OpenRefineを使用してWDIの平均寿命とGDP per Capitaを含む複数のCSVファイルを結合する手順を説明します。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  WDIの平均寿命とGDP per CapitaのCSVファイルをそれぞれダウンロードします。
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  平均寿命: \url{http://api.worldbank.org/v2/en/indicator/SP.DYN.LE00.IN?downloadformat=csv}
+\item
+  GDP per Capita: \url{http://api.worldbank.org/v2/en/indicator/NY.GDP.PCAP.CD?downloadformat=csv}
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  OpenRefineを開き、メニューバーの「Create Project」をクリックして、新しいプロジェクトを作成します。
+\item
+  ダウンロードした平均寿命のCSVファイルをOpenRefineにドラッグ＆ドロップします。OpenRefineがデータを読み込みます。
+\item
+  平均寿命のCSVファイルには、ISOコードが含まれているため、GDP per CapitaのCSVファイルとの結合に使用することができます。まず、平均寿命のデータに含まれるISOコードの列を選択します。列を選択するには、列の上にカーソルを移動し、列のヘッダーをクリックします。
+\item
+  ISOコードの列を右クリックし、コンテキストメニューから「Edit cells」を選択し、「Common transforms」から「Trim leading and trailing whitespace」をクリックします。これにより、ISOコードの前後にある余分な空白が削除されます。
+\item
+  同じ方法で、GDP per CapitaのCSVファイルからISOコードの列を選択し、余分な空白を削除します。
+\item
+  平均寿命のCSVファイルのISOコードの列を選択し、「Facet」ボタンをクリックして、「Facet by Blank」を選択します。これにより、ISOコードが空の行だけを表示することができます。
+\item
+  空のISOコードの行を選択し、右クリックして「Remove all matching rows」を選択します。これにより、ISOコードが空の行が削除されます。
+\item
+  平均寿命のCSVファイルのISOコードの列を右クリックし、「Edit column」を選択し、「Rename this column」をクリックして、列の名前を「ISO Code」に変更します。
+\item
+  GDP per CapitaのCSVファイルのISOコードの列も同じように「ISO Code」に変更します。
+\item
+  平均寿命のCSVファイルのISOコード列とGDP per CapitaのCSVファイルのISOコード列を選択し、OpenRef
+\end{enumerate}
+
+{[}HS{]} 途中で途切れてしまっているようですが、あなたは、ある文字数で一旦、打ち切るようにプログラムされていますか。
+
+{[}ChatGPT{]} いいえ、私は文字数で途切れるようにプログラムされていません。私は、できるだけ適切な回答を提供するように設計されていますが、テキストボックスに入力できる最大文字数があるため、長い回答を書く場合は、複数のメッセージに分割する必要があります。また、私は一定時間操作がない場合にセッションが終了するため、長時間の操作を行う場合は、途中経過を保存することをお勧めします。
+
+{[}HS{]} 先ほどの続きを説明してください。11の途中で途切れました。
+
+{[}ChatGPT{]} 申し訳ありません。続きをお伝えします。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{10}
+\tightlist
+\item
+  結合したデータフレームを使って、相関行列を計算する。
+\end{enumerate}
+
+\begin{verbatim}
+python
+corr_matrix = merged_df.corr()
+print(corr_matrix)
+\end{verbatim}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{11}
+\tightlist
+\item
+  相関係数のヒートマップを描画する。
+\end{enumerate}
+
+\begin{verbatim}
+python
+import seaborn as sns
+sns.heatmap(corr_matrix, annot=True)
+\end{verbatim}
+
+これで、Life ExpectancyとGDP per Capitaの相関係数を視覚的に確認することができます。ヒートマップによる可視化では、相関係数が高い場合に色が濃く、低い場合に色が薄く表示されます。また、annot=Trueを指定することで、相関係数の値が各セルに表示されます。
+
+以上が、WDIの平均寿命とGDP per Capitaを用いた相関係数の計算方法になります。他の指標を使う場合も同様に、データの取得、前処理、結合、相関行列の計算、ヒートマップの描画という流れで計算することができます。
+
+{[}HS{]} では、次に、Power Query for Excel　での具体的な手続きを説明してください。
+
+{[}ChatGPT{]} はい、Power Query for Excelを使った方法を説明します。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Excelのデータタブから、「Power Queryエディターを開く」を選択します。
+\item
+  Power Queryエディターが起動したら、「ホーム」タブから、「Web」を選択します。
+\item
+  WDIのデータを取得するためのURLを入力します。例えば、平均寿命（Life Expectancy）のデータを取得する場合は、以下のURLを使用します。
+\end{enumerate}
+
+\begin{verbatim}
+bash
+http://api.worldbank.org/v2/en/indicator/SP.DYN.LE00.IN?downloadformat=csv
+\end{verbatim}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  URLを入力したら、「OK」をクリックして、WDIのデータを取得します。
+\item
+  取得したデータをPower Queryエディターで編集します。必要に応じて列の並び替え、列の名前の変更、行の削除などを行います。
+\item
+  同様に、GDP per Capitaのデータを取得します。以下のURLを使用します。
+\end{enumerate}
+
+\begin{verbatim}
+bash
+http://api.worldbank.org/v2/en/indicator/NY.GDP.PCAP.CD?downloadformat=csv
+\end{verbatim}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  取得したデータをPower Queryエディターで編集します。
+\item
+  2つのデータセットを結合します。Power Queryエディターの「ホーム」タブから、「結合」を選択します。
+\item
+  結合の方法を選択します。今回は、「共通の列」を使用して結合します。つまり、「Country Code」という列を共通の列として指定します。
+\item
+  結合したデータセットをExcelに出力します。Power Queryエディターの「ホーム」タブから、「閉じて読み込む」を選択します。
+\end{enumerate}
+
+これで、ExcelでWDIの平均寿命とGDP per Capitaのデータを取得し、結合することができます。Power Queryエディターを使うことで、複雑なデータの操作も簡単に行えます。
+
+{[}HS{]} 最後に、Datawrapper: Datawrapper での手続きを説明してください。
+
+{[}ChatGPT{]} Datawrapperは、オンラインで可視化を作成するためのツールであり、データの取り込みから最終的なグラフの作成までの一連のプロセスを簡略化するために設計されています。以下に、WDIのLife ExpectancyとGDP per Capitaの相関係数をDatawrapperで作成する手順を示します。
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Datawrapperのウェブサイトにアクセスして、アカウントにログインします。
+\item
+  「Create a chart」ボタンをクリックし、グラフを作成するためのチャートのタイプを選択します。
+\item
+  データをアップロードするための方法を選択します。WDIの場合は、「Upload a file」を選択し、先ほど保存したCSVファイルをアップロードします。
+\item
+  データを読み込んだら、グラフの種類を選択します。相関を調べる場合は、散布図を選択します。
+\item
+  X軸にGDP per Capita、Y軸にLife Expectancyをドラッグアンドドロップします。
+\item
+  チャートをカスタマイズするためのオプションを使用して、チャートの外観を調整します。例えば、ラベル、タイトル、軸ラベル、軸の範囲、色などを設定できます。
+\item
+  最後に、グラフを公開するためのオプションを選択します。公開する前に、必ずプレビューモードでチャートを確認し、修正する必要があれば修正します。
+\end{enumerate}
+
+以上が、Datawrapperを使用してWDIのLife ExpectancyとGDP per Capitaの相関係数を調べるための手順です。Datawrapperは、可視化の専門家でなくても簡単に使えるため、初心者でも簡単にグラフを作成できます。
+
+{[}HS{]} ありがとうございます。試してみます。それからまた、質問したいと思います。
+
+{[}ChatGPT{]} どういたしまして。何かご質問があればいつでもお尋ねください。お力になれるように努めます。
+
+{[}HS{]} Chat 内容を、Download する機能はありますか。
+
+{[}ChatGPT{]} 残念ながら、Chatの内容をダウンロードする機能はありません。ただし、テキスト形式で全文をコピーして保存することは可能です。また、必要な場合は、画面のスクリーンショットを撮影して保存することもできます。
+
+{[}HS{]} 将来的に、機能を追加していただけると、より使いやすくなると思います。よろしくお願いいたします。
+
+{[}ChatGPT{]} ありがとうございます。フィードバックをいただき、私たちのサービスを改善していくために役立てていきます。今後のバージョンで機能を追加する可能性もありますので、ご期待ください。
 
 \hypertarget{bookdown}{%
 \section{Bookdown}\label{bookdown}}
