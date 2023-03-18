@@ -133,6 +133,8 @@ eco232
 ds4aj
 リンク
 chatgpt
+poe
+chat-gpt-1
 firstchat
 firstchatj
 digitalhealth

@@ -1,4 +1,34 @@
-# Chat GPT {#chatgpt}
+# 対話型 AI - Chat Bot {#chatgpt}
+
+> 対話型のAIが各種登場しています。特に、2022年11月30日にリリースされた Chat GPT は、さまざまなインパクトを与えているように見えます。競争にも拍車をかけ、公開性にも一石を投じているように見えます。
+
+> GPT4 の発表と同時に、公開・非公開の議論も、活発になっています。公開性は、著作権問題にも抵触するかもしれないネット横断的に取得する機械学習のためのデータの問題や、熾烈な企業間の競争の背景のもと、非常に困難な課題を含んでいますが、未来は誰のものかという、すべてのひとに関わる倫理の問題と深く結びついており、今後、注視が必要です。
+
+> 個人的には、批判的思考（Critical Thinking）を涵養する必要性とともに、これらを、その学習・訓練のためにも、活用する必要性を強く感じています。そこで、少しずつ、紹介していきたいと思います。
+
+> 課題などは、別の章で考察していこうと思います。
+
+## Poe
+
+質問に答えを返すサービスを提供している [Quora](https://www.quora.com/) が運営しており、幾つもの、Chat Bot を利用することが可能です。[Poe](https://poe.com/login) にアクセスし、携帯電話などの番号、または、Google Account があれば、無償で登録して、利用可能です。また、iOS などモバイル用の、アプリからも利用可能です。
+
+この記事を書いている時点では、多少の制限のもとで、以下のものが利用可能です。
+
+* [Sage](https://www.crunchbase.com/organization/sage-ai-inc-sagetalk)
+* [GPT-4](https://openai.com/product/gpt-4): 1日ひとつの質問のみ。
+* [Claude+](https://www.anthropic.com/index/introducing-claude): 1日ひとつの質問のみ。
+* [Chat GPT](https://openai.com/blog/chatgpt)
+* [Dragonfly](https://dragonflyai.co/)
+
+[2023.03.18]
+
+教育用としては、制限付きでも、十分活用可能だと思います。
+
+## Chat GPT
+
+> [Open AI](https://openai.com/) が運営する、対話型 AI です。[Chat.OpenAI](https://chat.openai.com/) から無料で登録が可能で、利用できます。ただし、携帯電話番号が必要です。
+
+> Chat GPT 3.5 は、2022年11月30日に公開され、無償で利用可能。Chat GPT 4.0 は、2023.03.14 にリリースされ、一ヶ月20ドルで、Chat GPT Plus として利用できるようになっています。[2023.03.18]
 
 Chat GPT を使いながら、考えたことを、実例を交えて書いていきます。英語で使うことが多いですが、英語の場合には、[DeepL](https://www.deepl.com/translator) による翻訳をつけてあります。このページでは、翻訳には、手を入れない方針にしています。
 
