@@ -1,5 +1,5 @@
 --- 
-title: "データ・サイエンス教育"
+title: "データ・サイエンスを一緒に教えませんか"
 author: "鈴木 寛（Hiroshi Suzuki）"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
