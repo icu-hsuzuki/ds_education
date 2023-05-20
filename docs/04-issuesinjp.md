@@ -158,7 +158,7 @@ list_dslabs$results %>% as_tibble() %>% select(3:4)
 #>  8 heights           Self-Reported Heights                  
 #>  9 historic_co2      Atmospheric carbon dioxide concentrati…
 #> 10 mnist_27          Useful example for illustrating machin…
-#> # … with 19 more rows
+#> # ℹ 19 more rows
 ```
 
 #### `dslabs` に含まれるデータの日本語訳（DeepL）

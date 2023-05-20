@@ -1,7 +1,7 @@
 --- 
 title: "データ・サイエンスを一緒に教えませんか"
 author: "鈴木 寛（Hiroshi Suzuki）"
-date: "2023-03-18"
+date: "2023-05-20"
 site: bookdown::bookdown_site
 documentclass: bxjsbook #book
 bibliography: [book.bib, packages.bib]
